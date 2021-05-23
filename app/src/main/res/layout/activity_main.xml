@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="(LOGO)"
@@ -25,64 +26,95 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Location"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="157dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236" />
 
     <ImageButton
         android:id="@+id/locationBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_menu_mylocation"
-        tools:layout_editor_absoluteX="295dp"
-        tools:layout_editor_absoluteY="156dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toEndOf="@+id/locationTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229"
+        app:srcCompat="@android:drawable/ic_menu_mylocation" />
 
     <Button
         android:id="@+id/createTripBtn"
-        android:layout_width="283dp"
-        android:layout_height="78dp"
+        android:layout_width="300sp"
+        android:layout_height="100sp"
         android:text="create trip"
         android:textColor="#000000"
         android:textStyle="bold"
         app:backgroundTint="#C3C3C3"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="299dp" />
-
-    <Button
-        android:id="@+id/savedRoutesBtn"
-        android:layout_width="283dp"
-        android:layout_height="78dp"
-        android:text="saved routes"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        app:backgroundTint="#C3C3C3"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="496dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426" />
 
     <Button
         android:id="@+id/showTransportsBtn"
-        android:layout_width="283dp"
-        android:layout_height="78dp"
+        android:layout_width="300sp"
+        android:layout_height="100sp"
         android:text="show transports"
         android:textColor="#000000"
         android:textStyle="bold"
         app:backgroundTint="#C3C3C3"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="398dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTripBtn"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <Button
+        android:id="@+id/savedRoutesBtn"
+        android:layout_width="300sp"
+        android:layout_height="100sp"
+        android:text="saved routes"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:backgroundTint="#C3C3C3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showTransportsBtn"
+        app:layout_constraintVertical_bias="0.065" />
 
     <ImageButton
         android:id="@+id/settingsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_menu_preferences"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="642dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944"
+        app:srcCompat="@android:drawable/ic_menu_preferences" />
 
     <ImageButton
         android:id="@+id/helpBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_menu_help"
-        tools:layout_editor_absoluteX="305dp"
-        tools:layout_editor_absoluteY="642dp" />
+        android:layout_marginStart="193dp"
+        android:layout_marginLeft="193dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/settingsBtn"
+        app:layout_constraintTop_toBottomOf="@+id/savedRoutesBtn"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_help" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
