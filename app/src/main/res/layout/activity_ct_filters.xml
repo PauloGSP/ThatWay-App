@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CT_Filters">
+
+    <ImageButton
+        android:id="@+id/returnBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <TextView
+        android:id="@+id/CT_FiltersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Trip"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <ImageButton
+        android:id="@+id/homeBtnShowTransports3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_dialog_dialer"
+        tools:layout_editor_absoluteX="341dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <TextView
+        android:id="@+id/filtersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filters"
+        tools:layout_editor_absoluteX="186dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <LinearLayout
+        android:layout_width="372dp"
+        android:layout_height="478dp"
+        android:background="#B8B8B8"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="178dp"></LinearLayout>
+
+    <Button
+        android:id="@+id/filtersDoneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="done"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="671dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

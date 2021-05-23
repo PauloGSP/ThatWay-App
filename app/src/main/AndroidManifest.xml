@@ -15,10 +15,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
-        <activity android:name=".MapSelectLocation"></activity>
-
-
-
+        <activity android:name=".RouteAllDetails"></activity>
+        <activity android:name=".SavedRoutes" />
+        <activity android:name=".CityPrivateTransports" />
+        <activity android:name=".CT_TripInfo" />
+        <activity android:name=".CT_SearchResults" />
+        <activity android:name=".CT_Filters" />
+        <activity android:name=".CT_LocationsFilters" />
+        <activity android:name=".MapSelectLocation" />
         <activity android:name=".ShowTransports" />
         <activity android:name=".HelpPage" />
         <activity android:name=".MainActivity">
