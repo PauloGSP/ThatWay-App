@@ -24,12 +24,12 @@ public class CT_SearchResults extends AppCompatActivity {
     //temos de receber os filtros selecionados a partir do CT_LocationFilters
 
     // arrays/ficheiros necessários
-    ArrayList<Trip> list_of_trips = new ArrayList<Trip>();  //contem todas as viagens
+    static ArrayList<Trip> list_of_trips = new ArrayList<Trip>();  //contem todas as viagens
 
 
     //ler um ficheiro e adicionar objetos Trip para list_of_trips
-    Scanner sc = new Scanner(new File("trips.txt"));
-    while (sc.hasNextLine()) {
+    Scanner scanner = new Scanner(new File("trips.txt"));
+    while (scanner.hasNextLine()) {
         String line = sc.nextLine();
         String[] trip_info = line.split("/t");
 
@@ -40,15 +40,35 @@ public class CT_SearchResults extends AppCompatActivity {
         String transport_type = trip_info[4];
         Double price = Double.parseDouble(trip_info[5]);
         long travelling_time = ChronoUnit.MINUTES.between(l1,l2);
-        String departure_date_string = trip_info[6];
-        DateFormat df = new SimpleDateFormat("dd/mm/yyyy");
-        Date departure_date = df.parse(departure_date_string);
+
+        String departure_date_string = trip_info[6]; //pode ter data (Date) ou ser diário (DAILY)
+        Date departure_date = null;
+        String departure_routine = null;
+        try {
+            DateFormat df = new SimpleDateFormat("dd/mm/yyyy");
+            departure_date = df.parse(departure_date_string);
+        } catch (Exception e) {
+            departure_routine = departure_date_string;
+        }
+
         String place_of_departure = trip_info[7];
         String place_of_arrival = trip_info[8];
 
         //ponto de origem / ponto de destino / hora saída / hora chegada / tipo transporte / preço / data de saída (se for DAILY repete-se todos os dias) / coordenadas do ponto de saida / coordenadas do ponto de chegada
-        Trip trip = new Trip(origin,destiny,departure_time,arrival_time,transport_type,price,travelling_time,departure_date,place_of_departure,place_of_arrival);
+        Trip trip;
+        if (departure_date == null) {
+            //caso seja uma trip que seja rotineira
+            trip = new Trip(origin,destiny,departure_time,arrival_time,transport_type,price,travelling_time,departure_routine,place_of_departure,place_of_arrival);
+        } else {
+            //caso só aconteça uma vez
+            trip = new Trip(origin,destiny,departure_time,arrival_time,transport_type,price,travelling_time,departure_date,place_of_departure,place_of_arrival);
+        }
         list_of_trips.add(trip);
+    }
+    scanner.close();
+
+    for (Trip t : list_of_trips) {
+        System.out.println(t);
     }
 
     @Override
