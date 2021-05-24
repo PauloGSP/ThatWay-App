@@ -28,7 +28,9 @@ public class CT_SearchResults extends AppCompatActivity {
 
 
     //ler um ficheiro e adicionar objetos Trip para list_of_trips
+    /*
     Scanner scanner = new Scanner(new File("trips.txt"));
+
     while (scanner.hasNextLine()) {
         String line = sc.nextLine();
         String[] trip_info = line.split("/t");
@@ -70,6 +72,7 @@ public class CT_SearchResults extends AppCompatActivity {
     for (Trip t : list_of_trips) {
         System.out.println(t);
     }
+    */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

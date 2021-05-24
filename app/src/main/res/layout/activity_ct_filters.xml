@@ -56,50 +56,76 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="360dp"
-        android:layout_height="510dp"
+        android:layout_width="359dp"
+        android:layout_height="529dp"
         android:background="#BDBDBD"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departure time:"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.124"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.216" />
 
         <TextView
             android:id="@+id/textView15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
             android:text="Transport type"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="193dp" />
-
-        <CheckBox
-            android:id="@+id/trainCheckBox"
-            android:layout_width="104dp"
-            android:layout_height="38dp"
-            android:text="Train"
-            android:textSize="16sp"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="271dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.137"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/departureTime" />
 
         <CheckBox
             android:id="@+id/busCheckBox"
             android:layout_width="104dp"
             android:layout_height="38dp"
+            android:layout_marginTop="12dp"
             android:text="Bus"
             android:textSize="16sp"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="233dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <CheckBox
+            android:id="@+id/trainCheckBox"
+            android:layout_width="104dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="4dp"
+            android:text="Train"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/busCheckBox" />
 
         <CheckBox
             android:id="@+id/metroCheckBox"
             android:layout_width="104dp"
             android:layout_height="38dp"
+            android:layout_marginTop="4dp"
             android:text="Metro"
             android:textSize="16sp"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="308dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trainCheckBox" />
 
         <TextView
             android:id="@+id/textView12"
@@ -108,8 +134,12 @@
             android:text="Schedule"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="33dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.105"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.033" />
 
         <TextView
             android:id="@+id/textView14"
@@ -117,74 +147,118 @@
             android:layout_height="wrap_content"
             android:text="Arrival Time:"
             android:textSize="16sp"
-            tools:layout_editor_absoluteX="193dp"
-            tools:layout_editor_absoluteY="80dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.309" />
 
         <EditText
-            android:id="@+id/arrivalTime_editTextTime"
-            android:layout_width="123dp"
-            android:layout_height="33dp"
+            android:id="@+id/arrivalTime"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
             android:ems="10"
             android:inputType="time"
-            android:textSize="20sp"
-            tools:layout_editor_absoluteX="190dp"
-            tools:layout_editor_absoluteY="107dp" />
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.854"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.293" />
+
+        <EditText
+            android:id="@+id/departureTime"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="time"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.854"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Departure time:"
+            android:text="Departure date:"
             android:textSize="16sp"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="80dp" />
-
-        <EditText
-            android:id="@+id/departureTime_editTextTime"
-            android:layout_width="120dp"
-            android:layout_height="33dp"
-            android:ems="10"
-            android:inputType="time"
-            android:textSize="20sp"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="107dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.124"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.132" />
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="416dp"
             android:text=" Order by"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="31dp"
-            tools:layout_editor_absoluteY="382dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.105"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="49dp"
+            android:layout_height="33dp"
             android:text="Price"
             android:textSize="16sp"
-            tools:layout_editor_absoluteX="38dp"
-            tools:layout_editor_absoluteY="431dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.951" />
 
         <TextView
             android:id="@+id/textView18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="119dp"
+            android:layout_height="39dp"
             android:text="Travelling time"
             android:textSize="16sp"
-            tools:layout_editor_absoluteX="186dp"
-            tools:layout_editor_absoluteY="431dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.847"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.968" />
 
         <Switch
             android:id="@+id/orderBySwitch"
-            android:layout_width="67dp"
-            android:layout_height="28dp"
+            android:layout_width="68dp"
+            android:layout_height="37dp"
             android:scrollbarSize="20dp"
             android:textSize="24sp"
-            tools:layout_editor_absoluteX="91dp"
-            tools:layout_editor_absoluteY="431dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.391"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.951" />
+
+        <EditText
+            android:id="@+id/departureDate"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.854"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.107" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
