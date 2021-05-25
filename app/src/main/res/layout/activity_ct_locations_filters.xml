@@ -68,6 +68,7 @@
         android:id="@+id/recyclerView"
         android:layout_width="331dp"
         android:layout_height="319dp"
+        android:background="#C8C8C8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
