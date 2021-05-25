@@ -12,6 +12,11 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Switch;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalTime;
+import java.util.Date;
+
 public class CT_Filters extends AppCompatActivity {
 
     @Override
@@ -47,11 +52,18 @@ public class CT_Filters extends AppCompatActivity {
                 //por default estes valores estão com o timestamp atual no CT_LocationFilters e só dá para fazer set a estes valores
                 //o departure date n permite inserir o "/" nem o "-"
 
+                String depDate = departureDate.getText().toString();
+                String depTime = departureTime.getText().toString();
+                String arrTime = arrivalTime.getText().toString();
+                depDate = ((depDate.matches("")) ? "DEFAULT" : depDate);
+                depTime = ((depTime.matches("")) ? "DEFAULT" : depTime);
+                arrTime = ((arrTime.matches("")) ? "DEFAULT" : arrTime);
+
                 // ver os estados das checkBox's
                 Boolean[] checked_transports = new Boolean[3];  //inicializa um array de tamanho 3 com valores 0
-                if (busCheckBox.isChecked()) checked_transports[0] = true;
-                if (trainCheckBox.isChecked()) checked_transports[1] = true;
-                if (metroCheckBox.isChecked()) checked_transports[2] = true;
+                checked_transports[0] = ((busCheckBox.isChecked()) ? true : false);
+                checked_transports[1] = ((metroCheckBox.isChecked()) ? true : false);
+                checked_transports[2] = ((trainCheckBox.isChecked()) ? true : false);
 
                 //ver qual é o estado do switch para saber se a ordenação é por travelling time ou por price
                 String ORDER_BY;
@@ -61,7 +73,10 @@ public class CT_Filters extends AppCompatActivity {
                     ORDER_BY = "PRICE";
                 }
 
-                System.out.println(checked_transports);
+                System.out.println(depDate);
+                System.out.println(depTime);
+                System.out.println(arrTime);
+                for (Boolean b : checked_transports) System.out.println(b);
                 System.out.println(ORDER_BY);
 
                 //passar informação para a activity anterior
