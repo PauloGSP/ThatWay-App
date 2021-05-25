@@ -2,6 +2,7 @@ package com.example.projectapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.format.Time;
 import android.view.View;
@@ -62,8 +63,8 @@ public class CT_Filters extends AppCompatActivity {
                 // ver os estados das checkBox's
                 Boolean[] checked_transports = new Boolean[3];  //inicializa um array de tamanho 3 com valores 0
                 checked_transports[0] = ((busCheckBox.isChecked()) ? true : false);
-                checked_transports[1] = ((metroCheckBox.isChecked()) ? true : false);
-                checked_transports[2] = ((trainCheckBox.isChecked()) ? true : false);
+                checked_transports[1] = ((trainCheckBox.isChecked()) ? true : false);
+                checked_transports[2] = ((metroCheckBox.isChecked()) ? true : false);
 
                 //ver qual é o estado do switch para saber se a ordenação é por travelling time ou por price
                 String ORDER_BY;
@@ -80,6 +81,15 @@ public class CT_Filters extends AppCompatActivity {
                 System.out.println(ORDER_BY);
 
                 //passar informação para a activity anterior
+                Intent sendFilters = new Intent(this,CT_LocationsFilters.class);
+                sendFilters.putExtra("depDate",depDate);
+                sendFilters.putExtra("depTime",depTime);
+                sendFilters.putExtra("arrTime",arrTime);
+                sendFilters.putExtra("bus",depDate);
+                sendFilters.putExtra("train",depDate);
+                sendFilters.putExtra("metro",depDate);
+                sendFilters.putExtra("order",ORDER_BY);
+                startActivity(sendFilters);
 
             }
         });
