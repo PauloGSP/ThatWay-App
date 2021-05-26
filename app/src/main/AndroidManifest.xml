@@ -15,7 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
-        <activity android:name=".CT_LocationFilters3"></activity>
+        <activity android:name=".BreakpointPage"></activity>
         <activity android:name=".RouteAllDetails" />
         <activity android:name=".SavedRoutes" />
         <activity android:name=".CityPrivateTransports" />

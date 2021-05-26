@@ -28,11 +28,23 @@ public class CT_SearchResults<pp> extends AppCompatActivity {
     Scanner sc;
     Intent intent;
 
+    //filtros e cenas introduzidas pelo user
+
+    public static String origem;
+    public static String paragem;
+    public static String destino;
+    public static String dataSaida;
+    public static String horaSaida;
+    public static String horaChegada;
+    public static boolean bus;
+    public static boolean train;
+    public static boolean metro;
+    public static String order;
+
+    //para leitura no scanner
     private String origin;
-    private String breakpoint;
     private String destiny;
     private String origin_address;
-    private String breakpoint_address;
     private String destiny_address;
     private String departure_date;
     private LocalTime departure_time;
@@ -43,11 +55,6 @@ public class CT_SearchResults<pp> extends AppCompatActivity {
     private String origin_coords;
     private String destiny_coords;
     private long travelling_time;
-
-    private boolean bus;
-    private boolean train;
-    private boolean metro;
-    private String order;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,25 +98,13 @@ public class CT_SearchResults<pp> extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        intent = getIntent();
-        origin = intent.getStringExtra("location1");
-        destiny = intent.getStringExtra("location2");
-        breakpoint = intent.getStringExtra("breakpoint");
-        departure_date = intent.getStringExtra("depDate");
-        departure_time = LocalTime.parse(intent.getStringExtra("depTime"));
-        arrival_time = LocalTime.parse(intent.getStringExtra("arrTime"));
-        bus = intent.getBooleanExtra("bus",true);
-        train = intent.getBooleanExtra("train",true);
-        metro = intent.getBooleanExtra("metro",true);
-        order = intent.getStringExtra("order");
-
         System.out.println("RESULTADOS:");
-        System.out.println(origin);
-        System.out.println(breakpoint);
-        System.out.println(destiny);
-        System.out.println(departure_date);
-        System.out.println(departure_time);
-        System.out.println(arrival_time);
+        System.out.println(origem);
+        System.out.println(paragem);
+        System.out.println(destino);
+        System.out.println(dataSaida);
+        System.out.println(horaSaida);
+        System.out.println(horaChegada);
         System.out.println(bus);
         System.out.println(train);
         System.out.println(metro);

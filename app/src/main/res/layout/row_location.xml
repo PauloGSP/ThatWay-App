@@ -7,44 +7,55 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="363dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:background="#ECECEC"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp">
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="29dp">
 
         <TextView
-            android:id="@+id/locationTypeTextView2"
+            android:id="@+id/rwgwrgwgwrgw"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="From"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="15dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.49" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="233dp"
-            android:layout_height="50dp"
+            android:id="@+id/constraintLayout2"
+            android:layout_width="285dp"
+            android:layout_height="69dp"
             android:background="#D5D5D5"
             tools:layout_editor_absoluteX="77dp"
             tools:layout_editor_absoluteY="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/locationInputText3_2"
-                android:layout_width="166dp"
-                android:layout_height="34dp"
+                android:id="@+id/breakpoint"
+                android:layout_width="168dp"
+                android:layout_height="55dp"
                 android:hint="hint"
-                android:textSize="12sp"
-                tools:layout_editor_absoluteX="6dp"
-                tools:layout_editor_absoluteY="8dp" />
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.136"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
                 android:id="@+id/locationRowBtn2"
                 android:layout_width="32dp"
                 android:layout_height="34dp"
-                app:srcCompat="@android:drawable/ic_menu_mylocation"
-                tools:layout_editor_absoluteX="185dp"
-                tools:layout_editor_absoluteY="8dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.936"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.485"
+                app:srcCompat="@android:drawable/ic_menu_mylocation" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
