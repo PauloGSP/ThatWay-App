@@ -9,7 +9,11 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
+import java.util.ArrayList;
+
 public class CT_LocationsFilters extends AppCompatActivity {
+
+    ArrayList<String> locations;     //primeiro é o de origem, segundo o de chegada e o resto são breakpoints (ordenados)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +22,16 @@ public class CT_LocationsFilters extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_ct_locations_filters);
+
+        locations = new ArrayList<String>();
+
+        Button addBreakpointBtn = (Button) findViewById(R.id.addBreakpointBtn);
+        addBreakpointBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //criar um botão
+            }
+        });
 
         Button filtersBtn = (Button) findViewById(R.id.filtersBtn);
         filtersBtn.setOnClickListener(new View.OnClickListener() {

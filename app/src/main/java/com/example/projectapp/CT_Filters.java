@@ -30,7 +30,6 @@ public class CT_Filters extends AppCompatActivity {
 
         EditText departureDate = (EditText) findViewById(R.id.departureDate);
 
-
         EditText departureTime = (EditText) findViewById(R.id.departureTime);
 
         EditText arrivalTime = (EditText) findViewById(R.id.arrivalTime);
@@ -44,6 +43,7 @@ public class CT_Filters extends AppCompatActivity {
         Switch orderBySwitch = (Switch) findViewById(R.id.orderBySwitch);
 
         Button filtersDoneBtn = (Button) findViewById(R.id.filtersDoneBtn);
+
         filtersDoneBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,7 +81,8 @@ public class CT_Filters extends AppCompatActivity {
                 System.out.println(ORDER_BY);
 
                 //passar informação para a activity anterior
-                Intent sendFilters = new Intent(this,CT_LocationsFilters.class);
+                /*
+                Intent sendFilters = new Intent(this, CT_LocationsFilters.class);
                 sendFilters.putExtra("depDate",depDate);
                 sendFilters.putExtra("depTime",depTime);
                 sendFilters.putExtra("arrTime",arrTime);
@@ -90,6 +91,7 @@ public class CT_Filters extends AppCompatActivity {
                 sendFilters.putExtra("metro",depDate);
                 sendFilters.putExtra("order",ORDER_BY);
                 startActivity(sendFilters);
+                */
 
             }
         });
