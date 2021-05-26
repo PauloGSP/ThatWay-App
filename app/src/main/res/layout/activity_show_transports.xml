@@ -6,6 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".ShowTransports">
 
+
+    <Button
+        android:id="@+id/bus"
+        android:layout_width="323dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="37dp"
+        android:text="Buses"
+        app:layout_constraintBottom_toTopOf="@+id/train"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titleShowTransports" />
+
+    <Button
+        android:id="@+id/taxi"
+        android:layout_width="323dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="483dp"
+        android:layout_marginBottom="143dp"
+        android:text="Taxi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titleShowTransports"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/metro"
+        android:layout_width="323dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="372dp"
+        android:layout_marginBottom="32dp"
+        android:text="Metro"
+        app:layout_constraintBottom_toTopOf="@+id/taxi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titleShowTransports" />
+
     <ImageButton
         android:id="@+id/locationBtnShowTransports"
         android:layout_width="wrap_content"
@@ -52,6 +90,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_dialog_dialer" />
+    >
 
     <TextView
         android:id="@+id/locationShowTransports"
@@ -65,4 +104,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.138" />
+
+    <Button
+        android:id="@+id/train"
+        android:layout_width="323dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginBottom="37dp"
+        android:text="Train"
+        app:layout_constraintBottom_toTopOf="@+id/metro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titleShowTransports"
+        app:layout_constraintVertical_bias="0.768" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

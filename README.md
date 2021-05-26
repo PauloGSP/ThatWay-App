@@ -5,4 +5,3 @@ App with easy-to-use, simple and acessible information about public transports, 
 Authors: @ricardombrodriguez
          @dxogo
          @paulogsp
-

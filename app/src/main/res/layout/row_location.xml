@@ -13,7 +13,7 @@
         tools:layout_editor_absoluteY="16dp">
 
         <TextView
-            android:id="@+id/locationTypeTextView2"
+            android:id="@+id/locationTypeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="From"
@@ -28,7 +28,7 @@
             tools:layout_editor_absoluteY="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/locationInputText3_2"
+                android:id="@+id/locationInputText"
                 android:layout_width="166dp"
                 android:layout_height="34dp"
                 android:hint="hint"
@@ -37,7 +37,7 @@
                 tools:layout_editor_absoluteY="8dp" />
 
             <ImageButton
-                android:id="@+id/locationRowBtn2"
+                android:id="@+id/locationRowBtn"
                 android:layout_width="32dp"
                 android:layout_height="34dp"
                 app:srcCompat="@android:drawable/ic_menu_mylocation"
