@@ -1,4 +1,0 @@
-"André Homem" 912345678 ZipTrip
-"João Barroso"  931141516  Antetokounmpo
-"Leonor Maria"  919876551 CristinaLimusina
-"Marta Lemes" 931234642 RealTaxi
