@@ -15,7 +15,14 @@ import java.util.ArrayList;
 
 public class CT_LocationsFilters extends AppCompatActivity {
 
-    ArrayList<String> locations;     //primeiro é o de origem, segundo o de chegada e o resto são breakpoints (ordenados)
+    private Intent data;
+    private String depDate;
+    private String depTime;
+    private String arrTime;
+    private boolean bus;
+    private boolean train;
+    private boolean metro;
+    private String order;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +32,15 @@ public class CT_LocationsFilters extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_ct_locations_filters);
 
-        locations = new ArrayList<String>();
+        AutoCompleteTextView location2_1 = findViewById(R.id.location2_1);
+        AutoCompleteTextView location2_2 = findViewById(R.id.location2_2);
 
         Button addBreakpointBtn = (Button) findViewById(R.id.addBreakpointBtn1);
         addBreakpointBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent gotoNextPage = new Intent(getApplicationContext(), CT_LocationFilters3.class);
-                startActivity(gotoNextPage);
+                startActivityForResult(gotoNextPage,1);
             }
         });
 
@@ -49,8 +57,6 @@ public class CT_LocationsFilters extends AppCompatActivity {
         swapBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AutoCompleteTextView location2_1 = findViewById(R.id.location2_1);
-                AutoCompleteTextView location2_2 = findViewById(R.id.location2_2);
                 String location1 = location2_1.getText().toString();
                 String location2 = location2_2.getText().toString();
                 location2_1.setText(location2);
@@ -63,11 +69,35 @@ public class CT_LocationsFilters extends AppCompatActivity {
         searchResultsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToResults = new Intent(getApplicationContext(), CT_SearchResults.class);
-                //PASSAR ARGUMENTOS
-                startActivity(goToResults);
+                String location1 = location2_1.getText().toString();
+                String location2 = location2_2.getText().toString();
+                if (location1 != "" || location2 != "") {
+                    Intent goToResults = new Intent(getApplicationContext(), CT_SearchResults.class);
+                    goToResults.putExtra("location1",location1);
+                    goToResults.putExtra("location2",location2);
+                    //PASSAR ARGUMENTOS
+                    startActivity(goToResults);
+                } else {
+                    System.out.println("Falta parametros");
+                }
             }
         });
 
     }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1) {
+            if(resultCode == RESULT_OK) {
+                depDate = data.getStringExtra("depDate");
+                depTime = data.getStringExtra("depTime");
+                arrTime = data.getStringExtra("arrTime");
+                bus = data.getBooleanExtra("bus",true);
+                train = data.getBooleanExtra("train",true);
+                metro = data.getBooleanExtra("metro",true);
+                order = data.getStringExtra("order");
+            }
+        }
+    }
+
 }
