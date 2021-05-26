@@ -1,0 +1,8 @@
+origem	destino	ponto_or	ponto_ch	h_saida	h_chegada	transporte	preço	data_saída	coor_origem	coor_destino	daily(true or false)
+aveiro	estarreja	estacao_aveiro	estacao_estarreja	14:00	14:15	TRAIN	1.45	27/05/2021	40.64341386036852, -8.6408032773646	40.7512086333165, -8.575193730819068	DAILY
+aveiro	estarreja	aveiro_avenida_25_abril	estarreja_rua_caetano_ferreira	14:30	14:35	BUS	2.00	27/05/2021	40.6363056,-8.6492221	40.7569636,-8.5684835		
+aveiro	estarreja	estacao_aveiro	estacao_estarreja	15:50	16:03	TRAIN	1.45	29/05/2021	40.64341386036852, -8.6408032773646	40.7512086333165, -8.575193730819068	DAILY	
+viseu	aveiro	estacao_ferroviaria_mangualde	estacao_aveiro	08:00	11:03	TRAIN	3.30	27/05/2021	40.5867498,-7.760322	40.66187619619079, -7.915905515083552	40.2141963,-8.4366716
+porto	lisboa	porto_campanha	lisboa_santa_apolonia	12:37	16:00	TRAIN	25.10	29/05/2021	41.149318, -8.585097	38.714176, -9.122615,744	DAILY	
+porto	aveiro	porto_terminal_casa_da_musica	aveiro_viacao_aveirense	15:00	16:00	BUS 96.77 29/05/2021	41.1568108, -8.6244826	40.6409332, -8.6573271
+coimbra	coimbra	coimbra_estacao_nova	coimbra_avenida_fernao_magalhaes	11:13	11:21	BUS	3.50	27/05/2021	40.2087667, -8.43205	40.2141963, -8.4366716
