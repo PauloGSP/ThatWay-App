@@ -21,9 +21,7 @@ public class CT_LocationFilters3 extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_ct_locations_filters);
-
-        locations = new ArrayList<String>();
+        setContentView(R.layout.activity_ct_location_filters2);
 
         Button filtersBtn = (Button) findViewById(R.id.filtersBtn2);
         filtersBtn.setOnClickListener(new View.OnClickListener() {

@@ -31,9 +31,8 @@ public class CT_LocationsFilters extends AppCompatActivity {
         addBreakpointBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent addBreakpoint = new Intent(getApplicationContext(), CT_LocationFilters3.class);
-                //PASSAR ARGUMENTOS
-                startActivity(addBreakpoint);
+                Intent gotoNextPage = new Intent(getApplicationContext(), CT_LocationFilters3.class);
+                startActivity(gotoNextPage);
             }
         });
 
@@ -52,8 +51,11 @@ public class CT_LocationsFilters extends AppCompatActivity {
             public void onClick(View v) {
                 AutoCompleteTextView location2_1 = findViewById(R.id.location2_1);
                 AutoCompleteTextView location2_2 = findViewById(R.id.location2_2);
-                location2_1.setText(location2_2.getText().toString());
-                location2_2.setText(location2_1.getText().toString());
+                String location1 = location2_1.getText().toString();
+                String location2 = location2_2.getText().toString();
+                location2_1.setText(location2);
+                location2_2.setText(location1);
+
             }
         });
 
