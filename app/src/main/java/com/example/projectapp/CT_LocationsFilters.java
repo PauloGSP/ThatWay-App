@@ -39,8 +39,21 @@ public class CT_LocationsFilters extends AppCompatActivity {
         addBreakpointBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String location1 = location2_1.getText().toString();
+                String location2 = location2_2.getText().toString();
+
                 Intent gotoNextPage = new Intent(getApplicationContext(), CT_LocationFilters3.class);
-                startActivityForResult(gotoNextPage,1);
+                gotoNextPage.putExtra("location1",location1);
+                gotoNextPage.putExtra("location2",location2);
+                gotoNextPage.putExtra("depDate",depDate);
+                gotoNextPage.putExtra("depTime",depTime);
+                gotoNextPage.putExtra("arrTime",arrTime);
+                gotoNextPage.putExtra("bus",bus);
+                gotoNextPage.putExtra("train",train);
+                gotoNextPage.putExtra("metro",metro);
+                gotoNextPage.putExtra("order",order);
+                startActivity(gotoNextPage);
+
             }
         });
 
@@ -49,7 +62,7 @@ public class CT_LocationsFilters extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent goToFilters = new Intent(getApplicationContext(), CT_Filters.class);
-                startActivity(goToFilters);
+                startActivityForResult(goToFilters,1);
             }
         });
 
@@ -71,12 +84,20 @@ public class CT_LocationsFilters extends AppCompatActivity {
             public void onClick(View v) {
                 String location1 = location2_1.getText().toString();
                 String location2 = location2_2.getText().toString();
-                if (location1 != "" || location2 != "") {
+                if (location1 != "" && location2 != "") {
+
                     Intent goToResults = new Intent(getApplicationContext(), CT_SearchResults.class);
                     goToResults.putExtra("location1",location1);
                     goToResults.putExtra("location2",location2);
-                    //PASSAR ARGUMENTOS
+                    goToResults.putExtra("depDate",depDate);
+                    goToResults.putExtra("depTime",depTime);
+                    goToResults.putExtra("arrTime",arrTime);
+                    goToResults.putExtra("bus",bus);
+                    goToResults.putExtra("train",train);
+                    goToResults.putExtra("metro",metro);
+                    goToResults.putExtra("order",order);
                     startActivity(goToResults);
+
                 } else {
                     System.out.println("Falta parametros");
                 }

@@ -81,7 +81,7 @@ public class CT_Filters extends AppCompatActivity {
                 System.out.println(ORDER_BY);
 
 
-                Intent sendFilters = new Intent(getApplicationContext(), CT_LocationsFilters.class);
+                Intent sendFilters = new Intent();
                 sendFilters.putExtra("depDate",depDate);
                 sendFilters.putExtra("depTime",depTime);
                 sendFilters.putExtra("arrTime",arrTime);
