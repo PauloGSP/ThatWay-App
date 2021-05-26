@@ -7,13 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 import java.util.ArrayList;
 
-public class CT_LocationsFilters extends AppCompatActivity {
+public class CT_LocationFilters3 extends AppCompatActivity {
 
     ArrayList<String> locations;     //primeiro é o de origem, segundo o de chegada e o resto são breakpoints (ordenados)
 
@@ -27,17 +25,7 @@ public class CT_LocationsFilters extends AppCompatActivity {
 
         locations = new ArrayList<String>();
 
-        Button addBreakpointBtn = (Button) findViewById(R.id.addBreakpointBtn1);
-        addBreakpointBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent addBreakpoint = new Intent(getApplicationContext(), CT_LocationFilters3.class);
-                //PASSAR ARGUMENTOS
-                startActivity(addBreakpoint);
-            }
-        });
-
-        Button filtersBtn = (Button) findViewById(R.id.filtersBtn1);
+        Button filtersBtn = (Button) findViewById(R.id.filtersBtn2);
         filtersBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,18 +34,7 @@ public class CT_LocationsFilters extends AppCompatActivity {
             }
         });
 
-        ImageButton swapBtn = (ImageButton) findViewById(R.id.swapBtn);
-        swapBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AutoCompleteTextView location2_1 = findViewById(R.id.location2_1);
-                AutoCompleteTextView location2_2 = findViewById(R.id.location2_2);
-                location2_1.setText(location2_2.getText().toString());
-                location2_2.setText(location2_1.getText().toString());
-            }
-        });
-
-        Button searchResultsBtn = (Button) findViewById(R.id.searchResultsBtn);
+        Button searchResultsBtn = (Button) findViewById(R.id.searchResultsBtn2);
         searchResultsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,5 +44,6 @@ public class CT_LocationsFilters extends AppCompatActivity {
             }
         });
 
+        //passar argumentos no search results
     }
 }

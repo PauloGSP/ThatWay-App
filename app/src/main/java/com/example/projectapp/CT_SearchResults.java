@@ -21,7 +21,6 @@ import java.util.Scanner;
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class CT_SearchResults<pp> extends AppCompatActivity {
 
-    private String[] trips;
     private String[] trip_info;
     private ArrayList<Trip> list_of_trips;
     Trip trip;
@@ -92,6 +91,8 @@ public class CT_SearchResults<pp> extends AppCompatActivity {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
+
 
     }
 }
