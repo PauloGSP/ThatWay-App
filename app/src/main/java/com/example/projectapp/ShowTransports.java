@@ -34,6 +34,7 @@ public class ShowTransports extends AppCompatActivity {
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v) {
+                CT_SearchResults.bus = true;
                 CT_SearchResults.train = false;
                 CT_SearchResults.metro = false;
                 Intent goToCreateTrip = new Intent(getApplicationContext(), CT_LocationsFilters.class);
@@ -49,6 +50,7 @@ public class ShowTransports extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 CT_SearchResults.bus = false;
+                CT_SearchResults.train = true;
                 CT_SearchResults.metro = false;
                 Intent goToCreateTrip = new Intent(getApplicationContext(), CT_LocationsFilters.class);
                 startActivity(goToCreateTrip);
@@ -64,11 +66,13 @@ public class ShowTransports extends AppCompatActivity {
             public void onClick(View v) {
                 CT_SearchResults.train = false;
                 CT_SearchResults.bus = false;
+                CT_SearchResults.metro = true;
                 Intent goToCreateTrip = new Intent(getApplicationContext(), CT_LocationsFilters.class);
                 startActivity(goToCreateTrip);
             }
 
         });
+
         // ir para a pagina do taxi harcoded
         Button taxi = findViewById(R.id.taxi);
         taxi.setOnClickListener(new View.OnClickListener() {
