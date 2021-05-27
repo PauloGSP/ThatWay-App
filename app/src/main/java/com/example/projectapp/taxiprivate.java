@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 public class taxiprivate extends AppCompatActivity{
 
@@ -15,5 +16,8 @@ public class taxiprivate extends AppCompatActivity{
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_taxiprivate);
+
+        TextView location = (TextView) findViewById(R.id.locationShowTransports2);
+        location.setText(MainActivity.currentLocation);
     }
 }

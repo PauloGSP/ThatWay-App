@@ -35,6 +35,8 @@ public class CT_LocationsFilters extends AppCompatActivity {
         AutoCompleteTextView location2_1 = findViewById(R.id.origem);
         AutoCompleteTextView location2_2 = findViewById(R.id.destino);
 
+        location2_1.setText(MainActivity.currentLocation);
+
         Button filtersBtn = (Button) findViewById(R.id.filtersBtn1);
         filtersBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,12 +58,12 @@ public class CT_LocationsFilters extends AppCompatActivity {
             }
         });
 
-        Button breakpointBtn = (Button) findViewById(R.id.addBreakpoint);
-        breakpointBtn.setOnClickListener(new View.OnClickListener() {
+        Button addBreakpoint = (Button) findViewById(R.id.addBreakpoint);
+        addBreakpoint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent gotonextpage = new Intent(getApplicationContext(), BreakpointPage.class);
-                startActivity(gotonextpage);
+                Intent intent = new Intent(getApplicationContext(), BreakpointPage.class);
+                startActivity(intent);
             }
         });
 

@@ -10,9 +10,13 @@
         android:id="@+id/returnBtn4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_menu_revert"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="18dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <TextView
         android:id="@+id/CT_SearchResultsTitle"
@@ -20,39 +24,81 @@
         android:layout_height="wrap_content"
         android:text="Search Results"
         android:textSize="28sp"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="31dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 
     <ImageButton
         android:id="@+id/homeBtnShowTransports4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_dialog_dialer"
-        tools:layout_editor_absoluteX="341dp"
-        tools:layout_editor_absoluteY="18dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
 
     <Button
         android:id="@+id/changeLocationFiltersBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Change location/filters"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="108dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153" />
 
     <TextView
-        android:id="@+id/chooseResultTextView"
+        android:id="@+id/originText"
+        android:layout_width="92dp"
+        android:layout_height="24dp"
+        android:text="origin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeLocationFiltersBtn"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <TextView
+        android:id="@+id/destinyText"
+        android:layout_width="87dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:text="destiny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeLocationFiltersBtn" />
+
+    <TextView
+        android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text='Choose result from "origin" to "destiny":'
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="191dp" />
+        android:text="to"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265" />
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="233dp"></ListView>
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(next)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,17 +6,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.TextView;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Scanner;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
@@ -24,6 +24,7 @@ public class CT_SearchResults<pp> extends AppCompatActivity {
 
     private String[] trip_info;
     private ArrayList<Trip> list_of_trips;
+    private ArrayList<String> locations;
     Trip trip;
     Scanner sc;
     Intent intent;
@@ -36,10 +37,11 @@ public class CT_SearchResults<pp> extends AppCompatActivity {
     public static String dataSaida;
     public static String horaSaida;
     public static String horaChegada;
-    public static boolean bus;
-    public static boolean train;
-    public static boolean metro;
+    public static boolean bus = true;
+    public static boolean train = true;
+    public static boolean metro = true;
     public static String order;
+    private int counter = 0;
 
     //para leitura no scanner
     private String origin;
@@ -65,6 +67,13 @@ public class CT_SearchResults<pp> extends AppCompatActivity {
         setContentView(R.layout.activity_ct_search_results);
 
         list_of_trips = new ArrayList<Trip>();
+        locations = new ArrayList<String>();
+
+
+        TextView originText = (TextView) findViewById(R.id.originText);
+        TextView destinyText = (TextView) findViewById(R.id.destinyText);
+        Button next = (Button) findViewById(R.id.next);
+
 
         try {
 
@@ -97,6 +106,25 @@ public class CT_SearchResults<pp> extends AppCompatActivity {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
+        /*
+
+
+
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                counter++;
+                if (counter < locations.size()-1) {
+                    originText.setText(locations.get(counter));
+                    destinyText.setText(locations.get(counter + 1));
+                }
+            }
+        });
+
+
+         */
 
         System.out.println("RESULTADOS:");
         System.out.println(origem);

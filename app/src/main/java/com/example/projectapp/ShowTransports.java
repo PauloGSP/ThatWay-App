@@ -1,13 +1,18 @@
 package com.example.projectapp;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 
 public class ShowTransports extends AppCompatActivity {
@@ -20,11 +25,17 @@ public class ShowTransports extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_show_transports);
 
+        TextView location = (TextView) findViewById(R.id.locationShowTransports);
+        location.setText(MainActivity.currentLocation);
+
         //ir para o create trips com filtro do bus
         Button bustrip = findViewById(R.id.bus);
         bustrip.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v) {
+                CT_SearchResults.train = false;
+                CT_SearchResults.metro = false;
                 Intent goToCreateTrip = new Intent(getApplicationContext(), CT_LocationsFilters.class);
                 startActivity(goToCreateTrip);
             }
@@ -34,8 +45,11 @@ public class ShowTransports extends AppCompatActivity {
 
         Button traintrip = findViewById(R.id.train);
         traintrip.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v) {
+                CT_SearchResults.bus = false;
+                CT_SearchResults.metro = false;
                 Intent goToCreateTrip = new Intent(getApplicationContext(), CT_LocationsFilters.class);
                 startActivity(goToCreateTrip);
             }
@@ -45,8 +59,11 @@ public class ShowTransports extends AppCompatActivity {
 
         Button metrotrip = findViewById(R.id.metro);
         metrotrip.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v) {
+                CT_SearchResults.train = false;
+                CT_SearchResults.bus = false;
                 Intent goToCreateTrip = new Intent(getApplicationContext(), CT_LocationsFilters.class);
                 startActivity(goToCreateTrip);
             }

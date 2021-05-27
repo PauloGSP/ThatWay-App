@@ -9,9 +9,12 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
+
+    public static String currentLocation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +24,14 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
+        EditText locationText = (EditText) findViewById(R.id.locationTextView);
+
         //ir para a página de mapa
         ImageButton locationBtn = findViewById(R.id.locationBtn);
         locationBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                currentLocation = locationText.getText().toString();
                 Intent goToMaps = new Intent(getApplicationContext(), MapSelectLocation.class);
                 startActivity(goToMaps);
             }
@@ -36,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         createTripBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                currentLocation = locationText.getText().toString();
                 Intent goToCreateTrip = new Intent(getApplicationContext(), CT_LocationsFilters.class);
                 startActivity(goToCreateTrip);
             }
@@ -46,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         showTransportsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                currentLocation = locationText.getText().toString();
                 Intent goToShowTransports = new Intent(getApplicationContext(), ShowTransports.class);
                 startActivity(goToShowTransports);
             }
@@ -56,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         savedRoutesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                currentLocation = locationText.getText().toString();
                 Intent goToSavedRoutes = new Intent(getApplicationContext(), SavedRoutes.class);
                 startActivity(goToSavedRoutes);
             }

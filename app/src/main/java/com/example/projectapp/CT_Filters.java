@@ -1,8 +1,10 @@
 package com.example.projectapp;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.format.Time;
 import android.view.View;
@@ -20,6 +22,7 @@ import java.util.Date;
 
 public class CT_Filters extends AppCompatActivity {
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,10 +38,13 @@ public class CT_Filters extends AppCompatActivity {
         EditText arrivalTime = (EditText) findViewById(R.id.arrivalTime);
 
         CheckBox busCheckBox = (CheckBox) findViewById(R.id.busCheckBox);
+        busCheckBox.setChecked(CT_SearchResults.bus);
 
         CheckBox trainCheckBox = (CheckBox) findViewById(R.id.trainCheckBox);
+        trainCheckBox.setChecked(CT_SearchResults.train);
 
         CheckBox metroCheckBox = (CheckBox) findViewById(R.id.metroCheckBox);
+        metroCheckBox.setChecked(CT_SearchResults.metro);
 
         Switch orderBySwitch = (Switch) findViewById(R.id.orderBySwitch);
 
