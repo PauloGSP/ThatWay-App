@@ -9,9 +9,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.time.LocalTime;
@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
-public class CT_SearchResults<pp> extends AppCompatActivity {
+public class CT_SearchResults extends AppCompatActivity {
 
     private String[] trip_info;
     private ArrayList<Trip> list_of_trips;
@@ -68,7 +68,6 @@ public class CT_SearchResults<pp> extends AppCompatActivity {
 
         list_of_trips = new ArrayList<Trip>();
         locations = new ArrayList<String>();
-
 
         TextView originText = (TextView) findViewById(R.id.originText);
         TextView destinyText = (TextView) findViewById(R.id.destinyText);

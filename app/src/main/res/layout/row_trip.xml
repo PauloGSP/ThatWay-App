@@ -6,18 +6,34 @@
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="368dp"
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
         android:layout_height="155dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
         android:background="#E4E4E4"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="16dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/transportTypeIcon"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            tools:layout_editor_absoluteX="15dp"
-            tools:layout_editor_absoluteY="9dp"
+            android:layout_width="103dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginRight="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/iconMoney"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.206"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
@@ -27,24 +43,35 @@
             android:gravity="center"
             android:text="TYPE"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="15dp"
-            tools:layout_editor_absoluteY="109dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.872" />
 
         <TextView
             android:id="@+id/scheduleTimeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="time: dep - arr"
-            tools:layout_editor_absoluteX="186dp"
-            tools:layout_editor_absoluteY="27dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.679"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.198" />
 
         <TextView
             android:id="@+id/tickerPriceText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ticket price"
-            tools:layout_editor_absoluteX="186dp"
-            tools:layout_editor_absoluteY="70dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.644"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/addTripBtn"
@@ -52,8 +79,12 @@
             android:layout_height="40dp"
             android:text="add trip"
             android:textSize="10sp"
-            tools:layout_editor_absoluteX="263dp"
-            tools:layout_editor_absoluteY="109dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.977"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.947" />
 
         <Button
             android:id="@+id/moreInfoBtn"
@@ -61,24 +92,36 @@
             android:layout_height="40dp"
             android:text="more info"
             android:textSize="10sp"
-            tools:layout_editor_absoluteX="149dp"
-            tools:layout_editor_absoluteY="109dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.574"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.947" />
 
         <ImageButton
             android:id="@+id/iconTime"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            app:srcCompat="@android:drawable/ic_menu_recent_history"
-            tools:layout_editor_absoluteX="149dp"
-            tools:layout_editor_absoluteY="16dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.438"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.216"
+            app:srcCompat="@android:drawable/ic_menu_recent_history" />
 
         <ImageButton
             android:id="@+id/iconMoney"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            app:srcCompat="@android:drawable/btn_star"
-            tools:layout_editor_absoluteX="149dp"
-            tools:layout_editor_absoluteY="59dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.438"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.496"
+            app:srcCompat="@android:drawable/btn_star" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

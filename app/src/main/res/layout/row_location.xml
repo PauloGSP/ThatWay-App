@@ -6,19 +6,31 @@
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="363dp"
+        android:id="@+id/constraintLayout4"
+        android:layout_width="0dp"
         android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:background="#ECECEC"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="29dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/rwgwrgwgwrgw"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="From"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:text="Breakpoint"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayout2"
             app:layout_constraintHorizontal_bias="0.048"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -26,26 +38,21 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout2"
-            android:layout_width="285dp"
-            android:layout_height="69dp"
+            android:layout_width="268dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
             android:background="#D5D5D5"
-            tools:layout_editor_absoluteX="77dp"
-            tools:layout_editor_absoluteY="0dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/breakpoint"
-                android:layout_width="168dp"
-                android:layout_height="55dp"
-                android:hint="hint"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.136"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/rwgwrgwgwrgw"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
 
             <ImageButton
-                android:id="@+id/locationRowBtn2"
+                android:id="@+id/deleteBreakpoint"
                 android:layout_width="32dp"
                 android:layout_height="34dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -54,8 +61,22 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.485"
-                app:srcCompat="@android:drawable/ic_menu_mylocation" />
+                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+            <AutoCompleteTextView
+                android:id="@+id/locationAutoComplete"
+                android:layout_width="187dp"
+                android:layout_height="55dp"
+                android:completionHint="Insert a location"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.175"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.52" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

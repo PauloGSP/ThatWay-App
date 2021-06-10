@@ -25,6 +25,9 @@ public final class RowTripBinding implements ViewBinding {
   public final Button addTripBtn;
 
   @NonNull
+  public final ConstraintLayout constraintLayout3;
+
+  @NonNull
   public final ImageButton iconMoney;
 
   @NonNull
@@ -46,11 +49,13 @@ public final class RowTripBinding implements ViewBinding {
   public final TextView transportTypeText;
 
   private RowTripBinding(@NonNull ConstraintLayout rootView, @NonNull Button addTripBtn,
-      @NonNull ImageButton iconMoney, @NonNull ImageButton iconTime, @NonNull Button moreInfoBtn,
+      @NonNull ConstraintLayout constraintLayout3, @NonNull ImageButton iconMoney,
+      @NonNull ImageButton iconTime, @NonNull Button moreInfoBtn,
       @NonNull TextView scheduleTimeText, @NonNull TextView tickerPriceText,
       @NonNull ImageView transportTypeIcon, @NonNull TextView transportTypeText) {
     this.rootView = rootView;
     this.addTripBtn = addTripBtn;
+    this.constraintLayout3 = constraintLayout3;
     this.iconMoney = iconMoney;
     this.iconTime = iconTime;
     this.moreInfoBtn = moreInfoBtn;
@@ -90,6 +95,12 @@ public final class RowTripBinding implements ViewBinding {
       id = R.id.addTripBtn;
       Button addTripBtn = rootView.findViewById(id);
       if (addTripBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.constraintLayout3;
+      ConstraintLayout constraintLayout3 = rootView.findViewById(id);
+      if (constraintLayout3 == null) {
         break missingId;
       }
 
@@ -135,8 +146,9 @@ public final class RowTripBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RowTripBinding((ConstraintLayout) rootView, addTripBtn, iconMoney, iconTime,
-          moreInfoBtn, scheduleTimeText, tickerPriceText, transportTypeIcon, transportTypeText);
+      return new RowTripBinding((ConstraintLayout) rootView, addTripBtn, constraintLayout3,
+          iconMoney, iconTime, moreInfoBtn, scheduleTimeText, tickerPriceText, transportTypeIcon,
+          transportTypeText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
