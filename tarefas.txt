@@ -57,4 +57,8 @@ Aparece uma lista dinâmica com todos os details de cada route. Opção de apaga
 
 == XML'S == 
 
-- Mudar o XML (design) das row_locations / row_trips para as listas dinâmicas
+- Mudar o XML (design) das row_locations / row_trips para as listas
+
+== Fun shit==
+
+Papei o richiardo
