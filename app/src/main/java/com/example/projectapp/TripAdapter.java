@@ -17,6 +17,7 @@ import java.util.ArrayList;
 
 public class TripAdapter extends ArrayAdapter<Trip> {
     public TripAdapter(Context context, ArrayList<Trip> trips){
+
         super(context,0, trips);
     }
 
@@ -40,8 +41,11 @@ public class TripAdapter extends ArrayAdapter<Trip> {
         ImageButton moneyicon =(ImageButton) convertView.findViewById(R.id.iconMoney);
 
         // Populate the data into the template view using the data object
-        tvName.setText(user.name);
-        tvHome.setText(user.hometown);
+        TransportType.setText(trip.getTransport_type());
+        tickerPriceText.setText( trip.getPrice().toString());
+        addtrip.setClickable(true);
+        moreinfo.setClickable(true);
+
         // Return the completed view to render on screen
         return convertView;
     }
