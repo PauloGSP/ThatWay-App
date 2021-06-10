@@ -17,7 +17,6 @@ public class Route {
 
     //metodos para calcular o total_travelling_time e o total_price
 
-
     public String getTitle() {
         return title;
     }

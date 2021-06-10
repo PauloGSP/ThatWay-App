@@ -35,7 +35,6 @@ import java.util.Date;
             this.travelling_time = travelling_time;
         }
 
-
         // GETTERS AND SETTERS
 
         public String getOrigin() {
@@ -90,9 +89,7 @@ import java.util.Date;
             return transport_type;
         }
 
-        public void setTransport_type(String transport_type) {
-            this.transport_type = transport_type;
-        }
+        public void setTransport_type(String transport_type) { this.transport_type = transport_type; }
 
         public Double getPrice() {
             return price;
@@ -106,9 +103,7 @@ import java.util.Date;
             return travelling_time;
         }
 
-        public void setTravelling_time(long travelling_time) {
-            this.travelling_time = travelling_time;
-        }
+        public void setTravelling_time(long travelling_time) { this.travelling_time = travelling_time; }
 
         public String getRoutine() {
             return routine;
@@ -133,6 +128,12 @@ import java.util.Date;
         public void setDestiny_coords(String destiny_coords) {
             this.destiny_coords = destiny_coords;
         }
+
+        //função para retornar string do tipo "14:00 - 14:45"
+        public String getTripTime() {
+            return this.departure_time.toString() + " - " + this.arrival_time.toString();
+        }
+
 
 
         // TO STRING

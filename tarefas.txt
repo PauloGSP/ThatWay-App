@@ -57,8 +57,10 @@ Aparece uma lista dinâmica com todos os details de cada route. Opção de apaga
 
 == XML'S == 
 
-- Mudar o XML (design) das row_locations / row_trips para as listas
+- Mudar o XML (design) das row_locations / row_trips para as listas dinâmicas
 
-== Fun shit==
+== Classes necessárias para representar informação ==
 
-Papei o richiardo
+Trip (apenas uma viagem) - done
+Route (conjunto de viagens) - done
+Spot (possível classe que representa terminais/estações)
