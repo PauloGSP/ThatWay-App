@@ -1,0 +1,60 @@
+========== PROJETO IHC ===========
+
+== NO GERAL ==
+
+- Corrigir butões de goback e alterar o icone do home button
+- Alterar o design da app
+- Alterar o design dos botões para algo mais minimalista
+- Autocomplete quando inserimos uma cidade!!!!
+- O autocomplete deve ter a opção de colocar terminais em vez de cidade (quando queremos deslocar-nos na mesma city)
+
+== MainActivity ==
+
+- Alterar logo (mais tarde)
+- Ver o que fazer com os botões de baixo
+
+== Show transports ==
+
+- Criar lista dinâmica de todos os transportes nessa cidade
+- Passar os parâmetros dos filtros de bus/train/metro (done)
+- Mudar o titulo dos transportes privados (ex: "transport type" para Taxi
+- Fazer lista dinâmica para os transportes privados
+
+== Saved routes ==
+
+- Lista dinâmica de todas as saved routes
+- Quando clicamos numa saved route deve mostrar uma lista dinâmica com cada percurso da mesma
+
+== MapSelectLocation ==
+
+- Acho que é melhor cagarmos nisto, mais vale termos um array com várias cidades e depois um autocomplete.
+
+== Create Trip ==
+
+- Swap de from-to (done)
+- Filter by a funcionar e a passar todos os argumentos (done)
+- Colocar o botão de swap num sítio melhor
+- Pôr o add breakpoint a funcionar
+
+== Create trip (com breakpoints) ==
+
+- Permitir listas dinâmicas com um máximo de dois breakpoints (maybe)
+- Botão para eliminar um breakpoint (basta um 'X' ao lado)
+
+== Search results == 
+
+- Permitir voltar à página de create trip (com os dados introduzidos anteriormente)
+- Botão de goback permite ir para a trip anterior
+- Mudar o texto do origimn to destiny
+- LISTA DINÂMICA DOS RESULTADOS
+- Permite ir ver os detalhes dessa trip
+- Botão de next vai para a proxima trip se esta existir
+- O botão de next pode ter um texto do tipo "NEXT (1/2)" para o user saber em que trip está/quantas faltam
+
+== Route all details ==
+
+Aparece uma lista dinâmica com todos os details de cada route. Opção de apagar uma rota, de alterar o nome da saved route e opção de alterar uma trip em específico (ex: quero que seja de autocarro em vez de comboio na viagem de aveiro para o porto)
+
+== XML'S == 
+
+- Mudar o XML (design) das row_locations / row_trips para as listas dinâmicas
