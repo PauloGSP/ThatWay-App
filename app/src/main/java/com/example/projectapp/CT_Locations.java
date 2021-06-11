@@ -21,6 +21,8 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class CT_Locations extends AppCompatActivity {
 
@@ -138,44 +140,53 @@ public class CT_Locations extends AppCompatActivity {
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v) {
-                String location1 = location2_1.getText().toString();
-                String location2 = location2_2.getText().toString();
 
-                boolean valid_breakpoints = true;
                 ArrayList<String> locations = new ArrayList<String>();
+                boolean validLocations = true;
+                boolean noRepeatedLocations = true;
+
+                String location1 = location2_1.getText().toString().trim();
+                String location2 = location2_2.getText().toString().trim();
+
+                locations.add(location1);
+                locations.add(location2);
+
+                if (!Arrays.asList(CT_SearchResults.LOCATIONS).contains(location1.toLowerCase()) ||
+                    !Arrays.asList(CT_SearchResults.LOCATIONS).contains(location2.toLowerCase())) {
+                    validLocations = false;
+                }
+
+                int currentBk = 1;
+
                 for (View bk_view : breakpoints) {
                     AutoCompleteTextView autocomplete = bk_view.findViewById(R.id.locationAutoComplete);
-                    String location = autocomplete.getText().toString();
+                    String location = autocomplete.getText().toString().trim();
 
                     //ver se o valor atual não existe nas locations possíveis
                     if (!Arrays.asList(CT_SearchResults.LOCATIONS).contains(location.toLowerCase())) {
-                        valid_breakpoints = false;
-                        locations.clear();
-
-                        System.out.println("BREAKPOINTS INVÁLIDOS!!!!!!!!!!");
+                        validLocations = false;
+                        System.out.println("LOCATIONS INVÁLIDAS");
                         break;
-
                     } else {
-                        locations.add(location);
+                        locations.add(currentBk++,location);
                     }
                 }
 
-                if (valid_breakpoints) {
-                    //validação do "from" e "to"
-                    if (location1 != "" && location2 != "" ) {
+                Set<String> set = new HashSet<String>(locations);
+                if (set.size() != locations.size()) {
+                    noRepeatedLocations = false;
+                    System.out.println("LOCATIONS repetidas");
+                }
 
+                if (validLocations && noRepeatedLocations) {
                         //passar todos os argumentos
 
-                        locations.add(0,location1);
-                        locations.add(location2);
                         CT_SearchResults.trips = locations;
                         Intent goToResults = new Intent(getApplicationContext(), CT_SearchResults.class);
                         startActivity(goToResults);
 
-                    } else {
-                        //mostrar modal a dizer erro!!!
-                        System.out.println("Falta parametros");
-                    }
+                } else {
+                    locations.clear();
                 }
             }
         });
