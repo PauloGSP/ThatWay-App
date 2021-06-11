@@ -25,7 +25,7 @@ public final class RowLocationBinding implements ViewBinding {
   public final ConstraintLayout constraintLayout2;
 
   @NonNull
-  public final ConstraintLayout constraintLayout4;
+  public final ConstraintLayout contraintlayoutbreakpoint;
 
   @NonNull
   public final ImageButton deleteBreakpoint;
@@ -34,18 +34,18 @@ public final class RowLocationBinding implements ViewBinding {
   public final AutoCompleteTextView locationAutoComplete;
 
   @NonNull
-  public final TextView rwgwrgwgwrgw;
+  public final TextView textviewbreakpoint;
 
   private RowLocationBinding(@NonNull LinearLayout rootView,
-      @NonNull ConstraintLayout constraintLayout2, @NonNull ConstraintLayout constraintLayout4,
-      @NonNull ImageButton deleteBreakpoint, @NonNull AutoCompleteTextView locationAutoComplete,
-      @NonNull TextView rwgwrgwgwrgw) {
+      @NonNull ConstraintLayout constraintLayout2,
+      @NonNull ConstraintLayout contraintlayoutbreakpoint, @NonNull ImageButton deleteBreakpoint,
+      @NonNull AutoCompleteTextView locationAutoComplete, @NonNull TextView textviewbreakpoint) {
     this.rootView = rootView;
     this.constraintLayout2 = constraintLayout2;
-    this.constraintLayout4 = constraintLayout4;
+    this.contraintlayoutbreakpoint = contraintlayoutbreakpoint;
     this.deleteBreakpoint = deleteBreakpoint;
     this.locationAutoComplete = locationAutoComplete;
-    this.rwgwrgwgwrgw = rwgwrgwgwrgw;
+    this.textviewbreakpoint = textviewbreakpoint;
   }
 
   @Override
@@ -81,9 +81,9 @@ public final class RowLocationBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.constraintLayout4;
-      ConstraintLayout constraintLayout4 = rootView.findViewById(id);
-      if (constraintLayout4 == null) {
+      id = R.id.contraintlayoutbreakpoint;
+      ConstraintLayout contraintlayoutbreakpoint = rootView.findViewById(id);
+      if (contraintlayoutbreakpoint == null) {
         break missingId;
       }
 
@@ -99,14 +99,14 @@ public final class RowLocationBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.rwgwrgwgwrgw;
-      TextView rwgwrgwgwrgw = rootView.findViewById(id);
-      if (rwgwrgwgwrgw == null) {
+      id = R.id.textviewbreakpoint;
+      TextView textviewbreakpoint = rootView.findViewById(id);
+      if (textviewbreakpoint == null) {
         break missingId;
       }
 
-      return new RowLocationBinding((LinearLayout) rootView, constraintLayout2, constraintLayout4,
-          deleteBreakpoint, locationAutoComplete, rwgwrgwgwrgw);
+      return new RowLocationBinding((LinearLayout) rootView, constraintLayout2,
+          contraintlayoutbreakpoint, deleteBreakpoint, locationAutoComplete, textviewbreakpoint);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

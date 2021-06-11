@@ -1881,11 +1881,11 @@ id confirm_button
 id constraintLayout
 id constraintLayout2
 id constraintLayout3
-id constraintLayout4
 id container
 id content
 id contentPanel
 id contiguous
+id contraintlayoutbreakpoint
 id coordinator
 id cos
 id counterclockwise
@@ -2144,7 +2144,6 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
-id rwgwrgwgwrgw
 id satellite
 id save_non_transition_alpha
 id save_overlay_view
@@ -2271,6 +2270,7 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id textviewbreakpoint
 id tickerPriceText
 id ticketPriceTextView
 id time

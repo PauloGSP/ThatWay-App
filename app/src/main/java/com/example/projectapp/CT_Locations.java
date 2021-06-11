@@ -20,6 +20,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class CT_Locations extends AppCompatActivity {
 
@@ -33,15 +34,12 @@ public class CT_Locations extends AppCompatActivity {
     private String order;
 
     private int numOfBreakpoints;
-    private ListView listView;
-    ArrayList<Breakpoint> breakpoints;
-    ArrayAdapter<String> adapter;
-
-
+    ArrayList<View> breakpoints;
     LinearLayout layoutList;
 
 
     public void addView() {
+
         View locationView = getLayoutInflater().inflate(R.layout.row_location, null, false);
 
         AutoCompleteTextView locationText = (AutoCompleteTextView) locationView.findViewById(R.id.locationAutoComplete);
@@ -55,6 +53,18 @@ public class CT_Locations extends AppCompatActivity {
         });
 
         layoutList.addView(locationView);
+        breakpoints.add(locationView); //adicionar à lista de breakpoints
+        numOfBreakpoints++;
+
+        if (numOfBreakpoints >= 3) {
+            Button addBreakpoint = (Button) findViewById(R.id.addBreakpoint);
+            addBreakpoint.setVisibility(View.GONE);
+        }
+
+        if (numOfBreakpoints > 0) {
+            ImageButton btnSwap = (ImageButton) findViewById(R.id.swapBtn);
+            btnSwap.setVisibility(View.GONE);
+        }
 
 
     }
@@ -62,6 +72,18 @@ public class CT_Locations extends AppCompatActivity {
     public void removeView(View view) {
 
         layoutList.removeView(view);
+        breakpoints.remove(view); //remover da lista de breakpoints
+        numOfBreakpoints--;
+
+        if (numOfBreakpoints < 3) {
+            Button addBreakpoint = (Button) findViewById(R.id.addBreakpoint);
+            addBreakpoint.setVisibility(View.VISIBLE);
+        }
+
+        if (numOfBreakpoints == 0) {
+            ImageButton btnSwap = (ImageButton) findViewById(R.id.swapBtn);
+            btnSwap.setVisibility(View.VISIBLE);
+        }
 
     }
 
@@ -79,20 +101,8 @@ public class CT_Locations extends AppCompatActivity {
         location2_1.setText(MainActivity.currentLocation);
 
         numOfBreakpoints = 0;
-        breakpoints = new ArrayList<Breakpoint>();
-
-        BreakpointAdapter adapter = new BreakpointAdapter(this, breakpoints);
-        /*
-        ListView listView = (ListView) findViewById(R.id.listview);
-        listView.setAdapter(adapter);
-
-
-         */
-
+        breakpoints = new ArrayList<View>();
         layoutList = findViewById(R.id.layout_list);
-
-
-
 
         Button filtersBtn = (Button) findViewById(R.id.filtersBtn1);
         filtersBtn.setOnClickListener(new View.OnClickListener() {
@@ -118,14 +128,6 @@ public class CT_Locations extends AppCompatActivity {
         addBreakpoint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*
-               //add xml row to the listview
-                Breakpoint bk = new Breakpoint();
-                //breakpoints.add(bk);
-                adapter.add(bk);
-                //adapter.notifyDataSetChanged();
-                listView.setLayoutParams(new LinearLayout.LayoutParams(RecyclerView.LayoutParams.FILL_PARENT, 70));
-                */
                 addView();
 
             }
@@ -138,15 +140,42 @@ public class CT_Locations extends AppCompatActivity {
             public void onClick(View v) {
                 String location1 = location2_1.getText().toString();
                 String location2 = location2_2.getText().toString();
-                if (location1 != "" && location2 != "") {
 
-                    CT_SearchResults.origem = location1;
-                    CT_SearchResults.destino = location2;
-                    Intent goToResults = new Intent(getApplicationContext(), CT_SearchResults.class);
-                    startActivity(goToResults);
+                boolean valid_breakpoints = true;
+                ArrayList<String> locations = new ArrayList<String>();
+                for (View bk_view : breakpoints) {
+                    AutoCompleteTextView autocomplete = bk_view.findViewById(R.id.locationAutoComplete);
+                    String location = autocomplete.getText().toString();
 
-                } else {
-                    System.out.println("Falta parametros");
+                    //ver se o valor atual não existe nas locations possíveis
+                    if (!Arrays.asList(CT_SearchResults.LOCATIONS).contains(location.toLowerCase())) {
+                        valid_breakpoints = false;
+                        locations.clear();
+
+                        System.out.println("BREAKPOINTS INVÁLIDOS!!!!!!!!!!");
+                        break;
+
+                    } else {
+                        locations.add(location);
+                    }
+                }
+
+                if (valid_breakpoints) {
+                    //validação do "from" e "to"
+                    if (location1 != "" && location2 != "" ) {
+
+                        //passar todos os argumentos
+
+                        locations.add(0,location1);
+                        locations.add(location2);
+                        CT_SearchResults.trips = locations;
+                        Intent goToResults = new Intent(getApplicationContext(), CT_SearchResults.class);
+                        startActivity(goToResults);
+
+                    } else {
+                        //mostrar modal a dizer erro!!!
+                        System.out.println("Falta parametros");
+                    }
                 }
             }
         });

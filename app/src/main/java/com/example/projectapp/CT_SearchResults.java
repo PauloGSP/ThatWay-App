@@ -30,11 +30,8 @@ public class CT_SearchResults extends AppCompatActivity {
     Scanner sc;
     Intent intent;
 
-    //filtros e cenas introduzidas pelo user
 
-    public static String origem;
-    public static String paragem;
-    public static String destino;
+    public static ArrayList<String> trips;  //guarda todas as trips (origem + breakpoint(s) + destino)
     public static String dataSaida;
     public static String horaSaida;
     public static String horaChegada;
@@ -59,6 +56,9 @@ public class CT_SearchResults extends AppCompatActivity {
     private String destiny_coords;
     private long travelling_time;
 
+    //colocar tudo em minusculas para dps comparar em lowercase()
+    public static final String[] LOCATIONS = new String[] {"aveiro","estarreja","ovar","anadia","viseu","coimbra","porto"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -67,6 +67,9 @@ public class CT_SearchResults extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_ct_search_results);
+
+        System.out.println("SEARCH RESULTS - TRIP INFO");
+        for (String s : trips) System.out.println(s);
 
         list_of_trips = new ArrayList<Trip>();
         locations = new ArrayList<String>();
@@ -128,9 +131,6 @@ public class CT_SearchResults extends AppCompatActivity {
          */
 
         System.out.println("RESULTADOS:");
-        System.out.println(origem);
-        System.out.println(paragem);
-        System.out.println(destino);
         System.out.println(dataSaida);
         System.out.println(horaSaida);
         System.out.println(horaChegada);
