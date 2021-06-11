@@ -39,7 +39,7 @@
         <activity android:name="com.example.projectapp.CT_TripInfo" />
         <activity android:name="com.example.projectapp.CT_SearchResults" />
         <activity android:name="com.example.projectapp.CT_Filters" />
-        <activity android:name="com.example.projectapp.CT_LocationsFilters" />
+        <activity android:name="com.example.projectapp.CT_Locations" />
         <activity android:name="com.example.projectapp.MapSelectLocation" />
         <activity android:name="com.example.projectapp.ShowTransports" />
         <activity android:name="com.example.projectapp.HelpPage" />

@@ -125,10 +125,10 @@ activity#com.example.projectapp.CT_Filters
 ADDED from C:\Users\35192\AndroidStudioProjects\IHC_Project\app\src\main\AndroidManifest.xml:24:9-48
 	android:name
 		ADDED from C:\Users\35192\AndroidStudioProjects\IHC_Project\app\src\main\AndroidManifest.xml:24:19-45
-activity#com.example.projectapp.CT_LocationsFilters
-ADDED from C:\Users\35192\AndroidStudioProjects\IHC_Project\app\src\main\AndroidManifest.xml:25:9-57
+activity#com.example.projectapp.CT_Locations
+ADDED from C:\Users\35192\AndroidStudioProjects\IHC_Project\app\src\main\AndroidManifest.xml:25:9-50
 	android:name
-		ADDED from C:\Users\35192\AndroidStudioProjects\IHC_Project\app\src\main\AndroidManifest.xml:25:19-54
+		ADDED from C:\Users\35192\AndroidStudioProjects\IHC_Project\app\src\main\AndroidManifest.xml:25:19-47
 activity#com.example.projectapp.MapSelectLocation
 ADDED from C:\Users\35192\AndroidStudioProjects\IHC_Project\app\src\main\AndroidManifest.xml:26:9-55
 	android:name

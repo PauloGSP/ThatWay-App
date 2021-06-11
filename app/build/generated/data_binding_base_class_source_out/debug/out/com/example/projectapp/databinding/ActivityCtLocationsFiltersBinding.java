@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -40,6 +41,9 @@ public final class ActivityCtLocationsFiltersBinding implements ViewBinding {
   public final ImageButton homeBtnShowTransports2;
 
   @NonNull
+  public final ListView listview;
+
+  @NonNull
   public final AutoCompleteTextView origem;
 
   @NonNull
@@ -64,9 +68,10 @@ public final class ActivityCtLocationsFiltersBinding implements ViewBinding {
       @NonNull TextView CTLocationFiltersTextView, @NonNull Button addBreakpoint,
       @NonNull AutoCompleteTextView destino, @NonNull ConstraintLayout feefef,
       @NonNull Button filtersBtn1, @NonNull ImageButton homeBtnShowTransports2,
-      @NonNull AutoCompleteTextView origem, @NonNull ImageButton returnBtn2,
-      @NonNull ConstraintLayout sdwdw, @NonNull Button searchResultsBtn,
-      @NonNull ImageButton swapBtn, @NonNull TextView textView10, @NonNull TextView textView11) {
+      @NonNull ListView listview, @NonNull AutoCompleteTextView origem,
+      @NonNull ImageButton returnBtn2, @NonNull ConstraintLayout sdwdw,
+      @NonNull Button searchResultsBtn, @NonNull ImageButton swapBtn, @NonNull TextView textView10,
+      @NonNull TextView textView11) {
     this.rootView = rootView;
     this.CTLocationFiltersTextView = CTLocationFiltersTextView;
     this.addBreakpoint = addBreakpoint;
@@ -74,6 +79,7 @@ public final class ActivityCtLocationsFiltersBinding implements ViewBinding {
     this.feefef = feefef;
     this.filtersBtn1 = filtersBtn1;
     this.homeBtnShowTransports2 = homeBtnShowTransports2;
+    this.listview = listview;
     this.origem = origem;
     this.returnBtn2 = returnBtn2;
     this.sdwdw = sdwdw;
@@ -146,6 +152,12 @@ public final class ActivityCtLocationsFiltersBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.listview;
+      ListView listview = rootView.findViewById(id);
+      if (listview == null) {
+        break missingId;
+      }
+
       id = R.id.origem;
       AutoCompleteTextView origem = rootView.findViewById(id);
       if (origem == null) {
@@ -190,8 +202,8 @@ public final class ActivityCtLocationsFiltersBinding implements ViewBinding {
 
       return new ActivityCtLocationsFiltersBinding((ConstraintLayout) rootView,
           CTLocationFiltersTextView, addBreakpoint, destino, feefef, filtersBtn1,
-          homeBtnShowTransports2, origem, returnBtn2, sdwdw, searchResultsBtn, swapBtn, textView10,
-          textView11);
+          homeBtnShowTransports2, listview, origem, returnBtn2, sdwdw, searchResultsBtn, swapBtn,
+          textView10, textView11);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

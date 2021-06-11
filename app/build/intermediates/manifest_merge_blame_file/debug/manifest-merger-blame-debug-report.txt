@@ -72,9 +72,9 @@
 41        <activity android:name="com.example.projectapp.CT_Filters" />
 41-->C:\Users\35192\AndroidStudioProjects\IHC_Project\app\src\main\AndroidManifest.xml:24:9-48
 41-->C:\Users\35192\AndroidStudioProjects\IHC_Project\app\src\main\AndroidManifest.xml:24:19-45
-42        <activity android:name="com.example.projectapp.CT_LocationsFilters" />
-42-->C:\Users\35192\AndroidStudioProjects\IHC_Project\app\src\main\AndroidManifest.xml:25:9-57
-42-->C:\Users\35192\AndroidStudioProjects\IHC_Project\app\src\main\AndroidManifest.xml:25:19-54
+42        <activity android:name="com.example.projectapp.CT_Locations" />
+42-->C:\Users\35192\AndroidStudioProjects\IHC_Project\app\src\main\AndroidManifest.xml:25:9-50
+42-->C:\Users\35192\AndroidStudioProjects\IHC_Project\app\src\main\AndroidManifest.xml:25:19-47
 43        <activity android:name="com.example.projectapp.MapSelectLocation" />
 43-->C:\Users\35192\AndroidStudioProjects\IHC_Project\app\src\main\AndroidManifest.xml:26:9-55
 43-->C:\Users\35192\AndroidStudioProjects\IHC_Project\app\src\main\AndroidManifest.xml:26:19-52

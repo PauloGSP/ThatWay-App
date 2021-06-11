@@ -12,8 +12,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 
 public class ShowTransports extends AppCompatActivity {
 
@@ -37,7 +35,7 @@ public class ShowTransports extends AppCompatActivity {
                 CT_SearchResults.bus = true;
                 CT_SearchResults.train = false;
                 CT_SearchResults.metro = false;
-                Intent goToCreateTrip = new Intent(getApplicationContext(), CT_LocationsFilters.class);
+                Intent goToCreateTrip = new Intent(getApplicationContext(), CT_Locations.class);
                 startActivity(goToCreateTrip);
             }
 
@@ -52,7 +50,7 @@ public class ShowTransports extends AppCompatActivity {
                 CT_SearchResults.bus = false;
                 CT_SearchResults.train = true;
                 CT_SearchResults.metro = false;
-                Intent goToCreateTrip = new Intent(getApplicationContext(), CT_LocationsFilters.class);
+                Intent goToCreateTrip = new Intent(getApplicationContext(), CT_Locations.class);
                 startActivity(goToCreateTrip);
             }
 
@@ -67,7 +65,7 @@ public class ShowTransports extends AppCompatActivity {
                 CT_SearchResults.train = false;
                 CT_SearchResults.bus = false;
                 CT_SearchResults.metro = true;
-                Intent goToCreateTrip = new Intent(getApplicationContext(), CT_LocationsFilters.class);
+                Intent goToCreateTrip = new Intent(getApplicationContext(), CT_Locations.class);
                 startActivity(goToCreateTrip);
             }
 

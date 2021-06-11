@@ -3,7 +3,6 @@ package com.example.projectapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 currentLocation = locationText.getText().toString();
-                Intent goToCreateTrip = new Intent(getApplicationContext(), CT_LocationsFilters.class);
+                Intent goToCreateTrip = new Intent(getApplicationContext(), CT_Locations.class);
                 startActivity(goToCreateTrip);
             }
         });

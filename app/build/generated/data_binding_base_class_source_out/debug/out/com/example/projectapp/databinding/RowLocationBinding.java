@@ -4,6 +4,7 @@ package com.example.projectapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AutoCompleteTextView;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -11,7 +12,6 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.example.projectapp.R;
-import com.google.android.material.textfield.TextInputEditText;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,24 +21,29 @@ public final class RowLocationBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextInputEditText breakpoint;
-
-  @NonNull
   public final ConstraintLayout constraintLayout2;
 
   @NonNull
-  public final ImageButton locationRowBtn2;
+  public final ConstraintLayout constraintLayout4;
+
+  @NonNull
+  public final ImageButton deleteBreakpoint;
+
+  @NonNull
+  public final AutoCompleteTextView locationAutoComplete;
 
   @NonNull
   public final TextView rwgwrgwgwrgw;
 
   private RowLocationBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextInputEditText breakpoint, @NonNull ConstraintLayout constraintLayout2,
-      @NonNull ImageButton locationRowBtn2, @NonNull TextView rwgwrgwgwrgw) {
+      @NonNull ConstraintLayout constraintLayout2, @NonNull ConstraintLayout constraintLayout4,
+      @NonNull ImageButton deleteBreakpoint, @NonNull AutoCompleteTextView locationAutoComplete,
+      @NonNull TextView rwgwrgwgwrgw) {
     this.rootView = rootView;
-    this.breakpoint = breakpoint;
     this.constraintLayout2 = constraintLayout2;
-    this.locationRowBtn2 = locationRowBtn2;
+    this.constraintLayout4 = constraintLayout4;
+    this.deleteBreakpoint = deleteBreakpoint;
+    this.locationAutoComplete = locationAutoComplete;
     this.rwgwrgwgwrgw = rwgwrgwgwrgw;
   }
 
@@ -69,21 +74,27 @@ public final class RowLocationBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.breakpoint;
-      TextInputEditText breakpoint = rootView.findViewById(id);
-      if (breakpoint == null) {
-        break missingId;
-      }
-
       id = R.id.constraintLayout2;
       ConstraintLayout constraintLayout2 = rootView.findViewById(id);
       if (constraintLayout2 == null) {
         break missingId;
       }
 
-      id = R.id.locationRowBtn2;
-      ImageButton locationRowBtn2 = rootView.findViewById(id);
-      if (locationRowBtn2 == null) {
+      id = R.id.constraintLayout4;
+      ConstraintLayout constraintLayout4 = rootView.findViewById(id);
+      if (constraintLayout4 == null) {
+        break missingId;
+      }
+
+      id = R.id.deleteBreakpoint;
+      ImageButton deleteBreakpoint = rootView.findViewById(id);
+      if (deleteBreakpoint == null) {
+        break missingId;
+      }
+
+      id = R.id.locationAutoComplete;
+      AutoCompleteTextView locationAutoComplete = rootView.findViewById(id);
+      if (locationAutoComplete == null) {
         break missingId;
       }
 
@@ -93,8 +104,8 @@ public final class RowLocationBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RowLocationBinding((ConstraintLayout) rootView, breakpoint, constraintLayout2,
-          locationRowBtn2, rwgwrgwgwrgw);
+      return new RowLocationBinding((ConstraintLayout) rootView, constraintLayout2,
+          constraintLayout4, deleteBreakpoint, locationAutoComplete, rwgwrgwgwrgw);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

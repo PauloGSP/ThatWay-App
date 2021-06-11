@@ -1880,6 +1880,7 @@ int id confirm_button 0x7f08007e
 int id constraintLayout 0x7f08007f
 int id constraintLayout2 0x7f080080
 int id constraintLayout3 0x7f080081
+int id constraintLayout4 0x7f080236
 int id container 0x7f080082
 int id content 0x7f080083
 int id contentPanel 0x7f080084
@@ -1898,6 +1899,7 @@ int id decelerate 0x7f080090
 int id decelerateAndComplete 0x7f080091
 int id decor_content_parent 0x7f080092
 int id default_activity_button 0x7f080093
+int id deleteBreakpoint 0x7f080237
 int id deleteRouteBtn 0x7f080094
 int id deltaRelative 0x7f080095
 int id depArrTimeTextView 0x7f080096
@@ -2021,9 +2023,10 @@ int id line3 0x7f08010b
 int id linear 0x7f08010c
 int id listMode 0x7f08010d
 int id list_item 0x7f08010e
+int id listview 0x7f080238
+int id locationAutoComplete 0x7f080239
 int id locationBtn 0x7f08010f
 int id locationBtnShowTransports 0x7f080110
-int id locationRowBtn2 0x7f080111
 int id locationShowTransports 0x7f080112
 int id locationShowTransports2 0x7f080113
 int id locationTextView 0x7f080114

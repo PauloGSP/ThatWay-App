@@ -22,7 +22,7 @@
         <activity android:name=".CT_TripInfo" />
         <activity android:name=".CT_SearchResults" />
         <activity android:name=".CT_Filters" />
-        <activity android:name=".CT_LocationsFilters" />
+        <activity android:name=".CT_Locations" />
         <activity android:name=".MapSelectLocation" />
         <activity android:name=".ShowTransports" />
         <activity android:name=".HelpPage" />
