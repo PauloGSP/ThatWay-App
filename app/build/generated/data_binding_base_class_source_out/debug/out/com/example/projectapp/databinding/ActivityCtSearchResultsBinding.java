@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,40 +25,44 @@ public final class ActivityCtSearchResultsBinding implements ViewBinding {
   public final TextView CTSearchResultsTitle;
 
   @NonNull
-  public final Button changeLocationFiltersBtn;
+  public final TextView arrowLbl;
 
   @NonNull
-  public final TextView destinyText;
+  public final Button btnNext;
+
+  @NonNull
+  public final Button changeLocationFiltersBtn;
 
   @NonNull
   public final ImageButton homeBtnShowTransports4;
 
   @NonNull
-  public final Button next;
+  public final TextView lblDestiny;
 
   @NonNull
-  public final TextView originText;
+  public final TextView lblOrigin;
 
   @NonNull
   public final ImageButton returnBtn4;
 
   @NonNull
-  public final TextView textView22;
+  public final ScrollView scrollView2;
 
   private ActivityCtSearchResultsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView CTSearchResultsTitle, @NonNull Button changeLocationFiltersBtn,
-      @NonNull TextView destinyText, @NonNull ImageButton homeBtnShowTransports4,
-      @NonNull Button next, @NonNull TextView originText, @NonNull ImageButton returnBtn4,
-      @NonNull TextView textView22) {
+      @NonNull TextView CTSearchResultsTitle, @NonNull TextView arrowLbl, @NonNull Button btnNext,
+      @NonNull Button changeLocationFiltersBtn, @NonNull ImageButton homeBtnShowTransports4,
+      @NonNull TextView lblDestiny, @NonNull TextView lblOrigin, @NonNull ImageButton returnBtn4,
+      @NonNull ScrollView scrollView2) {
     this.rootView = rootView;
     this.CTSearchResultsTitle = CTSearchResultsTitle;
+    this.arrowLbl = arrowLbl;
+    this.btnNext = btnNext;
     this.changeLocationFiltersBtn = changeLocationFiltersBtn;
-    this.destinyText = destinyText;
     this.homeBtnShowTransports4 = homeBtnShowTransports4;
-    this.next = next;
-    this.originText = originText;
+    this.lblDestiny = lblDestiny;
+    this.lblOrigin = lblOrigin;
     this.returnBtn4 = returnBtn4;
-    this.textView22 = textView22;
+    this.scrollView2 = scrollView2;
   }
 
   @Override
@@ -93,15 +98,21 @@ public final class ActivityCtSearchResultsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.changeLocationFiltersBtn;
-      Button changeLocationFiltersBtn = rootView.findViewById(id);
-      if (changeLocationFiltersBtn == null) {
+      id = R.id.arrowLbl;
+      TextView arrowLbl = rootView.findViewById(id);
+      if (arrowLbl == null) {
         break missingId;
       }
 
-      id = R.id.destinyText;
-      TextView destinyText = rootView.findViewById(id);
-      if (destinyText == null) {
+      id = R.id.btnNext;
+      Button btnNext = rootView.findViewById(id);
+      if (btnNext == null) {
+        break missingId;
+      }
+
+      id = R.id.changeLocationFiltersBtn;
+      Button changeLocationFiltersBtn = rootView.findViewById(id);
+      if (changeLocationFiltersBtn == null) {
         break missingId;
       }
 
@@ -111,15 +122,15 @@ public final class ActivityCtSearchResultsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.next;
-      Button next = rootView.findViewById(id);
-      if (next == null) {
+      id = R.id.lblDestiny;
+      TextView lblDestiny = rootView.findViewById(id);
+      if (lblDestiny == null) {
         break missingId;
       }
 
-      id = R.id.originText;
-      TextView originText = rootView.findViewById(id);
-      if (originText == null) {
+      id = R.id.lblOrigin;
+      TextView lblOrigin = rootView.findViewById(id);
+      if (lblOrigin == null) {
         break missingId;
       }
 
@@ -129,15 +140,15 @@ public final class ActivityCtSearchResultsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView22;
-      TextView textView22 = rootView.findViewById(id);
-      if (textView22 == null) {
+      id = R.id.scrollView2;
+      ScrollView scrollView2 = rootView.findViewById(id);
+      if (scrollView2 == null) {
         break missingId;
       }
 
       return new ActivityCtSearchResultsBinding((ConstraintLayout) rootView, CTSearchResultsTitle,
-          changeLocationFiltersBtn, destinyText, homeBtnShowTransports4, next, originText,
-          returnBtn4, textView22);
+          arrowLbl, btnNext, changeLocationFiltersBtn, homeBtnShowTransports4, lblDestiny,
+          lblOrigin, returnBtn4, scrollView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -32,7 +32,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.ProjectApp" >
-        <activity android:name="com.example.projectapp.BreakpointPage" />
         <activity android:name="com.example.projectapp.RouteAllDetails" />
         <activity android:name="com.example.projectapp.SavedRoutes" />
         <activity android:name="com.example.projectapp.CityPrivateTransports" />

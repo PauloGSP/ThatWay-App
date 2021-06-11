@@ -1,0 +1,19 @@
+Aveiro/Estarreja/Estação de Aveiro/Estação de Estarreja/13:18/13:31/TRAIN/1.45/40.6434138,-8.64080327/40.7512086,-8.5751937
+Aveiro/Estarreja/Estação de Aveiro/Estação de Estarreja/15:18/15:31/TRAIN/1.45/40.6434138,-8.64080327/40.7512086,-8.5751937
+Aveiro/Estarreja/Estação de Aveiro/Estação de Estarreja/16:18/16:31/TRAIN/1.45/40.6434138,-8.64080327/40.7512086,-8.5751937
+Aveiro/Estarreja/Estação de Aveiro/Estação de Estarreja/20:25/20:38/TRAIN/1.45/40.6434138,-8.64080327/40.7512086,-8.5751937
+Estarreja/Aveiro/Estação de Estarreja/Estação de Aveiro/09:36/09:48/TRAIN/1.45/40.7512086,-8.5751937/40.6434138,-8.64080327
+Estarreja/Aveiro/Estação de Estarreja/Estação de Aveiro/09:56/10:11/TRAIN/1.45/40.7512086,-8.5751937/40.6434138,-8.64080327
+Estarreja/Aveiro/Estação de Estarreja/Estação de Aveiro/14:56/15:11/TRAIN/1.45/40.7512086,-8.5751937/40.6434138,-8.64080327
+Estarreja/Aveiro/Estação de Estarreja/Estação de Aveiro/20:58/21:13/TRAIN/1.45/40.7512086,-8.5751937/40.6434138,-8.64080327
+Aveiro/Estarreja/Av. 25 Abril/Rua Caetano Ferreira/14:30/14:35/BUS/2.00/40.6363056,-8.6492221/40.7569636,-8.5684835
+Aveiro/Aveiro/Avenida Lourenço Peixinho/Estação da Luz/18:48/19:17/BUS/4.00/40.6430859,-8.6486172/40.5751014,-8.6231732
+Aveiro/Estarreja/Estação de Aveiro/Estação de Estarreja/15:50/16:03/TRAIN/1.45/40.6434138,-8.64080327/40.7512086,-8.5751937
+Viseu/Aveiro/Estação Ferroviária Mangualde/Estação de Aveiro/08:00/11:03/TRAIN/3.30/40.5867498,-7.760322/40.6434138,-8.64080327
+Porto/Lisboa/Campanhã/Santa Apolónia/12:37/16:00/TRAIN/25.10/41.149318,-8.585097/38.714176,-9.122615,744
+Porto/Aveiro/Av. da Boavista/R. do Clube dos Galitos/15:00/16:00/BUS/96.77/41.1568108,-8.6244826/40.6409332,-8.6573271
+Coimbra/Coimbra/Estação de Nova/Av. Fernão Magalhães/11:13/11:21/BUS/3.50/40.2087667,-8.43205/40.2141963,-8.4366716
+Porto/Porto/Crestins/Bolhão/22:00/22:20/METRO/2.00/41.2351,-8.6612/41.146,-8.6062
+Porto/Porto/Crestins/Bolhão/22:49/23:11/METRO/2.00/41.2351,-8.6612/41.146,-8.6062
+Porto/Porto/Estádio do Dragão/Trindade/12:53/13:01/METRO/1.20/41.1606838,-8.5845264/41.152277,-8.6114877
+Porto/Porto/Hospital São João/Ovidio/14:14/14:30/METRO/1.20/41.1827919,-8.602445/41.1452254,-8.613206

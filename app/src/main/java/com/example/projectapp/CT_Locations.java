@@ -2,23 +2,16 @@ package com.example.projectapp;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
-import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.ListView;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -38,7 +31,6 @@ public class CT_Locations extends AppCompatActivity {
     private int numOfBreakpoints;
     ArrayList<View> breakpoints;
     LinearLayout layoutList;
-
 
     public void addView() {
 
@@ -91,6 +83,7 @@ public class CT_Locations extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -151,8 +144,8 @@ public class CT_Locations extends AppCompatActivity {
                 locations.add(location1);
                 locations.add(location2);
 
-                if (!Arrays.asList(CT_SearchResults.LOCATIONS).contains(location1.toLowerCase()) ||
-                    !Arrays.asList(CT_SearchResults.LOCATIONS).contains(location2.toLowerCase())) {
+                if (!Arrays.asList(MainActivity.allLocations).contains(location1.toLowerCase()) ||
+                    !Arrays.asList(MainActivity.allLocations).contains(location2.toLowerCase())) {
                     validLocations = false;
                 }
 
@@ -163,7 +156,7 @@ public class CT_Locations extends AppCompatActivity {
                     String location = autocomplete.getText().toString().trim();
 
                     //ver se o valor atual não existe nas locations possíveis
-                    if (!Arrays.asList(CT_SearchResults.LOCATIONS).contains(location.toLowerCase())) {
+                    if (!Arrays.asList(MainActivity.allLocations).contains(location.toLowerCase())) {
                         validLocations = false;
                         System.out.println("LOCATIONS INVÁLIDAS");
                         break;
@@ -181,9 +174,11 @@ public class CT_Locations extends AppCompatActivity {
                 if (validLocations && noRepeatedLocations) {
                         //passar todos os argumentos
 
-                        CT_SearchResults.trips = locations;
-                        Intent goToResults = new Intent(getApplicationContext(), CT_SearchResults.class);
-                        startActivity(goToResults);
+                    System.out.println("valido!");
+
+                    CT_SearchResults.selected_trips = locations;
+                    Intent goToResults = new Intent(getApplicationContext(), CT_SearchResults.class);
+                    startActivity(goToResults);
 
                 } else {
                     locations.clear();

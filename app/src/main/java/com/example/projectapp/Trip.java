@@ -14,13 +14,12 @@ import java.util.Date;
         private String transport_type;
         private Double price;
         private long travelling_time;
-        private String routine;
         private String origin_coords;
         private String destiny_coords;
 
         //construtor com data única
         public Trip(String origin, String destiny, String origin_address, String destiny_address, LocalTime departure_time, LocalTime arrival_time, String transport_type, Double price,
-                    String routine, String origin_coords, String destiny_coords, long travelling_time) {
+                    String origin_coords, String destiny_coords, long travelling_time) {
             this.origin = origin;
             this.destiny = destiny;
             this.origin_address = origin_address;
@@ -29,7 +28,6 @@ import java.util.Date;
             this.arrival_time = arrival_time;
             this.transport_type = transport_type;
             this.price = price;
-            this.routine = routine;
             this.origin_coords = origin_coords;
             this.destiny_coords = destiny_coords;
             this.travelling_time = travelling_time;
@@ -105,14 +103,6 @@ import java.util.Date;
 
         public void setTravelling_time(long travelling_time) { this.travelling_time = travelling_time; }
 
-        public String getRoutine() {
-            return routine;
-        }
-
-        public void setRoutine(String routine) {
-            this.routine = routine;
-        }
-
         public String getOrigin_coords() {
             return origin_coords;
         }
@@ -134,10 +124,7 @@ import java.util.Date;
             return this.departure_time.toString() + " - " + this.arrival_time.toString();
         }
 
-
-
         // TO STRING
-
         @Override
         public String toString() {
             return "Trip{" +
@@ -150,7 +137,6 @@ import java.util.Date;
                     ", transport_type='" + transport_type + '\'' +
                     ", price=" + price +
                     ", travelling_time=" + travelling_time +
-                    ", routine='" + routine + '\'' +
                     ", origin_coords='" + origin_coords + '\'' +
                     ", destiny_coords='" + destiny_coords + '\'' +
                     '}';

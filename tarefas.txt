@@ -64,3 +64,7 @@ Aparece uma lista dinâmica com todos os details de cada route. Opção de apaga
 Trip (apenas uma viagem) - done
 Route (conjunto de viagens) - done
 Spot (possível classe que representa terminais/estações)
+
+== MAPAS ==
+
+Basta termos um mapa só para visualização (dos terminais e isso) que podemos obter a partir das coordenadas
