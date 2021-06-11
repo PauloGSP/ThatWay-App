@@ -2016,6 +2016,7 @@ id labelGroup
 id labeled
 id largeLabel
 id layout
+id layout_list
 id left
 id leftToRight
 id light
@@ -2024,7 +2025,6 @@ id line3
 id linear
 id listMode
 id list_item
-id listview
 id locationAutoComplete
 id locationBtn
 id locationBtnShowTransports

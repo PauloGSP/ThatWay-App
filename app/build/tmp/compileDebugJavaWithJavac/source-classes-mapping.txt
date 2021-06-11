@@ -1,3 +1,5 @@
+com/example/projectapp/Breakpoint.java
+ com.example.projectapp.Breakpoint
 com/example/projectapp/databinding/ActivityBreakpointPageBinding.java
  com.example.projectapp.databinding.ActivityBreakpointPageBinding
 com/example/projectapp/CityPrivateTransports.java
@@ -14,8 +16,12 @@ com/example/projectapp/databinding/ActivityTaxiprivateBinding.java
  com.example.projectapp.databinding.ActivityTaxiprivateBinding
 com/example/projectapp/databinding/ActivityCtFiltersBinding.java
  com.example.projectapp.databinding.ActivityCtFiltersBinding
-com/example/projectapp/SavedRoutes.java
- com.example.projectapp.SavedRoutes
+com/example/projectapp/ShowTransports.java
+ com.example.projectapp.ShowTransports
+ com.example.projectapp.ShowTransports$1
+ com.example.projectapp.ShowTransports$2
+ com.example.projectapp.ShowTransports$3
+ com.example.projectapp.ShowTransports$4
 com/example/projectapp/databinding/ActivityRouteAllDetailsBinding.java
  com.example.projectapp.databinding.ActivityRouteAllDetailsBinding
 com/example/projectapp/CT_TripInfo.java
@@ -24,20 +30,33 @@ com/example/projectapp/HelpPage.java
  com.example.projectapp.HelpPage
 com/example/projectapp/CT_SearchResults.java
  com.example.projectapp.CT_SearchResults
+com/example/projectapp/TripAdapter.java
+ com.example.projectapp.TripAdapter
 com/example/projectapp/BreakpointPage.java
  com.example.projectapp.BreakpointPage
 com/example/projectapp/Route.java
  com.example.projectapp.Route
-com/example/projectapp/databinding/RowLocationBinding.java
- com.example.projectapp.databinding.RowLocationBinding
+com/example/projectapp/MainActivity.java
+ com.example.projectapp.MainActivity
+ com.example.projectapp.MainActivity$1
+ com.example.projectapp.MainActivity$2
+ com.example.projectapp.MainActivity$3
+ com.example.projectapp.MainActivity$4
 com/example/projectapp/databinding/ActivityCityPrivateTransportsBinding.java
  com.example.projectapp.databinding.ActivityCityPrivateTransportsBinding
 com/example/projectapp/databinding/ActivityCtLocationsFiltersBinding.java
  com.example.projectapp.databinding.ActivityCtLocationsFiltersBinding
-com/example/projectapp/databinding/DetailsBinding.java
- com.example.projectapp.databinding.DetailsBinding
-com/example/projectapp/Trip.java
- com.example.projectapp.Trip
+com/example/projectapp/CT_Locations.java
+ com.example.projectapp.CT_Locations
+ com.example.projectapp.CT_Locations$1
+ com.example.projectapp.CT_Locations$2
+ com.example.projectapp.CT_Locations$3
+ com.example.projectapp.CT_Locations$4
+ com.example.projectapp.CT_Locations$5
+com/example/projectapp/BreakpointAdapter.java
+ com.example.projectapp.BreakpointAdapter
+com/example/projectapp/taxiprivate.java
+ com.example.projectapp.taxiprivate
 com/example/projectapp/databinding/ActivitySavedRoutesBinding.java
  com.example.projectapp.databinding.ActivitySavedRoutesBinding
 com/example/projectapp/BuildConfig.java
@@ -55,27 +74,11 @@ com/example/projectapp/MapSelectLocation.java
  com.example.projectapp.MapSelectLocation
 com/example/projectapp/databinding/ActivityMapSelectLocation2Binding.java
  com.example.projectapp.databinding.ActivityMapSelectLocation2Binding
-com/example/projectapp/Breakpoint.java
- com.example.projectapp.Breakpoint
-com/example/projectapp/taxiprivate.java
- com.example.projectapp.taxiprivate
-com/example/projectapp/BreakpointAdapter.java
- com.example.projectapp.BreakpointAdapter
-com/example/projectapp/MainActivity.java
- com.example.projectapp.MainActivity
- com.example.projectapp.MainActivity$1
- com.example.projectapp.MainActivity$2
- com.example.projectapp.MainActivity$3
- com.example.projectapp.MainActivity$4
-com/example/projectapp/CT_Locations.java
- com.example.projectapp.CT_Locations
- com.example.projectapp.CT_Locations$1
- com.example.projectapp.CT_Locations$2
- com.example.projectapp.CT_Locations$3
- com.example.projectapp.CT_Locations$4
-com/example/projectapp/ShowTransports.java
- com.example.projectapp.ShowTransports
- com.example.projectapp.ShowTransports$1
- com.example.projectapp.ShowTransports$2
- com.example.projectapp.ShowTransports$3
- com.example.projectapp.ShowTransports$4
+com/example/projectapp/Trip.java
+ com.example.projectapp.Trip
+com/example/projectapp/databinding/DetailsBinding.java
+ com.example.projectapp.databinding.DetailsBinding
+com/example/projectapp/SavedRoutes.java
+ com.example.projectapp.SavedRoutes
+com/example/projectapp/databinding/RowLocationBinding.java
+ com.example.projectapp.databinding.RowLocationBinding

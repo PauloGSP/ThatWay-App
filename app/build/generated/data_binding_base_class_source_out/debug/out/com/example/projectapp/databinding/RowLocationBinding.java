@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AutoCompleteTextView;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,7 +19,7 @@ import java.lang.String;
 
 public final class RowLocationBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final ConstraintLayout constraintLayout2;
@@ -35,7 +36,7 @@ public final class RowLocationBinding implements ViewBinding {
   @NonNull
   public final TextView rwgwrgwgwrgw;
 
-  private RowLocationBinding(@NonNull ConstraintLayout rootView,
+  private RowLocationBinding(@NonNull LinearLayout rootView,
       @NonNull ConstraintLayout constraintLayout2, @NonNull ConstraintLayout constraintLayout4,
       @NonNull ImageButton deleteBreakpoint, @NonNull AutoCompleteTextView locationAutoComplete,
       @NonNull TextView rwgwrgwgwrgw) {
@@ -49,7 +50,7 @@ public final class RowLocationBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -104,8 +105,8 @@ public final class RowLocationBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RowLocationBinding((ConstraintLayout) rootView, constraintLayout2,
-          constraintLayout4, deleteBreakpoint, locationAutoComplete, rwgwrgwgwrgw);
+      return new RowLocationBinding((LinearLayout) rootView, constraintLayout2, constraintLayout4,
+          deleteBreakpoint, locationAutoComplete, rwgwrgwgwrgw);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

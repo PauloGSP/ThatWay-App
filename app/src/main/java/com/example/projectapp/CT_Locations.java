@@ -2,7 +2,10 @@ package com.example.projectapp;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.Intent;
+import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +14,9 @@ import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -33,6 +38,33 @@ public class CT_Locations extends AppCompatActivity {
     ArrayAdapter<String> adapter;
 
 
+    LinearLayout layoutList;
+
+
+    public void addView() {
+        View locationView = getLayoutInflater().inflate(R.layout.row_location, null, false);
+
+        AutoCompleteTextView locationText = (AutoCompleteTextView) locationView.findViewById(R.id.locationAutoComplete);
+
+        ImageButton removeButton = (ImageButton) locationView.findViewById(R.id.deleteBreakpoint);
+        removeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                removeView(locationView);
+            }
+        });
+
+        layoutList.addView(locationView);
+
+
+    }
+
+    public void removeView(View view) {
+
+        layoutList.removeView(view);
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,12 +79,20 @@ public class CT_Locations extends AppCompatActivity {
         location2_1.setText(MainActivity.currentLocation);
 
         numOfBreakpoints = 0;
-        listView = findViewById(R.id.listview);
         breakpoints = new ArrayList<Breakpoint>();
 
         BreakpointAdapter adapter = new BreakpointAdapter(this, breakpoints);
+        /*
         ListView listView = (ListView) findViewById(R.id.listview);
         listView.setAdapter(adapter);
+
+
+         */
+
+        layoutList = findViewById(R.id.layout_list);
+
+
+
 
         Button filtersBtn = (Button) findViewById(R.id.filtersBtn1);
         filtersBtn.setOnClickListener(new View.OnClickListener() {
@@ -78,11 +118,16 @@ public class CT_Locations extends AppCompatActivity {
         addBreakpoint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                /*
                //add xml row to the listview
                 Breakpoint bk = new Breakpoint();
                 //breakpoints.add(bk);
                 adapter.add(bk);
                 //adapter.notifyDataSetChanged();
+                listView.setLayoutParams(new LinearLayout.LayoutParams(RecyclerView.LayoutParams.FILL_PARENT, 70));
+                */
+                addView();
+
             }
         });
 
