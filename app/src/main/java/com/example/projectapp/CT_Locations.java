@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AutoCompleteTextView;
@@ -81,6 +82,21 @@ public class CT_Locations extends AppCompatActivity {
 
     }
 
+    //percorrer todos os filhos do viewgroup (linear layout neste caso)
+    public ArrayList<String> loopBreakpoints(ViewGroup parent) {
+        ArrayList<String> breakpoints = new ArrayList<String>();
+        for (int i = 0; i < parent.getChildCount(); i++) {
+            final View child = parent.getChildAt(i);
+            if (child instanceof ViewGroup) {
+                AutoCompleteTextView autocomplete = child.findViewById(R.id.locationAutoComplete);
+                String location = autocomplete.getText().toString().trim();
+                breakpoints.add(location);
+            }
+        }
+        return breakpoints;
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -142,27 +158,12 @@ public class CT_Locations extends AppCompatActivity {
                 String location2 = location2_2.getText().toString().trim();
 
                 locations.add(location1);
+                ArrayList<String> breakpoints = loopBreakpoints(layoutList);
+                locations.addAll(breakpoints);
                 locations.add(location2);
 
-                if (!Arrays.asList(MainActivity.allLocations).contains(location1.toLowerCase()) ||
-                    !Arrays.asList(MainActivity.allLocations).contains(location2.toLowerCase())) {
-                    validLocations = false;
-                }
-
-                int currentBk = 1;
-
-                for (View bk_view : breakpoints) {
-                    AutoCompleteTextView autocomplete = bk_view.findViewById(R.id.locationAutoComplete);
-                    String location = autocomplete.getText().toString().trim();
-
-                    //ver se o valor atual não existe nas locations possíveis
-                    if (!Arrays.asList(MainActivity.allLocations).contains(location.toLowerCase())) {
-                        validLocations = false;
-                        System.out.println("LOCATIONS INVÁLIDAS");
-                        break;
-                    } else {
-                        locations.add(currentBk++,location);
-                    }
+                for (String loc : locations) {
+                    if (!MainActivity.allLocations.contains(loc.toLowerCase())) validLocations = false;
                 }
 
                 Set<String> set = new HashSet<String>(locations);
@@ -171,11 +172,9 @@ public class CT_Locations extends AppCompatActivity {
                     System.out.println("LOCATIONS repetidas");
                 }
 
+                for (String l : locations)  System.out.println(l);
+
                 if (validLocations && noRepeatedLocations) {
-                        //passar todos os argumentos
-
-                    System.out.println("valido!");
-
                     CT_SearchResults.selected_trips = locations;
                     Intent goToResults = new Intent(getApplicationContext(), CT_SearchResults.class);
                     startActivity(goToResults);

@@ -53,6 +53,8 @@ com/example/projectapp/MapSelectLocation.java
  com.example.projectapp.MapSelectLocation
 com/example/projectapp/databinding/ActivityMapSelectLocation2Binding.java
  com.example.projectapp.databinding.ActivityMapSelectLocation2Binding
+com/example/projectapp/taxiprivate.java
+ com.example.projectapp.taxiprivate
 com/example/projectapp/MainActivity.java
  com.example.projectapp.MainActivity
  com.example.projectapp.MainActivity$1
@@ -72,5 +74,3 @@ com/example/projectapp/ShowTransports.java
  com.example.projectapp.ShowTransports$2
  com.example.projectapp.ShowTransports$3
  com.example.projectapp.ShowTransports$4
-com/example/projectapp/taxiprivate.java
- com.example.projectapp.taxiprivate
