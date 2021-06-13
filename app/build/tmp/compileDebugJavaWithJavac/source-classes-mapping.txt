@@ -48,6 +48,20 @@ com/example/projectapp/databinding/ActivityCtSearchResultsBinding.java
  com.example.projectapp.databinding.ActivityCtSearchResultsBinding
 com/example/projectapp/databinding/ActivityHelpPageBinding.java
  com.example.projectapp.databinding.ActivityHelpPageBinding
+com/example/projectapp/CT_Filters.java
+ com.example.projectapp.CT_Filters
+ com.example.projectapp.CT_Filters$1
+ com.example.projectapp.CT_Filters$1$1
+ com.example.projectapp.CT_Filters$2
+ com.example.projectapp.CT_Filters$2$1
+ com.example.projectapp.CT_Filters$3
+com/example/projectapp/CT_SearchResults.java
+ com.example.projectapp.CT_SearchResults
+ com.example.projectapp.CT_SearchResults$1
+com/example/projectapp/ShowTransports.java
+ com.example.projectapp.ShowTransports
+com/example/projectapp/taxiprivate.java
+ com.example.projectapp.taxiprivate
 com/example/projectapp/MainActivity.java
  com.example.projectapp.MainActivity
 com/example/projectapp/CT_Locations.java
@@ -57,17 +71,3 @@ com/example/projectapp/CT_Locations.java
  com.example.projectapp.CT_Locations$3
  com.example.projectapp.CT_Locations$4
  com.example.projectapp.CT_Locations$5
-com/example/projectapp/ShowTransports.java
- com.example.projectapp.ShowTransports
-com/example/projectapp/taxiprivate.java
- com.example.projectapp.taxiprivate
-com/example/projectapp/CT_SearchResults.java
- com.example.projectapp.CT_SearchResults
- com.example.projectapp.CT_SearchResults$1
-com/example/projectapp/CT_Filters.java
- com.example.projectapp.CT_Filters
- com.example.projectapp.CT_Filters$1
- com.example.projectapp.CT_Filters$1$1
- com.example.projectapp.CT_Filters$2
- com.example.projectapp.CT_Filters$2$1
- com.example.projectapp.CT_Filters$3

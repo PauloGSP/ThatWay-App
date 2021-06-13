@@ -42,15 +42,27 @@ public class CT_Filters extends AppCompatActivity {
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
                         String time;
+                        boolean hourZero = false;
+                        boolean minuteZero = false;
                         if (hourOfDay < 10) {
-                            time = "0" + hourOfDay + ":" + minute;
-                            departureTime.setText(time);
+                            hourZero = true;
                         }
-                        else {
-                            time = hourOfDay + ":" + minute;
-                            departureTime.setText(time);
+                        if (minute < 10) {
+                            minuteZero = true;
                         }
+                        if (hourZero) {
+                            time = "0" + hourOfDay +":";
+                        } else {
+                            time = hourOfDay + ":";
+                        }
+                        if (minuteZero) {
+                            time += "0" + minute;
+                        } else {
+                            time += minute;
+                        }
+                        departureTime.setText(time);
                         CT_SearchResults.horaSaida_str = time;
+                        System.out.println(time);
                     }
                 }, mHour, mMin, true);
                 timePickerDialog.show();
@@ -72,14 +84,26 @@ public class CT_Filters extends AppCompatActivity {
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
                         String time;
+                        boolean hourZero = false;
+                        boolean minuteZero = false;
                         if (hourOfDay < 10) {
-                            time = "0" + hourOfDay + ":" + minute;
-                            arrivalTime.setText(time);
+                            hourZero = true;
                         }
-                        else {
-                            time = hourOfDay + ":" + minute;
-                            arrivalTime.setText(time);
+                        if (minute < 10) {
+                            minuteZero = true;
                         }
+                        if (hourZero) {
+                            time = "0" + hourOfDay +":";
+                        } else {
+                            time = hourOfDay + ":";
+                        }
+                        if (minuteZero) {
+                            time += "0" + minute;
+                        } else {
+                            time += minute;
+                        }
+                        System.out.println(time);
+                        arrivalTime.setText(time);
                         CT_SearchResults.horaChegada_str = time;
                     }
                 }, mHour, mMin, true);
@@ -103,14 +127,12 @@ public class CT_Filters extends AppCompatActivity {
         filtersDoneBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //passar todos os parametros para a página anterior
 
-                //falta ver os estados do dep date / dep time / arr time
-                //por default estes valores estão com o timestamp atual no CT_LocationFilters e só dá para fazer set a estes valores
-                //o departure date n permite inserir o "/" nem o "-"
+                System.out.println(CT_SearchResults.horaSaida_str);
+                System.out.println(CT_SearchResults.horaChegada_str);
 
-                String depTime = departureTime.getText().toString();
-                String arrTime = arrivalTime.getText().toString();
+                String depTime = CT_SearchResults.horaSaida_str;
+                String arrTime = CT_SearchResults.horaChegada_str;
 
                 // ver os estados das checkBox's
                 Boolean[] checked_transports = new Boolean[3];  //inicializa um array de tamanho 3 com valores 0

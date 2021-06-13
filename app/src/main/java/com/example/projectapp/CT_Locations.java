@@ -89,6 +89,7 @@ public class CT_Locations extends AppCompatActivity {
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -106,6 +107,9 @@ public class CT_Locations extends AppCompatActivity {
         numOfBreakpoints = 0;
         breakpoints = new ArrayList<View>();
         layoutList = findViewById(R.id.layout_list);
+
+        CT_SearchResults.horaSaida = (CT_SearchResults.horaSaida_str.equals("choose time")) ? LocalTime.parse("00:00") : LocalTime.parse(CT_SearchResults.horaSaida_str);
+        CT_SearchResults.horaChegada = (CT_SearchResults.horaChegada_str.equals("choose time")) ? LocalTime.parse("23:59") : LocalTime.parse(CT_SearchResults.horaChegada_str);
 
         Button filtersBtn = (Button) findViewById(R.id.filtersBtn1);
         filtersBtn.setOnClickListener(new View.OnClickListener() {
