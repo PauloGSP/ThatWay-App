@@ -13,21 +13,13 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+
+import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
 public class CT_Locations extends AppCompatActivity {
-
-    private Intent data;
-    private String depDate;
-    private String depTime;
-    private String arrTime;
-    private boolean bus;
-    private boolean train;
-    private boolean metro;
-    private String order;
 
     private int numOfBreakpoints;
     ArrayList<View> breakpoints;
@@ -193,17 +185,15 @@ public class CT_Locations extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1) {
             if(resultCode == RESULT_OK) {
-                depDate = data.getStringExtra("depDate");
-                depTime = data.getStringExtra("depTime");
-                arrTime = data.getStringExtra("arrTime");
-                bus = data.getBooleanExtra("bus",true);
-                train = data.getBooleanExtra("train",true);
-                metro = data.getBooleanExtra("metro",true);
-                order = data.getStringExtra("order");
+                String depTime = data.getStringExtra("depTime");
+                String arrTime = data.getStringExtra("arrTime");
+                boolean bus = data.getBooleanExtra("bus", true);
+                boolean train = data.getBooleanExtra("train", true);
+                boolean metro = data.getBooleanExtra("metro", true);
+                String order = data.getStringExtra("order");
 
-                CT_SearchResults.dataSaida = depDate;
-                CT_SearchResults.horaSaida = depTime;
-                CT_SearchResults.horaChegada = arrTime;
+                CT_SearchResults.horaSaida = (depTime.equals("choose time")) ? null : LocalTime.parse(depTime);
+                CT_SearchResults.horaChegada = (arrTime.equals("choose time")) ? null : LocalTime.parse(arrTime);
                 CT_SearchResults.bus = bus;
                 CT_SearchResults.train = train;
                 CT_SearchResults.metro = metro;

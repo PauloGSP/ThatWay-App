@@ -1879,7 +1879,6 @@ int id collapseActionView 0x7f08007d
 int id confirm_button 0x7f08007e
 int id constraintLayout 0x7f08007f
 int id constraintLayout2 0x7f080080
-int id constraintLayout3 0x7f080081
 int id container 0x7f080082
 int id content 0x7f080083
 int id contentPanel 0x7f080084
@@ -1903,7 +1902,6 @@ int id deleteBreakpoint 0x7f080095
 int id deleteRouteBtn 0x7f080096
 int id deltaRelative 0x7f080097
 int id depArrTimeTextView 0x7f080098
-int id departureDate 0x7f080099
 int id departureTime 0x7f08009a
 int id dependency_ordering 0x7f08009b
 int id design_bottom_sheet 0x7f08009c
@@ -2018,6 +2016,7 @@ int id line3 0x7f080108
 int id linear 0x7f080109
 int id listMode 0x7f08010a
 int id list_item 0x7f08010b
+int id listview 0x7f08022b
 int id locationAutoComplete 0x7f08010c
 int id locationBtn 0x7f08010d
 int id locationBtnShowTransports 0x7f08010e
@@ -2146,7 +2145,6 @@ int id scroll 0x7f080188
 int id scrollIndicatorDown 0x7f080189
 int id scrollIndicatorUp 0x7f08018a
 int id scrollView 0x7f08018b
-int id scrollView2 0x7f08018c
 int id scrollable 0x7f08018d
 int id sdwdw 0x7f08018e
 int id searchResultsBtn 0x7f08018f
@@ -2231,7 +2229,6 @@ int id textView 0x7f0801dd
 int id textView10 0x7f0801de
 int id textView11 0x7f0801df
 int id textView12 0x7f0801e0
-int id textView13 0x7f0801e1
 int id textView14 0x7f0801e2
 int id textView15 0x7f0801e3
 int id textView16 0x7f0801e4
@@ -2288,6 +2285,7 @@ int id trip1 0x7f080216
 int id trip2 0x7f080217
 int id trip3 0x7f080218
 int id trip4 0x7f080219
+int id trip_container 0x7f08022c
 int id unchecked 0x7f08021a
 int id uniform 0x7f08021b
 int id unlabeled 0x7f08021c

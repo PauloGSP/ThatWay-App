@@ -1880,7 +1880,6 @@ id collapseActionView
 id confirm_button
 id constraintLayout
 id constraintLayout2
-id constraintLayout3
 id container
 id content
 id contentPanel
@@ -1904,7 +1903,6 @@ id deleteBreakpoint
 id deleteRouteBtn
 id deltaRelative
 id depArrTimeTextView
-id departureDate
 id departureTime
 id dependency_ordering
 id design_bottom_sheet
@@ -2019,6 +2017,7 @@ id line3
 id linear
 id listMode
 id list_item
+id listview
 id locationAutoComplete
 id locationBtn
 id locationBtnShowTransports
@@ -2147,7 +2146,6 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
-id scrollView2
 id scrollable
 id sdwdw
 id searchResultsBtn
@@ -2232,7 +2230,6 @@ id textView
 id textView10
 id textView11
 id textView12
-id textView13
 id textView14
 id textView15
 id textView16
@@ -2289,6 +2286,7 @@ id trip1
 id trip2
 id trip3
 id trip4
+id trip_container
 id unchecked
 id uniform
 id unlabeled

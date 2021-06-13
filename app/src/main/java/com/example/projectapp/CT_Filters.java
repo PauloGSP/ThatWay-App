@@ -3,24 +3,30 @@ package com.example.projectapp;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.text.format.Time;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Switch;
+import android.widget.TimePicker;
 
+import java.sql.Time;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalTime;
+import java.util.Calendar;
 import java.util.Date;
 
 public class CT_Filters extends AppCompatActivity {
+
+    int mHour, mMin;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -31,11 +37,50 @@ public class CT_Filters extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_ct_filters);
 
-        EditText departureDate = (EditText) findViewById(R.id.departureDate);
+        Button departureTime = (Button) findViewById(R.id.departureTime);
+        departureTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        EditText departureTime = (EditText) findViewById(R.id.departureTime);
+                Calendar c = Calendar.getInstance();
+                mHour = c.get(Calendar.HOUR_OF_DAY);
+                mMin = c.get(Calendar.MINUTE);
 
-        EditText arrivalTime = (EditText) findViewById(R.id.arrivalTime);
+                TimePickerDialog timePickerDialog = new TimePickerDialog(CT_Filters.this, new TimePickerDialog.OnTimeSetListener() {
+                    @Override
+                    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                        if (hourOfDay < 12)
+                            departureTime.setText("0" + hourOfDay + ":" + minute);
+                        else
+                            departureTime.setText(hourOfDay + ":" + minute);
+                    }
+                }, mHour, mMin, true);
+                timePickerDialog.show();
+
+            }
+        });
+
+        Button arrivalTime = (Button) findViewById(R.id.arrivalTime);
+        arrivalTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Calendar c = Calendar.getInstance();
+                mHour = c.get(Calendar.HOUR_OF_DAY);
+                mMin = c.get(Calendar.MINUTE);
+
+                TimePickerDialog timePickerDialog = new TimePickerDialog(CT_Filters.this, new TimePickerDialog.OnTimeSetListener() {
+                    @Override
+                    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                        if (hourOfDay < 12)
+                            arrivalTime.setText("0" + hourOfDay + ":" + minute);
+                        else
+                            arrivalTime.setText(hourOfDay + ":" + minute);
+                    }
+                }, mHour, mMin, true);
+                timePickerDialog.show();
+            }
+        });
 
         CheckBox busCheckBox = (CheckBox) findViewById(R.id.busCheckBox);
         busCheckBox.setChecked(CT_SearchResults.bus);
@@ -59,12 +104,8 @@ public class CT_Filters extends AppCompatActivity {
                 //por default estes valores estão com o timestamp atual no CT_LocationFilters e só dá para fazer set a estes valores
                 //o departure date n permite inserir o "/" nem o "-"
 
-                String depDate = departureDate.getText().toString();
                 String depTime = departureTime.getText().toString();
                 String arrTime = arrivalTime.getText().toString();
-                depDate = ((depDate.matches("")) ? "DEFAULT" : depDate);
-                depTime = ((depTime.matches("")) ? "DEFAULT" : depTime);
-                arrTime = ((arrTime.matches("")) ? "DEFAULT" : arrTime);
 
                 // ver os estados das checkBox's
                 Boolean[] checked_transports = new Boolean[3];  //inicializa um array de tamanho 3 com valores 0
@@ -80,7 +121,7 @@ public class CT_Filters extends AppCompatActivity {
                     ORDER_BY = "PRICE";
                 }
 
-                System.out.println(depDate);
+                //System.out.println(depDate);
                 System.out.println(depTime);
                 System.out.println(arrTime);
                 for (Boolean b : checked_transports) System.out.println(b);
@@ -88,7 +129,6 @@ public class CT_Filters extends AppCompatActivity {
 
 
                 Intent sendFilters = new Intent();
-                sendFilters.putExtra("depDate",depDate);
                 sendFilters.putExtra("depTime",depTime);
                 sendFilters.putExtra("arrTime",arrTime);
                 sendFilters.putExtra("bus",checked_transports[0]);
@@ -103,3 +143,4 @@ public class CT_Filters extends AppCompatActivity {
 
     }
 }
+

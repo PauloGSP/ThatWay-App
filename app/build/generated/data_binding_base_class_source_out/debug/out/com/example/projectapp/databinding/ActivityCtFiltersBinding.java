@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -27,7 +26,7 @@ public final class ActivityCtFiltersBinding implements ViewBinding {
   public final TextView CTFiltersTextView;
 
   @NonNull
-  public final EditText arrivalTime;
+  public final Button arrivalTime;
 
   @NonNull
   public final CheckBox busCheckBox;
@@ -36,10 +35,7 @@ public final class ActivityCtFiltersBinding implements ViewBinding {
   public final ConstraintLayout constraintLayout;
 
   @NonNull
-  public final EditText departureDate;
-
-  @NonNull
-  public final EditText departureTime;
+  public final Button departureTime;
 
   @NonNull
   public final Button filtersDoneBtn;
@@ -58,9 +54,6 @@ public final class ActivityCtFiltersBinding implements ViewBinding {
 
   @NonNull
   public final TextView textView12;
-
-  @NonNull
-  public final TextView textView13;
 
   @NonNull
   public final TextView textView14;
@@ -84,12 +77,11 @@ public final class ActivityCtFiltersBinding implements ViewBinding {
   public final CheckBox trainCheckBox;
 
   private ActivityCtFiltersBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView CTFiltersTextView, @NonNull EditText arrivalTime,
+      @NonNull TextView CTFiltersTextView, @NonNull Button arrivalTime,
       @NonNull CheckBox busCheckBox, @NonNull ConstraintLayout constraintLayout,
-      @NonNull EditText departureDate, @NonNull EditText departureTime,
-      @NonNull Button filtersDoneBtn, @NonNull ImageButton homeBtnShowTransports3,
-      @NonNull CheckBox metroCheckBox, @NonNull Switch orderBySwitch,
-      @NonNull ImageButton returnBtn3, @NonNull TextView textView12, @NonNull TextView textView13,
+      @NonNull Button departureTime, @NonNull Button filtersDoneBtn,
+      @NonNull ImageButton homeBtnShowTransports3, @NonNull CheckBox metroCheckBox,
+      @NonNull Switch orderBySwitch, @NonNull ImageButton returnBtn3, @NonNull TextView textView12,
       @NonNull TextView textView14, @NonNull TextView textView15, @NonNull TextView textView16,
       @NonNull TextView textView17, @NonNull TextView textView18, @NonNull TextView textView19,
       @NonNull CheckBox trainCheckBox) {
@@ -98,7 +90,6 @@ public final class ActivityCtFiltersBinding implements ViewBinding {
     this.arrivalTime = arrivalTime;
     this.busCheckBox = busCheckBox;
     this.constraintLayout = constraintLayout;
-    this.departureDate = departureDate;
     this.departureTime = departureTime;
     this.filtersDoneBtn = filtersDoneBtn;
     this.homeBtnShowTransports3 = homeBtnShowTransports3;
@@ -106,7 +97,6 @@ public final class ActivityCtFiltersBinding implements ViewBinding {
     this.orderBySwitch = orderBySwitch;
     this.returnBtn3 = returnBtn3;
     this.textView12 = textView12;
-    this.textView13 = textView13;
     this.textView14 = textView14;
     this.textView15 = textView15;
     this.textView16 = textView16;
@@ -150,7 +140,7 @@ public final class ActivityCtFiltersBinding implements ViewBinding {
       }
 
       id = R.id.arrivalTime;
-      EditText arrivalTime = rootView.findViewById(id);
+      Button arrivalTime = rootView.findViewById(id);
       if (arrivalTime == null) {
         break missingId;
       }
@@ -167,14 +157,8 @@ public final class ActivityCtFiltersBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.departureDate;
-      EditText departureDate = rootView.findViewById(id);
-      if (departureDate == null) {
-        break missingId;
-      }
-
       id = R.id.departureTime;
-      EditText departureTime = rootView.findViewById(id);
+      Button departureTime = rootView.findViewById(id);
       if (departureTime == null) {
         break missingId;
       }
@@ -212,12 +196,6 @@ public final class ActivityCtFiltersBinding implements ViewBinding {
       id = R.id.textView12;
       TextView textView12 = rootView.findViewById(id);
       if (textView12 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView13;
-      TextView textView13 = rootView.findViewById(id);
-      if (textView13 == null) {
         break missingId;
       }
 
@@ -264,9 +242,9 @@ public final class ActivityCtFiltersBinding implements ViewBinding {
       }
 
       return new ActivityCtFiltersBinding((ConstraintLayout) rootView, CTFiltersTextView,
-          arrivalTime, busCheckBox, constraintLayout, departureDate, departureTime, filtersDoneBtn,
-          homeBtnShowTransports3, metroCheckBox, orderBySwitch, returnBtn3, textView12, textView13,
-          textView14, textView15, textView16, textView17, textView18, textView19, trainCheckBox);
+          arrivalTime, busCheckBox, constraintLayout, departureTime, filtersDoneBtn,
+          homeBtnShowTransports3, metroCheckBox, orderBySwitch, returnBtn3, textView12, textView14,
+          textView15, textView16, textView17, textView18, textView19, trainCheckBox);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
