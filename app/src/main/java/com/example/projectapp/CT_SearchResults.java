@@ -75,8 +75,8 @@ public class CT_SearchResults extends AppCompatActivity {
         maxPages = selected_trips.size() - 1;
 
         TripAdapter adapter = new TripAdapter(this, MainActivity.allTrips);
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
-        recyclerView.setAdapter(adapter);
+        //RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
+        //recyclerView.setAdapter(adapter);
 
 
 

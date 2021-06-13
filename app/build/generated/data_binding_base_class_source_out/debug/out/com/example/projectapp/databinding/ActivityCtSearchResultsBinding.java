@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -45,14 +44,10 @@ public final class ActivityCtSearchResultsBinding implements ViewBinding {
   @NonNull
   public final ImageButton returnBtn4;
 
-  @NonNull
-  public final ScrollView scrollView2;
-
   private ActivityCtSearchResultsBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView CTSearchResultsTitle, @NonNull TextView arrowLbl, @NonNull Button btnNext,
       @NonNull Button changeLocationFiltersBtn, @NonNull ImageButton homeBtnShowTransports4,
-      @NonNull TextView lblDestiny, @NonNull TextView lblOrigin, @NonNull ImageButton returnBtn4,
-      @NonNull ScrollView scrollView2) {
+      @NonNull TextView lblDestiny, @NonNull TextView lblOrigin, @NonNull ImageButton returnBtn4) {
     this.rootView = rootView;
     this.CTSearchResultsTitle = CTSearchResultsTitle;
     this.arrowLbl = arrowLbl;
@@ -62,7 +57,6 @@ public final class ActivityCtSearchResultsBinding implements ViewBinding {
     this.lblDestiny = lblDestiny;
     this.lblOrigin = lblOrigin;
     this.returnBtn4 = returnBtn4;
-    this.scrollView2 = scrollView2;
   }
 
   @Override
@@ -140,15 +134,9 @@ public final class ActivityCtSearchResultsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.scrollView2;
-      ScrollView scrollView2 = rootView.findViewById(id);
-      if (scrollView2 == null) {
-        break missingId;
-      }
-
       return new ActivityCtSearchResultsBinding((ConstraintLayout) rootView, CTSearchResultsTitle,
           arrowLbl, btnNext, changeLocationFiltersBtn, homeBtnShowTransports4, lblDestiny,
-          lblOrigin, returnBtn4, scrollView2);
+          lblOrigin, returnBtn4);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

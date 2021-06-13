@@ -4,8 +4,8 @@ package com.example.projectapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,9 +22,6 @@ public final class ActivityShowTransportsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button bus;
-
-  @NonNull
   public final Guideline guideline2;
 
   @NonNull
@@ -34,44 +31,34 @@ public final class ActivityShowTransportsBinding implements ViewBinding {
   public final ImageButton homeBtnShowTransports;
 
   @NonNull
+  public final ListView lista;
+
+  @NonNull
   public final ImageButton locationBtnShowTransports;
 
   @NonNull
   public final TextView locationShowTransports;
 
   @NonNull
-  public final Button metro;
-
-  @NonNull
   public final ImageButton returnBtnShowTransports;
-
-  @NonNull
-  public final Button taxi;
 
   @NonNull
   public final TextView titleShowTransports;
 
-  @NonNull
-  public final Button train;
-
-  private ActivityShowTransportsBinding(@NonNull ConstraintLayout rootView, @NonNull Button bus,
+  private ActivityShowTransportsBinding(@NonNull ConstraintLayout rootView,
       @NonNull Guideline guideline2, @NonNull Guideline guideline3,
-      @NonNull ImageButton homeBtnShowTransports, @NonNull ImageButton locationBtnShowTransports,
-      @NonNull TextView locationShowTransports, @NonNull Button metro,
-      @NonNull ImageButton returnBtnShowTransports, @NonNull Button taxi,
-      @NonNull TextView titleShowTransports, @NonNull Button train) {
+      @NonNull ImageButton homeBtnShowTransports, @NonNull ListView lista,
+      @NonNull ImageButton locationBtnShowTransports, @NonNull TextView locationShowTransports,
+      @NonNull ImageButton returnBtnShowTransports, @NonNull TextView titleShowTransports) {
     this.rootView = rootView;
-    this.bus = bus;
     this.guideline2 = guideline2;
     this.guideline3 = guideline3;
     this.homeBtnShowTransports = homeBtnShowTransports;
+    this.lista = lista;
     this.locationBtnShowTransports = locationBtnShowTransports;
     this.locationShowTransports = locationShowTransports;
-    this.metro = metro;
     this.returnBtnShowTransports = returnBtnShowTransports;
-    this.taxi = taxi;
     this.titleShowTransports = titleShowTransports;
-    this.train = train;
   }
 
   @Override
@@ -101,12 +88,6 @@ public final class ActivityShowTransportsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.bus;
-      Button bus = rootView.findViewById(id);
-      if (bus == null) {
-        break missingId;
-      }
-
       id = R.id.guideline2;
       Guideline guideline2 = rootView.findViewById(id);
       if (guideline2 == null) {
@@ -125,6 +106,12 @@ public final class ActivityShowTransportsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.lista;
+      ListView lista = rootView.findViewById(id);
+      if (lista == null) {
+        break missingId;
+      }
+
       id = R.id.locationBtnShowTransports;
       ImageButton locationBtnShowTransports = rootView.findViewById(id);
       if (locationBtnShowTransports == null) {
@@ -137,21 +124,9 @@ public final class ActivityShowTransportsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.metro;
-      Button metro = rootView.findViewById(id);
-      if (metro == null) {
-        break missingId;
-      }
-
       id = R.id.returnBtnShowTransports;
       ImageButton returnBtnShowTransports = rootView.findViewById(id);
       if (returnBtnShowTransports == null) {
-        break missingId;
-      }
-
-      id = R.id.taxi;
-      Button taxi = rootView.findViewById(id);
-      if (taxi == null) {
         break missingId;
       }
 
@@ -161,15 +136,9 @@ public final class ActivityShowTransportsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.train;
-      Button train = rootView.findViewById(id);
-      if (train == null) {
-        break missingId;
-      }
-
-      return new ActivityShowTransportsBinding((ConstraintLayout) rootView, bus, guideline2,
-          guideline3, homeBtnShowTransports, locationBtnShowTransports, locationShowTransports,
-          metro, returnBtnShowTransports, taxi, titleShowTransports, train);
+      return new ActivityShowTransportsBinding((ConstraintLayout) rootView, guideline2, guideline3,
+          homeBtnShowTransports, lista, locationBtnShowTransports, locationShowTransports,
+          returnBtnShowTransports, titleShowTransports);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

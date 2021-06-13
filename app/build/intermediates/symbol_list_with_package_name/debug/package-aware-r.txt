@@ -1852,7 +1852,6 @@ id blocking
 id bottom
 id bounce
 id btnNext
-id bus
 id busCheckBox
 id buttonPanel
 id cache_measures
@@ -1880,7 +1879,6 @@ id collapseActionView
 id confirm_button
 id constraintLayout
 id constraintLayout2
-id constraintLayout3
 id container
 id content
 id contentPanel
@@ -2019,6 +2017,7 @@ id line3
 id linear
 id listMode
 id list_item
+id lista
 id locationAutoComplete
 id locationBtn
 id locationBtnShowTransports
@@ -2047,7 +2046,6 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id message
-id metro
 id metroCheckBox
 id middle
 id mini
@@ -2147,7 +2145,6 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
-id scrollView2
 id scrollable
 id sdwdw
 id searchResultsBtn
@@ -2215,7 +2212,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
-id taxi
 id terrain
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
@@ -2270,7 +2266,6 @@ id toggle
 id top
 id topPanel
 id touch_outside
-id train
 id trainCheckBox
 id transitionToEnd
 id transitionToStart
@@ -2289,6 +2284,7 @@ id trip1
 id trip2
 id trip3
 id trip4
+id trip_container
 id unchecked
 id uniform
 id unlabeled

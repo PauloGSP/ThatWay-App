@@ -22,6 +22,8 @@ import java.lang.reflect.Array;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     public static String currentLocation;
     public static ArrayList<Trip> allTrips;
     public static ArrayList<String> allLocations;
-
+    public static HashMap<String,ArrayList<String>> cityTransports;
     // fazer load de todas as trips
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void loadAllTrips() {
@@ -93,7 +95,40 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+    public void loadcityTransports(){
+        System.out.println("loadcityTransports");
 
+        for (Trip t : allTrips) {
+            String origin = t.getOrigin();
+            String destiny = t.getDestiny();
+            String transport = t.getTransport_type();
+            if(!cityTransports.containsKey(origin.toLowerCase())){
+                cityTransports.put(origin.toLowerCase(),new ArrayList<>(Arrays.asList(transport)));
+
+
+            }else {
+                ArrayList<String> transportes = new ArrayList(cityTransports.get(origin.toLowerCase()));
+                if(!transportes.contains(transport)){
+                    transportes.add(transport);
+                    cityTransports.put(origin.toLowerCase(),transportes);
+                }
+
+            }
+            if(!cityTransports.containsKey(destiny.toLowerCase())){
+                cityTransports.put(destiny.toLowerCase(),new ArrayList<>(Arrays.asList(transport)));
+
+
+            }else {
+                ArrayList<String> transportes = new ArrayList(cityTransports.get(destiny.toLowerCase()));
+                if (!transportes.contains(transport)) {
+                    transportes.add(transport);
+                    cityTransports.put(destiny.toLowerCase(), transportes);
+                }
+            }
+
+
+        }
+    }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -106,9 +141,9 @@ public class MainActivity extends AppCompatActivity {
 
         allTrips = new ArrayList<Trip>();
         allLocations = new ArrayList<String>();
+        cityTransports= new HashMap<String, ArrayList<String>>();
 
-        System.out.println("yauuuu");
-
+        loadcityTransports();
         loadAllTrips();
         loadAllLocations();
 

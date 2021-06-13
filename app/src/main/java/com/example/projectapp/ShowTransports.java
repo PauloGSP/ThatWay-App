@@ -9,7 +9,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Adapter;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 
 
@@ -22,10 +25,14 @@ public class ShowTransports extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_show_transports);
-
         TextView location = (TextView) findViewById(R.id.locationShowTransports);
         location.setText(MainActivity.currentLocation);
+        String local= MainActivity.currentLocation;
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,MainActivity.cityTransports.get(local));
+        ListView lista = findViewById(R.id.lista);
+        lista.setAdapter(adapter);
 
+        /*
         //ir para o create trips com filtro do bus
         Button bustrip = findViewById(R.id.bus);
         bustrip.setOnClickListener(new View.OnClickListener() {
@@ -80,6 +87,6 @@ public class ShowTransports extends AppCompatActivity {
                 startActivity(goToPrivateTransport);
             }
 
-        });
+        });*/
     }
 }
