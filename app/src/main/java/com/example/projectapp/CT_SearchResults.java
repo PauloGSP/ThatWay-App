@@ -2,20 +2,15 @@ package com.example.projectapp;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import java.lang.reflect.Array;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -26,6 +21,8 @@ public class CT_SearchResults extends AppCompatActivity {
     public static ArrayList<String> selected_trips;  //guarda todas as trips (origem + breakpoint(s) + destino)
     public static LocalTime horaSaida;
     public static LocalTime horaChegada;
+    public static String horaSaida_str = "choose time";
+    public static String horaChegada_str = "choose time";
     public static boolean bus = true;
     public static boolean train = true;
     public static boolean metro = true;

@@ -38,7 +38,6 @@ public class TripAdapter extends ArrayAdapter<Trip> {
         TextView TransportType = (TextView) convertView.findViewById(R.id.transportTypeText);
         TextView scheduleTimeText = (TextView) convertView.findViewById(R.id.scheduleTimeText);
         TextView tickerPriceText = (TextView) convertView.findViewById(R.id.tickerPriceText);
-        Button addtrip = (Button) convertView.findViewById(R.id.addTripBtn);
         Button moreinfo = (Button) convertView.findViewById(R.id.moreInfoBtn);
         ImageButton Timeicon = (ImageButton) convertView.findViewById(R.id.iconTime);
         ImageButton moneyicon = (ImageButton) convertView.findViewById(R.id.iconMoney);
@@ -46,7 +45,6 @@ public class TripAdapter extends ArrayAdapter<Trip> {
         // Populate the data into the template view using the data object
         TransportType.setText(trip.getTransport_type());
         tickerPriceText.setText(trip.getPrice().toString());
-        addtrip.setClickable(true);
         moreinfo.setClickable(true);
 
         // Return the completed view to render on screen

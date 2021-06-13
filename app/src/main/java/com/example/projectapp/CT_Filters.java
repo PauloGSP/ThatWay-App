@@ -2,7 +2,6 @@ package com.example.projectapp;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Build;
@@ -10,19 +9,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TimePicker;
-
-import java.sql.Time;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.time.LocalTime;
 import java.util.Calendar;
-import java.util.Date;
 
 public class CT_Filters extends AppCompatActivity {
 
@@ -38,6 +29,7 @@ public class CT_Filters extends AppCompatActivity {
         setContentView(R.layout.activity_ct_filters);
 
         Button departureTime = (Button) findViewById(R.id.departureTime);
+        departureTime.setText(CT_SearchResults.horaSaida_str);
         departureTime.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,10 +41,16 @@ public class CT_Filters extends AppCompatActivity {
                 TimePickerDialog timePickerDialog = new TimePickerDialog(CT_Filters.this, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                        if (hourOfDay < 12)
-                            departureTime.setText("0" + hourOfDay + ":" + minute);
-                        else
-                            departureTime.setText(hourOfDay + ":" + minute);
+                        String time;
+                        if (hourOfDay < 10) {
+                            time = "0" + hourOfDay + ":" + minute;
+                            departureTime.setText(time);
+                        }
+                        else {
+                            time = hourOfDay + ":" + minute;
+                            departureTime.setText(time);
+                        }
+                        CT_SearchResults.horaSaida_str = time;
                     }
                 }, mHour, mMin, true);
                 timePickerDialog.show();
@@ -61,6 +59,7 @@ public class CT_Filters extends AppCompatActivity {
         });
 
         Button arrivalTime = (Button) findViewById(R.id.arrivalTime);
+        arrivalTime.setText(CT_SearchResults.horaChegada_str);
         arrivalTime.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,10 +71,16 @@ public class CT_Filters extends AppCompatActivity {
                 TimePickerDialog timePickerDialog = new TimePickerDialog(CT_Filters.this, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                        if (hourOfDay < 12)
-                            arrivalTime.setText("0" + hourOfDay + ":" + minute);
-                        else
-                            arrivalTime.setText(hourOfDay + ":" + minute);
+                        String time;
+                        if (hourOfDay < 10) {
+                            time = "0" + hourOfDay + ":" + minute;
+                            arrivalTime.setText(time);
+                        }
+                        else {
+                            time = hourOfDay + ":" + minute;
+                            arrivalTime.setText(time);
+                        }
+                        CT_SearchResults.horaChegada_str = time;
                     }
                 }, mHour, mMin, true);
                 timePickerDialog.show();

@@ -192,8 +192,8 @@ public class CT_Locations extends AppCompatActivity {
                 boolean metro = data.getBooleanExtra("metro", true);
                 String order = data.getStringExtra("order");
 
-                CT_SearchResults.horaSaida = (depTime.equals("choose time")) ? null : LocalTime.parse(depTime);
-                CT_SearchResults.horaChegada = (arrTime.equals("choose time")) ? null : LocalTime.parse(arrTime);
+                CT_SearchResults.horaSaida = (depTime.equals("choose time")) ? LocalTime.parse("00:00") : LocalTime.parse(depTime);
+                CT_SearchResults.horaChegada = (arrTime.equals("choose time")) ? LocalTime.parse("23:59") : LocalTime.parse(arrTime);
                 CT_SearchResults.bus = bus;
                 CT_SearchResults.train = train;
                 CT_SearchResults.metro = metro;

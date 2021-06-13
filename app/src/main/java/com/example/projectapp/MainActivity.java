@@ -6,25 +6,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.Array;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Scanner;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -147,50 +141,38 @@ public class MainActivity extends AppCompatActivity {
         loadAllTrips();
         loadAllLocations();
 
-        EditText locationText = (EditText) findViewById(R.id.locationTextView);
+        EditText locationText = findViewById(R.id.locationTextView);
 
         //ir para a página de mapa
         ImageButton locationBtn = findViewById(R.id.locationBtn);
-        locationBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                currentLocation = locationText.getText().toString();
-                Intent goToMaps = new Intent(getApplicationContext(), MapSelectLocation.class);
-                startActivity(goToMaps);
-            }
+        locationBtn.setOnClickListener(v -> {
+            currentLocation = locationText.getText().toString();
+            Intent goToMaps = new Intent(getApplicationContext(), MapSelectLocation.class);
+            startActivity(goToMaps);
         });
 
         //ir para o create trips
         Button createTripBtn = findViewById(R.id.createTripBtn);
-        createTripBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                currentLocation = locationText.getText().toString();
-                Intent goToCreateTrip = new Intent(getApplicationContext(), CT_Locations.class);
-                startActivity(goToCreateTrip);
-            }
+        createTripBtn.setOnClickListener(v -> {
+            currentLocation = locationText.getText().toString();
+            Intent goToCreateTrip = new Intent(getApplicationContext(), CT_Locations.class);
+            startActivity(goToCreateTrip);
         });
 
         //ir para show transports
         Button showTransportsBtn = findViewById(R.id.showTransportsBtn);
-        showTransportsBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                currentLocation = locationText.getText().toString();
-                Intent goToShowTransports = new Intent(getApplicationContext(), ShowTransports.class);
-                startActivity(goToShowTransports);
-            }
+        showTransportsBtn.setOnClickListener(v -> {
+            currentLocation = locationText.getText().toString();
+            Intent goToShowTransports = new Intent(getApplicationContext(), ShowTransports.class);
+            startActivity(goToShowTransports);
         });
 
         //ir para saved routes
         Button savedRoutesBtn = findViewById(R.id.savedRoutesBtn);
-        savedRoutesBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                currentLocation = locationText.getText().toString();
-                Intent goToSavedRoutes = new Intent(getApplicationContext(), SavedRoutes.class);
-                startActivity(goToSavedRoutes);
-            }
+        savedRoutesBtn.setOnClickListener(v -> {
+            currentLocation = locationText.getText().toString();
+            Intent goToSavedRoutes = new Intent(getApplicationContext(), SavedRoutes.class);
+            startActivity(goToSavedRoutes);
         });
     }
 }

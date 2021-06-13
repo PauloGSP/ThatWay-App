@@ -22,7 +22,7 @@ public final class RowTripBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button addTripBtn;
+  public final TextView directions;
 
   @NonNull
   public final ImageButton iconMoney;
@@ -48,13 +48,13 @@ public final class RowTripBinding implements ViewBinding {
   @NonNull
   public final ConstraintLayout tripContainer;
 
-  private RowTripBinding(@NonNull ConstraintLayout rootView, @NonNull Button addTripBtn,
+  private RowTripBinding(@NonNull ConstraintLayout rootView, @NonNull TextView directions,
       @NonNull ImageButton iconMoney, @NonNull ImageButton iconTime, @NonNull Button moreInfoBtn,
       @NonNull TextView scheduleTimeText, @NonNull TextView tickerPriceText,
       @NonNull ImageView transportTypeIcon, @NonNull TextView transportTypeText,
       @NonNull ConstraintLayout tripContainer) {
     this.rootView = rootView;
-    this.addTripBtn = addTripBtn;
+    this.directions = directions;
     this.iconMoney = iconMoney;
     this.iconTime = iconTime;
     this.moreInfoBtn = moreInfoBtn;
@@ -92,9 +92,9 @@ public final class RowTripBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.addTripBtn;
-      Button addTripBtn = rootView.findViewById(id);
-      if (addTripBtn == null) {
+      id = R.id.directions;
+      TextView directions = rootView.findViewById(id);
+      if (directions == null) {
         break missingId;
       }
 
@@ -146,7 +146,7 @@ public final class RowTripBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RowTripBinding((ConstraintLayout) rootView, addTripBtn, iconMoney, iconTime,
+      return new RowTripBinding((ConstraintLayout) rootView, directions, iconMoney, iconTime,
           moreInfoBtn, scheduleTimeText, tickerPriceText, transportTypeIcon, transportTypeText,
           tripContainer);
     }
