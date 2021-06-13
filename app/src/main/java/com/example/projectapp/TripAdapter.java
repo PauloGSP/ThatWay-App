@@ -13,6 +13,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import org.w3c.dom.Text;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class TripAdapter extends ArrayAdapter<Trip> {
@@ -34,6 +35,7 @@ public class TripAdapter extends ArrayAdapter<Trip> {
 
         // Lookup view for data population
         ConstraintLayout MainContainer = (ConstraintLayout) convertView.findViewById(R.id.trip_container) ;
+        TextView directions = (TextView) convertView.findViewById(R.id.directions);
         ImageView Image=(ImageView) convertView.findViewById(R.id.transportTypeIcon);
         TextView TransportType = (TextView) convertView.findViewById(R.id.transportTypeText);
         TextView scheduleTimeText = (TextView) convertView.findViewById(R.id.scheduleTimeText);
@@ -42,10 +44,22 @@ public class TripAdapter extends ArrayAdapter<Trip> {
         ImageButton Timeicon = (ImageButton) convertView.findViewById(R.id.iconTime);
         ImageButton moneyicon = (ImageButton) convertView.findViewById(R.id.iconMoney);
 
-        // Populate the data into the template view using the data object
+        // set do tipo de transporte
         TransportType.setText(trip.getTransport_type());
-        tickerPriceText.setText(trip.getPrice().toString());
+
+        //set do preço
+        DecimalFormat df2 = new DecimalFormat("#.##");
+        tickerPriceText.setText(df2.format(trip.getPrice()) + "€");
         moreinfo.setClickable(true);
+
+        //set do tempo e demora
+        scheduleTimeText.setText(trip.getTripTime());
+
+        //set das directions
+        String direction = trip.getOrigin_address() + "  ➝  " + trip.getDestiny_address();
+        directions.setText(direction);
+
+        //set da imagem do tipo de transporte
 
         // Return the completed view to render on screen
         return convertView;

@@ -11,7 +11,7 @@ Aveiro/Aveiro/Avenida Lourenço Peixinho/Estação da Luz/18:48/19:17/BUS/4.00/4
 Aveiro/Estarreja/Estação de Aveiro/Estação de Estarreja/15:50/16:03/TRAIN/1.45/40.6434138,-8.64080327/40.7512086,-8.5751937
 Viseu/Aveiro/Estação Ferroviária Mangualde/Estação de Aveiro/08:00/11:03/TRAIN/3.30/40.5867498,-7.760322/40.6434138,-8.64080327
 Porto/Lisboa/Campanhã/Santa Apolónia/12:37/16:00/TRAIN/25.10/41.149318,-8.585097/38.714176,-9.122615,744
-Porto/Aveiro/Av. da Boavista/R. do Clube dos Galitos/15:00/16:00/BUS/96.77/41.1568108,-8.6244826/40.6409332,-8.6573271
+Porto/Aveiro/Av. da Boavista/R. do Clube dos Galitos/15:00/16:00/BUS/6.00/41.1568108,-8.6244826/40.6409332,-8.6573271
 Coimbra/Coimbra/Estação de Nova/Av. Fernão Magalhães/11:13/11:21/BUS/3.50/40.2087667,-8.43205/40.2141963,-8.4366716
 Porto/Porto/Crestins/Bolhão/22:00/22:20/METRO/2.00/41.2351,-8.6612/41.146,-8.6062
 Porto/Porto/Crestins/Bolhão/22:49/23:11/METRO/2.00/41.2351,-8.6612/41.146,-8.6062

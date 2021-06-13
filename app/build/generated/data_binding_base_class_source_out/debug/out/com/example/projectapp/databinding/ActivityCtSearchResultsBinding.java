@@ -31,9 +31,6 @@ public final class ActivityCtSearchResultsBinding implements ViewBinding {
   public final Button btnNext;
 
   @NonNull
-  public final Button changeLocationFiltersBtn;
-
-  @NonNull
   public final ImageButton homeBtnShowTransports4;
 
   @NonNull
@@ -48,21 +45,24 @@ public final class ActivityCtSearchResultsBinding implements ViewBinding {
   @NonNull
   public final ImageButton returnBtn4;
 
+  @NonNull
+  public final TextView textView13;
+
   private ActivityCtSearchResultsBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView CTSearchResultsTitle, @NonNull TextView arrowLbl, @NonNull Button btnNext,
-      @NonNull Button changeLocationFiltersBtn, @NonNull ImageButton homeBtnShowTransports4,
-      @NonNull TextView lblDestiny, @NonNull TextView lblOrigin, @NonNull ListView listview,
-      @NonNull ImageButton returnBtn4) {
+      @NonNull ImageButton homeBtnShowTransports4, @NonNull TextView lblDestiny,
+      @NonNull TextView lblOrigin, @NonNull ListView listview, @NonNull ImageButton returnBtn4,
+      @NonNull TextView textView13) {
     this.rootView = rootView;
     this.CTSearchResultsTitle = CTSearchResultsTitle;
     this.arrowLbl = arrowLbl;
     this.btnNext = btnNext;
-    this.changeLocationFiltersBtn = changeLocationFiltersBtn;
     this.homeBtnShowTransports4 = homeBtnShowTransports4;
     this.lblDestiny = lblDestiny;
     this.lblOrigin = lblOrigin;
     this.listview = listview;
     this.returnBtn4 = returnBtn4;
+    this.textView13 = textView13;
   }
 
   @Override
@@ -110,12 +110,6 @@ public final class ActivityCtSearchResultsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.changeLocationFiltersBtn;
-      Button changeLocationFiltersBtn = rootView.findViewById(id);
-      if (changeLocationFiltersBtn == null) {
-        break missingId;
-      }
-
       id = R.id.homeBtnShowTransports4;
       ImageButton homeBtnShowTransports4 = rootView.findViewById(id);
       if (homeBtnShowTransports4 == null) {
@@ -146,9 +140,15 @@ public final class ActivityCtSearchResultsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView13;
+      TextView textView13 = rootView.findViewById(id);
+      if (textView13 == null) {
+        break missingId;
+      }
+
       return new ActivityCtSearchResultsBinding((ConstraintLayout) rootView, CTSearchResultsTitle,
-          arrowLbl, btnNext, changeLocationFiltersBtn, homeBtnShowTransports4, lblDestiny,
-          lblOrigin, listview, returnBtn4);
+          arrowLbl, btnNext, homeBtnShowTransports4, lblDestiny, lblOrigin, listview, returnBtn4,
+          textView13);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

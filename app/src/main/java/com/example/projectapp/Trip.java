@@ -121,7 +121,7 @@ import java.util.Date;
 
         //função para retornar string do tipo "14:00 - 14:45"
         public String getTripTime() {
-            return this.departure_time.toString() + " - " + this.arrival_time.toString();
+            return this.departure_time.toString() + " - " + this.arrival_time.toString() + " (" + this.getTravelling_time() + " min.)";
         }
 
         // TO STRING

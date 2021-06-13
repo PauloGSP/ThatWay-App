@@ -3,10 +3,22 @@
 == NO GERAL ==
 
 - Corrigir butões de goback e alterar o icone do home button
+- O home button deve fazer clear de todos os parâmetros já inseridos (talvez n tirar o current location)
 - Alterar o design da app
 - Alterar o design dos botões para algo mais minimalista
-- Autocomplete quando inserimos uma cidade!!!!
+- Autocomplete quando inserimos uma cidade!!!!!!
 - O autocomplete deve ter a opção de colocar terminais em vez de cidade (quando queremos deslocar-nos na mesma city)
+
+== FICHEIROS DE TEXTO ==
+
+Diogo, cria um ficheiro para os transportes privados
+exemplo:
+Aveiro/Taxi/Taxis do Rogério/967712345
+Aveiro/Taxi/blabla/911111111
+Porto/Taxi/jdjwijd/893392203
+Aveiro/Moliceiro/Moliceiros Boa-Vida/912121212
+
+Adicionar mais transportes
 
 == MainActivity ==
 
@@ -15,6 +27,8 @@
 
 == Show transports ==
 
+(PAULO)
+
 - Criar lista dinâmica de todos os transportes nessa cidade
 - Passar os parâmetros dos filtros de bus/train/metro (done)
 - Mudar o titulo dos transportes privados (ex: "transport type" para Taxi
@@ -22,48 +36,39 @@
 
 == Saved routes ==
 
-- Lista dinâmica de todas as saved routes
+- Lista dinâmica de todas as saved routes (classe Route)
 - Quando clicamos numa saved route deve mostrar uma lista dinâmica com cada percurso da mesma
-
-== MapSelectLocation ==
-
-- Acho que é melhor cagarmos nisto, mais vale termos um array com várias cidades e depois um autocomplete.
-
-== Create Trip ==
-
-- Swap de from-to (done)
-- Filter by a funcionar e a passar todos os argumentos (done)
-- Colocar o botão de swap num sítio melhor
-- Pôr o add breakpoint a funcionar
 
 == Create trip (com breakpoints) ==
 
-- Permitir listas dinâmicas com um máximo de dois breakpoints (maybe)
-- Botão para eliminar um breakpoint (basta um 'X' ao lado)
+DONE!
+- Ver só onde mudamos o botão de swap e os outros
 
 == Search results == 
 
+- Alterar imagem do tipo de transporte (buscar à net 80x80 pixeis)
+- Alterar icones do relogio e do preço (buscar à net 30x30 pixeis)
 - Permitir voltar à página de create trip (com os dados introduzidos anteriormente)
-- Botão de goback permite ir para a trip anterior
-- Mudar o texto do origimn to destiny
-- LISTA DINÂMICA DOS RESULTADOS
-- Permite ir ver os detalhes dessa trip
-- Botão de next vai para a proxima trip se esta existir
-- O botão de next pode ter um texto do tipo "NEXT (1/2)" para o user saber em que trip está/quantas faltam
+- Botão de goback permite ir para a trip anterior (até chegar à primeira, regressando à página das locations)
+- Permite ir ver os detalhes dessa trip (more info)
+- Permitir seleção do container e, quando é clicado, guardar a trip e meter as bordas coloridas de seleção
+- CRIAR MODAL/ATIVIDADE PARA GUARDAR A ROTA COM UM NOME QUE VAI SER INTRODUZIDO
 
 == Route all details ==
 
-Aparece uma lista dinâmica com todos os details de cada route. Opção de apagar uma rota, de alterar o nome da saved route e opção de alterar uma trip em específico (ex: quero que seja de autocarro em vez de comboio na viagem de aveiro para o porto)
+- Lista dinâmica de todas as Trips que pertencem à Route
+- Botão de delete
+- Permitir alterar o titulo da route
+- Ver se dá para alterar uma trip em específico!
 
 == XML'S == 
 
-- Mudar o XML (design) das row_locations / row_trips para as listas dinâmicas
+- Mudar o XML do route details
 
 == Classes necessárias para representar informação ==
 
 Trip (apenas uma viagem) - done
-Route (conjunto de viagens) - done
-Spot (possível classe que representa terminais/estações)
+Route (conjunto de viagens) - almost done
 
 == MAPAS ==
 

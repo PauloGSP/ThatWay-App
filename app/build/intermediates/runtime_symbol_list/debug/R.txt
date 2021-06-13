@@ -1860,7 +1860,6 @@ int id center_horizontal 0x7f080069
 int id center_vertical 0x7f08006a
 int id chain 0x7f08006b
 int id chains 0x7f08006c
-int id changeLocationFiltersBtn 0x7f08006d
 int id checkbox 0x7f08006e
 int id checked 0x7f08006f
 int id chip 0x7f080070
@@ -2228,6 +2227,7 @@ int id textView 0x7f0801d9
 int id textView10 0x7f0801da
 int id textView11 0x7f0801db
 int id textView12 0x7f0801dc
+int id textView13 0x7f080226
 int id textView14 0x7f0801dd
 int id textView15 0x7f0801de
 int id textView16 0x7f0801df
