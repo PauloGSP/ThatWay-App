@@ -1,9 +1,11 @@
 package com.example.projectapp;
 
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -14,6 +16,8 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,15 +47,45 @@ public class CT_SearchResults extends AppCompatActivity {
     private int currentPage = 1;
     private int maxPages;
 
+
+    public void openDialog() {
+
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
+
+        // Setting Dialog Message
+        alertDialog.setTitle("Save route");
+        alertDialog.setMessage("Name the route to save it:");
+        final EditText input = new EditText(getApplicationContext());
+        alertDialog.setView(input);
+
+        alertDialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int which) {
+                    String name = input.getText().toString();
+                    if (!name.trim().equals("")) {
+                        //CRIAR CLASSE ROUTE COM TODAS AS TRIPS E COM O DEVIDO NOME
+                        Toast.makeText(getApplicationContext(),"Route saved", Toast.LENGTH_SHORT).show();
+                        Intent goToRouteDetails = new Intent(getApplicationContext(), RouteAllDetails.class);
+                        System.out.println(name);
+
+                        Intent goToRoute = new Intent(getApplicationContext(), RouteAllDetails.class);
+                        startActivity(goToRoute);
+                    } else {
+                        Toast.makeText(getApplicationContext(),"Please name the route.", Toast.LENGTH_SHORT).show();
+                        openDialog();
+                    }
+                }
+        });
+        alertDialog.show();
+    }
+
     //mostrar os resultados
     public void loadResults(int current) {
 
         Button nextBtn = (Button) findViewById(R.id.btnNext);
         if (current > maxPages) {
-            //passar para a proxima atividade
+            //passar para o modal de dar o nome à rota!
 
-            Intent goToRoute = new Intent(getApplicationContext(), RouteAllDetails.class);
-            startActivity(goToRoute);
+            openDialog();
 
         } else {
             if (current == maxPages) {
