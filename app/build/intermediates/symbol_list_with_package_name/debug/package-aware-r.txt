@@ -1836,6 +1836,7 @@ id all
 id always
 id animateToEnd
 id animateToStart
+id arrTime
 id arrivalTime
 id arrowLbl
 id asConfigured
@@ -1851,6 +1852,8 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btnArrival
+id btnDeparture
 id btnNext
 id busCheckBox
 id buttonPanel
@@ -1901,6 +1904,7 @@ id deleteBreakpoint
 id deleteRouteBtn
 id deltaRelative
 id depArrTimeTextView
+id depTime
 id departureTime
 id dependency_ordering
 id design_bottom_sheet
@@ -1909,6 +1913,7 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id destino
+id destiny
 id dialog_button
 id dimensions
 id direct
@@ -1993,7 +1998,6 @@ id ignoreRequest
 id image
 id imageButton
 id imageButton2
-id imageView
 id info
 id invisible
 id inward
@@ -2093,6 +2097,7 @@ id off
 id on
 id orderBySwitch
 id origem
+id origin
 id outline
 id outward
 id packed
@@ -2109,6 +2114,8 @@ id percent
 id pin
 id placeOfArrivalTextView
 id placeOfDepartureTextView
+id placeofarrival
+id placeofdeparture
 id position
 id postLayout
 id progress_circular
@@ -2236,14 +2243,16 @@ id textView17
 id textView18
 id textView19
 id textView2
+id textView20
+id textView21
 id textView24
 id textView25
 id textView3
+id textView4
 id textView5
 id textView6
 id textView7
 id textView8
-id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2255,6 +2264,7 @@ id textinput_prefix_text
 id textinput_suffix_text
 id textviewbreakpoint
 id tickerPriceText
+id ticketPrice
 id ticketPriceTextView
 id time
 id title
@@ -2273,10 +2283,13 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id transportIcon
+id transportType
 id transportTypeIcon
 id transportTypeImage
 id transportTypeText
 id transportTypeTextView
+id travellingTime
 id travellingTimeTextView
 id triangle
 id trip1

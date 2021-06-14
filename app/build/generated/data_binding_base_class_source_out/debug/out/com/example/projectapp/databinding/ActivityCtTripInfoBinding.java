@@ -24,16 +24,46 @@ public final class ActivityCtTripInfoBinding implements ViewBinding {
   public final TextView CTDetailsBtn;
 
   @NonNull
+  public final TextView arrTime;
+
+  @NonNull
+  public final ImageButton btnArrival;
+
+  @NonNull
+  public final ImageButton btnDeparture;
+
+  @NonNull
+  public final TextView depTime;
+
+  @NonNull
+  public final TextView destiny;
+
+  @NonNull
   public final ImageButton homeBtnShowTransports5;
 
   @NonNull
-  public final ImageView imageView;
+  public final TextView origin;
+
+  @NonNull
+  public final TextView placeofarrival;
+
+  @NonNull
+  public final TextView placeofdeparture;
 
   @NonNull
   public final ImageButton returnBtn5;
 
   @NonNull
   public final TextView textView2;
+
+  @NonNull
+  public final TextView textView20;
+
+  @NonNull
+  public final TextView textView21;
+
+  @NonNull
+  public final TextView textView4;
 
   @NonNull
   public final TextView textView5;
@@ -48,24 +78,51 @@ public final class ActivityCtTripInfoBinding implements ViewBinding {
   public final TextView textView8;
 
   @NonNull
-  public final TextView textView9;
+  public final TextView ticketPrice;
+
+  @NonNull
+  public final ImageView transportIcon;
+
+  @NonNull
+  public final TextView transportType;
+
+  @NonNull
+  public final TextView travellingTime;
 
   private ActivityCtTripInfoBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView CTDetailsBtn, @NonNull ImageButton homeBtnShowTransports5,
-      @NonNull ImageView imageView, @NonNull ImageButton returnBtn5, @NonNull TextView textView2,
-      @NonNull TextView textView5, @NonNull TextView textView6, @NonNull TextView textView7,
-      @NonNull TextView textView8, @NonNull TextView textView9) {
+      @NonNull TextView CTDetailsBtn, @NonNull TextView arrTime, @NonNull ImageButton btnArrival,
+      @NonNull ImageButton btnDeparture, @NonNull TextView depTime, @NonNull TextView destiny,
+      @NonNull ImageButton homeBtnShowTransports5, @NonNull TextView origin,
+      @NonNull TextView placeofarrival, @NonNull TextView placeofdeparture,
+      @NonNull ImageButton returnBtn5, @NonNull TextView textView2, @NonNull TextView textView20,
+      @NonNull TextView textView21, @NonNull TextView textView4, @NonNull TextView textView5,
+      @NonNull TextView textView6, @NonNull TextView textView7, @NonNull TextView textView8,
+      @NonNull TextView ticketPrice, @NonNull ImageView transportIcon,
+      @NonNull TextView transportType, @NonNull TextView travellingTime) {
     this.rootView = rootView;
     this.CTDetailsBtn = CTDetailsBtn;
+    this.arrTime = arrTime;
+    this.btnArrival = btnArrival;
+    this.btnDeparture = btnDeparture;
+    this.depTime = depTime;
+    this.destiny = destiny;
     this.homeBtnShowTransports5 = homeBtnShowTransports5;
-    this.imageView = imageView;
+    this.origin = origin;
+    this.placeofarrival = placeofarrival;
+    this.placeofdeparture = placeofdeparture;
     this.returnBtn5 = returnBtn5;
     this.textView2 = textView2;
+    this.textView20 = textView20;
+    this.textView21 = textView21;
+    this.textView4 = textView4;
     this.textView5 = textView5;
     this.textView6 = textView6;
     this.textView7 = textView7;
     this.textView8 = textView8;
-    this.textView9 = textView9;
+    this.ticketPrice = ticketPrice;
+    this.transportIcon = transportIcon;
+    this.transportType = transportType;
+    this.travellingTime = travellingTime;
   }
 
   @Override
@@ -101,15 +158,57 @@ public final class ActivityCtTripInfoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.arrTime;
+      TextView arrTime = rootView.findViewById(id);
+      if (arrTime == null) {
+        break missingId;
+      }
+
+      id = R.id.btnArrival;
+      ImageButton btnArrival = rootView.findViewById(id);
+      if (btnArrival == null) {
+        break missingId;
+      }
+
+      id = R.id.btnDeparture;
+      ImageButton btnDeparture = rootView.findViewById(id);
+      if (btnDeparture == null) {
+        break missingId;
+      }
+
+      id = R.id.depTime;
+      TextView depTime = rootView.findViewById(id);
+      if (depTime == null) {
+        break missingId;
+      }
+
+      id = R.id.destiny;
+      TextView destiny = rootView.findViewById(id);
+      if (destiny == null) {
+        break missingId;
+      }
+
       id = R.id.homeBtnShowTransports5;
       ImageButton homeBtnShowTransports5 = rootView.findViewById(id);
       if (homeBtnShowTransports5 == null) {
         break missingId;
       }
 
-      id = R.id.imageView;
-      ImageView imageView = rootView.findViewById(id);
-      if (imageView == null) {
+      id = R.id.origin;
+      TextView origin = rootView.findViewById(id);
+      if (origin == null) {
+        break missingId;
+      }
+
+      id = R.id.placeofarrival;
+      TextView placeofarrival = rootView.findViewById(id);
+      if (placeofarrival == null) {
+        break missingId;
+      }
+
+      id = R.id.placeofdeparture;
+      TextView placeofdeparture = rootView.findViewById(id);
+      if (placeofdeparture == null) {
         break missingId;
       }
 
@@ -122,6 +221,24 @@ public final class ActivityCtTripInfoBinding implements ViewBinding {
       id = R.id.textView2;
       TextView textView2 = rootView.findViewById(id);
       if (textView2 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView20;
+      TextView textView20 = rootView.findViewById(id);
+      if (textView20 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView21;
+      TextView textView21 = rootView.findViewById(id);
+      if (textView21 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView4;
+      TextView textView4 = rootView.findViewById(id);
+      if (textView4 == null) {
         break missingId;
       }
 
@@ -149,15 +266,35 @@ public final class ActivityCtTripInfoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView9;
-      TextView textView9 = rootView.findViewById(id);
-      if (textView9 == null) {
+      id = R.id.ticketPrice;
+      TextView ticketPrice = rootView.findViewById(id);
+      if (ticketPrice == null) {
         break missingId;
       }
 
-      return new ActivityCtTripInfoBinding((ConstraintLayout) rootView, CTDetailsBtn,
-          homeBtnShowTransports5, imageView, returnBtn5, textView2, textView5, textView6, textView7,
-          textView8, textView9);
+      id = R.id.transportIcon;
+      ImageView transportIcon = rootView.findViewById(id);
+      if (transportIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.transportType;
+      TextView transportType = rootView.findViewById(id);
+      if (transportType == null) {
+        break missingId;
+      }
+
+      id = R.id.travellingTime;
+      TextView travellingTime = rootView.findViewById(id);
+      if (travellingTime == null) {
+        break missingId;
+      }
+
+      return new ActivityCtTripInfoBinding((ConstraintLayout) rootView, CTDetailsBtn, arrTime,
+          btnArrival, btnDeparture, depTime, destiny, homeBtnShowTransports5, origin,
+          placeofarrival, placeofdeparture, returnBtn5, textView2, textView20, textView21,
+          textView4, textView5, textView6, textView7, textView8, ticketPrice, transportIcon,
+          transportType, travellingTime);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
