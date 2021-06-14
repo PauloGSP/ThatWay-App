@@ -1,66 +1,66 @@
 [
     {
-        "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_saved_routes.xml",
-        "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\activity_saved_routes.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ct_locations_filters.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_ct_locations_filters.xml"
     },
     {
-        "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ct_search_results.xml",
-        "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\activity_ct_search_results.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ct_search_results.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_ct_search_results.xml"
     },
     {
-        "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_show_transports.xml",
-        "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\activity_show_transports.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_location.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\row_location.xml"
     },
     {
-        "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_map_select_location2.xml",
-        "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\activity_map_select_location2.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_trip.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\row_trip.xml"
     },
     {
-        "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_taxiprivate.xml",
-        "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\activity_taxiprivate.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ct_filters.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_ct_filters.xml"
     },
     {
-        "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ct_trip_info.xml",
-        "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\activity_ct_trip_info.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_route_all_details.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_route_all_details.xml"
     },
     {
-        "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\details.xml",
-        "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\details.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\transportbutton.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\transportbutton.xml"
     },
     {
-        "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_location.xml",
-        "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\row_location.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_taxiprivate.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_taxiprivate.xml"
     },
     {
-        "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\transportbutton.xml",
-        "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\transportbutton.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_show_transports.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_show_transports.xml"
     },
     {
-        "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_help_page.xml",
-        "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\activity_help_page.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_map_select_location2.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_map_select_location2.xml"
     },
     {
-        "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ct_trip_info.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_ct_trip_info.xml"
     },
     {
-        "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_city_private_transports.xml",
-        "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\activity_city_private_transports.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\details.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\details.xml"
     },
     {
-        "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ct_locations_filters.xml",
-        "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\activity_ct_locations_filters.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ct_filters.xml",
-        "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\activity_ct_filters.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_city_private_transports.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_city_private_transports.xml"
     },
     {
-        "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_route_all_details.xml",
-        "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\activity_route_all_details.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_help_page.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_help_page.xml"
     },
     {
-        "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_trip.xml",
-        "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\row_trip.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_saved_routes.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_saved_routes.xml"
     }
 ]

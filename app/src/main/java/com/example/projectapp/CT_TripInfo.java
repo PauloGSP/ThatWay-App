@@ -1,13 +1,21 @@
 package com.example.projectapp;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.text.DecimalFormat;
 
 public class CT_TripInfo extends AppCompatActivity {
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,5 +23,34 @@ public class CT_TripInfo extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_ct_trip_info);
+
+        ImageView transportIcon = findViewById(R.id.transportIcon);
+        TextView transport = findViewById(R.id.transportType);
+        TextView origin = findViewById(R.id.origin);
+        TextView destiny = findViewById(R.id.destiny);
+        TextView depTime = findViewById(R.id.depTime);
+        TextView arrTime = findViewById(R.id.arrTime);
+        TextView travellingTime = findViewById(R.id.travellingTime);
+        TextView ticketPrice = findViewById(R.id.ticketPrice);
+        TextView placeofdeparture = findViewById(R.id.placeofdeparture);
+        TextView placeofarrival = findViewById(R.id.placeofarrival);
+
+        Trip trip = CT_SearchResults.currentTrip;
+
+        transport.setText(trip.getTransport_type());
+        origin.setText(trip.getOrigin_address() + " (" + trip.getOrigin() + ")");
+        destiny.setText(trip.getDestiny_address() + " (" + trip.getDestiny() + ")");
+        depTime.setText(trip.getDeparture_time().toString());
+        arrTime.setText(trip.getArrival_time().toString());
+        travellingTime.setText(trip.getTravelling_time() + " minutes");
+        DecimalFormat df2 = new DecimalFormat("#.##");
+        ticketPrice.setText(df2.format(trip.getPrice()) + "€");
+        placeofdeparture.setText(trip.getOrigin_address());
+        placeofarrival.setText(trip.getDestiny_address());
+
+        ImageButton depMap = findViewById(R.id.btnDeparture);
+        ImageButton arrMap = findViewById(R.id.btnArrival);
+
+
     }
 }
