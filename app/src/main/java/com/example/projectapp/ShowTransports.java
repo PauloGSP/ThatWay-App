@@ -88,7 +88,7 @@ public class ShowTransports extends AppCompatActivity {
                 btn.setText(fake.get(i));
                 btn.setWidth(890);
                 btn.setHeight(260);
-
+                btn.setboun
                 //Set onClickListener
                 int finalI = i;
                 btn.setOnClickListener(new View.OnClickListener() {

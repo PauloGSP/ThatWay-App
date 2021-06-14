@@ -6,18 +6,27 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.AdapterView;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class CT_SearchResults extends AppCompatActivity {
 
+    public static Trip currentTrip;
+    public static ArrayList<Trip> viewTrip;
     public static ArrayList<String> selected_trips;  //guarda todas as trips (origem + breakpoint(s) + destino)
     public static LocalTime horaSaida;
     public static LocalTime horaChegada;
@@ -27,7 +36,6 @@ public class CT_SearchResults extends AppCompatActivity {
     public static boolean train = true;
     public static boolean metro = true;
     public static String order;
-
     private int currentPage = 1;
     private int maxPages;
 
@@ -72,6 +80,9 @@ public class CT_SearchResults extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.listview);
         listView.setAdapter(adapter);
 
+        // How can I get the 'Trip' object when I click the more info button and then go to another activity?
+
+
         Button nextBtn = (Button) findViewById(R.id.btnNext);
         TextView lblOrigin = (TextView) findViewById(R.id.lblOrigin);
         TextView lblDestiny = (TextView) findViewById(R.id.lblDestiny);
@@ -104,6 +115,8 @@ public class CT_SearchResults extends AppCompatActivity {
         setContentView(R.layout.activity_ct_search_results);
 
         maxPages = selected_trips.size() - 1;
+
+
 
         //load da primeira pagina
         loadResults(currentPage);

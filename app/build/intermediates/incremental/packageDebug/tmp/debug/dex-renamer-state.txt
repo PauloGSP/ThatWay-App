@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Mon Jun 14 02:57:25 BST 2021
 base.0=C\:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+=======
+#Mon Jun 14 02:55:06 BST 2021
+base.0=C\:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+>>>>>>> ad8d01e486c4a09f3231398e5cb08e1268396ce8
 renamed.0=classes.dex
 path.0=classes.dex

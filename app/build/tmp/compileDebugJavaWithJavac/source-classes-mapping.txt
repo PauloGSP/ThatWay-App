@@ -22,10 +22,17 @@ com/example/projectapp/CT_TripInfo.java
  com.example.projectapp.CT_TripInfo
 com/example/projectapp/HelpPage.java
  com.example.projectapp.HelpPage
+<<<<<<< HEAD
 com/example/projectapp/databinding/ActivityMapSelectLocation2Binding.java
  com.example.projectapp.databinding.ActivityMapSelectLocation2Binding
 com/example/projectapp/TripAdapter.java
  com.example.projectapp.TripAdapter
+=======
+com/example/projectapp/SavedRoutes.java
+ com.example.projectapp.SavedRoutes
+com/example/projectapp/databinding/DetailsBinding.java
+ com.example.projectapp.databinding.DetailsBinding
+>>>>>>> ad8d01e486c4a09f3231398e5cb08e1268396ce8
 com/example/projectapp/Route.java
  com.example.projectapp.Route
 com/example/projectapp/databinding/RowLocationBinding.java
@@ -34,32 +41,39 @@ com/example/projectapp/databinding/ActivityCityPrivateTransportsBinding.java
  com.example.projectapp.databinding.ActivityCityPrivateTransportsBinding
 com/example/projectapp/databinding/ActivityCtLocationsFiltersBinding.java
  com.example.projectapp.databinding.ActivityCtLocationsFiltersBinding
+<<<<<<< HEAD
 com/example/projectapp/databinding/DetailsBinding.java
  com.example.projectapp.databinding.DetailsBinding
 com/example/projectapp/Trip.java
  com.example.projectapp.Trip
+=======
+com/example/projectapp/databinding/RowLocationBinding.java
+ com.example.projectapp.databinding.RowLocationBinding
+com/example/projectapp/taxiprivate.java
+ com.example.projectapp.taxiprivate
+>>>>>>> ad8d01e486c4a09f3231398e5cb08e1268396ce8
 com/example/projectapp/databinding/ActivitySavedRoutesBinding.java
  com.example.projectapp.databinding.ActivitySavedRoutesBinding
 com/example/projectapp/BuildConfig.java
  com.example.projectapp.BuildConfig
 com/example/projectapp/databinding/ActivityCtTripInfoBinding.java
  com.example.projectapp.databinding.ActivityCtTripInfoBinding
-com/example/projectapp/CT_Filters.java
- com.example.projectapp.CT_Filters
- com.example.projectapp.CT_Filters$1
- com.example.projectapp.CT_Filters$1$1
- com.example.projectapp.CT_Filters$2
- com.example.projectapp.CT_Filters$2$1
- com.example.projectapp.CT_Filters$3
+com/example/projectapp/Trip.java
+ com.example.projectapp.Trip
 com/example/projectapp/databinding/ActivityCtSearchResultsBinding.java
  com.example.projectapp.databinding.ActivityCtSearchResultsBinding
 com/example/projectapp/databinding/ActivityHelpPageBinding.java
  com.example.projectapp.databinding.ActivityHelpPageBinding
 com/example/projectapp/MapSelectLocation.java
  com.example.projectapp.MapSelectLocation
+<<<<<<< HEAD
 com/example/projectapp/CT_SearchResults.java
  com.example.projectapp.CT_SearchResults
  com.example.projectapp.CT_SearchResults$1
+=======
+com/example/projectapp/databinding/ActivityMapSelectLocation2Binding.java
+ com.example.projectapp.databinding.ActivityMapSelectLocation2Binding
+>>>>>>> ad8d01e486c4a09f3231398e5cb08e1268396ce8
 com/example/projectapp/CT_Locations.java
  com.example.projectapp.CT_Locations
  com.example.projectapp.CT_Locations$1
@@ -67,6 +81,7 @@ com/example/projectapp/CT_Locations.java
  com.example.projectapp.CT_Locations$3
  com.example.projectapp.CT_Locations$4
  com.example.projectapp.CT_Locations$5
+<<<<<<< HEAD
 com/example/projectapp/taxiprivate.java
  com.example.projectapp.taxiprivate
 com/example/projectapp/MainActivity.java
@@ -75,3 +90,18 @@ com/example/projectapp/ShowTransports.java
  com.example.projectapp.ShowTransports
  com.example.projectapp.ShowTransports$1
  com.example.projectapp.ShowTransports$2
+=======
+com/example/projectapp/CT_SearchResults.java
+ com.example.projectapp.CT_SearchResults
+ com.example.projectapp.CT_SearchResults$1
+com/example/projectapp/TripAdapter.java
+ com.example.projectapp.TripAdapter
+ com.example.projectapp.TripAdapter$1
+com/example/projectapp/CT_Filters.java
+ com.example.projectapp.CT_Filters
+ com.example.projectapp.CT_Filters$1
+ com.example.projectapp.CT_Filters$1$1
+ com.example.projectapp.CT_Filters$2
+ com.example.projectapp.CT_Filters$2$1
+ com.example.projectapp.CT_Filters$3
+>>>>>>> ad8d01e486c4a09f3231398e5cb08e1268396ce8
