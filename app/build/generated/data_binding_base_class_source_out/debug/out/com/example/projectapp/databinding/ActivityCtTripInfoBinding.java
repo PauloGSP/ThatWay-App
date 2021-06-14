@@ -36,9 +36,6 @@ public final class ActivityCtTripInfoBinding implements ViewBinding {
   public final TextView textView2;
 
   @NonNull
-  public final TextView textView4;
-
-  @NonNull
   public final TextView textView5;
 
   @NonNull
@@ -56,15 +53,14 @@ public final class ActivityCtTripInfoBinding implements ViewBinding {
   private ActivityCtTripInfoBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView CTDetailsBtn, @NonNull ImageButton homeBtnShowTransports5,
       @NonNull ImageView imageView, @NonNull ImageButton returnBtn5, @NonNull TextView textView2,
-      @NonNull TextView textView4, @NonNull TextView textView5, @NonNull TextView textView6,
-      @NonNull TextView textView7, @NonNull TextView textView8, @NonNull TextView textView9) {
+      @NonNull TextView textView5, @NonNull TextView textView6, @NonNull TextView textView7,
+      @NonNull TextView textView8, @NonNull TextView textView9) {
     this.rootView = rootView;
     this.CTDetailsBtn = CTDetailsBtn;
     this.homeBtnShowTransports5 = homeBtnShowTransports5;
     this.imageView = imageView;
     this.returnBtn5 = returnBtn5;
     this.textView2 = textView2;
-    this.textView4 = textView4;
     this.textView5 = textView5;
     this.textView6 = textView6;
     this.textView7 = textView7;
@@ -129,12 +125,6 @@ public final class ActivityCtTripInfoBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView4;
-      TextView textView4 = rootView.findViewById(id);
-      if (textView4 == null) {
-        break missingId;
-      }
-
       id = R.id.textView5;
       TextView textView5 = rootView.findViewById(id);
       if (textView5 == null) {
@@ -166,8 +156,8 @@ public final class ActivityCtTripInfoBinding implements ViewBinding {
       }
 
       return new ActivityCtTripInfoBinding((ConstraintLayout) rootView, CTDetailsBtn,
-          homeBtnShowTransports5, imageView, returnBtn5, textView2, textView4, textView5, textView6,
-          textView7, textView8, textView9);
+          homeBtnShowTransports5, imageView, returnBtn5, textView2, textView5, textView6, textView7,
+          textView8, textView9);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
