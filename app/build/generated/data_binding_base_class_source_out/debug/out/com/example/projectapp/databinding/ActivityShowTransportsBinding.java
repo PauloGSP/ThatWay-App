@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.ListView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -31,7 +31,7 @@ public final class ActivityShowTransportsBinding implements ViewBinding {
   public final ImageButton homeBtnShowTransports;
 
   @NonNull
-  public final ListView lista;
+  public final LinearLayout layout;
 
   @NonNull
   public final ImageButton locationBtnShowTransports;
@@ -47,14 +47,14 @@ public final class ActivityShowTransportsBinding implements ViewBinding {
 
   private ActivityShowTransportsBinding(@NonNull ConstraintLayout rootView,
       @NonNull Guideline guideline2, @NonNull Guideline guideline3,
-      @NonNull ImageButton homeBtnShowTransports, @NonNull ListView lista,
+      @NonNull ImageButton homeBtnShowTransports, @NonNull LinearLayout layout,
       @NonNull ImageButton locationBtnShowTransports, @NonNull TextView locationShowTransports,
       @NonNull ImageButton returnBtnShowTransports, @NonNull TextView titleShowTransports) {
     this.rootView = rootView;
     this.guideline2 = guideline2;
     this.guideline3 = guideline3;
     this.homeBtnShowTransports = homeBtnShowTransports;
-    this.lista = lista;
+    this.layout = layout;
     this.locationBtnShowTransports = locationBtnShowTransports;
     this.locationShowTransports = locationShowTransports;
     this.returnBtnShowTransports = returnBtnShowTransports;
@@ -106,9 +106,9 @@ public final class ActivityShowTransportsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.lista;
-      ListView lista = rootView.findViewById(id);
-      if (lista == null) {
+      id = R.id.layout;
+      LinearLayout layout = rootView.findViewById(id);
+      if (layout == null) {
         break missingId;
       }
 
@@ -137,7 +137,7 @@ public final class ActivityShowTransportsBinding implements ViewBinding {
       }
 
       return new ActivityShowTransportsBinding((ConstraintLayout) rootView, guideline2, guideline3,
-          homeBtnShowTransports, lista, locationBtnShowTransports, locationShowTransports,
+          homeBtnShowTransports, layout, locationBtnShowTransports, locationShowTransports,
           returnBtnShowTransports, titleShowTransports);
     }
     String missingId = rootView.getResources().getResourceName(id);
