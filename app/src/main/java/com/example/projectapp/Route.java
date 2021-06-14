@@ -10,9 +10,9 @@ public class Route {
     private ArrayList<Trip> list_of_trips;
 
     //recebe o titulo introduzido pelo utilizador
-    public Route(String title) {
+    public Route(String title,ArrayList<Trip> routeTrips) {
         this.title = title;
-        this.list_of_trips = new ArrayList<Trip>();
+        this.list_of_trips = routeTrips;
     }
 
     //metodos para calcular o total_travelling_time e o total_price

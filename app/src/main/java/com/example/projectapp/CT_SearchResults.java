@@ -63,6 +63,7 @@ public class CT_SearchResults extends AppCompatActivity {
                     String name = input.getText().toString();
                     if (!name.trim().equals("")) {
                         //CRIAR CLASSE ROUTE COM TODAS AS TRIPS E COM O DEVIDO NOME
+                        //VER SE JÁ EXISTEM ROUTES COM ESSE NOME
                         Toast.makeText(getApplicationContext(),"Route saved", Toast.LENGTH_SHORT).show();
                         Intent goToRouteDetails = new Intent(getApplicationContext(), RouteAllDetails.class);
                         System.out.println(name);

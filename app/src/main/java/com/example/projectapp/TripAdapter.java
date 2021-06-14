@@ -17,7 +17,6 @@ import java.util.ArrayList;
 
 public class TripAdapter extends ArrayAdapter<Trip> {
 
-    public static Trip currentTrip;
     public Context context;
 
     public TripAdapter(Context context, ArrayList<Trip> trips){
