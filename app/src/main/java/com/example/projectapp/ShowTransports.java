@@ -4,6 +4,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Layout;
@@ -88,7 +89,9 @@ public class ShowTransports extends AppCompatActivity {
                 btn.setText(fake.get(i));
                 btn.setWidth(890);
                 btn.setHeight(260);
-                btn.setboun
+                btn.setY(200+i*80);
+                btn.setBackgroundColor(Color.parseColor("#ff512e"));
+
                 //Set onClickListener
                 int finalI = i;
                 btn.setOnClickListener(new View.OnClickListener() {
@@ -115,7 +118,10 @@ public class ShowTransports extends AppCompatActivity {
                 //set all your button attributes, like text color,background color etc. here
                 btn.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT));
                 btn.setText(localTransport.get(i));
-
+                btn.setWidth(890);
+                btn.setHeight(260);
+                btn.setY(200+i*80);
+                btn.setBackgroundColor(Color.parseColor("#ff512e")); 
 
                 //Set onClickListener
                 int finalI = i;
