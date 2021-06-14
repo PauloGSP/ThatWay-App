@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class Route {
 
+    public static ArrayList<Route> savedRoutes = new ArrayList<Route>();
+    public static Route currentRoute;
     private String title;
     private String total_travelling_time;
     private Double total_price;

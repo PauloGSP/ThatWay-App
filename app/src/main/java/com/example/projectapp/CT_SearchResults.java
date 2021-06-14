@@ -31,10 +31,11 @@ import java.util.List;
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class CT_SearchResults extends AppCompatActivity {
 
+    public static Route currentRoute = null;
     public static int numberOfChilds;
     public static Trip currentTrip;
     public static ConstraintLayout currentContainer;
-    public static ArrayList<Trip> viewTrip;
+    public static ArrayList<Trip> trips;
     public static ArrayList<String> selected_trips;  //guarda todas as trips (origem + breakpoint(s) + destino)
     public static LocalTime horaSaida;
     public static LocalTime horaChegada;
@@ -63,13 +64,23 @@ public class CT_SearchResults extends AppCompatActivity {
                     String name = input.getText().toString();
                     if (!name.trim().equals("")) {
                         //CRIAR CLASSE ROUTE COM TODAS AS TRIPS E COM O DEVIDO NOME
-                        //VER SE JÁ EXISTEM ROUTES COM ESSE NOME
-                        Toast.makeText(getApplicationContext(),"Route saved", Toast.LENGTH_SHORT).show();
-                        Intent goToRouteDetails = new Intent(getApplicationContext(), RouteAllDetails.class);
-                        System.out.println(name);
-
-                        Intent goToRoute = new Intent(getApplicationContext(), RouteAllDetails.class);
-                        startActivity(goToRoute);
+                        //VER SE JÁ EXISTEM ROUTES COM ESSE NOME!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                        Route route = new Route(name,trips);
+                        boolean validName = true;
+                        for (Route r : Route.savedRoutes) {
+                            if (r.getTitle() == name) validName = false;
+                        }
+                        if (validName) {
+                            Route.savedRoutes.add(route);
+                            Route.currentRoute = route;
+                            Toast.makeText(getApplicationContext(),"Route saved", Toast.LENGTH_SHORT).show();
+                            System.out.println(name);
+                            Intent goToRoute = new Intent(getApplicationContext(), RouteAllDetails.class);
+                            startActivity(goToRoute);
+                        } else {
+                            Toast.makeText(getApplicationContext(),"There's already a route with that title.", Toast.LENGTH_SHORT).show();
+                            openDialog();
+                        }
                     } else {
                         Toast.makeText(getApplicationContext(),"Please name the route.", Toast.LENGTH_SHORT).show();
                         openDialog();
@@ -156,6 +167,7 @@ public class CT_SearchResults extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_ct_search_results);
 
+        trips = new ArrayList<Trip>();
         maxPages = selected_trips.size() - 1;
 
         //load da primeira pagina
@@ -168,6 +180,7 @@ public class CT_SearchResults extends AppCompatActivity {
 
                 //VER SE PODE SER VÁLIDO UMA PESSOA N ESCOLHER NENHUMA TRIP (EX: N LHE AGRADA NENHUMA)
 
+                trips.add(currentTrip); //tanto pode adicionar uma trip selecionada como adiciona 'null'
                 if (numberOfChilds == 0) {
                     loadResults(++currentPage);
                 } else if (CT_SearchResults.currentContainer == null) {
