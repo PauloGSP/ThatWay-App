@@ -1853,6 +1853,7 @@ id bottom
 id bounce
 id btnNext
 id busCheckBox
+id button
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -2016,7 +2017,6 @@ id line3
 id linear
 id listMode
 id list_item
-id lista
 id listview
 id locationAutoComplete
 id locationBtn
@@ -2460,6 +2460,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout transportbutton
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round

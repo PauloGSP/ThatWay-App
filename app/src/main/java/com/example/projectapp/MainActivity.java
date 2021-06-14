@@ -96,9 +96,11 @@ public class MainActivity extends AppCompatActivity {
             String origin = t.getOrigin();
             String destiny = t.getDestiny();
             String transport = t.getTransport_type();
+            System.out.println("Mano testei"+!cityTransports.containsKey(origin.toLowerCase() ));
             if(!cityTransports.containsKey(origin.toLowerCase())){
                 cityTransports.put(origin.toLowerCase(),new ArrayList<>(Arrays.asList(transport)));
-
+                System.out.println("Dei put de");
+                System.out.println(origin.toLowerCase() + "   "+ transport);
 
             }else {
                 ArrayList<String> transportes = new ArrayList(cityTransports.get(origin.toLowerCase()));
@@ -122,6 +124,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         }
+        System.out.println("begin");
+        System.out.println(cityTransports);
+        System.out.println("end");
+
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -137,10 +143,10 @@ public class MainActivity extends AppCompatActivity {
         allLocations = new ArrayList<String>();
         cityTransports= new HashMap<String, ArrayList<String>>();
 
-        loadcityTransports();
+
         loadAllTrips();
         loadAllLocations();
-
+        loadcityTransports();
         EditText locationText = findViewById(R.id.locationTextView);
 
         //ir para a página de mapa
