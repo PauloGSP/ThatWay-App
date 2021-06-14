@@ -1,27 +1,19 @@
 package com.example.projectapp;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
-import android.os.strictmode.IntentReceiverLeakedViolation;
 import android.view.*;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
-
 import androidx.annotation.RequiresApi;
-import androidx.constraintlayout.solver.state.State;
 import androidx.constraintlayout.widget.ConstraintLayout;
-
-import org.w3c.dom.Text;
-
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.List;
 
 public class TripAdapter extends ArrayAdapter<Trip> {
 
@@ -55,6 +47,27 @@ public class TripAdapter extends ArrayAdapter<Trip> {
         Button moreInfoBtn = (Button) convertView.findViewById(R.id.moreInfoBtn);
         ImageButton Timeicon = (ImageButton) convertView.findViewById(R.id.iconTime);
         ImageButton moneyicon = (ImageButton) convertView.findViewById(R.id.iconMoney);
+
+        MainContainer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (CT_SearchResults.currentContainer != null && MainContainer != CT_SearchResults.currentContainer) {
+                    CT_SearchResults.currentContainer.setBackgroundColor(Color.parseColor("#E4E4E4"));
+                    CT_SearchResults.currentContainer = MainContainer;
+                    CT_SearchResults.currentTrip = trip;
+                    MainContainer.setBackgroundColor(Color.parseColor("#ff512e"));
+                } else if (MainContainer == CT_SearchResults.currentContainer) {
+                    System.out.println("entrou");
+                    CT_SearchResults.currentContainer = null;
+                    CT_SearchResults.currentTrip = null;
+                    MainContainer.setBackgroundColor(Color.parseColor("#E4E4E4"));
+                } else {
+                    CT_SearchResults.currentContainer = MainContainer;
+                    CT_SearchResults.currentTrip = trip;
+                    MainContainer.setBackgroundColor(Color.parseColor("#ff512e"));
+                }
+            }
+        });
 
         // set do tipo de transporte
         TransportType.setText(trip.getTransport_type());

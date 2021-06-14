@@ -48,8 +48,12 @@ public class CT_TripInfo extends AppCompatActivity {
         placeofdeparture.setText(trip.getOrigin_address());
         placeofarrival.setText(trip.getDestiny_address());
 
+        //ir para o mapa com as coordenadas
+
         ImageButton depMap = findViewById(R.id.btnDeparture);
         ImageButton arrMap = findViewById(R.id.btnArrival);
+
+        //fazer set do icone de transporte
 
 
     }
