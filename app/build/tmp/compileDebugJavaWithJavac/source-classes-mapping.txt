@@ -6,8 +6,8 @@ com/example/projectapp/CityPrivateTransports.java
  com.example.projectapp.CityPrivateTransports
 com/example/projectapp/databinding/RowTripBinding.java
  com.example.projectapp.databinding.RowTripBinding
-com/example/projectapp/RouteAllDetails.java
- com.example.projectapp.RouteAllDetails
+com/example/projectapp/SavedRoutes.java
+ com.example.projectapp.SavedRoutes
 com/example/projectapp/databinding/ActivityShowTransportsBinding.java
  com.example.projectapp.databinding.ActivityShowTransportsBinding
 com/example/projectapp/databinding/ActivityMainBinding.java
@@ -28,16 +28,14 @@ com/example/projectapp/CT_TripInfo.java
  com.example.projectapp.CT_TripInfo
 com/example/projectapp/HelpPage.java
  com.example.projectapp.HelpPage
-com/example/projectapp/CT_SearchResults.java
- com.example.projectapp.CT_SearchResults
- com.example.projectapp.CT_SearchResults$1
- com.example.projectapp.CT_SearchResults$2
+com/example/projectapp/databinding/RowLocationBinding.java
+ com.example.projectapp.databinding.RowLocationBinding
 com/example/projectapp/TripAdapter.java
  com.example.projectapp.TripAdapter
  com.example.projectapp.TripAdapter$1
  com.example.projectapp.TripAdapter$2
-com/example/projectapp/Route.java
- com.example.projectapp.Route
+com/example/projectapp/databinding/DetailsBinding.java
+ com.example.projectapp.databinding.DetailsBinding
 com/example/projectapp/MainActivity.java
  com.example.projectapp.MainActivity
 com/example/projectapp/databinding/ActivityCityPrivateTransportsBinding.java
@@ -72,9 +70,12 @@ com/example/projectapp/MapSelectLocation.java
  com.example.projectapp.MapSelectLocation
 com/example/projectapp/databinding/ActivityMapSelectLocation2Binding.java
  com.example.projectapp.databinding.ActivityMapSelectLocation2Binding
-com/example/projectapp/databinding/DetailsBinding.java
- com.example.projectapp.databinding.DetailsBinding
-com/example/projectapp/SavedRoutes.java
- com.example.projectapp.SavedRoutes
-com/example/projectapp/databinding/RowLocationBinding.java
- com.example.projectapp.databinding.RowLocationBinding
+com/example/projectapp/CT_SearchResults.java
+ com.example.projectapp.CT_SearchResults
+ com.example.projectapp.CT_SearchResults$1
+ com.example.projectapp.CT_SearchResults$2
+com/example/projectapp/RouteAllDetails.java
+ com.example.projectapp.RouteAllDetails
+ com.example.projectapp.RouteAllDetails$1
+com/example/projectapp/Route.java
+ com.example.projectapp.Route
