@@ -25,8 +25,12 @@ import android.widget.Toast;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class CT_SearchResults extends AppCompatActivity {
@@ -91,6 +95,23 @@ public class CT_SearchResults extends AppCompatActivity {
         alertDialog.show();
     }
 
+    public static <T> ArrayList<T>
+    getArrayListFromStream(Stream<T> stream)
+    {
+
+        // Convert the Stream to List
+        List<T>
+                list = stream.collect(Collectors.toList());
+
+        // Create an ArrayList of the List
+        ArrayList<T>
+                arrayList = new ArrayList<T>(list);
+
+        // Return the ArrayList
+        return arrayList;
+    }
+
+
     //mostrar os resultados
     public void loadResults(int current) {
 
@@ -146,6 +167,23 @@ public class CT_SearchResults extends AppCompatActivity {
                 if (valid) trips.add(t);
             }
 
+            System.out.println(CT_SearchResults.order);
+            if (order.equals("PRICE")) {
+                System.out.println("PRICE");
+                Comparator<Trip> comparatorPrice = Comparator.comparing(Trip::getPrice);
+                comparatorPrice = comparatorPrice.thenComparing(Comparator.comparing(trip -> trip.getDeparture_time()));
+                Stream<Trip> tripStream = trips.stream().sorted(comparatorPrice);
+                trips = getArrayListFromStream(tripStream);
+            } else {
+                System.out.println("DEPARTURE");
+                Comparator<Trip> comparatorDeparture = Comparator.comparing(Trip::getDeparture_time);
+                comparatorDeparture = comparatorDeparture.thenComparing(Comparator.comparing(trip -> trip.getPrice()));
+                Stream<Trip> tripStream = trips.stream().sorted(comparatorDeparture);
+                trips = getArrayListFromStream(tripStream);
+            }
+
+            //não há else porque por default é ele ordenado por dep. time
+
             TripAdapter adapter = new TripAdapter(this, trips);
             ListView listView = (ListView) findViewById(R.id.listview);
             listView.setAdapter(adapter);
@@ -172,6 +210,7 @@ public class CT_SearchResults extends AppCompatActivity {
         trips = new ArrayList<Trip>();
         maxPages = selected_trips.size() - 1;
 
+        currentTrip = null;
         ultimaHoraChegada = LocalTime.parse("00:00");
 
         //load da primeira pagina
@@ -192,6 +231,7 @@ public class CT_SearchResults extends AppCompatActivity {
                 } else {
                     loadResults(++currentPage);
                 }
+                System.out.println(currentTrip);
             }
         });
 

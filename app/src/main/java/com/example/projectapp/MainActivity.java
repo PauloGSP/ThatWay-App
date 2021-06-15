@@ -143,6 +143,7 @@ public class MainActivity extends AppCompatActivity {
         allLocations = new ArrayList<String>();
         cityTransports= new HashMap<String, ArrayList<String>>();
 
+        CT_SearchResults.order = "DEPARTURE";
 
         loadAllTrips();
         loadAllLocations();
