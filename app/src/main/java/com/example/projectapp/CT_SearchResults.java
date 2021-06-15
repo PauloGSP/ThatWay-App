@@ -115,6 +115,9 @@ public class CT_SearchResults extends AppCompatActivity {
     //mostrar os resultados
     public void loadResults(int current) {
 
+        TextView noresults = findViewById(R.id.noResults);
+        noresults.setVisibility(View.GONE);
+
         Button nextBtn = (Button) findViewById(R.id.btnNext);
         if (current > maxPages) {
             //passar para o modal de dar o nome à rota!
@@ -194,6 +197,14 @@ public class CT_SearchResults extends AppCompatActivity {
 
             lblOrigin.setText(origin);
             lblDestiny.setText(destiny);
+
+            //só há uma página e não há resultados (deixa de aparecer o save route, só se pode voltar atrás)
+            if (numberOfChilds == 0 && currentPage == 1 && maxPages == currentPage) {
+                nextBtn.setVisibility(View.GONE);
+                noresults.setVisibility(View.VISIBLE);
+            } else if (trips.size() == 0 ) {
+                noresults.setVisibility(View.VISIBLE);
+            }
         }
 
     }

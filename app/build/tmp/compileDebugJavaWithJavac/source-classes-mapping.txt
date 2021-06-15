@@ -1,3 +1,9 @@
+com/example/projectapp/Trip.java
+ com.example.projectapp.Trip
+com/example/projectapp/BuildConfig.java
+ com.example.projectapp.BuildConfig
+com/example/projectapp/Route.java
+ com.example.projectapp.Route
 com/example/projectapp/CityPrivateTransports.java
  com.example.projectapp.CityPrivateTransports
 com/example/projectapp/databinding/RowTripBinding.java
@@ -19,16 +25,14 @@ com/example/projectapp/databinding/TransportbuttonBinding.java
  com.example.projectapp.databinding.TransportbuttonBinding
 com/example/projectapp/databinding/ActivityRouteAllDetailsBinding.java
  com.example.projectapp.databinding.ActivityRouteAllDetailsBinding
-com/example/projectapp/Trip.java
- com.example.projectapp.Trip
-com/example/projectapp/HelpPage.java
- com.example.projectapp.HelpPage
 com/example/projectapp/databinding/ActivityMapSelectLocation2Binding.java
  com.example.projectapp.databinding.ActivityMapSelectLocation2Binding
+com/example/projectapp/HelpPage.java
+ com.example.projectapp.HelpPage
 com/example/projectapp/MapSelectLocation.java
  com.example.projectapp.MapSelectLocation
-com/example/projectapp/Route.java
- com.example.projectapp.Route
+com/example/projectapp/databinding/ActivityHelpPageBinding.java
+ com.example.projectapp.databinding.ActivityHelpPageBinding
 com/example/projectapp/databinding/RowLocationBinding.java
  com.example.projectapp.databinding.RowLocationBinding
 com/example/projectapp/databinding/ActivityCityPrivateTransportsBinding.java
@@ -41,12 +45,8 @@ com/example/projectapp/taxiprivate.java
  com.example.projectapp.taxiprivate
 com/example/projectapp/databinding/ActivitySavedRoutesBinding.java
  com.example.projectapp.databinding.ActivitySavedRoutesBinding
-com/example/projectapp/BuildConfig.java
- com.example.projectapp.BuildConfig
 com/example/projectapp/databinding/ActivityCtTripInfoBinding.java
  com.example.projectapp.databinding.ActivityCtTripInfoBinding
-com/example/projectapp/databinding/ActivityHelpPageBinding.java
- com.example.projectapp.databinding.ActivityHelpPageBinding
 com/example/projectapp/databinding/ActivityCtSearchResultsBinding.java
  com.example.projectapp.databinding.ActivityCtSearchResultsBinding
 com/example/projectapp/MainActivity.java

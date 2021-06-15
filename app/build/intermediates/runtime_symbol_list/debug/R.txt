@@ -2087,6 +2087,7 @@ int id mtrl_view_tag_bottom_padding 0x7f08014b
 int id multiply 0x7f08014c
 int id navigation_header_container 0x7f08014d
 int id never 0x7f08014e
+int id noResults 0x7f080237
 int id noScroll 0x7f08014f
 int id none 0x7f080150
 int id normal 0x7f080151
