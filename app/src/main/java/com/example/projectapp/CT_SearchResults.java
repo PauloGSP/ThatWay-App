@@ -31,6 +31,7 @@ import java.util.List;
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class CT_SearchResults extends AppCompatActivity {
 
+    public static LocalTime ultimaHoraChegada;
     public static Route currentRoute = null;
     public static int numberOfChilds;
     public static Trip currentTrip;
@@ -140,6 +141,7 @@ public class CT_SearchResults extends AppCompatActivity {
                 LocalTime arrTime = t.getArrival_time();
 
                 if (!(depTime.isAfter(horaSaida) && arrTime.isBefore(horaChegada))) valid = false;
+                if (!depTime.isAfter(ultimaHoraChegada)) valid = false;
 
                 if (valid) trips.add(t);
             }
@@ -169,6 +171,8 @@ public class CT_SearchResults extends AppCompatActivity {
 
         trips = new ArrayList<Trip>();
         maxPages = selected_trips.size() - 1;
+
+        ultimaHoraChegada = LocalTime.parse("00:00");
 
         //load da primeira pagina
         loadResults(currentPage);

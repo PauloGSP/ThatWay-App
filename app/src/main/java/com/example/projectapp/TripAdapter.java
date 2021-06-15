@@ -13,11 +13,13 @@ import android.widget.TextView;
 import androidx.annotation.RequiresApi;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import java.text.DecimalFormat;
+import java.time.LocalTime;
 import java.util.ArrayList;
 
 public class TripAdapter extends ArrayAdapter<Trip> {
 
     public Context context;
+    public LocalTime ultimaHoraTemp;
 
     public TripAdapter(Context context, ArrayList<Trip> trips){
         super(context, R.layout.row_trip, trips);
@@ -50,19 +52,23 @@ public class TripAdapter extends ArrayAdapter<Trip> {
         MainContainer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+               ultimaHoraTemp = CT_SearchResults.ultimaHoraChegada; //variavel temporária
                 if (CT_SearchResults.currentContainer != null && MainContainer != CT_SearchResults.currentContainer) {
                     CT_SearchResults.currentContainer.setBackgroundColor(Color.parseColor("#E4E4E4"));
                     CT_SearchResults.currentContainer = MainContainer;
                     CT_SearchResults.currentTrip = trip;
+                    CT_SearchResults.ultimaHoraChegada = trip.getArrival_time();
                     MainContainer.setBackgroundColor(Color.parseColor("#ff512e"));
                 } else if (MainContainer == CT_SearchResults.currentContainer) {
-                    System.out.println("entrou");
+                    CT_SearchResults.ultimaHoraChegada = ultimaHoraTemp;
                     CT_SearchResults.currentContainer = null;
                     CT_SearchResults.currentTrip = null;
                     MainContainer.setBackgroundColor(Color.parseColor("#E4E4E4"));
                 } else {
+                    ultimaHoraTemp = CT_SearchResults.ultimaHoraChegada;
                     CT_SearchResults.currentContainer = MainContainer;
                     CT_SearchResults.currentTrip = trip;
+                    CT_SearchResults.ultimaHoraChegada = trip.getArrival_time();
                     MainContainer.setBackgroundColor(Color.parseColor("#ff512e"));
                 }
             }
