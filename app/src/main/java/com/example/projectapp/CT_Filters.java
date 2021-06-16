@@ -11,6 +11,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TimePicker;
 import java.util.Calendar;
@@ -121,6 +122,17 @@ public class CT_Filters extends AppCompatActivity {
         metroCheckBox.setChecked(CT_SearchResults.metro);
 
         Switch orderBySwitch = (Switch) findViewById(R.id.orderBySwitch);
+        if (CT_SearchResults.order.equals("PRICE")) orderBySwitch.setChecked(true);
+        else orderBySwitch.setChecked(false);
+        orderBySwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    CT_SearchResults.order = "PRICE";
+                } else {
+                    CT_SearchResults.order = "DEPARTURE";
+                }
+            }
+        });
 
         Button filtersDoneBtn = (Button) findViewById(R.id.filtersDoneBtn);
 
@@ -143,10 +155,11 @@ public class CT_Filters extends AppCompatActivity {
                 //ver qual é o estado do switch para saber se a ordenação é por travelling time ou por price
                 String ORDER_BY;
                 if (orderBySwitch.isChecked()) {
-                    ORDER_BY = "TRAVELLING_TIME";
-                } else {
                     ORDER_BY = "PRICE";
+                } else {
+                    ORDER_BY = "DEPARTURE";
                 }
+                CT_SearchResults.order = ORDER_BY;
 
                 //System.out.println(depDate);
                 System.out.println(depTime);

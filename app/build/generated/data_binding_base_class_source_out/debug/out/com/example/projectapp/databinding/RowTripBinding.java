@@ -34,6 +34,9 @@ public final class RowTripBinding implements ViewBinding {
   public final Button moreInfoBtn;
 
   @NonNull
+  public final TextView noselectedtrip;
+
+  @NonNull
   public final TextView scheduleTimeText;
 
   @NonNull
@@ -50,14 +53,15 @@ public final class RowTripBinding implements ViewBinding {
 
   private RowTripBinding(@NonNull ConstraintLayout rootView, @NonNull TextView directions,
       @NonNull ImageButton iconMoney, @NonNull ImageButton iconTime, @NonNull Button moreInfoBtn,
-      @NonNull TextView scheduleTimeText, @NonNull TextView tickerPriceText,
-      @NonNull ImageView transportTypeIcon, @NonNull TextView transportTypeText,
-      @NonNull ConstraintLayout tripContainer) {
+      @NonNull TextView noselectedtrip, @NonNull TextView scheduleTimeText,
+      @NonNull TextView tickerPriceText, @NonNull ImageView transportTypeIcon,
+      @NonNull TextView transportTypeText, @NonNull ConstraintLayout tripContainer) {
     this.rootView = rootView;
     this.directions = directions;
     this.iconMoney = iconMoney;
     this.iconTime = iconTime;
     this.moreInfoBtn = moreInfoBtn;
+    this.noselectedtrip = noselectedtrip;
     this.scheduleTimeText = scheduleTimeText;
     this.tickerPriceText = tickerPriceText;
     this.transportTypeIcon = transportTypeIcon;
@@ -116,6 +120,12 @@ public final class RowTripBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.noselectedtrip;
+      TextView noselectedtrip = rootView.findViewById(id);
+      if (noselectedtrip == null) {
+        break missingId;
+      }
+
       id = R.id.scheduleTimeText;
       TextView scheduleTimeText = rootView.findViewById(id);
       if (scheduleTimeText == null) {
@@ -147,8 +157,8 @@ public final class RowTripBinding implements ViewBinding {
       }
 
       return new RowTripBinding((ConstraintLayout) rootView, directions, iconMoney, iconTime,
-          moreInfoBtn, scheduleTimeText, tickerPriceText, transportTypeIcon, transportTypeText,
-          tripContainer);
+          moreInfoBtn, noselectedtrip, scheduleTimeText, tickerPriceText, transportTypeIcon,
+          transportTypeText, tripContainer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

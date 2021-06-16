@@ -43,6 +43,9 @@ public final class ActivityCtSearchResultsBinding implements ViewBinding {
   public final ListView listview;
 
   @NonNull
+  public final TextView noResults;
+
+  @NonNull
   public final ImageButton returnBtn4;
 
   @NonNull
@@ -51,8 +54,8 @@ public final class ActivityCtSearchResultsBinding implements ViewBinding {
   private ActivityCtSearchResultsBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView CTSearchResultsTitle, @NonNull TextView arrowLbl, @NonNull Button btnNext,
       @NonNull ImageButton homeBtnShowTransports4, @NonNull TextView lblDestiny,
-      @NonNull TextView lblOrigin, @NonNull ListView listview, @NonNull ImageButton returnBtn4,
-      @NonNull TextView textView13) {
+      @NonNull TextView lblOrigin, @NonNull ListView listview, @NonNull TextView noResults,
+      @NonNull ImageButton returnBtn4, @NonNull TextView textView13) {
     this.rootView = rootView;
     this.CTSearchResultsTitle = CTSearchResultsTitle;
     this.arrowLbl = arrowLbl;
@@ -61,6 +64,7 @@ public final class ActivityCtSearchResultsBinding implements ViewBinding {
     this.lblDestiny = lblDestiny;
     this.lblOrigin = lblOrigin;
     this.listview = listview;
+    this.noResults = noResults;
     this.returnBtn4 = returnBtn4;
     this.textView13 = textView13;
   }
@@ -134,6 +138,12 @@ public final class ActivityCtSearchResultsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.noResults;
+      TextView noResults = rootView.findViewById(id);
+      if (noResults == null) {
+        break missingId;
+      }
+
       id = R.id.returnBtn4;
       ImageButton returnBtn4 = rootView.findViewById(id);
       if (returnBtn4 == null) {
@@ -147,8 +157,8 @@ public final class ActivityCtSearchResultsBinding implements ViewBinding {
       }
 
       return new ActivityCtSearchResultsBinding((ConstraintLayout) rootView, CTSearchResultsTitle,
-          arrowLbl, btnNext, homeBtnShowTransports4, lblDestiny, lblOrigin, listview, returnBtn4,
-          textView13);
+          arrowLbl, btnNext, homeBtnShowTransports4, lblDestiny, lblOrigin, listview, noResults,
+          returnBtn4, textView13);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

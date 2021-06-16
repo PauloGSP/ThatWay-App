@@ -2022,6 +2022,7 @@ id linear
 id listMode
 id list_item
 id listview
+id listviewtrips
 id locationAutoComplete
 id locationBtn
 id locationBtnShowTransports
@@ -2087,9 +2088,11 @@ id mtrl_view_tag_bottom_padding
 id multiply
 id navigation_header_container
 id never
+id noResults
 id noScroll
 id none
 id normal
+id noselectedtrip
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -2139,6 +2142,7 @@ id rightToLeft
 id right_icon
 id right_side
 id rounded
+id routeName
 id row_index_key
 id satellite
 id save_non_transition_alpha
@@ -2253,6 +2257,7 @@ id textView5
 id textView6
 id textView7
 id textView8
+id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2274,6 +2279,8 @@ id title_template
 id toggle
 id top
 id topPanel
+id totalPrice
+id totalTravellingTime
 id touch_outside
 id trainCheckBox
 id transitionToEnd

@@ -143,11 +143,23 @@ public class MainActivity extends AppCompatActivity {
         allLocations = new ArrayList<String>();
         cityTransports= new HashMap<String, ArrayList<String>>();
 
+        CT_SearchResults.order = "DEPARTURE";
 
         loadAllTrips();
         loadAllLocations();
         loadcityTransports();
         EditText locationText = findViewById(R.id.locationTextView);
+
+        try {
+            Route.loadRoutes();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("ROTAS");
+        for (Route r : Route.savedRoutes) System.out.println(r);
 
         //ir para a página de mapa
         ImageButton locationBtn = findViewById(R.id.locationBtn);

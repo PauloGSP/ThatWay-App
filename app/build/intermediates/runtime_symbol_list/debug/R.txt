@@ -2021,6 +2021,7 @@ int id linear 0x7f08010a
 int id listMode 0x7f08010b
 int id list_item 0x7f08010c
 int id listview 0x7f08010d
+int id listviewtrips 0x7f080232
 int id locationAutoComplete 0x7f08010e
 int id locationBtn 0x7f08010f
 int id locationBtnShowTransports 0x7f080110
@@ -2086,9 +2087,11 @@ int id mtrl_view_tag_bottom_padding 0x7f08014b
 int id multiply 0x7f08014c
 int id navigation_header_container 0x7f08014d
 int id never 0x7f08014e
+int id noResults 0x7f080237
 int id noScroll 0x7f08014f
 int id none 0x7f080150
 int id normal 0x7f080151
+int id noselectedtrip 0x7f080238
 int id notification_background 0x7f080152
 int id notification_main_column 0x7f080153
 int id notification_main_column_container 0x7f080154
@@ -2138,6 +2141,7 @@ int id rightToLeft 0x7f08017f
 int id right_icon 0x7f080180
 int id right_side 0x7f080181
 int id rounded 0x7f080182
+int id routeName 0x7f080233
 int id row_index_key 0x7f080183
 int id satellite 0x7f080184
 int id save_non_transition_alpha 0x7f080185
@@ -2252,6 +2256,7 @@ int id textView5 0x7f0801f1
 int id textView6 0x7f0801f2
 int id textView7 0x7f0801f3
 int id textView8 0x7f0801f4
+int id textView9 0x7f080234
 int id text_input_end_icon 0x7f0801f5
 int id text_input_error_icon 0x7f0801f6
 int id text_input_start_icon 0x7f0801f7
@@ -2273,6 +2278,8 @@ int id title_template 0x7f080206
 int id toggle 0x7f080207
 int id top 0x7f080208
 int id topPanel 0x7f080209
+int id totalPrice 0x7f080235
+int id totalTravellingTime 0x7f080236
 int id touch_outside 0x7f08020a
 int id trainCheckBox 0x7f08020b
 int id transitionToEnd 0x7f08020c

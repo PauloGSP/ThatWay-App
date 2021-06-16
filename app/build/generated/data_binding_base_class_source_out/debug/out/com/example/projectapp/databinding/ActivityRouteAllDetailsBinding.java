@@ -5,7 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -30,21 +32,43 @@ public final class ActivityRouteAllDetailsBinding implements ViewBinding {
   public final ImageButton homeBtnShowTransports8;
 
   @NonNull
+  public final ListView listviewtrips;
+
+  @NonNull
   public final ImageButton returnBtn8;
+
+  @NonNull
+  public final EditText routeName;
 
   @NonNull
   public final TextView textView3;
 
+  @NonNull
+  public final TextView textView9;
+
+  @NonNull
+  public final TextView totalPrice;
+
+  @NonNull
+  public final TextView totalTravellingTime;
+
   private ActivityRouteAllDetailsBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView RouteDetailsTitle, @NonNull Button deleteRouteBtn,
-      @NonNull ImageButton homeBtnShowTransports8, @NonNull ImageButton returnBtn8,
-      @NonNull TextView textView3) {
+      @NonNull ImageButton homeBtnShowTransports8, @NonNull ListView listviewtrips,
+      @NonNull ImageButton returnBtn8, @NonNull EditText routeName, @NonNull TextView textView3,
+      @NonNull TextView textView9, @NonNull TextView totalPrice,
+      @NonNull TextView totalTravellingTime) {
     this.rootView = rootView;
     this.RouteDetailsTitle = RouteDetailsTitle;
     this.deleteRouteBtn = deleteRouteBtn;
     this.homeBtnShowTransports8 = homeBtnShowTransports8;
+    this.listviewtrips = listviewtrips;
     this.returnBtn8 = returnBtn8;
+    this.routeName = routeName;
     this.textView3 = textView3;
+    this.textView9 = textView9;
+    this.totalPrice = totalPrice;
+    this.totalTravellingTime = totalTravellingTime;
   }
 
   @Override
@@ -92,9 +116,21 @@ public final class ActivityRouteAllDetailsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.listviewtrips;
+      ListView listviewtrips = rootView.findViewById(id);
+      if (listviewtrips == null) {
+        break missingId;
+      }
+
       id = R.id.returnBtn8;
       ImageButton returnBtn8 = rootView.findViewById(id);
       if (returnBtn8 == null) {
+        break missingId;
+      }
+
+      id = R.id.routeName;
+      EditText routeName = rootView.findViewById(id);
+      if (routeName == null) {
         break missingId;
       }
 
@@ -104,8 +140,27 @@ public final class ActivityRouteAllDetailsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView9;
+      TextView textView9 = rootView.findViewById(id);
+      if (textView9 == null) {
+        break missingId;
+      }
+
+      id = R.id.totalPrice;
+      TextView totalPrice = rootView.findViewById(id);
+      if (totalPrice == null) {
+        break missingId;
+      }
+
+      id = R.id.totalTravellingTime;
+      TextView totalTravellingTime = rootView.findViewById(id);
+      if (totalTravellingTime == null) {
+        break missingId;
+      }
+
       return new ActivityRouteAllDetailsBinding((ConstraintLayout) rootView, RouteDetailsTitle,
-          deleteRouteBtn, homeBtnShowTransports8, returnBtn8, textView3);
+          deleteRouteBtn, homeBtnShowTransports8, listviewtrips, returnBtn8, routeName, textView3,
+          textView9, totalPrice, totalTravellingTime);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
