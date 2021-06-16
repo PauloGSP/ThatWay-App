@@ -150,6 +150,17 @@ public class MainActivity extends AppCompatActivity {
         loadcityTransports();
         EditText locationText = findViewById(R.id.locationTextView);
 
+        try {
+            Route.loadRoutes();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("ROTAS");
+        for (Route r : Route.savedRoutes) System.out.println(r);
+
         //ir para a página de mapa
         ImageButton locationBtn = findViewById(R.id.locationBtn);
         locationBtn.setOnClickListener(v -> {

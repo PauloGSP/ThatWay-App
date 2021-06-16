@@ -2092,6 +2092,7 @@ id noResults
 id noScroll
 id none
 id normal
+id noselectedtrip
 id notification_background
 id notification_main_column
 id notification_main_column_container

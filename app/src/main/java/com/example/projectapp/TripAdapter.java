@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.RequiresApi;
 import androidx.constraintlayout.widget.ConstraintLayout;
+
+import java.lang.reflect.Array;
 import java.text.DecimalFormat;
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -48,59 +50,88 @@ public class TripAdapter extends ArrayAdapter<Trip> {
         Button moreInfoBtn = (Button) convertView.findViewById(R.id.moreInfoBtn);
         ImageButton Timeicon = (ImageButton) convertView.findViewById(R.id.iconTime);
         ImageButton moneyicon = (ImageButton) convertView.findViewById(R.id.iconMoney);
+        TextView noselectedtrip = (TextView) convertView.findViewById(R.id.noselectedtrip);
 
-        MainContainer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               ultimaHoraTemp = CT_SearchResults.ultimaHoraChegada; //variavel temporária
-                if (CT_SearchResults.currentContainer != null && MainContainer != CT_SearchResults.currentContainer) {
-                    CT_SearchResults.currentContainer.setBackgroundColor(Color.parseColor("#E4E4E4"));
-                    CT_SearchResults.currentContainer = MainContainer;
-                    CT_SearchResults.currentTrip = trip;
-                    CT_SearchResults.ultimaHoraChegada = trip.getArrival_time();
-                    MainContainer.setBackgroundColor(Color.parseColor("#ff512e"));
-                } else if (MainContainer == CT_SearchResults.currentContainer) {
-                    CT_SearchResults.ultimaHoraChegada = ultimaHoraTemp;
-                    CT_SearchResults.currentContainer = null;
-                    CT_SearchResults.currentTrip = null;
-                    MainContainer.setBackgroundColor(Color.parseColor("#E4E4E4"));
-                } else {
-                    ultimaHoraTemp = CT_SearchResults.ultimaHoraChegada;
-                    CT_SearchResults.currentContainer = MainContainer;
-                    CT_SearchResults.currentTrip = trip;
-                    CT_SearchResults.ultimaHoraChegada = trip.getArrival_time();
-                    MainContainer.setBackgroundColor(Color.parseColor("#ff512e"));
+        //se a trip existe (not null)
+        if (trip != null) {
+
+            noselectedtrip.setVisibility(View.GONE);
+            Image.setVisibility(View.VISIBLE);
+            TransportType.setVisibility(View.VISIBLE);
+            scheduleTimeText.setVisibility(View.VISIBLE);
+            tickerPriceText.setVisibility(View.VISIBLE);
+            moreInfoBtn.setVisibility(View.VISIBLE);
+            Timeicon.setVisibility(View.VISIBLE);
+            moneyicon.setVisibility(View.VISIBLE);
+
+            MainContainer.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    ultimaHoraTemp = CT_SearchResults.ultimaHoraChegada; //variavel temporária
+                    if (CT_SearchResults.currentContainer != null && MainContainer != CT_SearchResults.currentContainer) {
+                        CT_SearchResults.currentContainer.setBackgroundColor(Color.parseColor("#E4E4E4"));
+                        CT_SearchResults.currentContainer = MainContainer;
+                        CT_SearchResults.currentTrip = trip;
+                        CT_SearchResults.ultimaHoraChegada = trip.getArrival_time();
+                        MainContainer.setBackgroundColor(Color.parseColor("#ff512e"));
+                    } else if (MainContainer == CT_SearchResults.currentContainer) {
+                        CT_SearchResults.ultimaHoraChegada = ultimaHoraTemp;
+                        CT_SearchResults.currentContainer = null;
+                        CT_SearchResults.currentTrip = null;
+                        MainContainer.setBackgroundColor(Color.parseColor("#E4E4E4"));
+                    } else {
+                        ultimaHoraTemp = CT_SearchResults.ultimaHoraChegada;
+                        CT_SearchResults.currentContainer = MainContainer;
+                        CT_SearchResults.currentTrip = trip;
+                        CT_SearchResults.ultimaHoraChegada = trip.getArrival_time();
+                        MainContainer.setBackgroundColor(Color.parseColor("#ff512e"));
+                    }
                 }
-            }
-        });
+            });
 
-        // set do tipo de transporte
-        TransportType.setText(trip.getTransport_type());
+            // set do tipo de transporte
+            TransportType.setText(trip.getTransport_type());
 
-        //set do preço
-        DecimalFormat df2 = new DecimalFormat("#.##");
-        tickerPriceText.setText(df2.format(trip.getPrice()) + "€");
-        //moreinfo.setClickable(true);
+            //set do preço
+            DecimalFormat df2 = new DecimalFormat("#.##");
+            tickerPriceText.setText(df2.format(trip.getPrice()) + "€");
+            //moreinfo.setClickable(true);
 
-        //set do tempo e demora
-        scheduleTimeText.setText(trip.getTripTime());
+            //set do tempo e demora
+            scheduleTimeText.setText(trip.getTripTime());
 
-        //set das directions
-        String direction = trip.getOrigin_address() + "  ➝  " + trip.getDestiny_address();
-        directions.setText(direction);
+            //set das directions
+            String direction = trip.getOrigin_address() + "  ➝  " + trip.getDestiny_address();
+            directions.setText(direction);
 
-        moreInfoBtn.setOnClickListener(new View.OnClickListener() {
+            moreInfoBtn.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                CT_SearchResults.currentTrip = trip;
-                Intent intent = new Intent(parent.getContext(), CT_TripInfo.class);
-                parent.getContext().startActivity(intent);
-            }
-        });
+                @Override
+                public void onClick(View v) {
+                    CT_SearchResults.currentTrip = trip;
+                    Intent intent = new Intent(parent.getContext(), CT_TripInfo.class);
+                    parent.getContext().startActivity(intent);
+                }
+            });
 
-        //set da imagem do tipo de transporte
+            //set da imagem do tipo de transporte
 
+        } else {
+            //null trip
+
+            ArrayList<String> locations = CT_SearchResults.selected_trips;
+
+            directions.setText(locations.get(position) + "  ➝  " + locations.get(position+1));
+            noselectedtrip.setVisibility(View.VISIBLE);
+            Image.setVisibility(View.GONE);
+            TransportType.setVisibility(View.GONE);
+            scheduleTimeText.setVisibility(View.GONE);
+            tickerPriceText.setVisibility(View.GONE);
+            moreInfoBtn.setVisibility(View.GONE);
+            Timeicon.setVisibility(View.GONE);
+            moneyicon.setVisibility(View.GONE);
+
+        }
         // Return the completed view to render on screen
         return convertView;
     }

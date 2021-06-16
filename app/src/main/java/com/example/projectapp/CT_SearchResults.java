@@ -40,7 +40,7 @@ public class CT_SearchResults extends AppCompatActivity {
     public static int numberOfChilds;
     public static Trip currentTrip;
     public static ConstraintLayout currentContainer;
-    public static ArrayList<Trip> trips;
+    public static ArrayList<Trip> choosen_trips;
     public static ArrayList<String> selected_trips;  //guarda todas as trips (origem + breakpoint(s) + destino)
     public static LocalTime horaSaida;
     public static LocalTime horaChegada;
@@ -70,12 +70,14 @@ public class CT_SearchResults extends AppCompatActivity {
                     if (!name.trim().equals("")) {
                         //CRIAR CLASSE ROUTE COM TODAS AS TRIPS E COM O DEVIDO NOME
                         //VER SE JÁ EXISTEM ROUTES COM ESSE NOME!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                        Route route = new Route(name,trips);
+                        Route route = new Route(name,choosen_trips);
                         boolean validName = true;
                         for (Route r : Route.savedRoutes) {
                             if (r.getTitle() == name) validName = false;
                         }
                         if (validName) {
+                            System.out.println("=TRIPS=");
+                            for (Trip t : choosen_trips) System.out.println(t);
                             Route.savedRoutes.add(route);
                             Route.currentRoute = route;
                             Toast.makeText(getApplicationContext(),"Route saved", Toast.LENGTH_SHORT).show();
@@ -83,6 +85,7 @@ public class CT_SearchResults extends AppCompatActivity {
                             Intent goToRoute = new Intent(getApplicationContext(), RouteAllDetails.class);
                             startActivity(goToRoute);
                         } else {
+                            System.out.println("repeated route title");
                             Toast.makeText(getApplicationContext(),"There's already a route with that title.", Toast.LENGTH_SHORT).show();
                             openDialog();
                         }
@@ -199,7 +202,7 @@ public class CT_SearchResults extends AppCompatActivity {
             lblDestiny.setText(destiny);
 
             //só há uma página e não há resultados (deixa de aparecer o save route, só se pode voltar atrás)
-            if (numberOfChilds == 0 && currentPage == 1 && maxPages == currentPage) {
+            if (trips.size() == 0 && currentPage == 1 && maxPages == currentPage) {
                 nextBtn.setVisibility(View.GONE);
                 noresults.setVisibility(View.VISIBLE);
             } else if (trips.size() == 0 ) {
@@ -218,7 +221,7 @@ public class CT_SearchResults extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_ct_search_results);
 
-        trips = new ArrayList<Trip>();
+        choosen_trips = new ArrayList<Trip>();
         maxPages = selected_trips.size() - 1;
 
         currentTrip = null;
@@ -234,7 +237,7 @@ public class CT_SearchResults extends AppCompatActivity {
 
                 //VER SE PODE SER VÁLIDO UMA PESSOA N ESCOLHER NENHUMA TRIP (EX: N LHE AGRADA NENHUMA)
 
-                trips.add(currentTrip); //tanto pode adicionar uma trip selecionada como adiciona 'null'
+                choosen_trips.add(currentTrip); //tanto pode adicionar uma trip selecionada como adiciona 'null'
                 if (numberOfChilds == 0) {
                     loadResults(++currentPage);
                 } else if (CT_SearchResults.currentContainer == null) {
@@ -242,7 +245,6 @@ public class CT_SearchResults extends AppCompatActivity {
                 } else {
                     loadResults(++currentPage);
                 }
-                System.out.println(currentTrip);
             }
         });
 

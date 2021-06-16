@@ -1,18 +1,27 @@
 package com.example.projectapp;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+
 public class RouteAllDetails extends AppCompatActivity {
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,22 +32,22 @@ public class RouteAllDetails extends AppCompatActivity {
 
         Route route = Route.currentRoute;
 
+        Route.storeRoutes();
+
+        TripAdapter adapter = new TripAdapter(this, CT_SearchResults.choosen_trips);
+        ListView listView = (ListView) findViewById(R.id.listviewtrips);
+        listView.setAdapter(adapter);
+
         EditText routeName = findViewById(R.id.routeName);
         routeName.setText(route.getTitle());
         routeName.addTextChangedListener(new TextWatcher() {
 
             @Override
-            public void afterTextChanged(Editable s) {}
-
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            public void afterTextChanged(Editable s) {
                 String currentTitle = routeName.getText().toString();
                 boolean validName = true;
                 for (Route r : Route.savedRoutes) {
-                    if (r.getTitle() == s) validName = false;
+                    if (r.getTitle() == s.toString()) validName = false;
                 }
                 if (validName) {
                     if (s.equals("")) {
@@ -52,6 +61,15 @@ public class RouteAllDetails extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"There's already a route with that title", Toast.LENGTH_SHORT).show();
                     routeName.setText(currentTitle);
                 }
+
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
             }
         });
 
