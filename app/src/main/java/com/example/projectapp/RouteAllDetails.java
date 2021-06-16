@@ -1,10 +1,9 @@
 package com.example.projectapp;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Build;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Window;
@@ -13,16 +12,15 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.google.gson.Gson;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.util.ArrayList;
 
 public class RouteAllDetails extends AppCompatActivity {
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
-    @Override
+    public static final String TAG = "route";
+    public static String json;
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -32,7 +30,13 @@ public class RouteAllDetails extends AppCompatActivity {
 
         Route route = Route.currentRoute;
 
-        Route.storeRoutes();
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        SharedPreferences.Editor editor = sharedPrefs.edit();
+        Gson gson = new Gson();
+        String json = gson.toJson(Route.savedRoutes);
+        editor.putString(TAG, json);
+        editor.commit();
+
 
         TripAdapter adapter = new TripAdapter(this, CT_SearchResults.choosen_trips);
         ListView listView = (ListView) findViewById(R.id.listviewtrips);
