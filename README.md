@@ -3,6 +3,6 @@
 App with easy-to-use, simple and acessible information about public transports, with the possibility to create routes and itineraries. 
 
 ## Authors:
-Ricardo Rodriguez: @ricardombrodriguez
-Diogo Cruz: @DXOGO
-Paulo Pereira: @paulogsp
+Ricardo Rodriguez: @ricardombrodriguez  
+Diogo Cruz: @DXOGO  
+Paulo Pereira: @paulogsp  
