@@ -32,6 +32,7 @@ public class ShowTransports extends AppCompatActivity {
 
         typeTransport = type;
 
+
         switch (type.toUpperCase()){
             case "BUS":
                 CT_SearchResults.bus = true;
