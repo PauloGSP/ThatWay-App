@@ -1973,7 +1973,6 @@ id guideline
 id guideline2
 id guideline3
 id header_title
-id helpBtn
 id helpTextView
 id hideable
 id home
@@ -2025,7 +2024,6 @@ id listview
 id listviewroutes
 id listviewtrips
 id locationAutoComplete
-id locationBtnShowTransports
 id locationShowTransports
 id locationShowTransports2
 id locationTextView
@@ -2173,7 +2171,6 @@ id selectLocationTextView
 id select_dialog_listview
 id selected
 id selection_type
-id settingsBtn
 id shortcut
 id showCustom
 id showHome

@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import com.google.gson.Gson;
@@ -25,6 +27,14 @@ public class SavedRoutes extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_saved_routes);
 
+        ImageButton returnBtn = findViewById(R.id.returnBtn7);
+        returnBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         Gson gson = new Gson();
         String json = sharedPrefs.getString(RouteAllDetails.TAG, "");
@@ -39,6 +49,7 @@ public class SavedRoutes extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.listviewroutes);
         listView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
+
 
     }
 }

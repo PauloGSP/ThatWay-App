@@ -15,6 +15,7 @@ import android.view.WindowManager;
 import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -54,7 +55,6 @@ public class ShowTransports extends AppCompatActivity {
                 Intent goToCreateTripMetro = new Intent(getApplicationContext(), CT_Locations.class);
                 startActivity(goToCreateTripMetro); break;
             default:
-
                 Intent goToPrivateTransportTaxi = new Intent(getApplicationContext(),taxiprivate.class ); //checkar
                 startActivity(goToPrivateTransportTaxi); break;
         }
@@ -71,6 +71,14 @@ public class ShowTransports extends AppCompatActivity {
         location.setText(MainActivity.currentLocation);
         String local= MainActivity.currentLocation.toLowerCase();
         LinearLayout layout =(LinearLayout) findViewById(R.id.layout);
+
+        ImageButton returnBtn = findViewById(R.id.returnBtnShowTransports);
+        returnBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
         if (local.isEmpty()){
             ArrayList<String> fake= new ArrayList<String>();

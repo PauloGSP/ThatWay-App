@@ -12,6 +12,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.ImageButton;
 import android.widget.Switch;
 import android.widget.TimePicker;
 import java.util.Calendar;
@@ -28,6 +29,15 @@ public class CT_Filters extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_ct_filters);
+
+        ImageButton returnBtn = findViewById(R.id.returnBtn3);
+        returnBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
 
         Button departureTime = (Button) findViewById(R.id.departureTime);
         departureTime.setText(CT_SearchResults.horaSaida_str);

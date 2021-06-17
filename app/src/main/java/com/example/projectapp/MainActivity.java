@@ -2,34 +2,25 @@ package com.example.projectapp;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.collection.ArraySet;
-
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
-
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.Type;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static LastPage lastPage;
     public static String currentLocation;
     public static ArrayList<Trip> allTrips;
     public static ArrayList<String> allLocations;
@@ -161,8 +152,10 @@ public class MainActivity extends AppCompatActivity {
                     cityTransports.put(destiny.toLowerCase(), transportes);
                 }
             }
-        }
 
+
+
+        }
         for (Ptransport p : allPrivateTransports){
 
             String city= p.getCity();
@@ -196,6 +189,8 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
+        lastPage = new LastPage(getApplicationContext());
+
         allTrips = new ArrayList<Trip>();
         allLocations = new ArrayList<String>();
         cityTransports= new HashMap<String, ArrayList<String>>();
@@ -215,6 +210,7 @@ public class MainActivity extends AppCompatActivity {
         createTripBtn.setOnClickListener(v -> {
             currentLocation = locationText.getText().toString();
             Intent goToCreateTrip = new Intent(getApplicationContext(), CT_Locations.class);
+            goToCreateTrip.putExtra("activity","MainActivity.class");
             startActivity(goToCreateTrip);
         });
 

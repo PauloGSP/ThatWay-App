@@ -2,6 +2,7 @@ package com.example.projectapp;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,7 +14,6 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -98,6 +98,14 @@ public class CT_Locations extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_ct_locations_filters);
+
+        ImageButton returnBtn = findViewById(R.id.returnBtn2);
+        returnBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
         AutoCompleteTextView location2_1 = findViewById(R.id.origem);
         AutoCompleteTextView location2_2 = findViewById(R.id.destino);

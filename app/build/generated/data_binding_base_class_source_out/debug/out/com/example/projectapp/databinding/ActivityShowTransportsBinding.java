@@ -34,9 +34,6 @@ public final class ActivityShowTransportsBinding implements ViewBinding {
   public final LinearLayout layout;
 
   @NonNull
-  public final ImageButton locationBtnShowTransports;
-
-  @NonNull
   public final TextView locationShowTransports;
 
   @NonNull
@@ -48,14 +45,13 @@ public final class ActivityShowTransportsBinding implements ViewBinding {
   private ActivityShowTransportsBinding(@NonNull ConstraintLayout rootView,
       @NonNull Guideline guideline2, @NonNull Guideline guideline3,
       @NonNull ImageButton homeBtnShowTransports, @NonNull LinearLayout layout,
-      @NonNull ImageButton locationBtnShowTransports, @NonNull TextView locationShowTransports,
-      @NonNull ImageButton returnBtnShowTransports, @NonNull TextView titleShowTransports) {
+      @NonNull TextView locationShowTransports, @NonNull ImageButton returnBtnShowTransports,
+      @NonNull TextView titleShowTransports) {
     this.rootView = rootView;
     this.guideline2 = guideline2;
     this.guideline3 = guideline3;
     this.homeBtnShowTransports = homeBtnShowTransports;
     this.layout = layout;
-    this.locationBtnShowTransports = locationBtnShowTransports;
     this.locationShowTransports = locationShowTransports;
     this.returnBtnShowTransports = returnBtnShowTransports;
     this.titleShowTransports = titleShowTransports;
@@ -112,12 +108,6 @@ public final class ActivityShowTransportsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.locationBtnShowTransports;
-      ImageButton locationBtnShowTransports = rootView.findViewById(id);
-      if (locationBtnShowTransports == null) {
-        break missingId;
-      }
-
       id = R.id.locationShowTransports;
       TextView locationShowTransports = rootView.findViewById(id);
       if (locationShowTransports == null) {
@@ -137,8 +127,8 @@ public final class ActivityShowTransportsBinding implements ViewBinding {
       }
 
       return new ActivityShowTransportsBinding((ConstraintLayout) rootView, guideline2, guideline3,
-          homeBtnShowTransports, layout, locationBtnShowTransports, locationShowTransports,
-          returnBtnShowTransports, titleShowTransports);
+          homeBtnShowTransports, layout, locationShowTransports, returnBtnShowTransports,
+          titleShowTransports);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

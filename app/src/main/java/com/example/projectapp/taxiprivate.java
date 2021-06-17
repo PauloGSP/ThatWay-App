@@ -3,8 +3,10 @@ package com.example.projectapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class taxiprivate extends AppCompatActivity{
@@ -20,6 +22,14 @@ public class taxiprivate extends AppCompatActivity{
         TextView location = (TextView) findViewById(R.id.locationShowTransports2);
         location.setText(MainActivity.currentLocation);
         TextView title =(TextView) findViewById(R.id.title);
-       // ShowTransports.typeTransport;
+        title.setText(ShowTransports.typeTransport);
+
+        ImageButton returnBtn = findViewById(R.id.returnBtn6);
+        returnBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
 }

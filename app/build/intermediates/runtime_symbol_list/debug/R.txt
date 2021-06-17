@@ -1972,7 +1972,6 @@ int id guideline 0x7f0800da
 int id guideline2 0x7f0800db
 int id guideline3 0x7f0800dc
 int id header_title 0x7f0800dd
-int id helpBtn 0x7f0800de
 int id helpTextView 0x7f0800df
 int id hideable 0x7f0800e0
 int id home 0x7f0800e1
@@ -2024,7 +2023,6 @@ int id listview 0x7f08010e
 int id listviewroutes 0x7f08010f
 int id listviewtrips 0x7f080110
 int id locationAutoComplete 0x7f080111
-int id locationBtnShowTransports 0x7f080112
 int id locationShowTransports 0x7f080113
 int id locationShowTransports2 0x7f080114
 int id locationTextView 0x7f080115
@@ -2172,7 +2170,6 @@ int id selectLocationTextView 0x7f0801a2
 int id select_dialog_listview 0x7f0801a3
 int id selected 0x7f0801a4
 int id selection_type 0x7f0801a5
-int id settingsBtn 0x7f0801a6
 int id shortcut 0x7f0801a7
 int id showCustom 0x7f0801a8
 int id showHome 0x7f0801a9
