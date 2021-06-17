@@ -3,7 +3,6 @@ package com.example.projectapp;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.collection.ArraySet;
-
 import android.content.Intent;
 import android.graphics.YuvImage;
 import android.content.SharedPreferences;
@@ -15,8 +14,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -30,6 +27,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static Context lastPage = this;
     public static String currentLocation;
     public static ArrayList<Trip> allTrips;
     public static ArrayList<String> allLocations;
