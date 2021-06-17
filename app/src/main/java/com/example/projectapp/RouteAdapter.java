@@ -38,7 +38,6 @@ public class RouteAdapter extends ArrayAdapter<Route> {
             }
         });
 
-
         // Return the completed view to render on screen
         return convertView;
     }

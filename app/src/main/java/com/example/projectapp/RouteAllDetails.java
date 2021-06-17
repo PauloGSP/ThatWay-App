@@ -1,9 +1,11 @@
 package com.example.projectapp;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.text.Editable;
@@ -17,6 +19,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
+import java.util.ArrayList;
 
 
 public class RouteAllDetails extends AppCompatActivity {
@@ -24,7 +30,7 @@ public class RouteAllDetails extends AppCompatActivity {
     public static final String TAG = "route";
     public static String json;
 
-
+    @RequiresApi(api = Build.VERSION_CODES.O)
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -34,11 +40,22 @@ public class RouteAllDetails extends AppCompatActivity {
 
         Route route = Route.currentRoute;
 
+        //load
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        SharedPreferences.Editor editor = sharedPrefs.edit();
         Gson gson = new Gson();
-        String json = gson.toJson(Route.savedRoutes);
-        editor.putString(TAG, json);
+        String json = sharedPrefs.getString(RouteAllDetails.TAG, "");
+        Type type = new TypeToken<ArrayList<Route>>() {}.getType();
+        ArrayList<Route> arrayList = gson.fromJson(json, type);
+        Route.savedRoutes = arrayList;
+
+        Route.savedRoutes.add(route);
+
+        //save
+        SharedPreferences sharedP = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        SharedPreferences.Editor editor = sharedP.edit();
+        Gson gsonn = new Gson();
+        String jsonstr = gsonn.toJson(Route.savedRoutes);
+        editor.putString(TAG, jsonstr);
         editor.commit();
 
 

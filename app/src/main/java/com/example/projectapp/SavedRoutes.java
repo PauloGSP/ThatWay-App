@@ -30,6 +30,7 @@ public class SavedRoutes extends AppCompatActivity {
         String json = sharedPrefs.getString(RouteAllDetails.TAG, "");
         Type type = new TypeToken<ArrayList<Route>>() {}.getType();
         ArrayList<Route> arrayList = gson.fromJson(json, type);
+        Route.savedRoutes = arrayList;
 
         System.out.println("SAVEDROUTES!!!");
         for (Route r : arrayList) System.out.println(r.getTitle());
@@ -37,6 +38,7 @@ public class SavedRoutes extends AppCompatActivity {
         RouteAdapter adapter = new RouteAdapter(this, arrayList);
         ListView listView = (ListView) findViewById(R.id.listviewroutes);
         listView.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
 
     }
 }
