@@ -5,11 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.collection.ArraySet;
 
 import android.content.Intent;
-<<<<<<< HEAD
 import android.graphics.YuvImage;
-=======
 import android.content.SharedPreferences;
->>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -19,8 +16,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 
 import java.io.BufferedReader;
 import java.io.IOException;
