@@ -39,66 +39,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_dialog_dialer" />
 
-
-    <Button
-        android:id="@+id/trip1"
-        android:layout_width="323dp"
-        android:layout_height="79dp"
-
-        android:layout_marginTop="82dp"
-
-        android:layout_marginBottom="31dp"
-        android:text="Aveiro-Estarreja"
-        app:layout_constraintBottom_toTopOf="@+id/trip2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SavedRoutesTitle"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/trip4"
-        android:layout_width="323dp"
-        android:layout_height="79dp"
-
-        android:layout_marginTop="412dp"
-        android:layout_marginBottom="174dp"
-        android:text="Porto-Aveiro"
+    <ListView
+        android:id="@+id/listviewroutes"
+        android:layout_width="363dp"
+        android:layout_height="550dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SavedRoutesTitle" />
-
-    <Button
-        android:id="@+id/trip3"
-        android:layout_width="323dp"
-        android:layout_height="79dp"
-
-        android:layout_marginTop="303dp"
-        android:layout_marginBottom="32dp"
-        android:text="Estarreja-Porto"
-        app:layout_constraintBottom_toTopOf="@+id/trip4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SavedRoutesTitle"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/trip2"
-        android:layout_width="323dp"
-        android:layout_height="79dp"
-
-        android:layout_marginTop="192dp"
-        android:layout_marginBottom="32dp"
-        android:text="Aveiro-Porto"
-        app:layout_constraintBottom_toTopOf="@+id/trip3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SavedRoutesTitle"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

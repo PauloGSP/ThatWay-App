@@ -4,8 +4,8 @@ package com.example.projectapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,32 +27,19 @@ public final class ActivitySavedRoutesBinding implements ViewBinding {
   public final ImageButton homeBtnShowTransports7;
 
   @NonNull
+  public final ListView listviewroutes;
+
+  @NonNull
   public final ImageButton returnBtn7;
-
-  @NonNull
-  public final Button trip1;
-
-  @NonNull
-  public final Button trip2;
-
-  @NonNull
-  public final Button trip3;
-
-  @NonNull
-  public final Button trip4;
 
   private ActivitySavedRoutesBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView SavedRoutesTitle, @NonNull ImageButton homeBtnShowTransports7,
-      @NonNull ImageButton returnBtn7, @NonNull Button trip1, @NonNull Button trip2,
-      @NonNull Button trip3, @NonNull Button trip4) {
+      @NonNull ListView listviewroutes, @NonNull ImageButton returnBtn7) {
     this.rootView = rootView;
     this.SavedRoutesTitle = SavedRoutesTitle;
     this.homeBtnShowTransports7 = homeBtnShowTransports7;
+    this.listviewroutes = listviewroutes;
     this.returnBtn7 = returnBtn7;
-    this.trip1 = trip1;
-    this.trip2 = trip2;
-    this.trip3 = trip3;
-    this.trip4 = trip4;
   }
 
   @Override
@@ -94,38 +81,20 @@ public final class ActivitySavedRoutesBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.listviewroutes;
+      ListView listviewroutes = rootView.findViewById(id);
+      if (listviewroutes == null) {
+        break missingId;
+      }
+
       id = R.id.returnBtn7;
       ImageButton returnBtn7 = rootView.findViewById(id);
       if (returnBtn7 == null) {
         break missingId;
       }
 
-      id = R.id.trip1;
-      Button trip1 = rootView.findViewById(id);
-      if (trip1 == null) {
-        break missingId;
-      }
-
-      id = R.id.trip2;
-      Button trip2 = rootView.findViewById(id);
-      if (trip2 == null) {
-        break missingId;
-      }
-
-      id = R.id.trip3;
-      Button trip3 = rootView.findViewById(id);
-      if (trip3 == null) {
-        break missingId;
-      }
-
-      id = R.id.trip4;
-      Button trip4 = rootView.findViewById(id);
-      if (trip4 == null) {
-        break missingId;
-      }
-
       return new ActivitySavedRoutesBinding((ConstraintLayout) rootView, SavedRoutesTitle,
-          homeBtnShowTransports7, returnBtn7, trip1, trip2, trip3, trip4);
+          homeBtnShowTransports7, listviewroutes, returnBtn7);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

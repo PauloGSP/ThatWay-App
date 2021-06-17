@@ -157,15 +157,6 @@ public class MainActivity extends AppCompatActivity {
         loadcityTransports();
         EditText locationText = findViewById(R.id.locationTextView);
 
-
-        //ir para a página de mapa
-        ImageButton locationBtn = findViewById(R.id.locationBtn);
-        locationBtn.setOnClickListener(v -> {
-            currentLocation = locationText.getText().toString();
-            Intent goToMaps = new Intent(getApplicationContext(), MapSelectLocation.class);
-            startActivity(goToMaps);
-        });
-
         //ir para o create trips
         Button createTripBtn = findViewById(R.id.createTripBtn);
         createTripBtn.setOnClickListener(v -> {

@@ -1,13 +1,17 @@
 package com.example.projectapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -82,6 +86,17 @@ public class RouteAllDetails extends AppCompatActivity {
         totalTravellingTime.setText(route.getTotal_travelling_time() + " minutes");
         TextView totalPrice = findViewById(R.id.totalPrice);
         totalPrice.setText(route.getTotal_price().toString() + "€");
+
+        Button deleteRoute = findViewById(R.id.deleteRouteBtn);
+        deleteRoute.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Route.savedRoutes.remove(route);
+                Toast.makeText(getApplicationContext(),"Route deleted successfully", Toast.LENGTH_SHORT).show();
+                Intent gotosavedroutes = new Intent(getApplicationContext(), SavedRoutes.class);
+                startActivity(gotosavedroutes);
+            }
+        });
 
     }
 }

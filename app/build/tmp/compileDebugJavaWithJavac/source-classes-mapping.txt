@@ -2,9 +2,9 @@ com/example/projectapp/CityPrivateTransports.java
  com.example.projectapp.CityPrivateTransports
 com/example/projectapp/databinding/RowTripBinding.java
  com.example.projectapp.databinding.RowTripBinding
-com/example/projectapp/RouteAllDetails.java
- com.example.projectapp.RouteAllDetails
- com.example.projectapp.RouteAllDetails$1
+com/example/projectapp/RouteAdapter.java
+ com.example.projectapp.RouteAdapter
+ com.example.projectapp.RouteAdapter$1
 com/example/projectapp/databinding/ActivityShowTransportsBinding.java
  com.example.projectapp.databinding.ActivityShowTransportsBinding
 com/example/projectapp/databinding/ActivityMainBinding.java
@@ -29,14 +29,16 @@ com/example/projectapp/CT_SearchResults.java
  com.example.projectapp.CT_SearchResults
  com.example.projectapp.CT_SearchResults$1
  com.example.projectapp.CT_SearchResults$2
+com/example/projectapp/databinding/RouteRowBinding.java
+ com.example.projectapp.databinding.RouteRowBinding
 com/example/projectapp/TripAdapter.java
  com.example.projectapp.TripAdapter
  com.example.projectapp.TripAdapter$1
  com.example.projectapp.TripAdapter$2
 com/example/projectapp/Route.java
  com.example.projectapp.Route
-com/example/projectapp/MainActivity.java
- com.example.projectapp.MainActivity
+com/example/projectapp/databinding/DetailsBinding.java
+ com.example.projectapp.databinding.DetailsBinding
 com/example/projectapp/databinding/ActivityCityPrivateTransportsBinding.java
  com.example.projectapp.databinding.ActivityCityPrivateTransportsBinding
 com/example/projectapp/databinding/ActivityCtLocationsFiltersBinding.java
@@ -48,6 +50,8 @@ com/example/projectapp/CT_Locations.java
  com.example.projectapp.CT_Locations$3
  com.example.projectapp.CT_Locations$4
  com.example.projectapp.CT_Locations$5
+com/example/projectapp/databinding/RowLocationBinding.java
+ com.example.projectapp.databinding.RowLocationBinding
 com/example/projectapp/taxiprivate.java
  com.example.projectapp.taxiprivate
 com/example/projectapp/databinding/ActivitySavedRoutesBinding.java
@@ -76,10 +80,12 @@ com/example/projectapp/databinding/ActivityMapSelectLocation2Binding.java
  com.example.projectapp.databinding.ActivityMapSelectLocation2Binding
 com/example/projectapp/Trip.java
  com.example.projectapp.Trip
-com/example/projectapp/databinding/DetailsBinding.java
- com.example.projectapp.databinding.DetailsBinding
+com/example/projectapp/MainActivity.java
+ com.example.projectapp.MainActivity
+com/example/projectapp/RouteAllDetails.java
+ com.example.projectapp.RouteAllDetails
+ com.example.projectapp.RouteAllDetails$1
+ com.example.projectapp.RouteAllDetails$2
 com/example/projectapp/SavedRoutes.java
  com.example.projectapp.SavedRoutes
  com.example.projectapp.SavedRoutes$1
-com/example/projectapp/databinding/RowLocationBinding.java
- com.example.projectapp.databinding.RowLocationBinding

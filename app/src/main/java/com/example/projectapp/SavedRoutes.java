@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ListView;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -30,9 +31,12 @@ public class SavedRoutes extends AppCompatActivity {
         Type type = new TypeToken<ArrayList<Route>>() {}.getType();
         ArrayList<Route> arrayList = gson.fromJson(json, type);
 
-        for (Route r : arrayList) {
-            System.out.println(r);
-        }
+        System.out.println("SAVEDROUTES!!!");
+        for (Route r : arrayList) System.out.println(r.getTitle());
+
+        RouteAdapter adapter = new RouteAdapter(this, arrayList);
+        ListView listView = (ListView) findViewById(R.id.listviewroutes);
+        listView.setAdapter(adapter);
 
     }
 }
