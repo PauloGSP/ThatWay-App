@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -24,6 +24,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button createTripBtn;
 
   @NonNull
+  public final ImageView imageView;
+
+  @NonNull
   public final EditText locationTextView;
 
   @NonNull
@@ -32,18 +35,15 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final Button showTransportsBtn;
 
-  @NonNull
-  public final TextView textView;
-
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button createTripBtn,
-      @NonNull EditText locationTextView, @NonNull Button savedRoutesBtn,
-      @NonNull Button showTransportsBtn, @NonNull TextView textView) {
+      @NonNull ImageView imageView, @NonNull EditText locationTextView,
+      @NonNull Button savedRoutesBtn, @NonNull Button showTransportsBtn) {
     this.rootView = rootView;
     this.createTripBtn = createTripBtn;
+    this.imageView = imageView;
     this.locationTextView = locationTextView;
     this.savedRoutesBtn = savedRoutesBtn;
     this.showTransportsBtn = showTransportsBtn;
-    this.textView = textView;
   }
 
   @Override
@@ -79,6 +79,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView;
+      ImageView imageView = rootView.findViewById(id);
+      if (imageView == null) {
+        break missingId;
+      }
+
       id = R.id.locationTextView;
       EditText locationTextView = rootView.findViewById(id);
       if (locationTextView == null) {
@@ -97,14 +103,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView;
-      TextView textView = rootView.findViewById(id);
-      if (textView == null) {
-        break missingId;
-      }
-
-      return new ActivityMainBinding((ConstraintLayout) rootView, createTripBtn, locationTextView,
-          savedRoutesBtn, showTransportsBtn, textView);
+      return new ActivityMainBinding((ConstraintLayout) rootView, createTripBtn, imageView,
+          locationTextView, savedRoutesBtn, showTransportsBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

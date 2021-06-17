@@ -41,7 +41,6 @@
         <activity android:name="com.example.projectapp.CT_Locations" />
         <activity android:name="com.example.projectapp.MapSelectLocation" />
         <activity android:name="com.example.projectapp.ShowTransports" />
-        <activity android:name="com.example.projectapp.HelpPage" />
         <activity android:name="com.example.projectapp.taxiprivate" />
         <activity android:name="com.example.projectapp.MainActivity" >
             <intent-filter>

@@ -24,7 +24,6 @@
         <activity android:name=".CT_Locations" />
         <activity android:name=".MapSelectLocation" />
         <activity android:name=".ShowTransports" />
-        <activity android:name=".HelpPage" />
         <activity android:name=".taxiprivate" />
         <activity android:name=".MainActivity">
             <intent-filter>
