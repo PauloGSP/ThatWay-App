@@ -3,26 +3,34 @@ package com.example.projectapp;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
+
 
 public class RouteAllDetails extends AppCompatActivity {
 
+    public static final String TAG = "route";
+    public static String json;
+
     @RequiresApi(api = Build.VERSION_CODES.O)
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -32,7 +40,24 @@ public class RouteAllDetails extends AppCompatActivity {
 
         Route route = Route.currentRoute;
 
-        Route.storeRoutes();
+        //load
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        Gson gson = new Gson();
+        String json = sharedPrefs.getString(RouteAllDetails.TAG, "");
+        Type type = new TypeToken<ArrayList<Route>>() {}.getType();
+        ArrayList<Route> arrayList = gson.fromJson(json, type);
+        Route.savedRoutes = arrayList;
+
+        Route.savedRoutes.add(route);
+
+        //save
+        SharedPreferences sharedP = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        SharedPreferences.Editor editor = sharedP.edit();
+        Gson gsonn = new Gson();
+        String jsonstr = gsonn.toJson(Route.savedRoutes);
+        editor.putString(TAG, jsonstr);
+        editor.commit();
+
 
         TripAdapter adapter = new TripAdapter(this, CT_SearchResults.choosen_trips);
         ListView listView = (ListView) findViewById(R.id.listviewtrips);
@@ -78,6 +103,17 @@ public class RouteAllDetails extends AppCompatActivity {
         totalTravellingTime.setText(route.getTotal_travelling_time() + " minutes");
         TextView totalPrice = findViewById(R.id.totalPrice);
         totalPrice.setText(route.getTotal_price().toString() + "€");
+
+        Button deleteRoute = findViewById(R.id.deleteRouteBtn);
+        deleteRoute.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Route.savedRoutes.remove(route);
+                Toast.makeText(getApplicationContext(),"Route deleted successfully", Toast.LENGTH_SHORT).show();
+                Intent gotosavedroutes = new Intent(getApplicationContext(), SavedRoutes.class);
+                startActivity(gotosavedroutes);
+            }
+        });
 
     }
 }

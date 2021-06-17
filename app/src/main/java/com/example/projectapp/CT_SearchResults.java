@@ -7,6 +7,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -82,6 +83,7 @@ public class CT_SearchResults extends AppCompatActivity {
                             Route.currentRoute = route;
                             Toast.makeText(getApplicationContext(),"Route saved", Toast.LENGTH_SHORT).show();
                             System.out.println(name);
+
                             Intent goToRoute = new Intent(getApplicationContext(), RouteAllDetails.class);
                             startActivity(goToRoute);
                         } else {

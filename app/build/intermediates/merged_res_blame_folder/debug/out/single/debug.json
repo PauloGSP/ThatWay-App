@@ -132,8 +132,17 @@
         "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_route_all_details.xml.flat",
         "source": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\src\\main\\res\\layout\\activity_route_all_details.xml"
+=======
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_route_row.xml.flat",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\route_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_ct_search_results.xml.flat",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_ct_search_results.xml"
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
     },
     {
         "merged": "C:\\Users\\35196\\Desktop\\GitHub\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",

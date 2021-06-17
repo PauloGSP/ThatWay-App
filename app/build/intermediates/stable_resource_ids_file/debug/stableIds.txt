@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 com.example.projectapp:styleable/BaseProgressIndicator = 0x7f100013
 com.example.projectapp:id/dialog_button = 0x7f0800a4
 com.example.projectapp:style/Widget.MaterialComponents.CompoundButton.Switch = 0x7f0f0288
@@ -49,9 +50,85 @@ com.example.projectapp:layout/mtrl_calendar_days_of_week = 0x7f0b004f
 com.example.projectapp:string/app_name = 0x7f0e001b
 com.example.projectapp:dimen/mtrl_high_ripple_default_alpha = 0x7f06012f
 com.example.projectapp:styleable/MotionHelper = 0x7f10005b
+=======
+com.example.projectapp:styleable/ChipGroup = 0x7f10001a
+com.example.projectapp:style/Widget.MaterialComponents.AppBarLayout.Primary = 0x7f0f025e
+com.example.projectapp:style/Widget.MaterialComponents.TimePicker.Display.TextInputEditText = 0x7f0f02c4
+com.example.projectapp:style/Widget.MaterialComponents.CompoundButton.Switch = 0x7f0f0288
+com.example.projectapp:style/Widget.AppCompat.Button = 0x7f0f020f
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.ActionBar.Primary = 0x7f0f01de
+com.example.projectapp:style/Widget.AppCompat.Light.AutoCompleteTextView = 0x7f0f022c
+com.example.projectapp:style/Theme.Design.Light = 0x7f0f019c
+com.example.projectapp:styleable/BaseProgressIndicator = 0x7f100013
+com.example.projectapp:id/dialog_button = 0x7f0800a3
+com.example.projectapp:style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored = 0x7f0f0157
+com.example.projectapp:id/material_hour_tv = 0x7f08011e
+com.example.projectapp:styleable/Variant = 0x7f100083
+com.example.projectapp:style/TextAppearance.Design.Placeholder = 0x7f0f016b
+com.example.projectapp:drawable/abc_btn_borderless_material = 0x7f070009
+com.example.projectapp:style/Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge = 0x7f0f01ab
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.Picker.Date.Header.Text.Day = 0x7f0f01f6
+com.example.projectapp:interpolator/mtrl_fast_out_slow_in = 0x7f0a0008
+com.example.projectapp:style/Base.Theme.MaterialComponents.DialogWhenLarge = 0x7f0f005d
+com.example.projectapp:style/Widget.AppCompat.Light.ListPopupWindow = 0x7f0f022e
+com.example.projectapp:style/Base.V26.Theme.AppCompat = 0x7f0f008d
+com.example.projectapp:style/Widget.MaterialComponents.PopupMenu.Overflow = 0x7f0f02a9
+com.example.projectapp:style/Base.MaterialAlertDialog.MaterialComponents.Title.Icon = 0x7f0f0010
+com.example.projectapp:styleable/Chip = 0x7f100019
+com.example.projectapp:style/TextAppearance.MaterialComponents.Overline = 0x7f0f017c
+com.example.projectapp:style/TextAppearance.MaterialComponents.Subtitle2 = 0x7f0f017e
+com.example.projectapp:style/RtlOverlay.DialogWindowTitle.AppCompat = 0x7f0f00ff
+com.example.projectapp:style/Base.TextAppearance.AppCompat.Widget.Button.Inverse = 0x7f0f0039
+com.example.projectapp:style/Widget.AppCompat.ListView.Menu = 0x7f0f0238
+com.example.projectapp:styleable/MaterialRadioButton = 0x7f100050
+com.example.projectapp:style/TextAppearance.Design.Snackbar.Message = 0x7f0f016d
+com.example.projectapp:style/ShapeAppearanceOverlay.BottomLeftDifferentCornerSize = 0x7f0f0117
+com.example.projectapp:style/Widget.MaterialComponents.Snackbar = 0x7f0f02ad
+com.example.projectapp:styleable/PropertySet = 0x7f100064
+com.example.projectapp:layout/test_action_chip = 0x7f0b006f
+com.example.projectapp:style/ThemeOverlay.AppCompat.ActionBar = 0x7f0f01d3
+com.example.projectapp:styleable/Layout = 0x7f100040
+com.example.projectapp:styleable/TabItem = 0x7f100079
+com.example.projectapp:attr/thumbRadius = 0x7f030339
+com.example.projectapp:string/path_password_eye_mask_visible = 0x7f0e0072
+com.example.projectapp:style/Widget.AppCompat.Toolbar = 0x7f0f024b
+com.example.projectapp:styleable/LinearLayoutCompat = 0x7f100041
+com.example.projectapp:id/square = 0x7f0801b9
+com.example.projectapp:style/Widget.MaterialComponents.TabLayout.PrimarySurface = 0x7f0f02b2
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.TextInputEditText.FilledBox.Dense = 0x7f0f01fc
+com.example.projectapp:id/tag_unhandled_key_listeners = 0x7f0801d5
+com.example.projectapp:color/button_material_light = 0x7f050029
+com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.HeaderCancelButton = 0x7f0f0296
+com.example.projectapp:style/Widget.MaterialComponents.ChipGroup = 0x7f0f0280
+com.example.projectapp:string/abc_action_bar_home_description = 0x7f0e0000
+com.example.projectapp:style/Theme.AppCompat.DayNight.Dialog.MinWidth = 0x7f0f018a
+com.example.projectapp:id/action_bar_activity_content = 0x7f080038
+com.example.projectapp:id/routeBtn = 0x7f08023a
+com.example.projectapp:color/material_deep_teal_200 = 0x7f05006e
+com.example.projectapp:style/Base.ThemeOverlay.AppCompat.Dark = 0x7f0f006a
+com.example.projectapp:attr/boxStrokeErrorColor = 0x7f030068
+com.example.projectapp:style/Theme.AppCompat.Light.NoActionBar = 0x7f0f0198
+com.example.projectapp:attr/iconEndPadding = 0x7f030198
+com.example.projectapp:layout/select_dialog_singlechoice_material = 0x7f0b006d
+com.example.projectapp:style/ThemeOverlay.AppCompat.DayNight.ActionBar = 0x7f0f01d7
+com.example.projectapp:styleable/MotionScene = 0x7f10005d
+com.example.projectapp:style/Widget.MaterialComponents.CheckedTextView = 0x7f0f027b
+com.example.projectapp:styleable/ImageFilterView = 0x7f100036
+com.example.projectapp:layout/mtrl_calendar_days_of_week = 0x7f0b004f
+com.example.projectapp:style/Widget.MaterialComponents.MaterialButtonToggleGroup = 0x7f0f028e
+com.example.projectapp:drawable/abc_btn_check_to_on_mtrl_015 = 0x7f07000d
+com.example.projectapp:attr/materialCalendarHeaderCancelButton = 0x7f030235
+com.example.projectapp:style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu = 0x7f0f02b9
+com.example.projectapp:style/ShapeAppearanceOverlay.MaterialComponents.ExtendedFloatingActionButton = 0x7f0f011d
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.AutoCompleteTextView.FilledBox.Dense = 0x7f0f01e2
+com.example.projectapp:style/TextAppearance.MaterialComponents.Body2 = 0x7f0f0172
+com.example.projectapp:style/Base.TextAppearance.MaterialComponents.Badge = 0x7f0f0040
+com.example.projectapp:styleable/MotionHelper = 0x7f10005b
+com.example.projectapp:dimen/mtrl_high_ripple_default_alpha = 0x7f06012f
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.AppCompat.ListView = 0x7f0f0236
-com.example.projectapp:styleable/ClockFaceView = 0x7f10001c
 com.example.projectapp:integer/status_bar_notification_info_maxnum = 0x7f090015
+<<<<<<< HEAD
 com.example.projectapp:id/action_bar_activity_content = 0x7f080039
 com.example.projectapp:style/Theme.AppCompat.DayNight.Dialog.MinWidth = 0x7f0f018a
 com.example.projectapp:styleable/MaterialRadioButton = 0x7f100050
@@ -77,10 +154,20 @@ com.example.projectapp:style/Widget.MaterialComponents.TextInputLayout.OutlinedB
 com.example.projectapp:style/TextAppearance.MaterialComponents.Overline = 0x7f0f017c
 com.example.projectapp:styleable/ChipGroup = 0x7f10001a
 com.example.projectapp:style/Widget.AppCompat.Light.ListView.DropDown = 0x7f0f022f
+=======
+com.example.projectapp:styleable/ClockFaceView = 0x7f10001c
+com.example.projectapp:style/Base.V7.ThemeOverlay.AppCompat.Dialog = 0x7f0f0096
+com.example.projectapp:style/Base.TextAppearance.AppCompat = 0x7f0f0013
+com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.Item = 0x7f0f029e
+com.example.projectapp:id/decor_content_parent = 0x7f080093
+com.example.projectapp:style/Widget.Support.CoordinatorLayout = 0x7f0f02cc
+com.example.projectapp:style/Theme.Design.BottomSheetDialog = 0x7f0f019b
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:styleable/ActivityChooserView = 0x7f100005
 com.example.projectapp:integer/google_play_services_version = 0x7f090008
 com.example.projectapp:styleable/OnClick = 0x7f100060
 com.example.projectapp:style/Widget.MaterialComponents.TimePicker.ImageButton = 0x7f0f02c5
+<<<<<<< HEAD
 com.example.projectapp:style/Base.Widget.MaterialComponents.PopupMenu = 0x7f0f00d9
 com.example.projectapp:id/accessibility_custom_action_21 = 0x7f080026
 com.example.projectapp:color/mtrl_textinput_disabled_color = 0x7f0500bb
@@ -89,9 +176,33 @@ com.example.projectapp:style/Test.Widget.MaterialComponents.MaterialCalendar.Day
 com.example.projectapp:style/Widget.MaterialComponents.TabLayout.PrimarySurface = 0x7f0f02b2
 com.example.projectapp:id/square = 0x7f0801ba
 com.example.projectapp:style/Widget.MaterialComponents.ExtendedFloatingActionButton = 0x7f0f0289
+=======
+com.example.projectapp:style/Widget.AppCompat.Light.ListView.DropDown = 0x7f0f022f
+com.example.projectapp:dimen/abc_seekbar_track_progress_height_material = 0x7f060039
+com.example.projectapp:styleable/ThemeEnforcement = 0x7f10007e
+com.example.projectapp:id/textStart = 0x7f0801e1
+com.example.projectapp:styleable/View = 0x7f100084
+com.example.projectapp:style/Base.V14.ThemeOverlay.MaterialComponents.Dialog = 0x7f0f007d
+com.example.projectapp:id/mtrl_picker_header_toggle = 0x7f080147
+com.example.projectapp:styleable/AppBarLayout_Layout = 0x7f10000c
+com.example.projectapp:styleable/OnSwipe = 0x7f100061
+com.example.projectapp:style/Base.Widget.AppCompat.SeekBar = 0x7f0f00cc
+com.example.projectapp:style/Base.TextAppearance.AppCompat.Small.Inverse = 0x7f0f0029
+com.example.projectapp:drawable/abc_btn_default_mtrl_shape = 0x7f07000f
+com.example.projectapp:layout/abc_tooltip = 0x7f0b001b
+com.example.projectapp:style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar = 0x7f0f0233
+com.example.projectapp:layout/abc_screen_content_include = 0x7f0b0014
+com.example.projectapp:id/chains = 0x7f080070
+com.example.projectapp:style/Widget.MaterialComponents.TimePicker = 0x7f0f02c0
+com.example.projectapp:interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0 = 0x7f0a0000
+com.example.projectapp:style/Animation.AppCompat.Tooltip = 0x7f0f0005
+com.example.projectapp:style/Test.Widget.MaterialComponents.MaterialCalendar.Day = 0x7f0f0128
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.AppCompat.DrawerArrowToggle = 0x7f0f021a
 com.example.projectapp:style/TextAppearance.AppCompat.Button = 0x7f0f0133
+com.example.projectapp:style/Widget.MaterialComponents.ExtendedFloatingActionButton = 0x7f0f0289
 com.example.projectapp:style/Animation.Design.BottomSheetDialog = 0x7f0f0006
+<<<<<<< HEAD
 com.example.projectapp:styleable/MockView = 0x7f100059
 com.example.projectapp:attr/listDividerAlertDialog = 0x7f03021b
 com.example.projectapp:id/transportIcon = 0x7f08021b
@@ -101,10 +212,22 @@ com.example.projectapp:style/Theme.AppCompat.Light.DarkActionBar = 0x7f0f0193
 com.example.projectapp:drawable/abc_btn_check_to_on_mtrl_015 = 0x7f07000d
 com.example.projectapp:style/ShapeAppearanceOverlay.MaterialComponents.ExtendedFloatingActionButton = 0x7f0f011d
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.AutoCompleteTextView.FilledBox.Dense = 0x7f0f01e2
+=======
+com.example.projectapp:attr/listDividerAlertDialog = 0x7f03021b
+com.example.projectapp:styleable/MockView = 0x7f100059
+com.example.projectapp:id/transportIcon = 0x7f08021a
+com.example.projectapp:style/Widget.AppCompat.ActionButton.Overflow = 0x7f0f020b
+com.example.projectapp:color/switch_thumb_disabled_material_dark = 0x7f0500d3
+com.example.projectapp:style/Widget.MaterialComponents.BottomSheet = 0x7f0f026c
+com.example.projectapp:string/mtrl_picker_toggle_to_calendar_input_mode = 0x7f0e006b
+com.example.projectapp:style/TextAppearance.AppCompat.Large.Inverse = 0x7f0f013c
+com.example.projectapp:dimen/mtrl_calendar_days_of_week_height = 0x7f0600ef
+com.example.projectapp:style/Theme.AppCompat.Light.DarkActionBar = 0x7f0f0193
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.MaterialComponents.TextView = 0x7f0f02bf
-com.example.projectapp:string/abc_capital_off = 0x7f0e0006
 com.example.projectapp:style/Base.Widget.AppCompat.Spinner.Underlined = 0x7f0f00cf
 com.example.projectapp:style/RtlOverlay.Widget.AppCompat.SearchView.MagIcon = 0x7f0f010d
+<<<<<<< HEAD
 com.example.projectapp:style/RtlOverlay.Widget.AppCompat.PopupMenuItem = 0x7f0f0102
 com.example.projectapp:id/standard = 0x7f0801be
 com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.Day = 0x7f0f0290
@@ -224,22 +347,173 @@ com.example.projectapp:id/dragDown = 0x7f0800ac
 com.example.projectapp:style/TextAppearance.AppCompat.Title.Inverse = 0x7f0f014b
 com.example.projectapp:id/test_checkbox_app_button_tint = 0x7f0801da
 com.example.projectapp:mipmap/logo_round = 0x7f0c0005
+=======
+com.example.projectapp:string/abc_capital_off = 0x7f0e0006
+com.example.projectapp:id/standard = 0x7f0801bd
+com.example.projectapp:style/RtlOverlay.Widget.AppCompat.PopupMenuItem = 0x7f0f0102
+com.example.projectapp:dimen/abc_dialog_min_width_major = 0x7f060022
+com.example.projectapp:style/Widget.Design.Snackbar = 0x7f0f0256
+com.example.projectapp:drawable/abc_ic_menu_copy_mtrl_am_alpha = 0x7f070021
+com.example.projectapp:drawable/abc_btn_switch_to_on_mtrl_00012 = 0x7f070015
+com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.Day = 0x7f0f0290
+com.example.projectapp:style/CardView.Dark = 0x7f0f00e3
+com.example.projectapp:string/material_hour_selection = 0x7f0e003f
+com.example.projectapp:styleable/CollapsingToolbarLayout_Layout = 0x7f10001f
+com.example.projectapp:style/Widget.AppCompat.PopupMenu.Overflow = 0x7f0f023a
+com.example.projectapp:layout/route_row = 0x7f0b007e
+com.example.projectapp:style/ThemeOverlay.AppCompat.Dark = 0x7f0f01d4
+com.example.projectapp:style/TextAppearance.Design.Prefix = 0x7f0f016c
+com.example.projectapp:style/Base.Theme.AppCompat = 0x7f0f0047
+com.example.projectapp:drawable/notification_bg_low_pressed = 0x7f07009c
+com.example.projectapp:id/fitToContents = 0x7f0800cb
+com.example.projectapp:dimen/mtrl_tooltip_padding = 0x7f06016f
+com.example.projectapp:style/Theme.MaterialComponents.Light.LargeTouch = 0x7f0f01cc
+com.example.projectapp:style/Theme.MaterialComponents.Light.Dialog.FixedSize.Bridge = 0x7f0f01c8
+com.example.projectapp:color/design_default_color_background = 0x7f050049
+com.example.projectapp:attr/subtitleTextStyle = 0x7f0302ee
+com.example.projectapp:attr/touchAnchorSide = 0x7f03035b
+com.example.projectapp:styleable/FlowLayout = 0x7f10002e
+com.example.projectapp:style/CardView = 0x7f0f00e2
+com.example.projectapp:style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge = 0x7f0f01b3
+com.example.projectapp:attr/waveDecay = 0x7f030380
+com.example.projectapp:style/Widget.AppCompat.Button.Small = 0x7f0f0214
+com.example.projectapp:drawable/abc_list_selector_disabled_holo_dark = 0x7f070033
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.AutoCompleteTextView = 0x7f0f01e0
+com.example.projectapp:id/middle = 0x7f08012c
+com.example.projectapp:layout/material_timepicker = 0x7f0b0044
+com.example.projectapp:layout/design_layout_tab_text = 0x7f0b002e
+com.example.projectapp:string/abc_menu_ctrl_shortcut_label = 0x7f0e0009
+com.example.projectapp:styleable/StateSet = 0x7f100076
+com.example.projectapp:attr/layout_collapseMode = 0x7f0301d8
+com.example.projectapp:style/Widget.MaterialComponents.LinearProgressIndicator = 0x7f0f028d
+com.example.projectapp:dimen/abc_text_size_small_material = 0x7f06004c
+com.example.projectapp:style/Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge = 0x7f0f01b0
+com.example.projectapp:style/Widget.MaterialComponents.Button.OutlinedButton = 0x7f0f0270
+com.example.projectapp:drawable/common_google_signin_btn_icon_dark_normal = 0x7f070063
+com.example.projectapp:layout/abc_popup_menu_header_item_layout = 0x7f0b0012
+com.example.projectapp:style/Theme.MaterialComponents.Light.BarSize = 0x7f0f01be
+com.example.projectapp:style/Widget.AppCompat.Light.ActionBar.TabBar.Inverse = 0x7f0f0222
+com.example.projectapp:style/ThemeOverlay.AppCompat.Dialog = 0x7f0f01d8
+com.example.projectapp:style/Base.Theme.AppCompat.DialogWhenLarge = 0x7f0f004d
+com.example.projectapp:style/Theme.MaterialComponents.Light.Dialog.Alert = 0x7f0f01c4
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.Dialog.Alert.Framework = 0x7f0f01ed
+com.example.projectapp:styleable/MaterialTextView = 0x7f100053
+com.example.projectapp:color/mtrl_outlined_stroke_color = 0x7f0500b1
+com.example.projectapp:attr/barrierDirection = 0x7f03004d
+com.example.projectapp:dimen/mtrl_high_ripple_pressed_alpha = 0x7f060132
+com.example.projectapp:styleable/StateListDrawable = 0x7f100074
+com.example.projectapp:id/mtrl_picker_title_text = 0x7f08014b
+com.example.projectapp:style/Widget.AppCompat.SeekBar = 0x7f0f0243
+com.example.projectapp:style/Widget.AppCompat.PopupMenu = 0x7f0f0239
+com.example.projectapp:style/Theme.AppCompat.DialogWhenLarge = 0x7f0f0190
+com.example.projectapp:style/Base.Widget.AppCompat.ListView.Menu = 0x7f0f00c1
+com.example.projectapp:styleable/MotionTelltales = 0x7f10005e
+com.example.projectapp:xml/standalone_badge = 0x7f110000
+com.example.projectapp:styleable/GradientColor = 0x7f100034
+com.example.projectapp:attr/yearStyle = 0x7f030390
+com.example.projectapp:dimen/mtrl_low_ripple_hovered_alpha = 0x7f060136
+com.example.projectapp:string/app_name = 0x7f0e001b
+com.example.projectapp:style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense = 0x7f0f02b8
+com.example.projectapp:attr/colorPrimarySurface = 0x7f0300ce
+com.example.projectapp:styleable/MotionLayout = 0x7f10005c
+com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar = 0x7f0f028f
+com.example.projectapp:style/Theme.MaterialComponents.Light.DarkActionBar.Bridge = 0x7f0f01c2
+com.example.projectapp:string/common_google_play_services_enable_text = 0x7f0e0025
+com.example.projectapp:style/Widget.AppCompat.Light.ActionBar.TabText.Inverse = 0x7f0f0224
+com.example.projectapp:style/Base.Theme.AppCompat.Light.Dialog.Alert = 0x7f0f0051
+com.example.projectapp:layout/abc_action_mode_close_item_material = 0x7f0b0005
+com.example.projectapp:layout/transportbutton = 0x7f0b007d
+com.example.projectapp:attr/layout_collapseParallaxMultiplier = 0x7f0301d9
+com.example.projectapp:style/Widget.MaterialComponents.Chip.Choice = 0x7f0f027d
+com.example.projectapp:style/TextAppearance.MaterialComponents.Caption = 0x7f0f0174
+com.example.projectapp:style/TextAppearance.AppCompat.Large = 0x7f0f013b
+com.example.projectapp:style/Widget.MaterialComponents.Snackbar.TextView = 0x7f0f02af
+com.example.projectapp:string/common_google_play_services_install_button = 0x7f0e0027
+com.example.projectapp:style/Base.Widget.MaterialComponents.CheckedTextView = 0x7f0f00d6
+com.example.projectapp:style/TextAppearance.Compat.Notification = 0x7f0f0160
+com.example.projectapp:id/submenuarrow = 0x7f0801c6
+com.example.projectapp:id/selected = 0x7f0801a3
+com.example.projectapp:style/Base.TextAppearance.AppCompat.Title = 0x7f0f002c
+com.example.projectapp:style/Widget.AppCompat.ButtonBar.AlertDialog = 0x7f0f0216
+com.example.projectapp:style/Theme.Design.NoActionBar = 0x7f0f019f
+com.example.projectapp:id/visible_removing_fragment_view_tag = 0x7f080232
+com.example.projectapp:styleable/KeyTrigger = 0x7f10003f
+com.example.projectapp:style/Widget.MaterialComponents.TabLayout.Colored = 0x7f0f02b1
+com.example.projectapp:color/mtrl_navigation_item_background_color = 0x7f0500ab
+com.example.projectapp:style/TextAppearance.AppCompat.Widget.DropDownItem = 0x7f0f015a
+com.example.projectapp:dimen/material_filled_edittext_font_2_0_padding_bottom = 0x7f0600af
+com.example.projectapp:id/mtrl_calendar_day_selector_frame = 0x7f080137
+com.example.projectapp:id/password_toggle = 0x7f080165
+com.example.projectapp:id/alertTitle = 0x7f08004e
+com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.Fullscreen = 0x7f0f0295
+com.example.projectapp:style/Theme.AppCompat.Dialog.Alert = 0x7f0f018e
+com.example.projectapp:style/TextAppearance.MaterialComponents.Body1 = 0x7f0f0171
+com.example.projectapp:style/Widget.AppCompat.Light.ActionBar.TabView.Inverse = 0x7f0f0226
+com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.HeaderToggleButton = 0x7f0f029d
+com.example.projectapp:styleable/ViewStubCompat = 0x7f100087
+com.example.projectapp:attr/region_widthMoreThan = 0x7f0302a9
+com.example.projectapp:style/TextAppearance.AppCompat.Widget.ActionMode.Title = 0x7f0f0154
+com.example.projectapp:drawable/design_bottom_navigation_item_background = 0x7f070073
+com.example.projectapp:style/TextAppearance.Compat.Notification.Info = 0x7f0f0161
+com.example.projectapp:style/Animation.MaterialComponents.BottomSheetDialog = 0x7f0f0007
+com.example.projectapp:layout/select_dialog_multichoice_material = 0x7f0b006c
+com.example.projectapp:style/TextAppearance.MaterialComponents.Tooltip = 0x7f0f0180
+com.example.projectapp:style/ShapeAppearance.MaterialComponents.LargeComponent = 0x7f0f0111
+com.example.projectapp:dimen/abc_text_size_display_2_material = 0x7f060044
+com.example.projectapp:layout/activity_taxiprivate = 0x7f0b0027
+com.example.projectapp:style/ShapeAppearance.MaterialComponents = 0x7f0f0110
+com.example.projectapp:id/deltaRelative = 0x7f080097
+com.example.projectapp:string/mtrl_picker_toggle_to_year_selection = 0x7f0e006e
+com.example.projectapp:dimen/design_bottom_navigation_shadow_height = 0x7f06006a
+com.example.projectapp:dimen/material_clock_period_toggle_height = 0x7f0600a3
+com.example.projectapp:style/Widget.AppCompat.ProgressBar.Horizontal = 0x7f0f023d
+com.example.projectapp:attr/cornerFamilyBottomLeft = 0x7f0300f0
+com.example.projectapp:style/TestThemeWithLineHeight = 0x7f0f012e
+com.example.projectapp:string/mtrl_picker_text_input_year_abbr = 0x7f0e006a
+com.example.projectapp:id/item_touch_helper_previous_elevation = 0x7f0800fb
+com.example.projectapp:id/unchecked = 0x7f080228
+com.example.projectapp:id/dragDown = 0x7f0800ab
+com.example.projectapp:drawable/abc_textfield_search_activated_mtrl_alpha = 0x7f070052
+com.example.projectapp:color/cardview_dark_background = 0x7f05002a
+com.example.projectapp:style/TextAppearance.AppCompat.Title.Inverse = 0x7f0f014b
+com.example.projectapp:id/test_checkbox_app_button_tint = 0x7f0801d9
+com.example.projectapp:mipmap/logo_round = 0x7f0c0005
+com.example.projectapp:style/TextAppearance.AppCompat.Menu = 0x7f0f0143
+com.example.projectapp:color/dim_foreground_disabled_material_dark = 0x7f050060
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.MaterialComponents.Button.TextButton.Snackbar = 0x7f0f0277
 com.example.projectapp:style/Widget.MaterialComponents.BottomSheet.Modal = 0x7f0f026d
 com.example.projectapp:drawable/common_google_signin_btn_icon_dark_focused = 0x7f070062
 com.example.projectapp:style/Widget.MaterialComponents.Toolbar.PrimarySurface = 0x7f0f02c9
+<<<<<<< HEAD
 com.example.projectapp:style/TextAppearance.AppCompat.Menu = 0x7f0f0143
 com.example.projectapp:color/dim_foreground_disabled_material_dark = 0x7f050060
+=======
+com.example.projectapp:drawable/abc_scrubber_track_mtrl_alpha = 0x7f070040
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/TextAppearance.AppCompat.Body2 = 0x7f0f0132
 com.example.projectapp:color/abc_btn_colored_text_material = 0x7f050003
 com.example.projectapp:color/material_blue_grey_800 = 0x7f05006a
 com.example.projectapp:style/Test.ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Day = 0x7f0f0125
+<<<<<<< HEAD
 com.example.projectapp:id/material_label = 0x7f080120
 com.example.projectapp:drawable/abc_scrubber_primary_mtrl_alpha = 0x7f07003f
 com.example.projectapp:id/textinput_error = 0x7f0801ff
 com.example.projectapp:style/TextAppearance.MaterialComponents.Subtitle1 = 0x7f0f017d
 com.example.projectapp:style/Theme.AppCompat.DayNight.Dialog = 0x7f0f0188
 com.example.projectapp:id/ignore = 0x7f0800f3
+=======
+com.example.projectapp:styleable/AppCompatSeekBar = 0x7f10000e
+com.example.projectapp:styleable/ActionMenuView = 0x7f100003
+com.example.projectapp:id/material_label = 0x7f08011f
+com.example.projectapp:drawable/abc_scrubber_primary_mtrl_alpha = 0x7f07003f
+com.example.projectapp:style/Theme.MaterialComponents.Light.NoActionBar = 0x7f0f01cd
+com.example.projectapp:attr/toolbarStyle = 0x7f030355
+com.example.projectapp:id/textinput_error = 0x7f0801fe
+com.example.projectapp:style/TextAppearance.MaterialComponents.Subtitle1 = 0x7f0f017d
+com.example.projectapp:style/Theme.AppCompat.DayNight.Dialog = 0x7f0f0188
+com.example.projectapp:id/ignore = 0x7f0800f2
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:layout/test_toolbar_surface = 0x7f0b0077
 com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.Year.Selected = 0x7f0f02a2
 com.example.projectapp:attr/materialCalendarTheme = 0x7f03023f
@@ -247,10 +521,26 @@ com.example.projectapp:style/Base.Theme.MaterialComponents.Light = 0x7f0f005e
 com.example.projectapp:styleable/LinearLayoutCompat_Layout = 0x7f100042
 com.example.projectapp:style/TextAppearance.MaterialComponents.Headline4 = 0x7f0f0179
 com.example.projectapp:style/TestStyleWithThemeLineHeightAttribute = 0x7f0f012c
+<<<<<<< HEAD
 com.example.projectapp:id/tag_accessibility_pane_title = 0x7f0801ce
+=======
+com.example.projectapp:id/tag_accessibility_pane_title = 0x7f0801cd
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:layout/test_chip_zero_corner_radius = 0x7f0b0070
 com.example.projectapp:attr/verticalOffset = 0x7f03037b
+com.example.projectapp:id/mtrl_child_content_container = 0x7f080140
+com.example.projectapp:id/adjust_height = 0x7f08004c
 com.example.projectapp:style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush = 0x7f0f0274
+<<<<<<< HEAD
+=======
+com.example.projectapp:drawable/abc_btn_radio_material_anim = 0x7f070011
+com.example.projectapp:style/TextAppearance.AppCompat.Headline = 0x7f0f0139
+com.example.projectapp:string/mtrl_picker_navigate_to_year_description = 0x7f0e005d
+com.example.projectapp:attr/motionTarget = 0x7f030262
+com.example.projectapp:style/TextAppearance.AppCompat.Body1 = 0x7f0f0131
+com.example.projectapp:style/Widget.MaterialComponents.CircularProgressIndicator.ExtraSmall = 0x7f0f0282
+com.example.projectapp:layout/mtrl_picker_header_selection_text = 0x7f0b005e
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Test.Widget.MaterialComponents.MaterialCalendar.Day.Selected = 0x7f0f0129
 com.example.projectapp:style/TextAppearance.MaterialComponents.Headline6 = 0x7f0f017b
 com.example.projectapp:drawable/abc_list_pressed_holo_dark = 0x7f07002f
@@ -265,6 +555,7 @@ com.example.projectapp:drawable/$avd_show_password__0 = 0x7f070003
 com.example.projectapp:attr/boxStrokeColor = 0x7f030067
 com.example.projectapp:dimen/design_snackbar_min_width = 0x7f060084
 com.example.projectapp:style/Theme.MaterialComponents.DayNight = 0x7f0f01a4
+<<<<<<< HEAD
 com.example.projectapp:attr/layout_collapseParallaxMultiplier = 0x7f0301d9
 com.example.projectapp:style/RtlOverlay.DialogWindowTitle.AppCompat = 0x7f0f00ff
 com.example.projectapp:style/RtlUnderlay.Widget.AppCompat.ActionButton.Overflow = 0x7f0f010f
@@ -288,18 +579,57 @@ com.example.projectapp:id/homeBtnShowTransports2 = 0x7f0800e4
 com.example.projectapp:id/cancel_button = 0x7f08006c
 com.example.projectapp:drawable/btn_checkbox_checked_to_unchecked_mtrl_animation = 0x7f070059
 com.example.projectapp:id/accelerate = 0x7f080016
+=======
+com.example.projectapp:attr/popupMenuStyle = 0x7f030294
+com.example.projectapp:attr/moveWhenScrollAtTop = 0x7f030265
+com.example.projectapp:style/Widget.MaterialComponents.PopupMenu = 0x7f0f02a6
+com.example.projectapp:attr/contentInsetStartWithNavigation = 0x7f0300e3
+com.example.projectapp:style/Base.V7.Theme.AppCompat.Dialog = 0x7f0f0093
+com.example.projectapp:styleable/CustomAttribute = 0x7f100028
+com.example.projectapp:id/view_tree_lifecycle_owner = 0x7f08022e
+com.example.projectapp:color/mtrl_textinput_disabled_color = 0x7f0500bb
+com.example.projectapp:styleable/MaterialCardView = 0x7f10004e
+com.example.projectapp:layout/material_clockface_view = 0x7f0b003f
+com.example.projectapp:styleable/Slider = 0x7f10006f
+com.example.projectapp:id/accessibility_custom_action_21 = 0x7f080025
+com.example.projectapp:layout/abc_action_bar_up_container = 0x7f0b0001
+com.example.projectapp:style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu = 0x7f0f02bd
+com.example.projectapp:style/RtlUnderlay.Widget.AppCompat.ActionButton.Overflow = 0x7f0f010f
+com.example.projectapp:styleable/ButtonBarLayout = 0x7f100017
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.Picker.Date.Header.Text = 0x7f0f01f5
+com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.HeaderTitle = 0x7f0f029c
+com.example.projectapp:styleable/ActionBar = 0x7f100000
+com.example.projectapp:style/RtlOverlay.Widget.AppCompat.Search.DropDown.Icon2 = 0x7f0f010a
+com.example.projectapp:attr/listPreferredItemPaddingLeft = 0x7f030224
+com.example.projectapp:style/Base.Widget.AppCompat.Button.ButtonBar.AlertDialog = 0x7f0f00a8
+com.example.projectapp:id/snackbar_text = 0x7f0801b0
+com.example.projectapp:id/homeBtnShowTransports2 = 0x7f0800e3
+com.example.projectapp:id/cancel_button = 0x7f08006b
+com.example.projectapp:styleable/FloatingActionButton_Behavior_Layout = 0x7f10002d
+com.example.projectapp:id/accelerate = 0x7f080015
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:styleable/ShapeAppearance = 0x7f10006c
+com.example.projectapp:drawable/btn_checkbox_checked_to_unchecked_mtrl_animation = 0x7f070059
+com.example.projectapp:style/Platform.ThemeOverlay.AppCompat.Light = 0x7f0f00f9
+com.example.projectapp:styleable/ViewPager2 = 0x7f100086
+com.example.projectapp:styleable/AppCompatTextView = 0x7f100010
 com.example.projectapp:styleable/Constraint = 0x7f100022
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.Picker.Date.Spinner = 0x7f0f01f7
 com.example.projectapp:style/Theme.AppCompat = 0x7f0f0184
 com.example.projectapp:style/Widget.MaterialComponents.CompoundButton.RadioButton = 0x7f0f0287
+com.example.projectapp:string/mtrl_picker_text_input_date_range_end_hint = 0x7f0e0066
+com.example.projectapp:layout/material_timepicker_textinput_display = 0x7f0b0046
+com.example.projectapp:attr/triggerReceiver = 0x7f03036c
 com.example.projectapp:style/Base.ThemeOverlay.AppCompat.Light = 0x7f0f006e
+<<<<<<< HEAD
 com.example.projectapp:layout/material_timepicker_textinput_display = 0x7f0b0046
 com.example.projectapp:string/mtrl_picker_text_input_date_range_end_hint = 0x7f0e0066
 com.example.projectapp:attr/triggerReceiver = 0x7f03036c
 com.example.projectapp:layout/activity_taxiprivate = 0x7f0b0027
 com.example.projectapp:dimen/abc_text_size_display_2_material = 0x7f060044
 com.example.projectapp:style/TextAppearance.Compat.Notification.Info = 0x7f0f0161
+=======
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:string/abc_searchview_description_voice = 0x7f0e0017
 com.example.projectapp:attr/onHide = 0x7f030271
 com.example.projectapp:style/ShapeAppearanceOverlay.TopLeftCut = 0x7f0f0123
@@ -307,16 +637,24 @@ com.example.projectapp:style/Widget.MaterialComponents.Button.TextButton.Icon = 
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.BottomAppBar.Primary = 0x7f0f01e5
 com.example.projectapp:attr/layout_anchorGravity = 0x7f0301d6
 com.example.projectapp:styleable/MapAttrs = 0x7f100046
+<<<<<<< HEAD
 com.example.projectapp:id/normal = 0x7f080154
 com.example.projectapp:styleable/AlertDialog = 0x7f100006
 com.example.projectapp:style/Widget.MaterialComponents.PopupMenu.ContextMenu = 0x7f0f02a7
 com.example.projectapp:id/useLogo = 0x7f08022d
+=======
+com.example.projectapp:id/normal = 0x7f080153
+com.example.projectapp:styleable/AlertDialog = 0x7f100006
+com.example.projectapp:style/Widget.MaterialComponents.PopupMenu.ContextMenu = 0x7f0f02a7
+com.example.projectapp:id/useLogo = 0x7f08022c
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.AlertDialog.AppCompat = 0x7f0f0008
 com.example.projectapp:style/Base.Widget.MaterialComponents.PopupMenu.Overflow = 0x7f0f00dc
 com.example.projectapp:string/mtrl_picker_range_header_only_start_selected = 0x7f0e0060
 com.example.projectapp:style/EmptyTheme = 0x7f0f00e6
 com.example.projectapp:style/Theme.AppCompat.Dialog = 0x7f0f018d
 com.example.projectapp:drawable/abc_list_divider_mtrl_alpha = 0x7f07002c
+<<<<<<< HEAD
 com.example.projectapp:style/CardView.Dark = 0x7f0f00e3
 com.example.projectapp:string/material_hour_selection = 0x7f0e003f
 com.example.projectapp:style/Base.Widget.AppCompat.Spinner = 0x7f0f00ce
@@ -327,12 +665,21 @@ com.example.projectapp:styleable/ActionMenuView = 0x7f100003
 com.example.projectapp:styleable/AppCompatSeekBar = 0x7f10000e
 com.example.projectapp:style/Widget.MaterialComponents.Button = 0x7f0f026e
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.Toolbar.Surface = 0x7f0f0202
+=======
+com.example.projectapp:style/Base.Widget.MaterialComponents.PopupMenu = 0x7f0f00d9
+com.example.projectapp:style/Base.Widget.AppCompat.Spinner = 0x7f0f00ce
+com.example.projectapp:style/Base.Widget.AppCompat.SeekBar.Discrete = 0x7f0f00cd
+com.example.projectapp:style/Platform.Widget.AppCompat.Spinner = 0x7f0f00fe
+com.example.projectapp:style/Base.Widget.AppCompat.RatingBar = 0x7f0f00c7
+com.example.projectapp:style/Base.Widget.AppCompat.Light.PopupMenu = 0x7f0f00bb
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.Widget.AppCompat.ProgressBar.Horizontal = 0x7f0f00c6
-com.example.projectapp:styleable/CollapsingToolbarLayout_Layout = 0x7f10001f
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.Toolbar.Surface = 0x7f0f0202
 com.example.projectapp:style/Base.Widget.AppCompat.PopupMenu.Overflow = 0x7f0f00c3
 com.example.projectapp:anim/abc_slide_out_bottom = 0x7f010008
 com.example.projectapp:style/Widget.MaterialComponents.ShapeableImageView = 0x7f0f02ab
 com.example.projectapp:color/design_dark_default_color_on_secondary = 0x7f050041
+<<<<<<< HEAD
 com.example.projectapp:string/abc_shareactionprovider_share_with_application = 0x7f0e0019
 com.example.projectapp:drawable/ic_mtrl_chip_close_circle = 0x7f070082
 com.example.projectapp:style/Base.V14.Theme.MaterialComponents.Dialog = 0x7f0f0076
@@ -368,12 +715,41 @@ com.example.projectapp:styleable/AppCompatTextHelper = 0x7f10000f
 com.example.projectapp:style/Base.Widget.AppCompat.DrawerArrowToggle = 0x7f0f00b0
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox.Dense = 0x7f0f01fe
 com.example.projectapp:id/cache_measures = 0x7f08006b
+=======
+com.example.projectapp:layout/details = 0x7f0b0038
+com.example.projectapp:style/Base.V14.Theme.MaterialComponents.Dialog = 0x7f0f0076
+com.example.projectapp:string/abc_shareactionprovider_share_with_application = 0x7f0e0019
+com.example.projectapp:drawable/ic_mtrl_chip_close_circle = 0x7f070082
+com.example.projectapp:style/Test.Theme.MaterialComponents.MaterialCalendar = 0x7f0f0126
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.TextInputEditText.FilledBox = 0x7f0f01fb
+com.example.projectapp:dimen/mtrl_textinput_outline_box_expanded_padding = 0x7f060168
+com.example.projectapp:style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox.Dense = 0x7f0f0262
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.Dark = 0x7f0f01e8
+com.example.projectapp:integer/mtrl_card_anim_duration_ms = 0x7f090011
+com.example.projectapp:drawable/material_ic_keyboard_arrow_next_black_24dp = 0x7f070089
+com.example.projectapp:style/Base.Widget.AppCompat.ImageButton = 0x7f0f00b4
+com.example.projectapp:style/Theme.AppCompat.CompactMenu = 0x7f0f0185
+com.example.projectapp:styleable/AppCompatTextHelper = 0x7f10000f
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox.Dense = 0x7f0f01fe
+com.example.projectapp:style/Base.Widget.AppCompat.DrawerArrowToggle = 0x7f0f00b0
+com.example.projectapp:dimen/mtrl_switch_thumb_elevation = 0x7f060160
+com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.MonthTextView = 0x7f0f02a0
+com.example.projectapp:style/TestStyleWithLineHeight = 0x7f0f012a
+com.example.projectapp:style/Widget.MaterialComponents.Button = 0x7f0f026e
+com.example.projectapp:style/Theme.MaterialComponents.Light.Dialog.FixedSize = 0x7f0f01c7
+com.example.projectapp:dimen/compat_button_padding_horizontal_material = 0x7f060059
+com.example.projectapp:string/abc_prepend_shortcut_label = 0x7f0e0011
+com.example.projectapp:layout/material_chip_input_combo = 0x7f0b0039
+com.example.projectapp:style/Base.Widget.AppCompat.ButtonBar.AlertDialog = 0x7f0f00ac
+com.example.projectapp:id/cache_measures = 0x7f08006a
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.Widget.Design.TabLayout = 0x7f0f00d4
 com.example.projectapp:style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense = 0x7f0f02b8
 com.example.projectapp:attr/colorPrimarySurface = 0x7f0300ce
 com.example.projectapp:id/right_side = 0x7f080185
 com.example.projectapp:layout/abc_action_bar_title_item = 0x7f0b0000
 com.example.projectapp:color/abc_decor_view_status_guard = 0x7f050005
+<<<<<<< HEAD
 com.example.projectapp:string/abc_menu_ctrl_shortcut_label = 0x7f0e0009
 com.example.projectapp:styleable/StateSet = 0x7f100076
 com.example.projectapp:attr/layout_collapseMode = 0x7f0301d8
@@ -386,10 +762,20 @@ com.example.projectapp:drawable/abc_textfield_search_activated_mtrl_alpha = 0x7f
 com.example.projectapp:style/Widget.MaterialComponents.CircularProgressIndicator = 0x7f0f0281
 com.example.projectapp:style/Theme.MaterialComponents.Dialog.FixedSize.Bridge = 0x7f0f01b9
 com.example.projectapp:integer/bottom_sheet_slide_duration = 0x7f090003
+=======
+com.example.projectapp:id/right_side = 0x7f080184
+com.example.projectapp:style/Widget.MaterialComponents.CircularProgressIndicator = 0x7f0f0281
+com.example.projectapp:style/Theme.MaterialComponents.Dialog.FixedSize.Bridge = 0x7f0f01b9
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Theme.MaterialComponents.Light.Bridge = 0x7f0f01c0
 com.example.projectapp:color/tooltip_background_dark = 0x7f0500dd
 com.example.projectapp:style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small = 0x7f0f0140
 com.example.projectapp:styleable/ForegroundLinearLayout = 0x7f100031
+<<<<<<< HEAD
+=======
+com.example.projectapp:color/tooltip_background_dark = 0x7f0500dd
+com.example.projectapp:integer/bottom_sheet_slide_duration = 0x7f090003
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.V7.Widget.AppCompat.EditText = 0x7f0f0098
 com.example.projectapp:layout/material_clock_display_divider = 0x7f0b003b
 com.example.projectapp:style/TextAppearance.AppCompat.Caption = 0x7f0f0134
@@ -397,14 +783,20 @@ com.example.projectapp:styleable/MaterialTextAppearance = 0x7f100052
 com.example.projectapp:style/Base.V7.Theme.AppCompat.Light.Dialog = 0x7f0f0095
 com.example.projectapp:id/accessibility_custom_action_8 = 0x7f080036
 com.example.projectapp:layout/abc_search_view = 0x7f0b0019
+<<<<<<< HEAD
 com.example.projectapp:id/right = 0x7f080182
 com.example.projectapp:id/orderBySwitch = 0x7f08015b
+=======
+com.example.projectapp:id/right = 0x7f080181
+com.example.projectapp:id/orderBySwitch = 0x7f08015a
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:string/fab_transformation_scrim_behavior = 0x7f0e0038
 com.example.projectapp:style/Base.V23.Theme.AppCompat = 0x7f0f008b
 com.example.projectapp:string/abc_menu_alt_shortcut_label = 0x7f0e0008
 com.example.projectapp:integer/mtrl_calendar_selection_text_lines = 0x7f09000e
 com.example.projectapp:style/Base.V21.Theme.MaterialComponents.Light.Dialog = 0x7f0f0087
 com.example.projectapp:style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon = 0x7f0f028a
+<<<<<<< HEAD
 com.example.projectapp:attr/cornerSizeBottomRight = 0x7f0300f7
 com.example.projectapp:style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem = 0x7f0f015f
 com.example.projectapp:drawable/abc_ab_share_pack_mtrl_alpha = 0x7f070007
@@ -412,6 +804,15 @@ com.example.projectapp:id/locationShowTransports = 0x7f080113
 com.example.projectapp:dimen/mtrl_extended_fab_top_padding = 0x7f060127
 com.example.projectapp:style/Widget.AppCompat.SearchView.ActionBar = 0x7f0f0242
 com.example.projectapp:id/showTitle = 0x7f0801aa
+=======
+com.example.projectapp:drawable/abc_ab_share_pack_mtrl_alpha = 0x7f070007
+com.example.projectapp:attr/cornerSizeBottomRight = 0x7f0300f7
+com.example.projectapp:style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem = 0x7f0f015f
+com.example.projectapp:id/locationShowTransports = 0x7f080112
+com.example.projectapp:dimen/mtrl_extended_fab_top_padding = 0x7f060127
+com.example.projectapp:style/Widget.AppCompat.SearchView.ActionBar = 0x7f0f0242
+com.example.projectapp:id/showTitle = 0x7f0801a9
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:styleable/ActionMode = 0x7f100004
 com.example.projectapp:drawable/abc_popup_background_mtrl_mult = 0x7f070038
 com.example.projectapp:style/Base.V21.Theme.AppCompat.Dialog = 0x7f0f0081
@@ -423,6 +824,7 @@ com.example.projectapp:animator/design_fab_hide_motion_spec = 0x7f020001
 com.example.projectapp:style/TextAppearance.Design.Hint = 0x7f0f016a
 com.example.projectapp:style/Widget.MaterialComponents.TextInputEditText.FilledBox = 0x7f0f02b3
 com.example.projectapp:attr/queryBackground = 0x7f03029e
+<<<<<<< HEAD
 com.example.projectapp:style/TextAppearance.AppCompat.Widget.PopupMenu.Large = 0x7f0f015c
 com.example.projectapp:id/transportTypeIcon = 0x7f08021d
 com.example.projectapp:attr/closeItemLayout = 0x7f0300b7
@@ -443,13 +845,44 @@ com.example.projectapp:style/Animation.MaterialComponents.BottomSheetDialog = 0x
 com.example.projectapp:style/Base.ThemeOverlay.MaterialComponents.Dialog.Alert = 0x7f0f0070
 com.example.projectapp:id/dragStart = 0x7f0800b0
 com.example.projectapp:style/Widget.MaterialComponents.Button.TextButton.Dialog = 0x7f0f0273
+=======
+com.example.projectapp:attr/closeItemLayout = 0x7f0300b7
+com.example.projectapp:id/transportTypeIcon = 0x7f08021c
+com.example.projectapp:style/TextAppearance.AppCompat.Widget.PopupMenu.Large = 0x7f0f015c
+com.example.projectapp:color/design_dark_default_color_primary_dark = 0x7f050044
+com.example.projectapp:styleable/MaterialAlertDialog = 0x7f100047
+com.example.projectapp:id/view_offset_helper = 0x7f08022d
+com.example.projectapp:style/Base.V28.Theme.AppCompat = 0x7f0f0090
+com.example.projectapp:id/save_non_transition_alpha = 0x7f080189
+com.example.projectapp:style/Base.V14.Theme.MaterialComponents.Light.Bridge = 0x7f0f0079
+com.example.projectapp:color/secondary_text_disabled_material_dark = 0x7f0500d1
+com.example.projectapp:attr/state_liftable = 0x7f0302e2
+com.example.projectapp:styleable/ScrimInsetsFrameLayout = 0x7f100069
+com.example.projectapp:styleable/MaterialAutoCompleteTextView = 0x7f100049
+com.example.projectapp:style/Base.ThemeOverlay.MaterialComponents.Dialog.Alert = 0x7f0f0070
+com.example.projectapp:id/dragStart = 0x7f0800af
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:color/cardview_light_background = 0x7f05002b
+com.example.projectapp:style/Widget.MaterialComponents.Button.TextButton.Dialog = 0x7f0f0273
+com.example.projectapp:attr/firstBaselineToTopHeight = 0x7f03015d
 com.example.projectapp:color/material_on_background_emphasis_high_type = 0x7f050078
 com.example.projectapp:attr/firstBaselineToTopHeight = 0x7f03015d
 com.example.projectapp:style/Base.ThemeOverlay.AppCompat.Dialog = 0x7f0f006c
 com.example.projectapp:style/Base.Theme.MaterialComponents.Light.DarkActionBar = 0x7f0f0060
 com.example.projectapp:style/Base.TextAppearance.AppCompat.SearchResult.Subtitle = 0x7f0f0026
+com.example.projectapp:style/Widget.MaterialComponents.Tooltip = 0x7f0f02cb
+com.example.projectapp:drawable/abc_btn_radio_to_on_mtrl_015 = 0x7f070013
+com.example.projectapp:attr/cardPreventCornerOverlap = 0x7f030086
+com.example.projectapp:style/TextAppearance.AppCompat.Widget.ActionBar.Title = 0x7f0f0150
+com.example.projectapp:id/animateToStart = 0x7f080053
+com.example.projectapp:attr/drawableTopCompat = 0x7f03012a
+com.example.projectapp:styleable/ClockHandView = 0x7f10001d
+com.example.projectapp:integer/app_bar_elevation_anim_duration = 0x7f090002
+com.example.projectapp:style/Base.Theme.MaterialComponents.Bridge = 0x7f0f0056
+com.example.projectapp:dimen/abc_button_padding_vertical_material = 0x7f060015
+com.example.projectapp:layout/test_design_checkbox = 0x7f0b0071
 com.example.projectapp:style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse = 0x7f0f014f
+<<<<<<< HEAD
 com.example.projectapp:styleable/ClockHandView = 0x7f10001d
 com.example.projectapp:dimen/abc_button_padding_vertical_material = 0x7f060015
 com.example.projectapp:layout/test_design_checkbox = 0x7f0b0071
@@ -459,6 +892,17 @@ com.example.projectapp:attr/popupMenuBackground = 0x7f030293
 com.example.projectapp:style/Theme.AppCompat.CompactMenu = 0x7f0f0185
 com.example.projectapp:attr/chipSpacing = 0x7f03009f
 com.example.projectapp:style/Base.Theme.MaterialComponents.Dialog.FixedSize = 0x7f0f005b
+=======
+com.example.projectapp:styleable/Snackbar = 0x7f100070
+com.example.projectapp:style/Theme.MaterialComponents.Light.NoActionBar.Bridge = 0x7f0f01ce
+com.example.projectapp:string/password_toggle_content_description = 0x7f0e006f
+com.example.projectapp:layout/activity_ct_search_results = 0x7f0b001f
+com.example.projectapp:attr/popupMenuBackground = 0x7f030293
+com.example.projectapp:attr/chipSpacing = 0x7f03009f
+com.example.projectapp:style/Base.Theme.MaterialComponents.Dialog.FixedSize = 0x7f0f005b
+com.example.projectapp:style/Theme.MaterialComponents.DayNight.Dialog = 0x7f0f01a9
+com.example.projectapp:animator/fragment_open_exit = 0x7f020008
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.Theme.MaterialComponents = 0x7f0f0055
 com.example.projectapp:animator/fragment_open_exit = 0x7f020008
 com.example.projectapp:style/Theme.MaterialComponents.DayNight.Dialog = 0x7f0f01a9
@@ -468,22 +912,37 @@ com.example.projectapp:style/Base.Theme.AppCompat.Dialog.MinWidth = 0x7f0f004c
 com.example.projectapp:style/Base.Widget.AppCompat.SearchView.ActionBar = 0x7f0f00cb
 com.example.projectapp:style/Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle = 0x7f0f0045
 com.example.projectapp:style/TextAppearance.AppCompat.Display1 = 0x7f0f0135
+<<<<<<< HEAD
 com.example.projectapp:id/textView14 = 0x7f0801e9
 com.example.projectapp:style/RtlUnderlay.Widget.AppCompat.ActionButton = 0x7f0f010e
 com.example.projectapp:dimen/hint_alpha_material_light = 0x7f060097
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.Toolbar.Primary = 0x7f0f0201
 com.example.projectapp:attr/chipIcon = 0x7f030098
+=======
+com.example.projectapp:id/textView14 = 0x7f0801e8
+com.example.projectapp:attr/chipIcon = 0x7f030098
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.Toolbar.Primary = 0x7f0f0201
+com.example.projectapp:dimen/hint_alpha_material_light = 0x7f060097
+com.example.projectapp:style/RtlUnderlay.Widget.AppCompat.ActionButton = 0x7f0f010e
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.TextAppearance.AppCompat.Widget.DropDownItem = 0x7f0f003a
 com.example.projectapp:style/Base.TextAppearance.AppCompat.Widget.Button.Colored = 0x7f0f0038
 com.example.projectapp:string/material_clock_display_divider = 0x7f0e003d
 com.example.projectapp:id/container = 0x7f080083
 com.example.projectapp:style/Base.TextAppearance.AppCompat.Widget.Button = 0x7f0f0036
+com.example.projectapp:style/Widget.AppCompat.Toolbar.Button.Navigation = 0x7f0f024c
+com.example.projectapp:attr/actionButtonStyle = 0x7f03000b
+com.example.projectapp:string/clear_text_end_icon_content_description = 0x7f0e0023
+com.example.projectapp:style/Base.Widget.AppCompat.CompoundButton.RadioButton = 0x7f0f00ae
+com.example.projectapp:id/editTextTextMultiLine7 = 0x7f0800b8
+com.example.projectapp:attr/currentState = 0x7f030101
 com.example.projectapp:color/ripple_material_dark = 0x7f0500cd
 com.example.projectapp:attr/actionModeSelectAllDrawable = 0x7f030019
 com.example.projectapp:attr/maxImageSize = 0x7f03024c
 com.example.projectapp:style/Base.Widget.MaterialComponents.PopupMenu.ListPopupWindow = 0x7f0f00db
 com.example.projectapp:style/Widget.AppCompat.Button.Colored = 0x7f0f0213
 com.example.projectapp:style/Base.Theme.AppCompat.Light.Dialog.FixedSize = 0x7f0f0052
+<<<<<<< HEAD
 com.example.projectapp:id/textView11 = 0x7f0801e6
 com.example.projectapp:style/Base.Widget.AppCompat.CompoundButton.RadioButton = 0x7f0f00ae
 com.example.projectapp:id/editTextTextMultiLine7 = 0x7f0800b9
@@ -491,6 +950,12 @@ com.example.projectapp:attr/currentState = 0x7f030101
 com.example.projectapp:style/Base.TextAppearance.AppCompat.Widget.ActionMode.Subtitle = 0x7f0f0034
 com.example.projectapp:dimen/design_navigation_padding_bottom = 0x7f06007c
 com.example.projectapp:id/progress_horizontal = 0x7f080173
+=======
+com.example.projectapp:id/textView11 = 0x7f0801e5
+com.example.projectapp:style/Base.TextAppearance.AppCompat.Widget.ActionMode.Subtitle = 0x7f0f0034
+com.example.projectapp:dimen/design_navigation_padding_bottom = 0x7f06007c
+com.example.projectapp:id/progress_horizontal = 0x7f080172
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.TextAppearance.AppCompat.Small = 0x7f0f0028
 com.example.projectapp:string/abc_menu_sym_shortcut_label = 0x7f0e0010
 com.example.projectapp:style/Base.TextAppearance.AppCompat.SearchResult = 0x7f0f0025
@@ -498,12 +963,19 @@ com.example.projectapp:string/material_timepicker_hour = 0x7f0e0047
 com.example.projectapp:attr/contentPaddingStart = 0x7f0300e9
 com.example.projectapp:color/design_fab_shadow_start_color = 0x7f050059
 com.example.projectapp:style/Theme.AppCompat.Dialog.MinWidth = 0x7f0f018f
+<<<<<<< HEAD
 com.example.projectapp:style/Widget.AppCompat.Light.SearchView = 0x7f0f0232
 com.example.projectapp:drawable/abc_ic_menu_paste_mtrl_am_alpha = 0x7f070024
 com.example.projectapp:style/Base.V7.Widget.AppCompat.AutoCompleteTextView = 0x7f0f0097
+=======
+com.example.projectapp:drawable/abc_ic_menu_paste_mtrl_am_alpha = 0x7f070024
+com.example.projectapp:style/Base.V7.Widget.AppCompat.AutoCompleteTextView = 0x7f0f0097
+com.example.projectapp:style/Widget.AppCompat.Light.SearchView = 0x7f0f0232
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/liftOnScroll = 0x7f030212
-com.example.projectapp:attr/closeIconVisible = 0x7f0300b6
+com.example.projectapp:id/listviewroutes = 0x7f080239
 com.example.projectapp:style/RtlOverlay.Widget.AppCompat.Search.DropDown.Icon1 = 0x7f0f0109
+<<<<<<< HEAD
 com.example.projectapp:style/Base.Theme.AppCompat = 0x7f0f0047
 com.example.projectapp:string/path_password_eye_mask_visible = 0x7f0e0072
 com.example.projectapp:style/Base.Theme.MaterialComponents.Bridge = 0x7f0f0056
@@ -524,10 +996,29 @@ com.example.projectapp:id/constraintLayout2 = 0x7f080082
 com.example.projectapp:attr/cardCornerRadius = 0x7f030082
 com.example.projectapp:style/Theme.MaterialComponents.Bridge = 0x7f0f01a2
 com.example.projectapp:id/customPanel = 0x7f08008d
+=======
+com.example.projectapp:attr/closeIconVisible = 0x7f0300b6
+com.example.projectapp:attr/itemPadding = 0x7f0301b6
+com.example.projectapp:styleable/FloatingActionButton = 0x7f10002c
+com.example.projectapp:style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse = 0x7f0f0153
+com.example.projectapp:drawable/abc_spinner_textfield_background_material = 0x7f070045
+com.example.projectapp:color/material_slider_inactive_tick_marks_color = 0x7f050084
+com.example.projectapp:styleable/ConstraintSet = 0x7f100025
+com.example.projectapp:style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox = 0x7f0f0261
+com.example.projectapp:attr/suffixText = 0x7f0302ef
+com.example.projectapp:styleable/KeyFramesVelocity = 0x7f10003c
+com.example.projectapp:styleable/TabLayout = 0x7f10007a
+com.example.projectapp:color/design_default_color_secondary = 0x7f050053
+com.example.projectapp:id/constraintLayout2 = 0x7f080081
+com.example.projectapp:attr/cardCornerRadius = 0x7f030082
+com.example.projectapp:style/Theme.MaterialComponents.Bridge = 0x7f0f01a2
+com.example.projectapp:id/customPanel = 0x7f08008c
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Theme.MaterialComponents.DayNight.DarkActionBar.Bridge = 0x7f0f01a8
 com.example.projectapp:style/Platform.MaterialComponents.Light = 0x7f0f00f5
 com.example.projectapp:attr/waveVariesBy = 0x7f030384
 com.example.projectapp:style/ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Day = 0x7f0f011f
+<<<<<<< HEAD
 com.example.projectapp:drawable/abc_spinner_textfield_background_material = 0x7f070045
 com.example.projectapp:color/material_slider_inactive_tick_marks_color = 0x7f050084
 com.example.projectapp:styleable/ConstraintSet = 0x7f100025
@@ -537,6 +1028,12 @@ com.example.projectapp:style/Theme.AppCompat.Light.DialogWhenLarge = 0x7f0f0197
 com.example.projectapp:attr/actionModeTheme = 0x7f03001d
 com.example.projectapp:color/common_google_signin_btn_text_light = 0x7f050034
 com.example.projectapp:styleable/AnimatedStateListDrawableItem = 0x7f100008
+=======
+com.example.projectapp:attr/actionModeTheme = 0x7f03001d
+com.example.projectapp:color/common_google_signin_btn_text_light = 0x7f050034
+com.example.projectapp:styleable/AnimatedStateListDrawableItem = 0x7f100008
+com.example.projectapp:style/Theme.AppCompat.Light.DialogWhenLarge = 0x7f0f0197
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.TextAppearance.AppCompat.Caption = 0x7f0f0017
 com.example.projectapp:drawable/mtrl_popupmenu_background = 0x7f070094
 com.example.projectapp:style/Base.MaterialAlertDialog.MaterialComponents.Title.Text = 0x7f0f0012
@@ -544,6 +1041,7 @@ com.example.projectapp:style/Widget.AppCompat.ActionMode = 0x7f0f020c
 com.example.projectapp:string/material_timepicker_select_time = 0x7f0e004a
 com.example.projectapp:style/ShapeAppearanceOverlay.BottomRightCut = 0x7f0f0118
 com.example.projectapp:styleable/FontFamilyFont = 0x7f100030
+<<<<<<< HEAD
 com.example.projectapp:style/Widget.AppCompat.Button.Borderless = 0x7f0f0210
 com.example.projectapp:id/smallLabel = 0x7f0801af
 com.example.projectapp:style/Theme.MaterialComponents.DayNight.Bridge = 0x7f0f01a6
@@ -552,18 +1050,48 @@ com.example.projectapp:style/Theme.MaterialComponents.DayNight.Dialog.Bridge = 0
 com.example.projectapp:dimen/design_bottom_navigation_item_min_width = 0x7f060067
 com.example.projectapp:style/Base.MaterialAlertDialog.MaterialComponents.Title.Panel = 0x7f0f0011
 com.example.projectapp:drawable/common_google_signin_btn_text_light = 0x7f07006f
+=======
+com.example.projectapp:style/TextAppearance.AppCompat = 0x7f0f0130
+com.example.projectapp:style/Theme.MaterialComponents.DayNight.Dialog.Bridge = 0x7f0f01ac
+com.example.projectapp:dimen/design_bottom_navigation_item_min_width = 0x7f060067
+com.example.projectapp:style/Theme.MaterialComponents.DayNight.Bridge = 0x7f0f01a6
+com.example.projectapp:id/smallLabel = 0x7f0801ae
+com.example.projectapp:style/Widget.AppCompat.Button.Borderless = 0x7f0f0210
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/TextAppearance.AppCompat.Display4 = 0x7f0f0138
 com.example.projectapp:attr/alpha = 0x7f03002a
+com.example.projectapp:style/Base.MaterialAlertDialog.MaterialComponents.Title.Panel = 0x7f0f0011
+com.example.projectapp:drawable/common_google_signin_btn_text_light = 0x7f07006f
 com.example.projectapp:style/Base.Widget.MaterialComponents.PopupMenu.ContextMenu = 0x7f0f00da
 com.example.projectapp:style/Widget.MaterialComponents.CircularProgressIndicator.Small = 0x7f0f0284
+com.example.projectapp:attr/colorOnError = 0x7f0300c7
+com.example.projectapp:color/mtrl_tabs_colored_ripple_color = 0x7f0500b4
 com.example.projectapp:styleable/MaterialCalendar = 0x7f10004c
+<<<<<<< HEAD
 com.example.projectapp:id/returnBtnShowTransports = 0x7f080180
+=======
+com.example.projectapp:id/returnBtnShowTransports = 0x7f08017f
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:layout/abc_screen_simple_overlay_action_mode = 0x7f0b0016
 com.example.projectapp:attr/trackTint = 0x7f030364
 com.example.projectapp:style/TextAppearance.AppCompat.Display3 = 0x7f0f0137
+com.example.projectapp:style/ThemeOverlay.AppCompat.DayNight = 0x7f0f01d6
+com.example.projectapp:attr/fabCradleMargin = 0x7f030153
 com.example.projectapp:string/common_google_play_services_wear_update_text = 0x7f0e0032
 com.example.projectapp:styleable/MenuGroup = 0x7f100056
+<<<<<<< HEAD
 com.example.projectapp:layout/select_dialog_singlechoice_material = 0x7f0b006d
+=======
+com.example.projectapp:id/textinput_helper_text = 0x7f0801ff
+com.example.projectapp:style/RtlOverlay.Widget.AppCompat.PopupMenuItem.Shortcut = 0x7f0f0104
+com.example.projectapp:style/Widget.AppCompat.Button.ButtonBar.AlertDialog = 0x7f0f0212
+com.example.projectapp:style/TextAppearance.Compat.Notification.Time = 0x7f0f0163
+com.example.projectapp:style/TextAppearance.Design.Error = 0x7f0f0168
+com.example.projectapp:style/ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Window.Fullscreen = 0x7f0f0120
+com.example.projectapp:attr/uiScrollGesturesDuringRotateOrZoom = 0x7f030373
+com.example.projectapp:style/Widget.AppCompat.EditText = 0x7f0f021c
+com.example.projectapp:id/scrollView = 0x7f080193
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.AlertDialog.AppCompat.Light = 0x7f0f0009
 com.example.projectapp:styleable/KeyTimeCycle = 0x7f10003e
 com.example.projectapp:attr/fontFamily = 0x7f030173
@@ -578,6 +1106,7 @@ com.example.projectapp:style/Platform.V21.AppCompat = 0x7f0f00fa
 com.example.projectapp:drawable/abc_dialog_material_background = 0x7f07001a
 com.example.projectapp:attr/cornerFamilyBottomRight = 0x7f0300f1
 com.example.projectapp:string/mtrl_picker_text_input_month_abbr = 0x7f0e0069
+<<<<<<< HEAD
 com.example.projectapp:id/scrollView = 0x7f080194
 com.example.projectapp:id/placeofdeparture = 0x7f08016f
 com.example.projectapp:style/TextAppearance.MaterialComponents.TimePicker.Title = 0x7f0f017f
@@ -586,12 +1115,22 @@ com.example.projectapp:drawable/abc_text_select_handle_right_mtrl = 0x7f07004f
 com.example.projectapp:style/Widget.AppCompat.ActionBar.TabView = 0x7f0f0208
 com.example.projectapp:attr/dropDownListViewStyle = 0x7f03012c
 com.example.projectapp:style/Widget.MaterialComponents.Toolbar = 0x7f0f02c7
+=======
+com.example.projectapp:attr/dropDownListViewStyle = 0x7f03012c
+com.example.projectapp:style/Widget.MaterialComponents.Toolbar = 0x7f0f02c7
+com.example.projectapp:id/placeofdeparture = 0x7f08016e
+com.example.projectapp:style/Widget.AppCompat.ActionBar.TabView = 0x7f0f0208
+com.example.projectapp:drawable/abc_text_select_handle_right_mtrl = 0x7f07004f
+com.example.projectapp:style/TextAppearance.MaterialComponents.TimePicker.Title = 0x7f0f017f
+com.example.projectapp:id/rounded = 0x7f080185
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title = 0x7f0f0032
 com.example.projectapp:string/mtrl_picker_save = 0x7f0e0064
 com.example.projectapp:style/TextAppearance.Widget.AppCompat.Toolbar.Title = 0x7f0f0183
 com.example.projectapp:string/material_timepicker_text_input_mode_description = 0x7f0e004b
 com.example.projectapp:layout/notification_template_icon_group = 0x7f0b0066
 com.example.projectapp:styleable/CircularProgressIndicator = 0x7f10001b
+<<<<<<< HEAD
 com.example.projectapp:style/Widget.AppCompat.Toolbar.Button.Navigation = 0x7f0f024c
 com.example.projectapp:attr/actionButtonStyle = 0x7f03000b
 com.example.projectapp:string/clear_text_end_icon_content_description = 0x7f0e0023
@@ -604,6 +1143,11 @@ com.example.projectapp:id/mtrl_child_content_container = 0x7f080141
 com.example.projectapp:string/mtrl_picker_date_header_title = 0x7f0e0056
 com.example.projectapp:styleable/SwitchCompat = 0x7f100077
 com.example.projectapp:id/ticketPrice = 0x7f080206
+=======
+com.example.projectapp:string/mtrl_picker_date_header_title = 0x7f0e0056
+com.example.projectapp:styleable/SwitchCompat = 0x7f100077
+com.example.projectapp:id/ticketPrice = 0x7f080205
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/design_bottom_navigation_height = 0x7f060064
 com.example.projectapp:string/mtrl_exceed_max_badge_number_suffix = 0x7f0e004f
 com.example.projectapp:styleable/AppBarLayout = 0x7f10000a
@@ -619,20 +1163,39 @@ com.example.projectapp:style/ThemeOverlay.MaterialComponents.MaterialAlertDialog
 com.example.projectapp:string/icon_content_description = 0x7f0e003b
 com.example.projectapp:layout/mtrl_calendar_month_labeled = 0x7f0b0052
 com.example.projectapp:dimen/abc_alert_dialog_button_dimen = 0x7f060011
+<<<<<<< HEAD
 com.example.projectapp:id/contraintlayoutbreakpoint = 0x7f080087
 com.example.projectapp:styleable/State = 0x7f100073
 com.example.projectapp:style/Widget.AppCompat.Light.ActionBar.TabBar = 0x7f0f0221
 com.example.projectapp:id/selection_type = 0x7f0801a5
+=======
+com.example.projectapp:id/contraintlayoutbreakpoint = 0x7f080086
+com.example.projectapp:styleable/State = 0x7f100073
+com.example.projectapp:style/Widget.AppCompat.Light.ActionBar.TabBar = 0x7f0f0221
+com.example.projectapp:id/selection_type = 0x7f0801a4
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:color/design_fab_stroke_top_outer_color = 0x7f05005d
 com.example.projectapp:string/abc_action_menu_overflow_description = 0x7f0e0002
 com.example.projectapp:dimen/mtrl_calendar_header_content_padding_fullscreen = 0x7f0600f2
 com.example.projectapp:string/fab_transformation_sheet_behavior = 0x7f0e0039
 com.example.projectapp:drawable/notify_panel_notification_icon_bg = 0x7f0700a3
+<<<<<<< HEAD
 com.example.projectapp:id/off = 0x7f080159
 com.example.projectapp:id/mtrl_calendar_text_input_frame = 0x7f08013e
 com.example.projectapp:style/Base.V14.ThemeOverlay.MaterialComponents.Dialog.Alert = 0x7f0f007e
 com.example.projectapp:attr/contentInsetLeft = 0x7f0300e0
 com.example.projectapp:dimen/cardview_default_elevation = 0x7f060054
+=======
+com.example.projectapp:id/off = 0x7f080158
+com.example.projectapp:dimen/cardview_default_elevation = 0x7f060054
+com.example.projectapp:id/mtrl_calendar_text_input_frame = 0x7f08013d
+com.example.projectapp:style/Base.V14.ThemeOverlay.MaterialComponents.Dialog.Alert = 0x7f0f007e
+com.example.projectapp:attr/contentInsetLeft = 0x7f0300e0
+com.example.projectapp:style/Base.Widget.AppCompat.Light.ActionBar = 0x7f0f00b5
+com.example.projectapp:style/TextAppearance.Design.Counter = 0x7f0f0166
+com.example.projectapp:layout/mtrl_picker_header_fullscreen = 0x7f0b005d
+com.example.projectapp:layout/notification_action = 0x7f0b0063
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.Animation.AppCompat.Tooltip = 0x7f0f000c
 com.example.projectapp:attr/initialActivityCount = 0x7f0301aa
 com.example.projectapp:layout/material_clockface_textview = 0x7f0b003e
@@ -640,6 +1203,7 @@ com.example.projectapp:attr/layout_constraintLeft_creator = 0x7f0301f1
 com.example.projectapp:dimen/mtrl_progress_circular_track_thickness_small = 0x7f06014a
 com.example.projectapp:style/Theme.MaterialComponents.CompactMenu = 0x7f0f01a3
 com.example.projectapp:dimen/mtrl_calendar_content_padding = 0x7f0600e8
+<<<<<<< HEAD
 com.example.projectapp:style/ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Window.Fullscreen = 0x7f0f0120
 com.example.projectapp:style/TextAppearance.Design.Error = 0x7f0f0168
 com.example.projectapp:attr/uiScrollGesturesDuringRotateOrZoom = 0x7f030373
@@ -654,10 +1218,19 @@ com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.HeaderSe
 com.example.projectapp:string/common_google_play_services_notification_channel_name = 0x7f0e002a
 com.example.projectapp:style/Base.V7.Widget.AppCompat.Toolbar = 0x7f0f0099
 com.example.projectapp:id/transition_current_scene = 0x7f080216
+=======
+com.example.projectapp:attr/customStringValue = 0x7f03010b
+com.example.projectapp:style/Base.Widget.AppCompat.ListPopupWindow = 0x7f0f00be
+com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.HeaderSelection = 0x7f0f029a
+com.example.projectapp:string/common_google_play_services_notification_channel_name = 0x7f0e002a
+com.example.projectapp:style/Base.V7.Widget.AppCompat.Toolbar = 0x7f0f0099
+com.example.projectapp:id/transition_current_scene = 0x7f080215
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:color/design_dark_default_color_secondary = 0x7f050046
-com.example.projectapp:style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse = 0x7f0f0031
 com.example.projectapp:style/Widget.MaterialComponents.TabLayout = 0x7f0f02b0
+com.example.projectapp:style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse = 0x7f0f0031
 com.example.projectapp:string/common_google_play_services_enable_button = 0x7f0e0024
+<<<<<<< HEAD
 com.example.projectapp:id/origin = 0x7f08015d
 com.example.projectapp:attr/checkboxStyle = 0x7f03008a
 com.example.projectapp:id/message = 0x7f08012b
@@ -684,13 +1257,36 @@ com.example.projectapp:styleable/Badge = 0x7f100012
 com.example.projectapp:style/Base.DialogWindowTitleBackground.AppCompat = 0x7f0f000f
 com.example.projectapp:layout/mtrl_picker_header_fullscreen = 0x7f0b005d
 com.example.projectapp:layout/notification_action = 0x7f0b0063
+=======
+com.example.projectapp:id/origin = 0x7f08015c
+com.example.projectapp:id/message = 0x7f08012a
+com.example.projectapp:attr/checkboxStyle = 0x7f03008a
+com.example.projectapp:dimen/mtrl_bottomappbar_fab_cradle_rounded_corner_radius = 0x7f0600ca
+com.example.projectapp:attr/textAppearanceHeadline3 = 0x7f03031d
+com.example.projectapp:styleable/KeyPosition = 0x7f10003d
+com.example.projectapp:dimen/abc_edit_text_inset_bottom_material = 0x7f06002c
+com.example.projectapp:color/design_dark_default_color_background = 0x7f05003c
+com.example.projectapp:style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu = 0x7f0f02ba
+com.example.projectapp:id/homeBtnShowTransports3 = 0x7f0800e4
+com.example.projectapp:style/Theme.MaterialComponents.Dialog.Alert.Bridge = 0x7f0f01b6
+com.example.projectapp:id/transition_scene_layoutid_cache = 0x7f080218
+com.example.projectapp:color/mtrl_tabs_icon_color_selector_colored = 0x7f0500b6
+com.example.projectapp:styleable/Badge = 0x7f100012
+com.example.projectapp:dimen/default_dimension = 0x7f06005e
+com.example.projectapp:style/Base.DialogWindowTitleBackground.AppCompat = 0x7f0f000f
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:string/character_counter_content_description = 0x7f0e001f
 com.example.projectapp:attr/collapsingToolbarLayoutStyle = 0x7f0300bd
 com.example.projectapp:styleable/MaterialTimePicker = 0x7f100054
-com.example.projectapp:string/bottomsheet_action_expand_halfway = 0x7f0e001e
 com.example.projectapp:attr/buttonBarPositiveButtonStyle = 0x7f03006f
+<<<<<<< HEAD
 com.example.projectapp:style/TextAppearance.AppCompat.Title = 0x7f0f014a
 com.example.projectapp:id/zero_corner_chip = 0x7f080239
+=======
+com.example.projectapp:string/bottomsheet_action_expand_halfway = 0x7f0e001e
+com.example.projectapp:attr/collapsingToolbarLayoutStyle = 0x7f0300bd
+com.example.projectapp:id/zero_corner_chip = 0x7f080238
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:xml/standalone_badge_offset = 0x7f110004
 com.example.projectapp:style/Widget.MaterialComponents.PopupMenu.ListPopupWindow = 0x7f0f02a8
 com.example.projectapp:style/TextAppearance.AppCompat.Medium.Inverse = 0x7f0f0142
@@ -706,7 +1302,11 @@ com.example.projectapp:style/Widget.MaterialComponents.TextInputLayout.OutlinedB
 com.example.projectapp:style/Theme.MaterialComponents.DayNight.DarkActionBar = 0x7f0f01a7
 com.example.projectapp:style/Theme.MaterialComponents.DayNight.Dialog.FixedSize = 0x7f0f01ad
 com.example.projectapp:color/mtrl_on_primary_text_btn_text_color_selector = 0x7f0500ae
+<<<<<<< HEAD
 com.example.projectapp:id/noResults = 0x7f080151
+=======
+com.example.projectapp:id/noResults = 0x7f080150
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.MaterialComponents.TimePicker.Display = 0x7f0f02c3
 com.example.projectapp:drawable/abc_textfield_activated_mtrl_alpha = 0x7f070050
 com.example.projectapp:style/Theme.MaterialComponents.DayNight.Dialog.MinWidth = 0x7f0f01af
@@ -714,15 +1314,19 @@ com.example.projectapp:style/Base.Widget.AppCompat.CompoundButton.CheckBox = 0x7
 com.example.projectapp:style/TextAppearance.Design.CollapsingToolbar.Expanded = 0x7f0f0165
 com.example.projectapp:string/abc_search_hint = 0x7f0e0012
 com.example.projectapp:string/abc_menu_space_shortcut_label = 0x7f0e000f
-com.example.projectapp:string/abc_menu_shift_shortcut_label = 0x7f0e000e
-com.example.projectapp:attr/chipIconEnabled = 0x7f030099
 com.example.projectapp:style/MaterialAlertDialog.MaterialComponents.Picker.Date.Calendar = 0x7f0f00e9
 com.example.projectapp:style/Base.TextAppearance.AppCompat.Inverse = 0x7f0f001d
 com.example.projectapp:attr/listPreferredItemHeightLarge = 0x7f030221
 com.example.projectapp:plurals/mtrl_badge_content_description = 0x7f0d0000
 com.example.projectapp:style/Widget.Design.TextInputEditText = 0x7f0f0258
 com.example.projectapp:style/Base.Theme.MaterialComponents.Light.DarkActionBar.Bridge = 0x7f0f0061
+<<<<<<< HEAD
 com.example.projectapp:id/returnBtn = 0x7f080178
+=======
+com.example.projectapp:string/abc_menu_shift_shortcut_label = 0x7f0e000e
+com.example.projectapp:attr/chipIconEnabled = 0x7f030099
+com.example.projectapp:id/returnBtn = 0x7f080177
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.V7.Theme.AppCompat = 0x7f0f0092
 com.example.projectapp:drawable/abc_ic_go_search_api_material = 0x7f070020
 com.example.projectapp:style/Base.Widget.MaterialComponents.Slider = 0x7f0f00dd
@@ -731,6 +1335,7 @@ com.example.projectapp:dimen/tooltip_margin = 0x7f060183
 com.example.projectapp:animator/mtrl_extended_fab_show_motion_spec = 0x7f020014
 com.example.projectapp:attr/layout_constrainedHeight = 0x7f0301da
 com.example.projectapp:style/Widget.AppCompat.Light.PopupMenu = 0x7f0f0230
+<<<<<<< HEAD
 com.example.projectapp:attr/itemTextAppearanceActive = 0x7f0301c3
 com.example.projectapp:style/Widget.MaterialComponents.BottomNavigationView = 0x7f0f0269
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.AutoCompleteTextView.OutlinedBox = 0x7f0f01e3
@@ -740,11 +1345,22 @@ com.example.projectapp:attr/transitionPathRotate = 0x7f030369
 com.example.projectapp:attr/itemShapeInsetStart = 0x7f0301bd
 com.example.projectapp:style/Theme.AppCompat.Light.Dialog.Alert = 0x7f0f0195
 com.example.projectapp:dimen/abc_dialog_min_width_major = 0x7f060022
+=======
+com.example.projectapp:style/Widget.AppCompat.ActionBar.Solid = 0x7f0f0205
+com.example.projectapp:attr/transitionPathRotate = 0x7f030369
+com.example.projectapp:attr/itemShapeInsetStart = 0x7f0301bd
+com.example.projectapp:style/Theme.AppCompat.Light.Dialog.Alert = 0x7f0f0195
+com.example.projectapp:dimen/mtrl_navigation_item_icon_padding = 0x7f06013b
+com.example.projectapp:attr/itemTextAppearanceActive = 0x7f0301c3
+com.example.projectapp:style/Widget.MaterialComponents.BottomNavigationView = 0x7f0f0269
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.AutoCompleteTextView.OutlinedBox = 0x7f0f01e3
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.Design.ScrimInsetsFrameLayout = 0x7f0f0255
 com.example.projectapp:attr/keyPositionType = 0x7f0301c6
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.TextInputEditText = 0x7f0f01fa
 com.example.projectapp:id/accessibility_custom_action_31 = 0x7f080031
 com.example.projectapp:attr/touchAnchorId = 0x7f03035a
+<<<<<<< HEAD
 com.example.projectapp:id/postLayout = 0x7f080171
 com.example.projectapp:id/mtrl_calendar_months = 0x7f08013c
 com.example.projectapp:id/navigation_header_container = 0x7f08014f
@@ -752,6 +1368,11 @@ com.example.projectapp:color/mtrl_tabs_colored_ripple_color = 0x7f0500b4
 com.example.projectapp:attr/fabCradleMargin = 0x7f030153
 com.example.projectapp:style/ThemeOverlay.AppCompat.DayNight = 0x7f0f01d6
 com.example.projectapp:attr/colorOnError = 0x7f0300c7
+=======
+com.example.projectapp:id/postLayout = 0x7f080170
+com.example.projectapp:id/navigation_header_container = 0x7f08014e
+com.example.projectapp:id/mtrl_calendar_months = 0x7f08013b
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.AppCompat.Spinner = 0x7f0f0245
 com.example.projectapp:id/directions = 0x7f0800a7
 com.example.projectapp:styleable/KeyCycle = 0x7f100039
@@ -770,6 +1391,7 @@ com.example.projectapp:style/Widget.MaterialComponents.Light.ActionBar.Solid = 0
 com.example.projectapp:style/Base.Widget.AppCompat.CompoundButton.Switch = 0x7f0f00af
 com.example.projectapp:attr/tabPaddingBottom = 0x7f030308
 com.example.projectapp:styleable/LinearProgressIndicator = 0x7f100043
+<<<<<<< HEAD
 com.example.projectapp:id/accessibility_custom_action_3 = 0x7f08002f
 com.example.projectapp:id/homeAsUp = 0x7f0800e2
 com.example.projectapp:attr/triggerSlack = 0x7f03036d
@@ -777,8 +1399,32 @@ com.example.projectapp:attr/layout_constraintHeight_default = 0x7f0301ea
 com.example.projectapp:mipmap/ic_launcher = 0x7f0c0000
 com.example.projectapp:attr/appBarLayoutStyle = 0x7f030030
 com.example.projectapp:string/mtrl_picker_range_header_only_end_selected = 0x7f0e005f
+=======
+com.example.projectapp:attr/layout_constraintHeight_default = 0x7f0301ea
+com.example.projectapp:attr/triggerSlack = 0x7f03036d
+com.example.projectapp:id/accessibility_custom_action_3 = 0x7f08002e
+com.example.projectapp:id/homeAsUp = 0x7f0800e1
+com.example.projectapp:id/stop = 0x7f0801c4
+com.example.projectapp:id/imageButton = 0x7f0800f5
+com.example.projectapp:dimen/tooltip_vertical_padding = 0x7f060186
+com.example.projectapp:style/Widget.MaterialComponents.Slider = 0x7f0f02ac
+com.example.projectapp:layout/material_time_chip = 0x7f0b0042
+com.example.projectapp:id/SavedRoutesTitle = 0x7f080012
+com.example.projectapp:style/Widget.AppCompat.ButtonBar = 0x7f0f0215
+com.example.projectapp:attr/tabBackground = 0x7f0302f7
+com.example.projectapp:attr/searchIcon = 0x7f0302b4
+com.example.projectapp:style/Widget.MaterialComponents.Toolbar.Surface = 0x7f0f02ca
+com.example.projectapp:color/primary_text_disabled_material_light = 0x7f0500c8
+com.example.projectapp:string/common_google_play_services_update_title = 0x7f0e0030
+com.example.projectapp:style/Theme.AppCompat.DayNight.DarkActionBar = 0x7f0f0187
+com.example.projectapp:style/Theme.MaterialComponents.Dialog = 0x7f0f01b4
+com.example.projectapp:string/error_icon_content_description = 0x7f0e0036
+com.example.projectapp:attr/queryHint = 0x7f03029f
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/hideAnimationBehavior = 0x7f03018b
+com.example.projectapp:string/mtrl_picker_range_header_only_end_selected = 0x7f0e005f
 com.example.projectapp:attr/paddingBottomSystemWindowInsets = 0x7f030279
+<<<<<<< HEAD
 com.example.projectapp:dimen/tooltip_vertical_padding = 0x7f060186
 com.example.projectapp:id/stop = 0x7f0801c5
 com.example.projectapp:id/imageButton = 0x7f0800f6
@@ -795,6 +1441,10 @@ com.example.projectapp:attr/searchIcon = 0x7f0302b4
 com.example.projectapp:style/Widget.MaterialComponents.Toolbar.Surface = 0x7f0f02ca
 com.example.projectapp:color/primary_text_disabled_material_light = 0x7f0500c8
 com.example.projectapp:string/common_google_play_services_update_title = 0x7f0e0030
+=======
+com.example.projectapp:mipmap/ic_launcher = 0x7f0c0000
+com.example.projectapp:attr/appBarLayoutStyle = 0x7f030030
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/itemStrokeWidth = 0x7f0301c1
 com.example.projectapp:style/RtlOverlay.Widget.AppCompat.PopupMenuItem.Title = 0x7f0f0107
 com.example.projectapp:layout/text_view_with_theme_line_height = 0x7f0b007b
@@ -809,25 +1459,42 @@ com.example.projectapp:color/design_icon_tint = 0x7f05005e
 com.example.projectapp:layout/activity_ct_filters = 0x7f0b001d
 com.example.projectapp:style/Theme.MaterialComponents.Light.Dialog.MinWidth = 0x7f0f01c9
 com.example.projectapp:layout/mtrl_picker_header_dialog = 0x7f0b005c
+<<<<<<< HEAD
 com.example.projectapp:id/recyclerView2 = 0x7f080177
 com.example.projectapp:id/edit_query = 0x7f0800bb
+=======
+com.example.projectapp:id/recyclerView2 = 0x7f080176
+com.example.projectapp:id/edit_query = 0x7f0800ba
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.MaterialComponents.Button.TextButton = 0x7f0f0272
 com.example.projectapp:layout/mtrl_picker_dialog = 0x7f0b005a
 com.example.projectapp:animator/mtrl_extended_fab_state_list_animator = 0x7f020015
 com.example.projectapp:drawable/abc_control_background_material = 0x7f070019
 com.example.projectapp:color/material_on_background_emphasis_medium = 0x7f050079
+<<<<<<< HEAD
 com.example.projectapp:id/homeBtnShowTransports6 = 0x7f0800e8
 com.example.projectapp:id/swapBtn = 0x7f0801c9
+=======
+com.example.projectapp:id/homeBtnShowTransports6 = 0x7f0800e7
+com.example.projectapp:id/swapBtn = 0x7f0801c8
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:layout/mtrl_picker_actions = 0x7f0b0059
 com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.Day.Selected = 0x7f0f0292
 com.example.projectapp:layout/mtrl_calendar_months = 0x7f0b0054
 com.example.projectapp:style/Base.Widget.AppCompat.Light.ActionBar.Solid = 0x7f0f00b6
 com.example.projectapp:layout/mtrl_picker_text_input_date_range = 0x7f0b0062
 com.example.projectapp:attr/actionTextColorAlpha = 0x7f030022
+<<<<<<< HEAD
 com.example.projectapp:id/fill = 0x7f0800c6
 com.example.projectapp:attr/singleLine = 0x7f0302ca
 com.example.projectapp:style/Base.Widget.AppCompat.Light.ActionBar.TabView = 0x7f0f00ba
 com.example.projectapp:id/search_src_text = 0x7f0801a0
+=======
+com.example.projectapp:id/fill = 0x7f0800c5
+com.example.projectapp:attr/singleLine = 0x7f0302ca
+com.example.projectapp:style/Base.Widget.AppCompat.Light.ActionBar.TabView = 0x7f0f00ba
+com.example.projectapp:id/search_src_text = 0x7f08019f
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.AppCompat.DropDownItem.Spinner = 0x7f0f021b
 com.example.projectapp:attr/textEndPadding = 0x7f03032f
 com.example.projectapp:string/mtrl_badge_numberless_content_description = 0x7f0e004c
@@ -839,7 +1506,11 @@ com.example.projectapp:style/MaterialAlertDialog.MaterialComponents.Body.Text = 
 com.example.projectapp:style/Base.Widget.AppCompat.Light.PopupMenu.Overflow = 0x7f0f00bc
 com.example.projectapp:layout/notification_template_part_time = 0x7f0b0068
 com.example.projectapp:style/Widget.AppCompat.Light.ActionBar = 0x7f0f021e
+<<<<<<< HEAD
 com.example.projectapp:id/noScroll = 0x7f080152
+=======
+com.example.projectapp:id/noScroll = 0x7f080151
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.AppCompat.AutoCompleteTextView = 0x7f0f020e
 com.example.projectapp:drawable/abc_list_divider_material = 0x7f07002b
 com.example.projectapp:id/fade = 0x7f0800c4
@@ -858,7 +1529,11 @@ com.example.projectapp:layout/design_text_input_start_icon = 0x7f0b0037
 com.example.projectapp:attr/actionBarTabBarStyle = 0x7f030006
 com.example.projectapp:layout/design_navigation_menu_item = 0x7f0b0035
 com.example.projectapp:drawable/$avd_show_password__1 = 0x7f070004
+<<<<<<< HEAD
 com.example.projectapp:id/returnBtn3 = 0x7f08017a
+=======
+com.example.projectapp:id/returnBtn3 = 0x7f080179
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.AppCompat.ActionBar.TabBar = 0x7f0f0206
 com.example.projectapp:style/Base.Widget.AppCompat.ActionButton.Overflow = 0x7f0f00a1
 com.example.projectapp:dimen/notification_right_side_padding_top = 0x7f06017a
@@ -868,12 +1543,16 @@ com.example.projectapp:layout/design_layout_snackbar_include = 0x7f0b002c
 com.example.projectapp:dimen/mtrl_btn_icon_padding = 0x7f0600d5
 com.example.projectapp:layout/material_textinput_timepicker = 0x7f0b0041
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.Picker.Date.Calendar = 0x7f0f01f4
+<<<<<<< HEAD
 com.example.projectapp:id/tag_accessibility_clickable_spans = 0x7f0801cc
+=======
+com.example.projectapp:id/tag_accessibility_clickable_spans = 0x7f0801cb
+com.example.projectapp:string/abc_action_mode_done = 0x7f0e0003
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:string/path_password_eye = 0x7f0e0070
 com.example.projectapp:style/Base.Theme.AppCompat.Light.Dialog = 0x7f0f0050
 com.example.projectapp:layout/design_layout_snackbar = 0x7f0b002b
 com.example.projectapp:attr/tooltipFrameBackground = 0x7f030357
-com.example.projectapp:string/abc_action_mode_done = 0x7f0e0003
 com.example.projectapp:layout/abc_list_menu_item_radio = 0x7f0b0011
 com.example.projectapp:styleable/PopupWindow = 0x7f100062
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.TimePicker = 0x7f0f01ff
@@ -921,9 +1600,13 @@ com.example.projectapp:attr/windowNoTitle = 0x7f03038e
 com.example.projectapp:styleable/KeyAttribute = 0x7f100038
 com.example.projectapp:style/Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse = 0x7f0f00b9
 com.example.projectapp:interpolator/fast_out_slow_in = 0x7f0a0006
+<<<<<<< HEAD
 com.example.projectapp:style/Widget.MaterialComponents.TextInputLayout.OutlinedBox = 0x7f0f02bb
 com.example.projectapp:color/secondary_text_default_material_dark = 0x7f0500cf
 com.example.projectapp:id/unlabeled = 0x7f08022b
+=======
+com.example.projectapp:id/unlabeled = 0x7f08022a
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/flow_horizontalAlign = 0x7f030163
 com.example.projectapp:style/Widget.MaterialComponents.BottomNavigationView.Colored = 0x7f0f026a
 com.example.projectapp:interpolator/btn_radio_to_on_mtrl_animation_interpolator_0 = 0x7f0a0005
@@ -937,7 +1620,11 @@ com.example.projectapp:styleable/CoordinatorLayout = 0x7f100026
 com.example.projectapp:dimen/notification_top_pad_large_text = 0x7f06017f
 com.example.projectapp:style/Base.TextAppearance.AppCompat.Display1 = 0x7f0f0018
 com.example.projectapp:integer/mtrl_badge_max_character_count = 0x7f09000a
+<<<<<<< HEAD
 com.example.projectapp:id/month_navigation_fragment_toggle = 0x7f080131
+=======
+com.example.projectapp:id/month_navigation_fragment_toggle = 0x7f080130
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:integer/design_tab_indicator_anim_duration_ms = 0x7f090007
 com.example.projectapp:attr/showDelay = 0x7f0302c2
 com.example.projectapp:style/Widget.MaterialComponents.ActionBar.Solid = 0x7f0f025c
@@ -946,26 +1633,47 @@ com.example.projectapp:id/line3 = 0x7f08010a
 com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.HeaderConfirmButton = 0x7f0f0297
 com.example.projectapp:style/Widget.AppCompat.TextView.SpinnerItem = 0x7f0f024a
 com.example.projectapp:anim/abc_fade_in = 0x7f010000
+<<<<<<< HEAD
 com.example.projectapp:id/stretch = 0x7f0801c6
 com.example.projectapp:id/travellingTime = 0x7f080221
 com.example.projectapp:id/iconTime = 0x7f0800ef
 com.example.projectapp:id/wrap = 0x7f080237
+=======
+com.example.projectapp:id/stretch = 0x7f0801c5
+com.example.projectapp:id/travellingTime = 0x7f080220
+com.example.projectapp:id/iconTime = 0x7f0800ee
+com.example.projectapp:id/wrap = 0x7f080236
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/mtrl_btn_hovered_z = 0x7f0600d3
 com.example.projectapp:dimen/mtrl_card_dragged_z = 0x7f060111
 com.example.projectapp:attr/layout_constraintBaseline_creator = 0x7f0301dc
 com.example.projectapp:attr/textAppearanceHeadline5 = 0x7f03031f
+<<<<<<< HEAD
 com.example.projectapp:id/withinBounds = 0x7f080236
 com.example.projectapp:id/wide = 0x7f080234
 com.example.projectapp:style/Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense = 0x7f0f02b6
 com.example.projectapp:attr/iconTintMode = 0x7f03019e
 com.example.projectapp:style/Widget.AppCompat.Spinner.Underlined = 0x7f0f0248
 com.example.projectapp:id/view_tree_saved_state_registry_owner = 0x7f080230
+=======
+com.example.projectapp:id/withinBounds = 0x7f080235
+com.example.projectapp:id/wide = 0x7f080233
+com.example.projectapp:style/Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense = 0x7f0f02b6
+com.example.projectapp:attr/iconTintMode = 0x7f03019e
+com.example.projectapp:style/Widget.AppCompat.Spinner.Underlined = 0x7f0f0248
+com.example.projectapp:id/view_tree_saved_state_registry_owner = 0x7f08022f
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/themeLineHeight = 0x7f030335
 com.example.projectapp:style/Theme.ProjectApp = 0x7f0f01d1
 com.example.projectapp:dimen/abc_text_size_display_1_material = 0x7f060043
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox = 0x7f0f01fd
+<<<<<<< HEAD
 com.example.projectapp:id/bounce = 0x7f080064
 com.example.projectapp:id/trip2 = 0x7f080225
+=======
+com.example.projectapp:id/bounce = 0x7f080063
+com.example.projectapp:id/trip2 = 0x7f080224
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:drawable/abc_tab_indicator_material = 0x7f07004a
 com.example.projectapp:layout/test_toolbar = 0x7f0b0074
 com.example.projectapp:attr/motionStagger = 0x7f030261
@@ -975,6 +1683,7 @@ com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.DayTextV
 com.example.projectapp:string/mtrl_picker_range_header_title = 0x7f0e0062
 com.example.projectapp:drawable/googleg_disabled_color_18 = 0x7f070079
 com.example.projectapp:style/ThemeOverlay.AppCompat.Light = 0x7f0f01da
+<<<<<<< HEAD
 com.example.projectapp:id/decelerate = 0x7f080092
 com.example.projectapp:integer/mtrl_calendar_year_selector_span = 0x7f09000f
 com.example.projectapp:id/transportType = 0x7f08021c
@@ -987,11 +1696,26 @@ com.example.projectapp:layout/design_text_input_end_icon = 0x7f0b0036
 com.example.projectapp:id/scrollable = 0x7f080195
 com.example.projectapp:id/trainCheckBox = 0x7f080213
 com.example.projectapp:id/editTextTextMultiLine4 = 0x7f0800b6
+=======
+com.example.projectapp:id/decelerate = 0x7f080091
+com.example.projectapp:integer/mtrl_calendar_year_selector_span = 0x7f09000f
+com.example.projectapp:id/transportType = 0x7f08021b
+com.example.projectapp:style/Base.TextAppearance.MaterialComponents.Headline6 = 0x7f0f0042
+com.example.projectapp:style/Base.Widget.MaterialComponents.Snackbar = 0x7f0f00de
+com.example.projectapp:id/locationShowTransports2 = 0x7f080113
+com.example.projectapp:id/transition_position = 0x7f080217
+com.example.projectapp:dimen/design_textinput_caption_translate_y = 0x7f06008d
+com.example.projectapp:layout/design_text_input_end_icon = 0x7f0b0036
+com.example.projectapp:id/scrollable = 0x7f080194
+com.example.projectapp:id/trainCheckBox = 0x7f080212
+com.example.projectapp:id/editTextTextMultiLine4 = 0x7f0800b5
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/waveShape = 0x7f030383
 com.example.projectapp:styleable/SignInButton = 0x7f10006e
 com.example.projectapp:style/Base.Widget.AppCompat.Button = 0x7f0f00a5
 com.example.projectapp:drawable/abc_btn_check_material_anim = 0x7f07000b
 com.example.projectapp:layout/abc_alert_dialog_material = 0x7f0b0009
+<<<<<<< HEAD
 com.example.projectapp:id/touch_outside = 0x7f080212
 com.example.projectapp:styleable/DrawerArrowToggle = 0x7f100029
 com.example.projectapp:id/topPanel = 0x7f08020f
@@ -1019,29 +1743,74 @@ com.example.projectapp:id/listviewtrips = 0x7f08010f
 com.example.projectapp:id/text_input_error_icon = 0x7f0801fc
 com.example.projectapp:id/aligned = 0x7f080050
 com.example.projectapp:id/layout_list = 0x7f080103
+=======
+com.example.projectapp:id/touch_outside = 0x7f080211
+com.example.projectapp:styleable/DrawerArrowToggle = 0x7f100029
+com.example.projectapp:id/topPanel = 0x7f08020e
+com.example.projectapp:styleable/ScrollingViewBehavior_Layout = 0x7f10006a
+com.example.projectapp:id/titleShowTransports = 0x7f08020a
+com.example.projectapp:dimen/mtrl_bottomappbar_height = 0x7f0600cc
+com.example.projectapp:id/scheduleTimeText = 0x7f08018e
+com.example.projectapp:id/titleDividerNoCustom = 0x7f080209
+com.example.projectapp:attr/gapBetweenBars = 0x7f030180
+com.example.projectapp:id/month_grid = 0x7f08012e
+com.example.projectapp:id/title = 0x7f080208
+com.example.projectapp:id/time = 0x7f080207
+com.example.projectapp:attr/overlapAnchor = 0x7f030276
+com.example.projectapp:style/Platform.V21.AppCompat.Light = 0x7f0f00fb
+com.example.projectapp:id/ticketPriceTextView = 0x7f080206
+com.example.projectapp:drawable/notification_bg_normal_pressed = 0x7f07009e
+com.example.projectapp:drawable/material_cursor_drawable = 0x7f070084
+com.example.projectapp:id/tickerPriceText = 0x7f080204
+com.example.projectapp:style/Platform.ThemeOverlay.AppCompat = 0x7f0f00f7
+com.example.projectapp:id/tag_on_receive_content_listener = 0x7f0801cf
+com.example.projectapp:dimen/mtrl_calendar_header_text_padding = 0x7f0600f7
+com.example.projectapp:id/textinput_counter = 0x7f0801fd
+com.example.projectapp:attr/uiScrollGestures = 0x7f030372
+com.example.projectapp:id/listviewtrips = 0x7f08010e
+com.example.projectapp:id/text_input_error_icon = 0x7f0801fb
+com.example.projectapp:id/aligned = 0x7f08004f
+com.example.projectapp:id/layout_list = 0x7f080102
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/mtrl_progress_circular_radius = 0x7f060143
 com.example.projectapp:string/abc_menu_function_shortcut_label = 0x7f0e000c
 com.example.projectapp:attr/navigationIcon = 0x7f030268
 com.example.projectapp:color/mtrl_card_view_ripple = 0x7f05009b
 com.example.projectapp:layout/mtrl_calendar_vertical = 0x7f0b0055
+<<<<<<< HEAD
 com.example.projectapp:id/textView5 = 0x7f0801f6
+=======
+com.example.projectapp:id/textView5 = 0x7f0801f5
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.Compat.NotificationActionContainer = 0x7f0f024d
 com.example.projectapp:id/always = 0x7f080052
 com.example.projectapp:drawable/abc_seekbar_track_material = 0x7f070043
 com.example.projectapp:style/Theme.MaterialComponents.Dialog.Bridge = 0x7f0f01b7
 com.example.projectapp:attr/materialAlertDialogTitlePanelStyle = 0x7f03022e
+<<<<<<< HEAD
 com.example.projectapp:id/returnBtn7 = 0x7f08017e
 com.example.projectapp:dimen/material_clock_number_text_size = 0x7f0600a2
 com.example.projectapp:id/textView3 = 0x7f0801f4
+=======
+com.example.projectapp:id/returnBtn7 = 0x7f08017d
+com.example.projectapp:dimen/material_clock_number_text_size = 0x7f0600a2
+com.example.projectapp:id/textView3 = 0x7f0801f3
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.AppCompat.Light.ActivityChooserView = 0x7f0f022b
 com.example.projectapp:id/dragRight = 0x7f0800af
 com.example.projectapp:attr/indeterminateProgressStyle = 0x7f0301a4
 com.example.projectapp:attr/defaultState = 0x7f030112
+<<<<<<< HEAD
 com.example.projectapp:id/listview = 0x7f08010e
 com.example.projectapp:drawable/common_google_signin_btn_text_light_normal_background = 0x7f070072
+=======
+com.example.projectapp:id/listview = 0x7f08010d
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.AppCompat.Light.PopupMenu.Overflow = 0x7f0f0231
+com.example.projectapp:drawable/common_google_signin_btn_text_light_normal_background = 0x7f070072
 com.example.projectapp:layout/design_layout_tab_icon = 0x7f0b002d
 com.example.projectapp:attr/tickColorActive = 0x7f030340
+<<<<<<< HEAD
 com.example.projectapp:id/textView25 = 0x7f0801f3
 com.example.projectapp:attr/errorTextColor = 0x7f030144
 com.example.projectapp:style/Base.ThemeOverlay.AppCompat.Dark.ActionBar = 0x7f0f006b
@@ -1061,11 +1830,33 @@ com.example.projectapp:id/text = 0x7f0801dd
 com.example.projectapp:style/Widget.AppCompat.Light.ActionButton.CloseMode = 0x7f0f0228
 com.example.projectapp:id/test_radiobutton_app_button_tint = 0x7f0801dc
 com.example.projectapp:id/tag_transition_group = 0x7f0801d4
+=======
+com.example.projectapp:id/textView25 = 0x7f0801f2
+com.example.projectapp:attr/errorTextColor = 0x7f030144
+com.example.projectapp:style/Base.ThemeOverlay.AppCompat.Dark.ActionBar = 0x7f0f006b
+com.example.projectapp:id/textView21 = 0x7f0801f0
+com.example.projectapp:id/textView17 = 0x7f0801eb
+com.example.projectapp:style/TextAppearance.MaterialComponents.Headline5 = 0x7f0f017a
+com.example.projectapp:id/textView16 = 0x7f0801ea
+com.example.projectapp:drawable/material_ic_keyboard_arrow_previous_black_24dp = 0x7f07008a
+com.example.projectapp:layout/text_view_with_line_height_from_style = 0x7f0b007a
+com.example.projectapp:id/textView15 = 0x7f0801e9
+com.example.projectapp:style/Widget.MaterialComponents.Button.TextButton.Dialog.Icon = 0x7f0f0275
+com.example.projectapp:id/textView = 0x7f0801e3
+com.example.projectapp:attr/tickColor = 0x7f03033f
+com.example.projectapp:id/textTop = 0x7f0801e2
+com.example.projectapp:id/iconMoney = 0x7f0800ed
+com.example.projectapp:id/text = 0x7f0801dc
+com.example.projectapp:style/Widget.AppCompat.Light.ActionButton.CloseMode = 0x7f0f0228
+com.example.projectapp:id/test_radiobutton_app_button_tint = 0x7f0801db
+com.example.projectapp:id/tag_transition_group = 0x7f0801d3
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/mtrl_calendar_navigation_height = 0x7f0600ff
 com.example.projectapp:id/flip = 0x7f0800ce
 com.example.projectapp:drawable/common_google_signin_btn_text_dark_normal_background = 0x7f07006d
 com.example.projectapp:dimen/mtrl_slider_thumb_elevation = 0x7f060154
 com.example.projectapp:attr/backgroundTintMode = 0x7f030047
+<<<<<<< HEAD
 com.example.projectapp:id/tag_state_description = 0x7f0801d3
 com.example.projectapp:style/Theme.MaterialComponents.Dialog.MinWidth.Bridge = 0x7f0f01bb
 com.example.projectapp:id/tag_on_receive_content_mime_types = 0x7f0801d1
@@ -1075,15 +1866,31 @@ com.example.projectapp:style/TextAppearance.AppCompat.Small.Inverse = 0x7f0f0147
 com.example.projectapp:id/guideline3 = 0x7f0800dc
 com.example.projectapp:id/tag_on_apply_window_listener = 0x7f0801cf
 com.example.projectapp:id/elastic = 0x7f0800bc
+=======
+com.example.projectapp:id/tag_state_description = 0x7f0801d2
+com.example.projectapp:style/Theme.MaterialComponents.Dialog.MinWidth.Bridge = 0x7f0f01bb
+com.example.projectapp:id/tag_on_receive_content_mime_types = 0x7f0801d0
+com.example.projectapp:style/Widget.Design.BottomNavigationView = 0x7f0f0250
+com.example.projectapp:dimen/abc_progress_bar_height_material = 0x7f060035
+com.example.projectapp:style/TextAppearance.AppCompat.Small.Inverse = 0x7f0f0147
+com.example.projectapp:id/guideline3 = 0x7f0800db
+com.example.projectapp:id/tag_on_apply_window_listener = 0x7f0801ce
+com.example.projectapp:id/elastic = 0x7f0800bb
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.TextAppearance.AppCompat.SearchResult.Title = 0x7f0f0027
 com.example.projectapp:id/auto = 0x7f08005a
 com.example.projectapp:style/Widget.MaterialComponents.Button.OutlinedButton.Icon = 0x7f0f0271
+<<<<<<< HEAD
 com.example.projectapp:id/tag_accessibility_heading = 0x7f0801cd
+=======
+com.example.projectapp:id/tag_accessibility_heading = 0x7f0801cc
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.Design.BottomSheet.Modal = 0x7f0f0251
 com.example.projectapp:attr/pivotAnchor = 0x7f03028e
 com.example.projectapp:style/Widget.AppCompat.Light.ActionBar.Solid.Inverse = 0x7f0f0220
 com.example.projectapp:attr/panelMenuListTheme = 0x7f030280
 com.example.projectapp:attr/staggered = 0x7f0302d8
+<<<<<<< HEAD
 com.example.projectapp:id/tabMode = 0x7f0801ca
 com.example.projectapp:id/src_atop = 0x7f0801bb
 com.example.projectapp:id/submit_area = 0x7f0801c8
@@ -1098,11 +1905,28 @@ com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.YearNavi
 com.example.projectapp:id/spacer = 0x7f0801b4
 com.example.projectapp:id/shortcut = 0x7f0801a7
 com.example.projectapp:id/outward = 0x7f08015f
+=======
+com.example.projectapp:id/tabMode = 0x7f0801c9
+com.example.projectapp:id/src_atop = 0x7f0801ba
+com.example.projectapp:id/submit_area = 0x7f0801c7
+com.example.projectapp:style/TextAppearance.AppCompat.Subhead.Inverse = 0x7f0f0149
+com.example.projectapp:id/staticLayout = 0x7f0801c2
+com.example.projectapp:id/screen = 0x7f08018f
+com.example.projectapp:id/editTextTextMultiLine5 = 0x7f0800b6
+com.example.projectapp:attr/buttonBarStyle = 0x7f030070
+com.example.projectapp:id/startHorizontal = 0x7f0801bf
+com.example.projectapp:id/spline = 0x7f0801b5
+com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.YearNavigationButton = 0x7f0f02a4
+com.example.projectapp:id/spacer = 0x7f0801b3
+com.example.projectapp:id/shortcut = 0x7f0801a6
+com.example.projectapp:id/outward = 0x7f08015e
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/material_font_1_3_box_collapsed_padding_top = 0x7f0600b1
 com.example.projectapp:dimen/mtrl_navigation_item_shape_vertical_margin = 0x7f06013e
 com.example.projectapp:id/depArrTimeTextView = 0x7f080099
 com.example.projectapp:layout/mtrl_alert_dialog_title = 0x7f0b0049
 com.example.projectapp:styleable/AnimatedStateListDrawableCompat = 0x7f100007
+<<<<<<< HEAD
 com.example.projectapp:id/search_plate = 0x7f08019f
 com.example.projectapp:attr/behavior_saveFlags = 0x7f030058
 com.example.projectapp:id/sawtooth = 0x7f08018d
@@ -1123,19 +1947,50 @@ com.example.projectapp:integer/abc_config_activityShortDur = 0x7f090001
 com.example.projectapp:styleable/CollapsingToolbarLayout = 0x7f10001e
 com.example.projectapp:string/material_timepicker_minute = 0x7f0e0048
 com.example.projectapp:id/returnBtn8 = 0x7f08017f
+=======
+com.example.projectapp:id/search_plate = 0x7f08019e
+com.example.projectapp:attr/behavior_saveFlags = 0x7f030058
+com.example.projectapp:id/sawtooth = 0x7f08018c
+com.example.projectapp:id/search_go_btn = 0x7f08019c
+com.example.projectapp:style/TextAppearance.MaterialComponents.Headline1 = 0x7f0f0176
+com.example.projectapp:id/search_close_btn = 0x7f08019a
+com.example.projectapp:id/search_badge = 0x7f080197
+com.example.projectapp:id/sdwdw = 0x7f080195
+com.example.projectapp:id/mtrl_calendar_year_selector_frame = 0x7f08013e
+com.example.projectapp:id/transportTypeImage = 0x7f08021d
+com.example.projectapp:id/split_action_bar = 0x7f0801b6
+com.example.projectapp:id/scroll = 0x7f080190
+com.example.projectapp:styleable/PopupWindowBackgroundState = 0x7f100063
+com.example.projectapp:id/row_index_key = 0x7f080187
+com.example.projectapp:style/TextAppearance.AppCompat.Small = 0x7f0f0146
+com.example.projectapp:id/right_icon = 0x7f080183
+com.example.projectapp:integer/abc_config_activityShortDur = 0x7f090001
+com.example.projectapp:styleable/CollapsingToolbarLayout = 0x7f10001e
+com.example.projectapp:string/material_timepicker_minute = 0x7f0e0048
+com.example.projectapp:id/returnBtn8 = 0x7f08017e
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/TextAppearance.MaterialComponents.Headline3 = 0x7f0f0178
 com.example.projectapp:dimen/abc_list_item_height_material = 0x7f060031
 com.example.projectapp:attr/layout_constraintLeft_toLeftOf = 0x7f0301f2
 com.example.projectapp:style/ShapeAppearanceOverlay.MaterialComponents.Chip = 0x7f0f011c
+<<<<<<< HEAD
 com.example.projectapp:id/returnBtn5 = 0x7f08017c
 com.example.projectapp:layout/activity_saved_routes = 0x7f0b0025
 com.example.projectapp:style/Base.Widget.AppCompat.ListView.DropDown = 0x7f0f00c0
 com.example.projectapp:id/returnBtn2 = 0x7f080179
 com.example.projectapp:id/radio = 0x7f080174
+=======
+com.example.projectapp:id/returnBtn5 = 0x7f08017b
+com.example.projectapp:layout/activity_saved_routes = 0x7f0b0025
+com.example.projectapp:style/Base.Widget.AppCompat.ListView.DropDown = 0x7f0f00c0
+com.example.projectapp:id/returnBtn2 = 0x7f080178
+com.example.projectapp:id/radio = 0x7f080173
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/backgroundInsetTop = 0x7f030042
 com.example.projectapp:attr/textInputLayoutFocusedRectEnabled = 0x7f030330
 com.example.projectapp:layout/activity_help_page = 0x7f0b0021
 com.example.projectapp:string/common_google_play_services_enable_title = 0x7f0e0026
+<<<<<<< HEAD
 com.example.projectapp:id/center_vertical = 0x7f08006f
 com.example.projectapp:id/placeofarrival = 0x7f08016e
 com.example.projectapp:dimen/material_clock_period_toggle_margin_left = 0x7f0600a4
@@ -1167,36 +2022,96 @@ com.example.projectapp:dimen/mtrl_progress_circular_inset_medium = 0x7f060141
 com.example.projectapp:id/wrap_content = 0x7f080238
 com.example.projectapp:integer/mtrl_tab_indicator_anim_duration_ms = 0x7f090013
 com.example.projectapp:id/transitionToStart = 0x7f080215
+=======
+com.example.projectapp:id/center_vertical = 0x7f08006e
+com.example.projectapp:id/placeofarrival = 0x7f08016d
+com.example.projectapp:dimen/material_clock_period_toggle_margin_left = 0x7f0600a4
+com.example.projectapp:id/path = 0x7f080166
+com.example.projectapp:id/parentRelative = 0x7f080163
+com.example.projectapp:style/Widget.MaterialComponents.BottomAppBar = 0x7f0f0266
+com.example.projectapp:style/TextAppearance.Compat.Notification.Line2 = 0x7f0f0162
+com.example.projectapp:id/parent = 0x7f080161
+com.example.projectapp:id/outline = 0x7f08015d
+com.example.projectapp:attr/labelVisibilityMode = 0x7f0301cb
+com.example.projectapp:styleable/Spinner = 0x7f100072
+com.example.projectapp:drawable/btn_radio_off_mtrl = 0x7f07005c
+com.example.projectapp:id/trip4 = 0x7f080226
+com.example.projectapp:color/abc_search_url_text = 0x7f05000d
+com.example.projectapp:id/origem = 0x7f08015b
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.Dark.ActionBar = 0x7f0f01e9
+com.example.projectapp:id/notification_main_column_container = 0x7f080157
+com.example.projectapp:attr/actionModeFindDrawable = 0x7f030016
+com.example.projectapp:id/notification_main_column = 0x7f080156
+com.example.projectapp:id/notification_background = 0x7f080155
+com.example.projectapp:drawable/$avd_show_password__2 = 0x7f070005
+com.example.projectapp:drawable/ic_launcher_background = 0x7f07007d
+com.example.projectapp:id/multiply = 0x7f08014d
+com.example.projectapp:style/Theme.MaterialComponents.Dialog.Alert = 0x7f0f01b5
+com.example.projectapp:style/Widget.MaterialComponents.Badge = 0x7f0f0265
+com.example.projectapp:style/Base.V21.Theme.MaterialComponents = 0x7f0f0084
+com.example.projectapp:id/mtrl_view_tag_bottom_padding = 0x7f08014c
+com.example.projectapp:dimen/mtrl_progress_circular_inset_medium = 0x7f060141
+com.example.projectapp:id/wrap_content = 0x7f080237
+com.example.projectapp:id/transitionToStart = 0x7f080214
+com.example.projectapp:integer/mtrl_tab_indicator_anim_duration_ms = 0x7f090013
+com.example.projectapp:style/Widget.AppCompat.Light.ActionButton = 0x7f0f0227
+com.example.projectapp:id/mtrl_picker_header_selection_text = 0x7f080145
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.Centered = 0x7f0f01f2
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:styleable/ConstraintLayout_placeholder = 0x7f100024
 com.example.projectapp:id/mtrl_picker_header_selection_text = 0x7f080146
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.Centered = 0x7f0f01f2
 com.example.projectapp:style/Widget.AppCompat.Light.ActionButton = 0x7f0f0227
 com.example.projectapp:drawable/design_password_eye = 0x7f070077
 com.example.projectapp:dimen/compat_button_padding_vertical_material = 0x7f06005a
+<<<<<<< HEAD
 com.example.projectapp:id/mtrl_calendar_days_of_week = 0x7f080139
 com.example.projectapp:styleable/Transition = 0x7f100082
 com.example.projectapp:attr/layout_constraintBottom_toTopOf = 0x7f0301e0
 com.example.projectapp:string/material_hour_suffix = 0x7f0e0040
 com.example.projectapp:id/material_clock_period_toggle = 0x7f08011d
+=======
+com.example.projectapp:id/mtrl_calendar_days_of_week = 0x7f080138
+com.example.projectapp:styleable/Transition = 0x7f100082
+com.example.projectapp:attr/layout_constraintBottom_toTopOf = 0x7f0301e0
+com.example.projectapp:string/material_hour_suffix = 0x7f0e0040
+com.example.projectapp:id/material_clock_period_toggle = 0x7f08011c
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/extendedFloatingActionButtonStyle = 0x7f030150
 com.example.projectapp:drawable/abc_ic_menu_cut_mtrl_alpha = 0x7f070022
 com.example.projectapp:drawable/mtrl_dropdown_arrow = 0x7f07008f
 com.example.projectapp:style/Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item = 0x7f0f0044
 com.example.projectapp:animator/fragment_open_enter = 0x7f020007
+<<<<<<< HEAD
 com.example.projectapp:id/mtrl_anchor_parent = 0x7f080137
 com.example.projectapp:style/Theme.MaterialComponents.Light.DialogWhenLarge = 0x7f0f01cb
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen = 0x7f0f01f9
 com.example.projectapp:id/moreInfoBtn = 0x7f080135
+=======
+com.example.projectapp:id/mtrl_anchor_parent = 0x7f080136
+com.example.projectapp:style/Theme.MaterialComponents.Light.DialogWhenLarge = 0x7f0f01cb
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen = 0x7f0f01f9
+com.example.projectapp:id/moreInfoBtn = 0x7f080134
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/layout_constraintBaseline_toBaselineOf = 0x7f0301dd
 com.example.projectapp:id/homeBtnShowTransports7 = 0x7f0800e9
 com.example.projectapp:style/Base.Theme.AppCompat.Dialog = 0x7f0f0049
 com.example.projectapp:layout/abc_cascading_menu_item_layout = 0x7f0b000b
+<<<<<<< HEAD
 com.example.projectapp:id/month_title = 0x7f080134
 com.example.projectapp:layout/mtrl_calendar_month_navigation = 0x7f0b0053
 com.example.projectapp:style/Base.ThemeOverlay.MaterialComponents.Dialog = 0x7f0f006f
 com.example.projectapp:attr/content = 0x7f0300dc
 com.example.projectapp:id/asConfigured = 0x7f080058
 com.example.projectapp:id/month_navigation_next = 0x7f080132
+=======
+com.example.projectapp:id/month_title = 0x7f080133
+com.example.projectapp:layout/mtrl_calendar_month_navigation = 0x7f0b0053
+com.example.projectapp:style/Base.ThemeOverlay.MaterialComponents.Dialog = 0x7f0f006f
+com.example.projectapp:attr/content = 0x7f0300dc
+com.example.projectapp:id/asConfigured = 0x7f080057
+com.example.projectapp:id/month_navigation_next = 0x7f080131
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:drawable/abc_list_pressed_holo_light = 0x7f070030
 com.example.projectapp:drawable/mtrl_ic_cancel = 0x7f070092
 com.example.projectapp:style/TextAppearance.AppCompat.Inverse = 0x7f0f013a
@@ -1205,6 +2120,7 @@ com.example.projectapp:attr/fabCradleVerticalOffset = 0x7f030155
 com.example.projectapp:layout/design_navigation_menu = 0x7f0b0034
 com.example.projectapp:attr/listItemLayout = 0x7f03021c
 com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.MonthNavigationButton = 0x7f0f029f
+<<<<<<< HEAD
 com.example.projectapp:id/material_timepicker_view = 0x7f080129
 com.example.projectapp:attr/errorIconDrawable = 0x7f030140
 com.example.projectapp:color/mtrl_chip_close_icon_tint = 0x7f05009d
@@ -1218,10 +2134,27 @@ com.example.projectapp:style/Widget.AppCompat.Light.DropDownItem.Spinner = 0x7f0
 com.example.projectapp:id/material_textinput_timepicker = 0x7f080123
 com.example.projectapp:id/textView10 = 0x7f0801e5
 com.example.projectapp:id/material_minute_tv = 0x7f080122
+=======
+com.example.projectapp:id/material_timepicker_view = 0x7f080128
+com.example.projectapp:attr/errorIconDrawable = 0x7f030140
+com.example.projectapp:color/mtrl_chip_close_icon_tint = 0x7f05009d
+com.example.projectapp:style/Base.Widget.MaterialComponents.MaterialCalendar.NavigationButton = 0x7f0f00d8
+com.example.projectapp:id/motion_base = 0x7f080135
+com.example.projectapp:id/material_timepicker_cancel_button = 0x7f080123
+com.example.projectapp:style/MaterialAlertDialog.MaterialComponents.Picker.Date.Spinner = 0x7f0f00ea
+com.example.projectapp:id/save_overlay_view = 0x7f08018a
+com.example.projectapp:id/material_textinput_timepicker = 0x7f080122
+com.example.projectapp:style/Widget.AppCompat.Light.DropDownItem.Spinner = 0x7f0f022d
+com.example.projectapp:integer/config_tooltipAnimTime = 0x7f090005
+com.example.projectapp:id/snap = 0x7f0801b1
+com.example.projectapp:id/textView10 = 0x7f0801e4
+com.example.projectapp:id/material_minute_tv = 0x7f080121
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/abc_text_size_caption_material = 0x7f060042
 com.example.projectapp:layout/design_navigation_item = 0x7f0b0030
 com.example.projectapp:attr/constraintSetStart = 0x7f0300d8
 com.example.projectapp:style/Base.TextAppearance.AppCompat.Title.Inverse = 0x7f0f002d
+<<<<<<< HEAD
 com.example.projectapp:id/snap = 0x7f0801b2
 com.example.projectapp:string/abc_menu_meta_shortcut_label = 0x7f0e000d
 com.example.projectapp:attr/listPreferredItemHeightSmall = 0x7f030222
@@ -1241,6 +2174,26 @@ com.example.projectapp:color/bright_foreground_material_dark = 0x7f050026
 com.example.projectapp:id/locationBtnShowTransports = 0x7f080112
 com.example.projectapp:id/locationBtn = 0x7f080111
 com.example.projectapp:id/listMode = 0x7f08010c
+=======
+com.example.projectapp:dimen/mtrl_calendar_action_height = 0x7f0600e5
+com.example.projectapp:id/material_minute_text_input = 0x7f080120
+com.example.projectapp:attr/listPreferredItemHeightSmall = 0x7f030222
+com.example.projectapp:string/abc_menu_meta_shortcut_label = 0x7f0e000d
+com.example.projectapp:id/textView7 = 0x7f0801f7
+com.example.projectapp:id/material_hour_text_input = 0x7f08011d
+com.example.projectapp:id/material_clock_period_pm_button = 0x7f08011b
+com.example.projectapp:layout/material_radial_view_group = 0x7f0b0040
+com.example.projectapp:attr/labelBehavior = 0x7f0301c9
+com.example.projectapp:color/abc_secondary_text_material_dark = 0x7f050011
+com.example.projectapp:id/material_clock_display = 0x7f080117
+com.example.projectapp:id/trip3 = 0x7f080225
+com.example.projectapp:attr/startIconCheckable = 0x7f0302d9
+com.example.projectapp:id/locationTextView = 0x7f080114
+com.example.projectapp:color/bright_foreground_material_dark = 0x7f050026
+com.example.projectapp:id/locationBtnShowTransports = 0x7f080111
+com.example.projectapp:id/locationBtn = 0x7f080110
+com.example.projectapp:id/listMode = 0x7f08010b
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/mtrl_extended_fab_translation_z_pressed = 0x7f06012a
 com.example.projectapp:style/TextAppearance.AppCompat.SearchResult.Title = 0x7f0f0145
 com.example.projectapp:style/Base.Animation.AppCompat.DropDownUp = 0x7f0f000b
@@ -1259,7 +2212,17 @@ com.example.projectapp:id/action_context_bar = 0x7f080040
 com.example.projectapp:attr/materialCalendarHeaderTitle = 0x7f03023a
 com.example.projectapp:string/exposed_dropdown_menu_content_description = 0x7f0e0037
 com.example.projectapp:style/Base.Theme.MaterialComponents.Light.Dialog.FixedSize = 0x7f0f0065
+<<<<<<< HEAD
 com.example.projectapp:attr/switchMinWidth = 0x7f0302f3
+=======
+com.example.projectapp:style/Base.Widget.AppCompat.EditText = 0x7f0f00b3
+com.example.projectapp:attr/curveFit = 0x7f030102
+com.example.projectapp:attr/switchMinWidth = 0x7f0302f3
+com.example.projectapp:id/action_bar = 0x7f080037
+com.example.projectapp:id/invisible = 0x7f0800f8
+com.example.projectapp:color/material_on_background_disabled = 0x7f050077
+com.example.projectapp:attr/yearTodayStyle = 0x7f030391
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/TextAppearance.AppCompat.Display2 = 0x7f0f0136
 com.example.projectapp:style/Base.V14.Theme.MaterialComponents.Light.Dialog = 0x7f0f007b
 com.example.projectapp:id/invisible = 0x7f0800f9
@@ -1285,8 +2248,13 @@ com.example.projectapp:id/graph_wrap = 0x7f0800d6
 com.example.projectapp:style/Widget.MaterialComponents.TextInputEditText.OutlinedBox = 0x7f0f02b5
 com.example.projectapp:id/graph = 0x7f0800d5
 com.example.projectapp:attr/itemShapeAppearanceOverlay = 0x7f0301b9
+<<<<<<< HEAD
 com.example.projectapp:id/startVertical = 0x7f0801c2
 com.example.projectapp:id/list_item = 0x7f08010d
+=======
+com.example.projectapp:id/startVertical = 0x7f0801c1
+com.example.projectapp:id/list_item = 0x7f08010c
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.Dialog = 0x7f0f01eb
 com.example.projectapp:attr/badgeGravity = 0x7f030048
 com.example.projectapp:id/gone = 0x7f0800d4
@@ -1305,22 +2273,38 @@ com.example.projectapp:id/italic = 0x7f0800fb
 com.example.projectapp:id/exitUntilCollapsed = 0x7f0800c1
 com.example.projectapp:id/editTextTextMultiLine8 = 0x7f0800ba
 com.example.projectapp:dimen/notification_small_icon_background_padding = 0x7f06017b
+<<<<<<< HEAD
 com.example.projectapp:id/mapDoneBtn = 0x7f080116
 com.example.projectapp:id/dropdown_menu = 0x7f0800b2
 com.example.projectapp:id/dragUp = 0x7f0800b1
 com.example.projectapp:id/accessibility_custom_action_13 = 0x7f08001d
+=======
+com.example.projectapp:id/mapDoneBtn = 0x7f080115
+com.example.projectapp:id/dropdown_menu = 0x7f0800b1
+com.example.projectapp:id/dragUp = 0x7f0800b0
+com.example.projectapp:id/accessibility_custom_action_13 = 0x7f08001c
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/itemShapeFillColor = 0x7f0301ba
 com.example.projectapp:style/Widget.AppCompat.CompoundButton.RadioButton = 0x7f0f0218
 com.example.projectapp:style/MaterialAlertDialog.MaterialComponents = 0x7f0f00e7
 com.example.projectapp:style/Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox.Dense = 0x7f0f0264
 com.example.projectapp:id/easeIn = 0x7f0800b3
 com.example.projectapp:drawable/btn_radio_on_to_off_mtrl_animation = 0x7f07005f
+<<<<<<< HEAD
 com.example.projectapp:id/parent_matrix = 0x7f080165
 com.example.projectapp:id/disjoint = 0x7f0800ab
 com.example.projectapp:id/disableScroll = 0x7f0800aa
 com.example.projectapp:id/disableHome = 0x7f0800a8
 com.example.projectapp:style/Widget.AppCompat.Spinner.DropDown = 0x7f0f0246
 com.example.projectapp:id/destiny = 0x7f0800a3
+=======
+com.example.projectapp:id/parent_matrix = 0x7f080164
+com.example.projectapp:id/disjoint = 0x7f0800aa
+com.example.projectapp:id/disableScroll = 0x7f0800a9
+com.example.projectapp:id/disableHome = 0x7f0800a7
+com.example.projectapp:style/Widget.AppCompat.Spinner.DropDown = 0x7f0f0246
+com.example.projectapp:id/destiny = 0x7f0800a2
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:layout/notification_action_tombstone = 0x7f0b0064
 com.example.projectapp:id/design_navigation_view = 0x7f0800a1
 com.example.projectapp:style/Widget.MaterialComponents.ActionBar.PrimarySurface = 0x7f0f025b
@@ -1342,13 +2326,22 @@ com.example.projectapp:id/contentPanel = 0x7f080085
 com.example.projectapp:id/content = 0x7f080084
 com.example.projectapp:style/Base.V22.Theme.AppCompat = 0x7f0f0089
 com.example.projectapp:attr/actionModeBackground = 0x7f030010
+<<<<<<< HEAD
 com.example.projectapp:id/search_edit_frame = 0x7f08019c
+=======
+com.example.projectapp:id/search_edit_frame = 0x7f08019b
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/design_navigation_max_width = 0x7f06007b
 com.example.projectapp:style/Widget.MaterialComponents.TimePicker.Clock = 0x7f0f02c2
 com.example.projectapp:id/collapseActionView = 0x7f08007f
 com.example.projectapp:integer/abc_config_activityDefaultDur = 0x7f090000
+<<<<<<< HEAD
 com.example.projectapp:id/tag_screen_reader_focusable = 0x7f0801d2
 com.example.projectapp:id/clockwise = 0x7f08007e
+=======
+com.example.projectapp:id/tag_screen_reader_focusable = 0x7f0801d1
+com.example.projectapp:id/clockwise = 0x7f08007d
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/material_timepicker_dialog_buttons_margin_top = 0x7f0600b9
 com.example.projectapp:drawable/common_google_signin_btn_text_light_focused = 0x7f070070
 com.example.projectapp:style/Base.V21.Theme.MaterialComponents.Dialog = 0x7f0f0085
@@ -1359,6 +2352,7 @@ com.example.projectapp:attr/haloRadius = 0x7f030184
 com.example.projectapp:id/circle_center = 0x7f08007a
 com.example.projectapp:id/chip3 = 0x7f080077
 com.example.projectapp:style/Base.V14.ThemeOverlay.MaterialComponents.MaterialAlertDialog = 0x7f0f007f
+<<<<<<< HEAD
 com.example.projectapp:id/peekHeight = 0x7f080169
 com.example.projectapp:id/chip2 = 0x7f080076
 com.example.projectapp:color/abc_tint_default = 0x7f050014
@@ -1368,19 +2362,36 @@ com.example.projectapp:style/Theme.AppCompat.DayNight.NoActionBar = 0x7f0f018c
 com.example.projectapp:attr/floatingActionButtonStyle = 0x7f03015e
 com.example.projectapp:id/chip1 = 0x7f080075
 com.example.projectapp:id/checkbox = 0x7f080072
+=======
+com.example.projectapp:id/peekHeight = 0x7f080168
+com.example.projectapp:id/chip2 = 0x7f080075
+com.example.projectapp:color/abc_tint_default = 0x7f050014
+com.example.projectapp:id/chip1 = 0x7f080074
+com.example.projectapp:styleable/FragmentContainerView = 0x7f100033
+com.example.projectapp:id/searchResultsBtn = 0x7f080196
+com.example.projectapp:attr/floatingActionButtonStyle = 0x7f03015e
+com.example.projectapp:style/Theme.AppCompat.DayNight.NoActionBar = 0x7f0f018c
+com.example.projectapp:id/checkbox = 0x7f080071
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/design_fab_border_width = 0x7f06006f
 com.example.projectapp:id/chain = 0x7f080070
 com.example.projectapp:id/accessibility_custom_action_16 = 0x7f080020
 com.example.projectapp:id/busCheckBox = 0x7f080068
 com.example.projectapp:id/btnArrival = 0x7f080065
 com.example.projectapp:style/CardView.Light = 0x7f0f00e4
+<<<<<<< HEAD
 com.example.projectapp:id/pathRelative = 0x7f080168
 com.example.projectapp:id/beginning = 0x7f080061
+=======
+com.example.projectapp:id/pathRelative = 0x7f080167
+com.example.projectapp:id/beginning = 0x7f080060
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.MaterialComponents.AppBarLayout.PrimarySurface = 0x7f0f025f
 com.example.projectapp:string/mtrl_picker_text_input_day_abbr = 0x7f0e0068
 com.example.projectapp:id/baseline = 0x7f08005f
 com.example.projectapp:attr/chipBackgroundColor = 0x7f030094
 com.example.projectapp:style/Base.Theme.MaterialComponents.CompactMenu = 0x7f0f0057
+<<<<<<< HEAD
 com.example.projectapp:id/barrier = 0x7f08005e
 com.example.projectapp:id/textEnd = 0x7f0801df
 com.example.projectapp:id/SYM = 0x7f080011
@@ -1388,6 +2399,15 @@ com.example.projectapp:id/transportTypeTextView = 0x7f080220
 com.example.projectapp:id/autoCompleteToEnd = 0x7f08005c
 com.example.projectapp:color/highlighted_text_material_light = 0x7f050069
 com.example.projectapp:id/snackbar_action = 0x7f0801b0
+=======
+com.example.projectapp:id/barrier = 0x7f08005d
+com.example.projectapp:id/textEnd = 0x7f0801de
+com.example.projectapp:id/SYM = 0x7f080011
+com.example.projectapp:id/transportTypeTextView = 0x7f08021f
+com.example.projectapp:id/autoCompleteToEnd = 0x7f08005b
+com.example.projectapp:color/highlighted_text_material_light = 0x7f050069
+com.example.projectapp:id/snackbar_action = 0x7f0801af
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.MaterialComponents.Button.UnelevatedButton.Icon = 0x7f0f0279
 com.example.projectapp:id/autoComplete = 0x7f08005b
 com.example.projectapp:attr/itemTextColor = 0x7f0301c5
@@ -1416,18 +2436,30 @@ com.example.projectapp:id/action_menu_divider = 0x7f080043
 com.example.projectapp:dimen/design_snackbar_action_text_color_alpha = 0x7f06007f
 com.example.projectapp:style/Theme.Design.Light.NoActionBar = 0x7f0f019e
 com.example.projectapp:id/SHOW_PROGRESS = 0x7f080010
+<<<<<<< HEAD
 com.example.projectapp:id/mtrl_picker_text_input_date = 0x7f080149
 com.example.projectapp:id/action_bar_title = 0x7f08003e
+=======
+com.example.projectapp:id/mtrl_picker_text_input_date = 0x7f080148
+com.example.projectapp:id/action_bar_title = 0x7f08003d
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/abc_search_view_preferred_width = 0x7f060037
 com.example.projectapp:id/action_bar_root = 0x7f08003b
 com.example.projectapp:id/action_bar_container = 0x7f08003a
 com.example.projectapp:id/accessibility_custom_action_7 = 0x7f080035
 com.example.projectapp:styleable/MaterialButtonToggleGroup = 0x7f10004b
 com.example.projectapp:anim/mtrl_card_lowers_interpolator = 0x7f01001f
+<<<<<<< HEAD
 com.example.projectapp:id/startToEnd = 0x7f0801c1
 com.example.projectapp:id/fill_vertical = 0x7f0800c8
 com.example.projectapp:id/accessibility_custom_action_4 = 0x7f080032
 com.example.projectapp:id/accessibility_custom_action_30 = 0x7f080030
+=======
+com.example.projectapp:id/startToEnd = 0x7f0801c0
+com.example.projectapp:id/fill_vertical = 0x7f0800c7
+com.example.projectapp:id/accessibility_custom_action_4 = 0x7f080031
+com.example.projectapp:id/accessibility_custom_action_30 = 0x7f08002f
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/mtrl_calendar_dialog_background_inset = 0x7f0600f0
 com.example.projectapp:id/accessibility_custom_action_29 = 0x7f08002e
 com.example.projectapp:id/accessibility_custom_action_25 = 0x7f08002a
@@ -1435,7 +2467,11 @@ com.example.projectapp:color/mtrl_btn_text_color_disabled = 0x7f050095
 com.example.projectapp:integer/mtrl_calendar_header_orientation = 0x7f09000d
 com.example.projectapp:style/Platform.V25.AppCompat.Light = 0x7f0f00fd
 com.example.projectapp:style/Widget.Design.TextInputLayout = 0x7f0f0259
+<<<<<<< HEAD
 com.example.projectapp:id/search_voice_btn = 0x7f0801a1
+=======
+com.example.projectapp:id/search_voice_btn = 0x7f0801a0
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/mtrl_shape_corner_size_medium_component = 0x7f06014e
 com.example.projectapp:style/Base.V14.Theme.MaterialComponents.Light.DarkActionBar.Bridge = 0x7f0f007a
 com.example.projectapp:id/accessibility_custom_action_23 = 0x7f080028
@@ -1447,12 +2483,21 @@ com.example.projectapp:attr/motion_postLayoutCollision = 0x7f030263
 com.example.projectapp:style/Widget.AppCompat.PopupWindow = 0x7f0f023b
 com.example.projectapp:string/mtrl_picker_announce_current_selection = 0x7f0e0052
 com.example.projectapp:style/Base.Theme.MaterialComponents.Light.Bridge = 0x7f0f005f
+<<<<<<< HEAD
 com.example.projectapp:id/accessibility_custom_action_2 = 0x7f080024
 com.example.projectapp:id/material_timepicker_edit_text = 0x7f080126
 com.example.projectapp:attr/visibilityMode = 0x7f03037d
 com.example.projectapp:style/Theme.MaterialComponents.Light.Dialog.Bridge = 0x7f0f01c6
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.ActionBar.Surface = 0x7f0f01df
 com.example.projectapp:id/visible = 0x7f080232
+=======
+com.example.projectapp:id/accessibility_custom_action_2 = 0x7f080023
+com.example.projectapp:id/material_timepicker_edit_text = 0x7f080125
+com.example.projectapp:attr/visibilityMode = 0x7f03037d
+com.example.projectapp:style/Theme.MaterialComponents.Light.Dialog.Bridge = 0x7f0f01c6
+com.example.projectapp:style/ThemeOverlay.MaterialComponents.ActionBar.Surface = 0x7f0f01df
+com.example.projectapp:id/visible = 0x7f080231
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/material_cursor_width = 0x7f0600a9
 com.example.projectapp:style/Theme.MaterialComponents.DayNight.Dialog.Alert = 0x7f0f01aa
 com.example.projectapp:id/accessibility_custom_action_19 = 0x7f080023
@@ -1460,6 +2505,7 @@ com.example.projectapp:dimen/material_helper_text_font_1_3_padding_horizontal = 
 com.example.projectapp:dimen/mtrl_exposed_dropdown_menu_popup_vertical_padding = 0x7f060119
 com.example.projectapp:id/accessibility_custom_action_18 = 0x7f080022
 com.example.projectapp:string/mtrl_picker_text_input_date_range_start_hint = 0x7f0e0067
+<<<<<<< HEAD
 com.example.projectapp:id/routeName = 0x7f080187
 com.example.projectapp:id/accessibility_custom_action_0 = 0x7f080018
 com.example.projectapp:dimen/mtrl_calendar_day_horizontal_padding = 0x7f0600eb
@@ -1472,6 +2518,20 @@ com.example.projectapp:id/action_bar_subtitle = 0x7f08003d
 com.example.projectapp:id/material_clock_hand = 0x7f08011a
 com.example.projectapp:id/accessibility_custom_action_15 = 0x7f08001f
 com.example.projectapp:id/accessibility_custom_action_14 = 0x7f08001e
+=======
+com.example.projectapp:id/action_bar_subtitle = 0x7f08003c
+com.example.projectapp:id/material_clock_hand = 0x7f080119
+com.example.projectapp:id/month_navigation_previous = 0x7f080132
+com.example.projectapp:style/Base.Theme.MaterialComponents.Dialog.Bridge = 0x7f0f005a
+com.example.projectapp:id/routeName = 0x7f080186
+com.example.projectapp:id/accessibility_custom_action_0 = 0x7f080017
+com.example.projectapp:dimen/mtrl_calendar_day_horizontal_padding = 0x7f0600eb
+com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.Year.Today = 0x7f0f02a3
+com.example.projectapp:color/mtrl_choice_chip_ripple_color = 0x7f0500a1
+com.example.projectapp:attr/showPaths = 0x7f0302c5
+com.example.projectapp:id/accessibility_custom_action_15 = 0x7f08001e
+com.example.projectapp:id/accessibility_custom_action_14 = 0x7f08001d
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:styleable/ActionMenuItemView = 0x7f100002
 com.example.projectapp:id/accessibility_custom_action_11 = 0x7f08001b
 com.example.projectapp:id/accessibility_custom_action_10 = 0x7f08001a
@@ -1485,12 +2545,23 @@ com.example.projectapp:color/material_on_primary_emphasis_high_type = 0x7f05007b
 com.example.projectapp:id/SHOW_ALL = 0x7f08000e
 com.example.projectapp:id/NO_DEBUG = 0x7f08000b
 com.example.projectapp:style/Base.ThemeOverlay.AppCompat.ActionBar = 0x7f0f0069
+<<<<<<< HEAD
 com.example.projectapp:id/withText = 0x7f080235
+=======
+com.example.projectapp:id/withText = 0x7f080234
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.Theme.MaterialComponents.Dialog.Alert = 0x7f0f0059
 com.example.projectapp:id/FUNCTION = 0x7f080009
 com.example.projectapp:id/buttonPanel = 0x7f08006a
 com.example.projectapp:id/CT_SearchResultsTitle = 0x7f080008
+<<<<<<< HEAD
 com.example.projectapp:id/scale = 0x7f08018e
+=======
+com.example.projectapp:style/Base.Theme.AppCompat.Light.Dialog.MinWidth = 0x7f0f0053
+com.example.projectapp:id/CT_LocationFiltersTextView = 0x7f080006
+com.example.projectapp:attr/materialCalendarYearNavigationButton = 0x7f030240
+com.example.projectapp:id/scale = 0x7f08018d
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.MaterialComponents.TimePicker.ImageButton.ShapeAppearance = 0x7f0f02c6
 com.example.projectapp:style/Base.Widget.AppCompat.PopupMenu = 0x7f0f00c2
 com.example.projectapp:attr/materialCalendarYearNavigationButton = 0x7f030240
@@ -1504,11 +2575,19 @@ com.example.projectapp:drawable/notification_tile_bg = 0x7f0700a2
 com.example.projectapp:styleable/SearchView = 0x7f10006b
 com.example.projectapp:drawable/notification_template_icon_bg = 0x7f0700a0
 com.example.projectapp:drawable/notification_bg_normal = 0x7f07009d
+<<<<<<< HEAD
 com.example.projectapp:id/settingsBtn = 0x7f0801a6
 com.example.projectapp:style/Base.V28.Theme.AppCompat.Light = 0x7f0f0091
 com.example.projectapp:attr/scopeUris = 0x7f0302af
 com.example.projectapp:styleable/Transform = 0x7f100081
 com.example.projectapp:id/material_clock_period_am_button = 0x7f08011b
+=======
+com.example.projectapp:id/settingsBtn = 0x7f0801a5
+com.example.projectapp:style/Base.V28.Theme.AppCompat.Light = 0x7f0f0091
+com.example.projectapp:attr/scopeUris = 0x7f0302af
+com.example.projectapp:styleable/Transform = 0x7f100081
+com.example.projectapp:id/material_clock_period_am_button = 0x7f08011a
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.TextAppearance.AppCompat.Display4 = 0x7f0f001b
 com.example.projectapp:drawable/notification_bg_low_normal = 0x7f07009b
 com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.HeaderLayout = 0x7f0f0299
@@ -1520,6 +2599,7 @@ com.example.projectapp:attr/ratingBarStyleSmall = 0x7f0302a4
 com.example.projectapp:style/Base.Theme.AppCompat.Light = 0x7f0f004e
 com.example.projectapp:attr/cornerSize = 0x7f0300f5
 com.example.projectapp:color/mtrl_chip_background_color = 0x7f05009c
+<<<<<<< HEAD
 com.example.projectapp:id/mtrl_calendar_selection_frame = 0x7f08013d
 com.example.projectapp:drawable/notification_action_background = 0x7f070098
 com.example.projectapp:layout/material_time_input = 0x7f0b0043
@@ -1529,6 +2609,17 @@ com.example.projectapp:drawable/mtrl_dialog_background = 0x7f07008e
 com.example.projectapp:drawable/btn_radio_on_mtrl = 0x7f07005e
 com.example.projectapp:style/Base.Theme.AppCompat.Light.DarkActionBar = 0x7f0f004f
 com.example.projectapp:id/icon_group = 0x7f0800f0
+=======
+com.example.projectapp:id/mtrl_calendar_selection_frame = 0x7f08013c
+com.example.projectapp:drawable/notification_action_background = 0x7f070098
+com.example.projectapp:layout/material_time_input = 0x7f0b0043
+com.example.projectapp:id/rightToLeft = 0x7f080182
+com.example.projectapp:drawable/mtrl_dialog_background = 0x7f07008e
+com.example.projectapp:style/Base.Theme.AppCompat.Light.DarkActionBar = 0x7f0f004f
+com.example.projectapp:drawable/btn_radio_on_mtrl = 0x7f07005e
+com.example.projectapp:style/RtlOverlay.Widget.AppCompat.PopupMenuItem.Text = 0x7f0f0106
+com.example.projectapp:id/icon_group = 0x7f0800ef
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:id/SHOW_PATH = 0x7f08000f
 com.example.projectapp:drawable/material_ic_menu_arrow_up_black_24dp = 0x7f07008d
 com.example.projectapp:string/mtrl_picker_range_header_selected = 0x7f0e0061
@@ -1541,22 +2632,39 @@ com.example.projectapp:dimen/design_bottom_navigation_elevation = 0x7f060063
 com.example.projectapp:dimen/abc_text_size_headline_material = 0x7f060047
 com.example.projectapp:drawable/logo_background = 0x7f070083
 com.example.projectapp:drawable/ic_mtrl_checked_circle = 0x7f07007f
+<<<<<<< HEAD
 com.example.projectapp:id/mtrl_picker_text_input_range_end = 0x7f08014a
 com.example.projectapp:id/accessibility_custom_action_5 = 0x7f080033
 com.example.projectapp:drawable/ic_launcher_foreground = 0x7f07007e
 com.example.projectapp:styleable/ConstraintLayout_Layout = 0x7f100023
 com.example.projectapp:id/staticPostLayout = 0x7f0801c4
+=======
+com.example.projectapp:id/mtrl_picker_text_input_range_end = 0x7f080149
+com.example.projectapp:id/accessibility_custom_action_5 = 0x7f080032
+com.example.projectapp:drawable/ic_launcher_foreground = 0x7f07007e
+com.example.projectapp:styleable/ConstraintLayout_Layout = 0x7f100023
+com.example.projectapp:id/staticPostLayout = 0x7f0801c3
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:drawable/ic_clock_black_24dp = 0x7f07007b
+com.example.projectapp:id/skipCollapsed = 0x7f0801ac
+com.example.projectapp:drawable/googleg_standard_color_18 = 0x7f07007a
 com.example.projectapp:style/Base.Widget.AppCompat.ActionButton.CloseMode = 0x7f0f00a0
 com.example.projectapp:style/Base.Widget.AppCompat.SearchView = 0x7f0f00ca
 com.example.projectapp:style/Widget.MaterialComponents.CompoundButton.CheckBox = 0x7f0f0286
 com.example.projectapp:dimen/mtrl_calendar_text_input_padding_top = 0x7f060106
+<<<<<<< HEAD
 com.example.projectapp:id/skipCollapsed = 0x7f0801ad
 com.example.projectapp:drawable/googleg_standard_color_18 = 0x7f07007a
 com.example.projectapp:drawable/btn_checkbox_unchecked_mtrl = 0x7f07005a
 com.example.projectapp:drawable/design_snackbar_background = 0x7f070078
 com.example.projectapp:attr/indicatorDirectionCircular = 0x7f0301a6
 com.example.projectapp:id/textView20 = 0x7f0801f0
+=======
+com.example.projectapp:drawable/btn_checkbox_unchecked_mtrl = 0x7f07005a
+com.example.projectapp:drawable/design_snackbar_background = 0x7f070078
+com.example.projectapp:attr/indicatorDirectionCircular = 0x7f0301a6
+com.example.projectapp:id/textView20 = 0x7f0801ef
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/abc_text_size_menu_header_material = 0x7f06004a
 com.example.projectapp:dimen/abc_dropdownitem_icon_width = 0x7f060029
 com.example.projectapp:drawable/design_ic_visibility = 0x7f070075
@@ -1578,6 +2686,7 @@ com.example.projectapp:drawable/common_google_signin_btn_icon_dark = 0x7f070061
 com.example.projectapp:drawable/common_full_open_on_phone = 0x7f070060
 com.example.projectapp:dimen/mtrl_calendar_selection_text_baseline_to_bottom_fullscreen = 0x7f060104
 com.example.projectapp:style/Base.V21.ThemeOverlay.AppCompat.Dialog = 0x7f0f0088
+<<<<<<< HEAD
 com.example.projectapp:id/bottom = 0x7f080063
 com.example.projectapp:style/Widget.AppCompat.SearchView = 0x7f0f0241
 com.example.projectapp:id/mtrl_picker_header_title_and_selection = 0x7f080147
@@ -1586,13 +2695,27 @@ com.example.projectapp:drawable/btn_checkbox_checked_mtrl = 0x7f070058
 com.example.projectapp:anim/abc_tooltip_exit = 0x7f01000b
 com.example.projectapp:id/enterAlways = 0x7f0800bf
 com.example.projectapp:id/reverseSawtooth = 0x7f080181
+=======
+com.example.projectapp:id/bottom = 0x7f080062
+com.example.projectapp:id/reverseSawtooth = 0x7f080180
+com.example.projectapp:style/Widget.AppCompat.SearchView = 0x7f0f0241
+com.example.projectapp:id/mtrl_picker_header_title_and_selection = 0x7f080146
+com.example.projectapp:animator/fragment_close_enter = 0x7f020003
+com.example.projectapp:drawable/btn_checkbox_checked_mtrl = 0x7f070058
+com.example.projectapp:anim/abc_tooltip_exit = 0x7f01000b
+com.example.projectapp:id/enterAlways = 0x7f0800be
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:drawable/abc_text_select_handle_middle_mtrl = 0x7f07004e
 com.example.projectapp:style/Widget.MaterialComponents.CircularProgressIndicator.Medium = 0x7f0f0283
 com.example.projectapp:style/Theme.MaterialComponents.NoActionBar = 0x7f0f01cf
 com.example.projectapp:style/Widget.AppCompat.Light.ActionBar.TabView = 0x7f0f0225
 com.example.projectapp:drawable/abc_text_cursor_material = 0x7f07004c
 com.example.projectapp:attr/showTitle = 0x7f0302c7
+<<<<<<< HEAD
 com.example.projectapp:id/showTransportsBtn = 0x7f0801ab
+=======
+com.example.projectapp:id/showTransportsBtn = 0x7f0801aa
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/colorSecondary = 0x7f0300d1
 com.example.projectapp:drawable/common_google_signin_btn_icon_dark_normal_background = 0x7f070064
 com.example.projectapp:dimen/mtrl_calendar_selection_baseline_to_top_fullscreen = 0x7f060102
@@ -1602,12 +2725,20 @@ com.example.projectapp:string/mtrl_picker_date_header_unselected = 0x7f0e0057
 com.example.projectapp:style/Theme.MaterialComponents.DayNight.DialogWhenLarge = 0x7f0f01b1
 com.example.projectapp:id/feefef = 0x7f0800c5
 com.example.projectapp:style/ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Year = 0x7f0f0121
+<<<<<<< HEAD
 com.example.projectapp:id/scrollIndicatorDown = 0x7f080192
+=======
+com.example.projectapp:id/scrollIndicatorDown = 0x7f080191
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:drawable/abc_tab_indicator_mtrl_alpha = 0x7f07004b
 com.example.projectapp:style/Theme.AppCompat.DayNight.Dialog.Alert = 0x7f0f0189
 com.example.projectapp:attr/shrinkMotionSpec = 0x7f0302c8
 com.example.projectapp:styleable/MaterialCalendarItem = 0x7f10004d
+<<<<<<< HEAD
 com.example.projectapp:id/parallax = 0x7f080161
+=======
+com.example.projectapp:id/parallax = 0x7f080160
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:string/status_bar_notification_info_overflow = 0x7f0e0075
 com.example.projectapp:drawable/abc_star_black_48dp = 0x7f070046
 com.example.projectapp:style/Platform.AppCompat = 0x7f0f00f1
@@ -1621,8 +2752,13 @@ com.example.projectapp:drawable/common_google_signin_btn_text_dark = 0x7f07006a
 com.example.projectapp:attr/indeterminateAnimationType = 0x7f0301a3
 com.example.projectapp:drawable/abc_ic_arrow_drop_right_black_24dp = 0x7f07001d
 com.example.projectapp:string/abc_menu_enter_shortcut_label = 0x7f0e000b
+<<<<<<< HEAD
 com.example.projectapp:id/text2 = 0x7f0801de
 com.example.projectapp:id/endToStart = 0x7f0800be
+=======
+com.example.projectapp:id/text2 = 0x7f0801dd
+com.example.projectapp:id/endToStart = 0x7f0800bd
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:drawable/abc_ratingbar_material = 0x7f07003a
 com.example.projectapp:style/Base.Widget.AppCompat.ActionButton = 0x7f0f009f
 com.example.projectapp:drawable/abc_menu_hardkey_panel_mtrl_mult = 0x7f070037
@@ -1640,9 +2776,15 @@ com.example.projectapp:drawable/abc_ic_clear_material = 0x7f07001e
 com.example.projectapp:styleable/CompoundButton = 0x7f100021
 com.example.projectapp:dimen/abc_cascading_menus_min_smallest_width = 0x7f060016
 com.example.projectapp:style/Widget.Design.AppBarLayout = 0x7f0f024f
+<<<<<<< HEAD
 com.example.projectapp:id/src_in = 0x7f0801bc
 com.example.projectapp:style/Base.Theme.MaterialComponents.Light.Dialog.Alert = 0x7f0f0063
 com.example.projectapp:id/top = 0x7f08020e
+=======
+com.example.projectapp:id/src_in = 0x7f0801bb
+com.example.projectapp:style/Base.Theme.MaterialComponents.Light.Dialog.Alert = 0x7f0f0063
+com.example.projectapp:id/top = 0x7f08020d
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/tickVisible = 0x7f030345
 com.example.projectapp:style/Widget.MaterialComponents.CardView = 0x7f0f027a
 com.example.projectapp:dimen/design_bottom_navigation_margin = 0x7f060069
@@ -1659,16 +2801,28 @@ com.example.projectapp:xml/standalone_badge_gravity_bottom_start = 0x7f110002
 com.example.projectapp:drawable/abc_btn_radio_to_on_mtrl_000 = 0x7f070012
 com.example.projectapp:drawable/abc_btn_radio_material = 0x7f070010
 com.example.projectapp:layout/mtrl_picker_header_title_text = 0x7f0b005f
+<<<<<<< HEAD
 com.example.projectapp:id/linear = 0x7f08010b
 com.example.projectapp:id/position = 0x7f080170
 com.example.projectapp:style/Base.V21.Theme.MaterialComponents.Light = 0x7f0f0086
 com.example.projectapp:styleable/Motion = 0x7f10005a
 com.example.projectapp:id/spread = 0x7f0801b8
+=======
+com.example.projectapp:id/linear = 0x7f08010a
+com.example.projectapp:id/position = 0x7f08016f
+com.example.projectapp:style/Base.V21.Theme.MaterialComponents.Light = 0x7f0f0086
+com.example.projectapp:styleable/Motion = 0x7f10005a
+com.example.projectapp:id/spread = 0x7f0801b7
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:drawable/abc_btn_colored_material = 0x7f07000e
 com.example.projectapp:style/RtlOverlay.Widget.AppCompat.ActionBar.TitleItem = 0x7f0f0100
 com.example.projectapp:drawable/common_google_signin_btn_text_disabled = 0x7f07006e
 com.example.projectapp:style/Widget.MaterialComponents.Button.UnelevatedButton = 0x7f0f0278
+<<<<<<< HEAD
 com.example.projectapp:id/none = 0x7f080153
+=======
+com.example.projectapp:id/none = 0x7f080152
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:integer/cancel_button_image_alpha = 0x7f090004
 com.example.projectapp:drawable/abc_btn_check_to_on_mtrl_000 = 0x7f07000c
 com.example.projectapp:dimen/mtrl_extended_fab_bottom_padding = 0x7f06011a
@@ -1682,9 +2836,15 @@ com.example.projectapp:color/design_default_color_on_primary = 0x7f05004d
 com.example.projectapp:drawable/$avd_hide_password__1 = 0x7f070001
 com.example.projectapp:attr/latLngBoundsSouthWestLongitude = 0x7f0301d0
 com.example.projectapp:drawable/$avd_hide_password__0 = 0x7f070000
+<<<<<<< HEAD
 com.example.projectapp:id/hideable = 0x7f0800e0
 com.example.projectapp:id/search_bar = 0x7f080199
 com.example.projectapp:id/filtersDoneBtn = 0x7f0800cb
+=======
+com.example.projectapp:id/hideable = 0x7f0800df
+com.example.projectapp:id/search_bar = 0x7f080198
+com.example.projectapp:id/filtersDoneBtn = 0x7f0800ca
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/tooltip_horizontal_padding = 0x7f060182
 com.example.projectapp:dimen/abc_select_dialog_padding_start_material = 0x7f06003a
 com.example.projectapp:dimen/tooltip_corner_radius = 0x7f060181
@@ -1696,8 +2856,13 @@ com.example.projectapp:style/Theme.Design = 0x7f0f019a
 com.example.projectapp:style/Base.Widget.AppCompat.DrawerArrowToggle.Common = 0x7f0f00b1
 com.example.projectapp:attr/boxStrokeWidth = 0x7f030069
 com.example.projectapp:dimen/notification_top_pad = 0x7f06017e
+<<<<<<< HEAD
 com.example.projectapp:id/trip1 = 0x7f080224
 com.example.projectapp:id/fragment_container_view_tag = 0x7f0800d1
+=======
+com.example.projectapp:id/trip1 = 0x7f080223
+com.example.projectapp:id/fragment_container_view_tag = 0x7f0800d0
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/TextAppearance.AppCompat.Medium = 0x7f0f0141
 com.example.projectapp:dimen/notification_media_narrow_margin = 0x7f060178
 com.example.projectapp:style/Base.Widget.AppCompat.ActivityChooserView = 0x7f0f00a3
@@ -1723,7 +2888,11 @@ com.example.projectapp:dimen/mtrl_textinput_box_stroke_width_focused = 0x7f06016
 com.example.projectapp:attr/chipStrokeWidth = 0x7f0300a5
 com.example.projectapp:style/Widget.MaterialComponents.Toolbar.Primary = 0x7f0f02c8
 com.example.projectapp:attr/defaultDuration = 0x7f030110
+<<<<<<< HEAD
 com.example.projectapp:id/totalTravellingTime = 0x7f080211
+=======
+com.example.projectapp:id/totalTravellingTime = 0x7f080210
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/mtrl_textinput_box_stroke_width_default = 0x7f060164
 com.example.projectapp:integer/mtrl_card_anim_delay_ms = 0x7f090010
 com.example.projectapp:attr/circleRadius = 0x7f0300a9
@@ -1795,18 +2964,32 @@ com.example.projectapp:bool/mtrl_btn_textappearance_all_caps = 0x7f040002
 com.example.projectapp:dimen/mtrl_extended_fab_icon_size = 0x7f060121
 com.example.projectapp:styleable/Tooltip = 0x7f100080
 com.example.projectapp:dimen/design_bottom_navigation_icon_size = 0x7f060065
+<<<<<<< HEAD
 com.example.projectapp:id/parentPanel = 0x7f080163
 com.example.projectapp:dimen/mtrl_extended_fab_end_padding_icon = 0x7f060120
 com.example.projectapp:id/material_timepicker_container = 0x7f080125
 com.example.projectapp:id/cos = 0x7f080089
+=======
+com.example.projectapp:id/parentPanel = 0x7f080162
+com.example.projectapp:dimen/mtrl_extended_fab_end_padding_icon = 0x7f060120
+com.example.projectapp:id/material_timepicker_container = 0x7f080124
+com.example.projectapp:id/cos = 0x7f080088
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:string/material_slider_range_end = 0x7f0e0043
 com.example.projectapp:dimen/mtrl_extended_fab_disabled_elevation = 0x7f06011c
 com.example.projectapp:attr/counterOverflowTextAppearance = 0x7f0300fc
 com.example.projectapp:attr/viewInflaterClass = 0x7f03037c
+<<<<<<< HEAD
 com.example.projectapp:id/metroCheckBox = 0x7f08012c
 com.example.projectapp:dimen/mtrl_exposed_dropdown_menu_popup_vertical_offset = 0x7f060118
 com.example.projectapp:attr/layout_constraintTag = 0x7f0301f9
 com.example.projectapp:id/trip_container = 0x7f080228
+=======
+com.example.projectapp:id/metroCheckBox = 0x7f08012b
+com.example.projectapp:dimen/mtrl_exposed_dropdown_menu_popup_vertical_offset = 0x7f060118
+com.example.projectapp:attr/layout_constraintTag = 0x7f0301f9
+com.example.projectapp:id/trip_container = 0x7f080227
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:color/mtrl_filled_icon_tint = 0x7f0500a8
 com.example.projectapp:styleable/MaterialButton = 0x7f10004a
 com.example.projectapp:dimen/design_fab_size_mini = 0x7f060072
@@ -1832,8 +3015,13 @@ com.example.projectapp:xml/standalone_badge_gravity_top_start = 0x7f110003
 com.example.projectapp:attr/materialButtonOutlinedStyle = 0x7f030230
 com.example.projectapp:dimen/mtrl_min_touch_target_size = 0x7f060138
 com.example.projectapp:attr/motionInterpolator = 0x7f03025e
+<<<<<<< HEAD
 com.example.projectapp:id/layout = 0x7f080102
 com.example.projectapp:id/textView18 = 0x7f0801ed
+=======
+com.example.projectapp:id/layout = 0x7f080101
+com.example.projectapp:id/textView18 = 0x7f0801ec
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/onNegativeCross = 0x7f030272
 com.example.projectapp:id/jumpToStart = 0x7f0800fe
 com.example.projectapp:dimen/mtrl_calendar_pre_l_text_clip_padding = 0x7f060101
@@ -1843,7 +3031,11 @@ com.example.projectapp:dimen/mtrl_edittext_rectangle_top_offset = 0x7f060116
 com.example.projectapp:color/material_grey_850 = 0x7f050075
 com.example.projectapp:dimen/mtrl_calendar_header_toggle_margin_bottom = 0x7f0600f8
 com.example.projectapp:color/mtrl_btn_text_btn_ripple_color = 0x7f050094
+<<<<<<< HEAD
 com.example.projectapp:id/textView4 = 0x7f0801f5
+=======
+com.example.projectapp:id/textView4 = 0x7f0801f4
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/autoCompleteTextViewStyle = 0x7f030036
 com.example.projectapp:dimen/mtrl_calendar_day_width = 0x7f0600ee
 com.example.projectapp:attr/haloColor = 0x7f030183
@@ -1857,8 +3049,13 @@ com.example.projectapp:attr/itemIconTint = 0x7f0301b4
 com.example.projectapp:dimen/mtrl_btn_text_btn_padding_right = 0x7f0600e1
 com.example.projectapp:dimen/mtrl_btn_text_btn_icon_padding = 0x7f0600df
 com.example.projectapp:layout/test_toolbar_custom_background = 0x7f0b0075
+<<<<<<< HEAD
 com.example.projectapp:id/textinput_prefix_text = 0x7f080202
 com.example.projectapp:id/chip = 0x7f080074
+=======
+com.example.projectapp:id/textinput_prefix_text = 0x7f080201
+com.example.projectapp:id/chip = 0x7f080073
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/mtrl_btn_stroke_size = 0x7f0600de
 com.example.projectapp:attr/uiZoomControls = 0x7f030375
 com.example.projectapp:attr/endIconTintMode = 0x7f03013a
@@ -1875,7 +3072,11 @@ com.example.projectapp:dimen/mtrl_calendar_header_height = 0x7f0600f4
 com.example.projectapp:color/teal_700 = 0x7f0500da
 com.example.projectapp:dimen/mtrl_btn_text_size = 0x7f0600e2
 com.example.projectapp:style/Base.Theme.AppCompat.Dialog.Alert = 0x7f0f004a
+<<<<<<< HEAD
 com.example.projectapp:id/up = 0x7f08022c
+=======
+com.example.projectapp:id/up = 0x7f08022b
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/actionOverflowMenuStyle = 0x7f030020
 com.example.projectapp:dimen/mtrl_badge_long_text_horizontal_padding = 0x7f0600c0
 com.example.projectapp:drawable/mtrl_ic_arrow_drop_down = 0x7f070090
@@ -1892,14 +3093,22 @@ com.example.projectapp:attr/minTouchTargetSize = 0x7f030255
 com.example.projectapp:attr/tabStyle = 0x7f03030e
 com.example.projectapp:dimen/material_input_text_to_prefix_suffix_padding = 0x7f0600b6
 com.example.projectapp:attr/fastScrollHorizontalThumbDrawable = 0x7f030159
+<<<<<<< HEAD
 com.example.projectapp:id/on = 0x7f08015a
+=======
+com.example.projectapp:id/on = 0x7f080159
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/TextAppearance.MaterialComponents.Chip = 0x7f0f0175
 com.example.projectapp:string/mtrl_picker_invalid_range = 0x7f0e005c
 com.example.projectapp:dimen/material_filled_edittext_font_2_0_padding_top = 0x7f0600b0
 com.example.projectapp:dimen/material_filled_edittext_font_1_3_padding_bottom = 0x7f0600ad
 com.example.projectapp:attr/dragThreshold = 0x7f030120
 com.example.projectapp:color/primary_dark_material_light = 0x7f0500c2
+<<<<<<< HEAD
 com.example.projectapp:id/ratio = 0x7f080175
+=======
+com.example.projectapp:id/ratio = 0x7f080174
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/colorSecondaryVariant = 0x7f0300d2
 com.example.projectapp:dimen/material_emphasis_medium = 0x7f0600ac
 com.example.projectapp:dimen/material_clock_hand_stroke_width = 0x7f0600a1
@@ -1915,10 +3124,17 @@ com.example.projectapp:dimen/design_fab_translation_z_pressed = 0x7f060075
 com.example.projectapp:style/TextAppearance.MaterialComponents.Headline2 = 0x7f0f0177
 com.example.projectapp:style/Widget.AppCompat.ImageButton = 0x7f0f021d
 com.example.projectapp:attr/badgeStyle = 0x7f030049
+<<<<<<< HEAD
 com.example.projectapp:id/search_mag_icon = 0x7f08019e
 com.example.projectapp:dimen/hint_alpha_material_dark = 0x7f060096
 com.example.projectapp:color/design_default_color_on_surface = 0x7f05004f
 com.example.projectapp:id/selectLocationTextView = 0x7f0801a2
+=======
+com.example.projectapp:id/search_mag_icon = 0x7f08019d
+com.example.projectapp:dimen/hint_alpha_material_dark = 0x7f060096
+com.example.projectapp:color/design_default_color_on_surface = 0x7f05004f
+com.example.projectapp:id/selectLocationTextView = 0x7f0801a1
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/errorEnabled = 0x7f03013f
 com.example.projectapp:anim/btn_radio_to_off_mtrl_ring_outer_animation = 0x7f010013
 com.example.projectapp:dimen/highlight_alpha_material_light = 0x7f060095
@@ -1949,7 +3165,11 @@ com.example.projectapp:style/Platform.MaterialComponents.Light.Dialog = 0x7f0f00
 com.example.projectapp:dimen/design_navigation_separator_vertical_padding = 0x7f06007d
 com.example.projectapp:attr/srcCompat = 0x7f0302d6
 com.example.projectapp:drawable/abc_list_longpressed_holo = 0x7f07002e
+<<<<<<< HEAD
 com.example.projectapp:id/mtrl_motion_snapshot_view = 0x7f080143
+=======
+com.example.projectapp:id/mtrl_motion_snapshot_view = 0x7f080142
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/RtlOverlay.Widget.AppCompat.DialogTitle.Icon = 0x7f0f0101
 com.example.projectapp:dimen/mtrl_calendar_year_height = 0x7f06010a
 com.example.projectapp:dimen/design_navigation_elevation = 0x7f060076
@@ -1959,8 +3179,13 @@ com.example.projectapp:dimen/design_fab_size_normal = 0x7f060073
 com.example.projectapp:layout/material_clock_period_toggle = 0x7f0b003c
 com.example.projectapp:style/ShapeAppearanceOverlay.MaterialComponents.TextInputLayout.FilledBox = 0x7f0f0122
 com.example.projectapp:attr/fastScrollHorizontalTrackDrawable = 0x7f03015a
+<<<<<<< HEAD
 com.example.projectapp:id/mini = 0x7f08012e
 com.example.projectapp:id/locationAutoComplete = 0x7f080110
+=======
+com.example.projectapp:id/mini = 0x7f08012d
+com.example.projectapp:id/locationAutoComplete = 0x7f08010f
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/design_fab_image_size = 0x7f060071
 com.example.projectapp:attr/ratingBarStyleIndicator = 0x7f0302a3
 com.example.projectapp:attr/closeIconSize = 0x7f0300b3
@@ -1980,7 +3205,11 @@ com.example.projectapp:string/mtrl_picker_date_header_selected = 0x7f0e0055
 com.example.projectapp:attr/chipIconTint = 0x7f03009b
 com.example.projectapp:dimen/design_bottom_navigation_item_max_width = 0x7f060066
 com.example.projectapp:attr/maxHeight = 0x7f03024b
+<<<<<<< HEAD
 com.example.projectapp:id/tag_window_insets_animation_callback = 0x7f0801d7
+=======
+com.example.projectapp:id/tag_window_insets_animation_callback = 0x7f0801d6
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.Widget.MaterialComponents.AutoCompleteTextView = 0x7f0f00d5
 com.example.projectapp:color/material_slider_halo_color = 0x7f050083
 com.example.projectapp:attr/telltales_tailColor = 0x7f030313
@@ -2009,7 +3238,11 @@ com.example.projectapp:dimen/abc_text_size_button_material = 0x7f060041
 com.example.projectapp:dimen/abc_text_size_body_2_material = 0x7f060040
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.Light = 0x7f0f01ee
 com.example.projectapp:attr/suggestionRowLayout = 0x7f0302f2
+<<<<<<< HEAD
 com.example.projectapp:id/textView8 = 0x7f0801f9
+=======
+com.example.projectapp:id/textView8 = 0x7f0801f8
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/abc_star_big = 0x7f06003b
 com.example.projectapp:dimen/abc_seekbar_track_background_height_material = 0x7f060038
 com.example.projectapp:attr/selectableItemBackgroundBorderless = 0x7f0302b8
@@ -2029,11 +3262,19 @@ com.example.projectapp:dimen/abc_list_item_padding_horizontal_material = 0x7f060
 com.example.projectapp:drawable/abc_action_bar_item_background_material = 0x7f070008
 com.example.projectapp:style/Base.Widget.MaterialComponents.TextView = 0x7f0f00e1
 com.example.projectapp:dimen/abc_list_item_height_large_material = 0x7f060030
+<<<<<<< HEAD
 com.example.projectapp:id/textView13 = 0x7f0801e8
 com.example.projectapp:id/info = 0x7f0800f8
 com.example.projectapp:dimen/abc_floating_window_z = 0x7f06002f
 com.example.projectapp:attr/materialCircleRadius = 0x7f030242
 com.example.projectapp:id/search_button = 0x7f08019a
+=======
+com.example.projectapp:id/textView13 = 0x7f0801e7
+com.example.projectapp:id/info = 0x7f0800f7
+com.example.projectapp:dimen/abc_floating_window_z = 0x7f06002f
+com.example.projectapp:attr/materialCircleRadius = 0x7f030242
+com.example.projectapp:id/search_button = 0x7f080199
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/indicatorSize = 0x7f0301a9
 com.example.projectapp:color/material_slider_inactive_track_color = 0x7f050085
 com.example.projectapp:attr/mock_showLabel = 0x7f03025c
@@ -2050,8 +3291,13 @@ com.example.projectapp:dimen/design_bottom_navigation_active_item_max_width = 0x
 com.example.projectapp:dimen/abc_dialog_list_padding_top_no_title = 0x7f060021
 com.example.projectapp:dimen/mtrl_calendar_title_baseline_to_top = 0x7f060107
 com.example.projectapp:style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title = 0x7f0f0046
+<<<<<<< HEAD
 com.example.projectapp:id/mtrl_internal_children_alpha_tag = 0x7f080142
 com.example.projectapp:id/design_menu_item_action_area_stub = 0x7f08009f
+=======
+com.example.projectapp:id/mtrl_internal_children_alpha_tag = 0x7f080141
+com.example.projectapp:id/design_menu_item_action_area_stub = 0x7f08009e
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/abc_action_bar_icon_vertical_padding_material = 0x7f060006
 com.example.projectapp:attr/maxButtonHeight = 0x7f030249
 com.example.projectapp:attr/touchRegionId = 0x7f03035c
@@ -2067,8 +3313,13 @@ com.example.projectapp:drawable/abc_textfield_search_default_mtrl_alpha = 0x7f07
 com.example.projectapp:dimen/abc_button_inset_horizontal_material = 0x7f060012
 com.example.projectapp:attr/useCompatPadding = 0x7f030377
 com.example.projectapp:style/Base.V14.Theme.MaterialComponents = 0x7f0f0074
+<<<<<<< HEAD
 com.example.projectapp:id/uniform = 0x7f08022a
 com.example.projectapp:id/cut = 0x7f08008e
+=======
+com.example.projectapp:id/uniform = 0x7f080229
+com.example.projectapp:id/cut = 0x7f08008d
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/voiceIcon = 0x7f03037e
 com.example.projectapp:color/switch_thumb_normal_material_light = 0x7f0500d8
 com.example.projectapp:interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_1 = 0x7f0a0003
@@ -2106,7 +3357,11 @@ com.example.projectapp:attr/toolbarNavigationButtonStyle = 0x7f030354
 com.example.projectapp:color/tooltip_background_light = 0x7f0500de
 com.example.projectapp:styleable/AppCompatImageView = 0x7f10000d
 com.example.projectapp:color/test_mtrl_calendar_day_selected = 0x7f0500dc
+<<<<<<< HEAD
 com.example.projectapp:id/spread_inside = 0x7f0801b9
+=======
+com.example.projectapp:id/spread_inside = 0x7f0801b8
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/abc_switch_padding = 0x7f06003e
 com.example.projectapp:style/Base.Theme.MaterialComponents.Light.Dialog = 0x7f0f0062
 com.example.projectapp:color/common_google_signin_btn_text_dark_pressed = 0x7f050033
@@ -2125,7 +3380,11 @@ com.example.projectapp:dimen/mtrl_btn_corner_radius = 0x7f0600cd
 com.example.projectapp:attr/theme = 0x7f030334
 com.example.projectapp:color/ripple_material_light = 0x7f0500ce
 com.example.projectapp:color/radiobutton_themeable_attribute_color = 0x7f0500cc
+<<<<<<< HEAD
 com.example.projectapp:id/masked = 0x7f080117
+=======
+com.example.projectapp:id/masked = 0x7f080116
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Platform.AppCompat.Light = 0x7f0f00f2
 com.example.projectapp:attr/colorControlNormal = 0x7f0300c4
 com.example.projectapp:color/primary_material_light = 0x7f0500c4
@@ -2149,12 +3408,20 @@ com.example.projectapp:attr/useViewLifecycle = 0x7f030379
 com.example.projectapp:attr/colorOnPrimary = 0x7f0300c8
 com.example.projectapp:drawable/ic_mtrl_chip_checked_black = 0x7f070080
 com.example.projectapp:styleable/TextInputEditText = 0x7f10007c
+<<<<<<< HEAD
 com.example.projectapp:id/transportTypeText = 0x7f08021f
+=======
+com.example.projectapp:id/transportTypeText = 0x7f08021e
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:color/mtrl_filled_stroke_color = 0x7f0500a9
 com.example.projectapp:style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Header = 0x7f0f003b
 com.example.projectapp:attr/bottomAppBarStyle = 0x7f03005c
 com.example.projectapp:color/mtrl_fab_ripple_color = 0x7f0500a6
+<<<<<<< HEAD
 com.example.projectapp:id/scrollIndicatorUp = 0x7f080193
+=======
+com.example.projectapp:id/scrollIndicatorUp = 0x7f080192
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/materialCalendarHeaderSelection = 0x7f030239
 com.example.projectapp:color/primary_text_default_material_dark = 0x7f0500c5
 com.example.projectapp:color/mtrl_fab_bg_color_selector = 0x7f0500a4
@@ -2184,7 +3451,11 @@ com.example.projectapp:attr/controlBackground = 0x7f0300ed
 com.example.projectapp:dimen/material_text_view_test_line_height_override = 0x7f0600b8
 com.example.projectapp:drawable/abc_ic_menu_selectall_mtrl_alpha = 0x7f070025
 com.example.projectapp:color/mtrl_bottom_nav_ripple_color = 0x7f05008f
+<<<<<<< HEAD
 com.example.projectapp:id/start = 0x7f0801bf
+=======
+com.example.projectapp:id/start = 0x7f0801be
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/material_filled_edittext_font_1_3_padding_top = 0x7f0600ae
 com.example.projectapp:dimen/material_clock_size = 0x7f0600a6
 com.example.projectapp:attr/layout_goneMarginStart = 0x7f03020b
@@ -2229,7 +3500,6 @@ com.example.projectapp:color/mtrl_on_surface_ripple_color = 0x7f0500af
 com.example.projectapp:color/material_grey_50 = 0x7f050072
 com.example.projectapp:styleable/ActionBarLayout = 0x7f100001
 com.example.projectapp:color/material_grey_100 = 0x7f050070
-com.example.projectapp:color/material_deep_teal_200 = 0x7f05006e
 com.example.projectapp:attr/drawableTint = 0x7f030128
 com.example.projectapp:dimen/notification_big_circle_margin = 0x7f060173
 com.example.projectapp:id/accessibility_custom_action_28 = 0x7f08002d
@@ -2243,14 +3513,22 @@ com.example.projectapp:style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Lar
 com.example.projectapp:color/error_color_material_dark = 0x7f050064
 com.example.projectapp:attr/checkedIconEnabled = 0x7f03008e
 com.example.projectapp:dimen/hint_pressed_alpha_material_dark = 0x7f060098
+<<<<<<< HEAD
 com.example.projectapp:id/mtrl_picker_header = 0x7f080145
+=======
+com.example.projectapp:id/mtrl_picker_header = 0x7f080144
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/abc_disabled_alpha_material_light = 0x7f060028
 com.example.projectapp:style/TestThemeWithLineHeightDisabled = 0x7f0f012f
 com.example.projectapp:color/dim_foreground_disabled_material_light = 0x7f050061
 com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.Year = 0x7f0f02a1
 com.example.projectapp:style/Theme.MaterialComponents.Light.Dialog.Alert.Bridge = 0x7f0f01c5
 com.example.projectapp:dimen/mtrl_extended_fab_min_height = 0x7f060123
+<<<<<<< HEAD
 com.example.projectapp:id/toggle = 0x7f08020d
+=======
+com.example.projectapp:id/toggle = 0x7f08020c
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/iconPadding = 0x7f03019a
 com.example.projectapp:dimen/highlight_alpha_material_colored = 0x7f060093
 com.example.projectapp:attr/actionBarSplitStyle = 0x7f030004
@@ -2266,7 +3544,11 @@ com.example.projectapp:color/design_error = 0x7f050056
 com.example.projectapp:color/teal_200 = 0x7f0500d9
 com.example.projectapp:color/design_default_color_surface = 0x7f050055
 com.example.projectapp:style/ThemeOverlay.MaterialComponents.Light.Dialog.Alert.Framework = 0x7f0f01f0
+<<<<<<< HEAD
 com.example.projectapp:id/textinput_placeholder = 0x7f080201
+=======
+com.example.projectapp:id/textinput_placeholder = 0x7f080200
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/mock_showDiagonals = 0x7f03025b
 com.example.projectapp:color/design_default_color_secondary_variant = 0x7f050054
 com.example.projectapp:color/design_default_color_on_error = 0x7f05004c
@@ -2327,10 +3609,17 @@ com.example.projectapp:dimen/abc_star_small = 0x7f06003d
 com.example.projectapp:style/Widget.AppCompat.ActionButton.CloseMode = 0x7f0f020a
 com.example.projectapp:dimen/mtrl_extended_fab_corner_radius = 0x7f06011b
 com.example.projectapp:attr/flow_verticalAlign = 0x7f03016d
+<<<<<<< HEAD
 com.example.projectapp:id/showHome = 0x7f0801a9
 com.example.projectapp:color/background_material_dark = 0x7f05001f
 com.example.projectapp:color/background_floating_material_light = 0x7f05001e
 com.example.projectapp:id/transition_layout_save = 0x7f080217
+=======
+com.example.projectapp:id/showHome = 0x7f0801a8
+com.example.projectapp:color/background_material_dark = 0x7f05001f
+com.example.projectapp:color/background_floating_material_light = 0x7f05001e
+com.example.projectapp:id/transition_layout_save = 0x7f080216
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/tabContentStart = 0x7f0302f8
 com.example.projectapp:dimen/mtrl_calendar_action_confirm_button_min_width = 0x7f0600e4
 com.example.projectapp:attr/layoutDuringTransition = 0x7f0301d3
@@ -2351,8 +3640,13 @@ com.example.projectapp:dimen/mtrl_btn_icon_btn_padding_left = 0x7f0600d4
 com.example.projectapp:dimen/mtrl_badge_with_text_radius = 0x7f0600c6
 com.example.projectapp:color/design_default_color_primary_dark = 0x7f050051
 com.example.projectapp:dimen/mtrl_badge_text_size = 0x7f0600c3
+<<<<<<< HEAD
 com.example.projectapp:id/action_image = 0x7f080042
 com.example.projectapp:id/textView24 = 0x7f0801f2
+=======
+com.example.projectapp:id/action_image = 0x7f080041
+com.example.projectapp:id/textView24 = 0x7f0801f1
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/compat_notification_large_icon_max_height = 0x7f06005c
 com.example.projectapp:dimen/abc_config_prefDialogWidth = 0x7f060017
 com.example.projectapp:color/abc_tint_btn_checkable = 0x7f050013
@@ -2365,13 +3659,21 @@ com.example.projectapp:dimen/notification_large_icon_height = 0x7f060175
 com.example.projectapp:attr/passwordToggleEnabled = 0x7f030284
 com.example.projectapp:color/abc_search_url_text_normal = 0x7f05000e
 com.example.projectapp:color/abc_primary_text_disable_only_material_dark = 0x7f050009
+<<<<<<< HEAD
 com.example.projectapp:id/percent = 0x7f08016a
+=======
+com.example.projectapp:id/percent = 0x7f080169
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:color/abc_hint_foreground_material_light = 0x7f050008
 com.example.projectapp:style/RtlOverlay.Widget.AppCompat.PopupMenuItem.SubmenuArrow = 0x7f0f0105
 com.example.projectapp:interpolator/mtrl_linear = 0x7f0a0009
 com.example.projectapp:dimen/mtrl_chip_text_size = 0x7f060115
 com.example.projectapp:anim/btn_checkbox_to_unchecked_check_path_merged_animation = 0x7f010010
+<<<<<<< HEAD
 com.example.projectapp:id/textviewbreakpoint = 0x7f080204
+=======
+com.example.projectapp:id/textviewbreakpoint = 0x7f080203
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:color/mtrl_text_btn_text_color_selector = 0x7f0500b9
 com.example.projectapp:attr/drawableStartCompat = 0x7f030127
 com.example.projectapp:dimen/design_fab_translation_z_hovered_focused = 0x7f060074
@@ -2514,7 +3816,11 @@ com.example.projectapp:layout/material_clock_period_toggle_land = 0x7f0b003d
 com.example.projectapp:id/actions = 0x7f080049
 com.example.projectapp:attr/materialAlertDialogTitleIconStyle = 0x7f03022d
 com.example.projectapp:style/Widget.AppCompat.Spinner.DropDown.ActionBar = 0x7f0f0247
+<<<<<<< HEAD
 com.example.projectapp:id/src_over = 0x7f0801bd
+=======
+com.example.projectapp:id/src_over = 0x7f0801bc
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/textAppearanceOverline = 0x7f030326
 com.example.projectapp:color/abc_background_cache_hint_selector_material_dark = 0x7f050000
 com.example.projectapp:dimen/mtrl_textinput_end_icon_margin_start = 0x7f060167
@@ -2556,7 +3862,11 @@ com.example.projectapp:attr/tabSelectedTextColor = 0x7f03030d
 com.example.projectapp:attr/tabPaddingTop = 0x7f03030b
 com.example.projectapp:attr/tabPaddingStart = 0x7f03030a
 com.example.projectapp:string/hide_bottom_view_on_scroll_behavior = 0x7f0e003a
+<<<<<<< HEAD
 com.example.projectapp:id/triangle = 0x7f080223
+=======
+com.example.projectapp:id/triangle = 0x7f080222
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/tabPaddingEnd = 0x7f030309
 com.example.projectapp:style/TextAppearance.AppCompat.Widget.Button.Inverse = 0x7f0f0159
 com.example.projectapp:color/white = 0x7f0500df
@@ -2574,12 +3884,20 @@ com.example.projectapp:attr/tabMinWidth = 0x7f030305
 com.example.projectapp:dimen/mtrl_textinput_start_icon_margin_end = 0x7f060169
 com.example.projectapp:attr/isMaterialTheme = 0x7f0301ad
 com.example.projectapp:attr/tabMaxWidth = 0x7f030304
+<<<<<<< HEAD
 com.example.projectapp:id/mtrl_calendar_main_pane = 0x7f08013b
+=======
+com.example.projectapp:id/mtrl_calendar_main_pane = 0x7f08013a
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/passwordToggleTint = 0x7f030285
 com.example.projectapp:color/primary_dark_material_dark = 0x7f0500c1
 com.example.projectapp:id/home = 0x7f0800e1
 com.example.projectapp:layout/mtrl_picker_fullscreen = 0x7f0b005b
+<<<<<<< HEAD
 com.example.projectapp:id/textSpacerNoButtons = 0x7f0801e0
+=======
+com.example.projectapp:id/textSpacerNoButtons = 0x7f0801df
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/design_bottom_sheet_modal_elevation = 0x7f06006d
 com.example.projectapp:color/mtrl_btn_bg_color_selector = 0x7f050090
 com.example.projectapp:attr/foregroundInsidePadding = 0x7f03017e
@@ -2590,7 +3908,11 @@ com.example.projectapp:attr/tabIndicatorFullWidth = 0x7f030300
 com.example.projectapp:id/btnDeparture = 0x7f080066
 com.example.projectapp:animator/mtrl_btn_unelevated_state_list_anim = 0x7f02000e
 com.example.projectapp:attr/tabIndicator = 0x7f0302fc
+<<<<<<< HEAD
 com.example.projectapp:id/sin = 0x7f0801ac
+=======
+com.example.projectapp:id/sin = 0x7f0801ab
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/extendMotionSpec = 0x7f03014f
 com.example.projectapp:styleable/MenuView = 0x7f100058
 com.example.projectapp:attr/tabIconTintMode = 0x7f0302fb
@@ -2598,12 +3920,20 @@ com.example.projectapp:attr/tabGravity = 0x7f0302f9
 com.example.projectapp:style/Theme.AppCompat.DayNight = 0x7f0f0186
 com.example.projectapp:attr/textAppearanceButton = 0x7f030319
 com.example.projectapp:color/black = 0x7f050021
+<<<<<<< HEAD
 com.example.projectapp:id/textView12 = 0x7f0801e7
+=======
+com.example.projectapp:id/textView12 = 0x7f0801e6
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:layout/abc_list_menu_item_checkbox = 0x7f0b000e
 com.example.projectapp:attr/switchStyle = 0x7f0302f5
 com.example.projectapp:dimen/mtrl_btn_z = 0x7f0600e3
 com.example.projectapp:dimen/mtrl_slider_thumb_radius = 0x7f060155
+<<<<<<< HEAD
 com.example.projectapp:id/special_effects_controller_view_tag = 0x7f0801b5
+=======
+com.example.projectapp:id/special_effects_controller_view_tag = 0x7f0801b4
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/subtitleTextColor = 0x7f0302ed
 com.example.projectapp:attr/dayStyle = 0x7f03010e
 com.example.projectapp:attr/listPopupWindowStyle = 0x7f03021f
@@ -2624,7 +3954,11 @@ com.example.projectapp:id/forever = 0x7f0800d0
 com.example.projectapp:id/arrTime = 0x7f080055
 com.example.projectapp:attr/snackbarStyle = 0x7f0302cf
 com.example.projectapp:attr/snackbarButtonStyle = 0x7f0302ce
+<<<<<<< HEAD
 com.example.projectapp:id/text_input_end_icon = 0x7f0801fb
+=======
+com.example.projectapp:id/text_input_end_icon = 0x7f0801fa
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/abc_text_size_medium_material = 0x7f060049
 com.example.projectapp:color/mtrl_btn_ripple_color = 0x7f050091
 com.example.projectapp:attr/sizePercent = 0x7f0302cc
@@ -2645,7 +3979,11 @@ com.example.projectapp:attr/startIconTintMode = 0x7f0302dd
 com.example.projectapp:attr/textAllCaps = 0x7f030316
 com.example.projectapp:styleable/RecycleListView = 0x7f100067
 com.example.projectapp:style/Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox = 0x7f0f0263
+<<<<<<< HEAD
 com.example.projectapp:id/select_dialog_listview = 0x7f0801a3
+=======
+com.example.projectapp:id/select_dialog_listview = 0x7f0801a2
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:styleable/Toolbar = 0x7f10007f
 com.example.projectapp:id/SHIFT = 0x7f08000d
 com.example.projectapp:attr/spinBars = 0x7f0302d2
@@ -2664,7 +4002,11 @@ com.example.projectapp:style/Base.V26.Theme.AppCompat.Light = 0x7f0f008e
 com.example.projectapp:anim/abc_slide_out_top = 0x7f010009
 com.example.projectapp:attr/state_collapsed = 0x7f0302df
 com.example.projectapp:attr/dropdownListPreferredItemHeight = 0x7f03012d
+<<<<<<< HEAD
 com.example.projectapp:id/textView19 = 0x7f0801ee
+=======
+com.example.projectapp:id/textView19 = 0x7f0801ed
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/dividerPadding = 0x7f03011c
 com.example.projectapp:attr/layout_constraintLeft_toRightOf = 0x7f0301f3
 com.example.projectapp:dimen/notification_large_icon_width = 0x7f060176
@@ -2689,11 +4031,19 @@ com.example.projectapp:attr/passwordToggleDrawable = 0x7f030283
 com.example.projectapp:attr/contentPadding = 0x7f0300e4
 com.example.projectapp:style/Theme.MaterialComponents = 0x7f0f01a0
 com.example.projectapp:attr/chipStrokeColor = 0x7f0300a4
+<<<<<<< HEAD
 com.example.projectapp:id/placeOfArrivalTextView = 0x7f08016c
 com.example.projectapp:style/ThemeOverlay.AppCompat.Dialog.Alert = 0x7f0f01d9
 com.example.projectapp:attr/daySelectedStyle = 0x7f03010d
 com.example.projectapp:attr/passwordToggleContentDescription = 0x7f030282
 com.example.projectapp:id/satellite = 0x7f080189
+=======
+com.example.projectapp:id/placeOfArrivalTextView = 0x7f08016b
+com.example.projectapp:style/ThemeOverlay.AppCompat.Dialog.Alert = 0x7f0f01d9
+com.example.projectapp:attr/daySelectedStyle = 0x7f03010d
+com.example.projectapp:attr/passwordToggleContentDescription = 0x7f030282
+com.example.projectapp:id/satellite = 0x7f080188
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/panelMenuListWidth = 0x7f030281
 com.example.projectapp:attr/expandedTitleTextAppearance = 0x7f03014e
 com.example.projectapp:style/Base.Widget.AppCompat.DropDownItem.Spinner = 0x7f0f00b2
@@ -2739,19 +4089,31 @@ com.example.projectapp:attr/navigationContentDescription = 0x7f030267
 com.example.projectapp:dimen/highlight_alpha_material_dark = 0x7f060094
 com.example.projectapp:attr/flow_verticalBias = 0x7f03016e
 com.example.projectapp:attr/paddingRightSystemWindowInsets = 0x7f03027c
+<<<<<<< HEAD
 com.example.projectapp:id/tag_accessibility_actions = 0x7f0801cb
+=======
+com.example.projectapp:id/tag_accessibility_actions = 0x7f0801ca
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/listPreferredItemHeight = 0x7f030220
 com.example.projectapp:attr/multiChoiceItemLayout = 0x7f030266
 com.example.projectapp:style/Base.TextAppearance.AppCompat.Widget.ActionBar.Menu = 0x7f0f002f
 com.example.projectapp:attr/boxCornerRadiusTopEnd = 0x7f030065
 com.example.projectapp:attr/layout = 0x7f0301d1
+<<<<<<< HEAD
 com.example.projectapp:id/noselectedtrip = 0x7f080155
+=======
+com.example.projectapp:id/noselectedtrip = 0x7f080154
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/flow_lastHorizontalBias = 0x7f030167
 com.example.projectapp:attr/arrowHeadLength = 0x7f030033
 com.example.projectapp:attr/flow_lastHorizontalStyle = 0x7f030168
 com.example.projectapp:attr/passwordToggleTintMode = 0x7f030286
 com.example.projectapp:attr/mock_labelBackgroundColor = 0x7f030259
+<<<<<<< HEAD
 com.example.projectapp:id/view_tree_view_model_store_owner = 0x7f080231
+=======
+com.example.projectapp:id/view_tree_view_model_store_owner = 0x7f080230
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/minWidth = 0x7f030256
 com.example.projectapp:style/Widget.AppCompat.CompoundButton.Switch = 0x7f0f0219
 com.example.projectapp:style/Widget.AppCompat.Light.ActionMode.Inverse = 0x7f0f022a
@@ -2797,7 +4159,11 @@ com.example.projectapp:anim/design_snackbar_in = 0x7f01001a
 com.example.projectapp:attr/materialCalendarHeaderToggleButton = 0x7f03023b
 com.example.projectapp:attr/lastBaselineToBottomHeight = 0x7f0301cc
 com.example.projectapp:anim/design_bottom_sheet_slide_in = 0x7f010018
+<<<<<<< HEAD
 com.example.projectapp:id/packed = 0x7f080160
+=======
+com.example.projectapp:id/packed = 0x7f08015f
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/compat_button_inset_horizontal_material = 0x7f060057
 com.example.projectapp:dimen/design_snackbar_extra_spacing_horizontal = 0x7f060082
 com.example.projectapp:color/material_on_surface_disabled = 0x7f05007d
@@ -2820,16 +4186,26 @@ com.example.projectapp:attr/dialogPreferredPadding = 0x7f030117
 com.example.projectapp:anim/design_bottom_sheet_slide_out = 0x7f010019
 com.example.projectapp:attr/listChoiceIndicatorMultipleAnimated = 0x7f030219
 com.example.projectapp:string/mtrl_picker_cancel = 0x7f0e0053
+<<<<<<< HEAD
 com.example.projectapp:id/mtrl_picker_fullscreen = 0x7f080144
+=======
+com.example.projectapp:id/mtrl_picker_fullscreen = 0x7f080143
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/percentX = 0x7f03028b
 com.example.projectapp:attr/minSeparation = 0x7f030254
 com.example.projectapp:styleable/RangeSlider = 0x7f100066
 com.example.projectapp:animator/mtrl_fab_transformation_sheet_collapse_spec = 0x7f020018
 com.example.projectapp:style/Base.ThemeOverlay.AppCompat = 0x7f0f0068
 com.example.projectapp:attr/limitBoundsTo = 0x7f030214
+<<<<<<< HEAD
 com.example.projectapp:id/textView6 = 0x7f0801f7
 com.example.projectapp:attr/shapeAppearanceOverlay = 0x7f0302be
 com.example.projectapp:id/snapMargins = 0x7f0801b3
+=======
+com.example.projectapp:id/textView6 = 0x7f0801f6
+com.example.projectapp:attr/shapeAppearanceOverlay = 0x7f0302be
+com.example.projectapp:id/snapMargins = 0x7f0801b2
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.Widget.AppCompat.ActionBar.TabText = 0x7f0f009d
 com.example.projectapp:style/Platform.MaterialComponents.Dialog = 0x7f0f00f4
 com.example.projectapp:attr/layout_optimizationLevel = 0x7f03020f
@@ -2884,7 +4260,11 @@ com.example.projectapp:id/ifRoom = 0x7f0800f2
 com.example.projectapp:style/Base.V7.Theme.AppCompat.Light = 0x7f0f0094
 com.example.projectapp:attr/endIconTint = 0x7f030139
 com.example.projectapp:attr/layout_constraintBottom_toBottomOf = 0x7f0301df
+<<<<<<< HEAD
 com.example.projectapp:id/returnBtn4 = 0x7f08017b
+=======
+com.example.projectapp:id/returnBtn4 = 0x7f08017a
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/itemFillColor = 0x7f0301af
 com.example.projectapp:attr/selectionRequired = 0x7f0302b9
 com.example.projectapp:attr/colorPrimary = 0x7f0300cc
@@ -2925,7 +4305,11 @@ com.example.projectapp:style/MaterialAlertDialog.MaterialComponents.Title.Text =
 com.example.projectapp:style/Base.Theme.MaterialComponents.Light.DialogWhenLarge = 0x7f0f0067
 com.example.projectapp:dimen/mtrl_calendar_header_toggle_margin_top = 0x7f0600f9
 com.example.projectapp:attr/itemTextAppearanceInactive = 0x7f0301c4
+<<<<<<< HEAD
 com.example.projectapp:id/mtrl_calendar_frame = 0x7f08013a
+=======
+com.example.projectapp:id/mtrl_calendar_frame = 0x7f080139
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/minHideDelay = 0x7f030253
 com.example.projectapp:color/button_material_dark = 0x7f050028
 com.example.projectapp:styleable/MaterialCheckBox = 0x7f10004f
@@ -2936,11 +4320,19 @@ com.example.projectapp:id/filtersBtn1 = 0x7f0800ca
 com.example.projectapp:attr/perpendicularPath_percent = 0x7f03028d
 com.example.projectapp:attr/itemStrokeColor = 0x7f0301c0
 com.example.projectapp:attr/layout_goneMarginTop = 0x7f03020c
+<<<<<<< HEAD
 com.example.projectapp:id/text_input_start_icon = 0x7f0801fd
 com.example.projectapp:drawable/notification_icon_background = 0x7f07009f
 com.example.projectapp:attr/statusBarForeground = 0x7f0302e5
 com.example.projectapp:styleable/ExtendedFloatingActionButton = 0x7f10002a
 com.example.projectapp:id/textView2 = 0x7f0801ef
+=======
+com.example.projectapp:id/text_input_start_icon = 0x7f0801fc
+com.example.projectapp:drawable/notification_icon_background = 0x7f07009f
+com.example.projectapp:attr/statusBarForeground = 0x7f0302e5
+com.example.projectapp:styleable/ExtendedFloatingActionButton = 0x7f10002a
+com.example.projectapp:id/textView2 = 0x7f0801ee
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/material_emphasis_high_type = 0x7f0600ab
 com.example.projectapp:style/MaterialAlertDialog.MaterialComponents.Title.Icon = 0x7f0f00eb
 com.example.projectapp:style/Base.TextAppearance.AppCompat.Large = 0x7f0f001e
@@ -2957,7 +4349,11 @@ com.example.projectapp:attr/hintTextAppearance = 0x7f030191
 com.example.projectapp:attr/itemHorizontalTranslationEnabled = 0x7f0301b1
 com.example.projectapp:attr/itemBackground = 0x7f0301ae
 com.example.projectapp:attr/isLightTheme = 0x7f0301ac
+<<<<<<< HEAD
 com.example.projectapp:id/tag_unhandled_key_event_manager = 0x7f0801d5
+=======
+com.example.projectapp:id/tag_unhandled_key_event_manager = 0x7f0801d4
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/insetForeground = 0x7f0301ab
 com.example.projectapp:attr/indicatorDirectionLinear = 0x7f0301a7
 com.example.projectapp:attr/alphabeticModifiers = 0x7f03002b
@@ -2974,8 +4370,13 @@ com.example.projectapp:attr/textAppearancePopupMenuHeader = 0x7f030327
 com.example.projectapp:dimen/mtrl_calendar_navigation_bottom_padding = 0x7f0600fe
 com.example.projectapp:attr/icon = 0x7f030197
 com.example.projectapp:attr/itemIconSize = 0x7f0301b3
+<<<<<<< HEAD
 com.example.projectapp:id/returnBtn6 = 0x7f08017d
 com.example.projectapp:id/material_clock_face = 0x7f080119
+=======
+com.example.projectapp:id/returnBtn6 = 0x7f08017c
+com.example.projectapp:id/material_clock_face = 0x7f080118
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/showMotionSpec = 0x7f0302c4
 com.example.projectapp:dimen/design_navigation_icon_padding = 0x7f060077
 com.example.projectapp:id/arrowLbl = 0x7f080057
@@ -2992,7 +4393,11 @@ com.example.projectapp:attr/hintEnabled = 0x7f030190
 com.example.projectapp:dimen/mtrl_extended_fab_disabled_translation_z = 0x7f06011d
 com.example.projectapp:attr/liftOnScrollTargetViewId = 0x7f030213
 com.example.projectapp:attr/layout_editor_absoluteX = 0x7f030205
+<<<<<<< HEAD
 com.example.projectapp:id/textinput_suffix_text = 0x7f080203
+=======
+com.example.projectapp:id/textinput_suffix_text = 0x7f080202
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/mtrl_calendar_month_vertical_padding = 0x7f0600fd
 com.example.projectapp:attr/goIcon = 0x7f030182
 com.example.projectapp:attr/contentInsetStart = 0x7f0300e2
@@ -3011,12 +4416,20 @@ com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.HeaderSe
 com.example.projectapp:attr/fontProviderAuthority = 0x7f030174
 com.example.projectapp:attr/circleCrop = 0x7f0300a8
 com.example.projectapp:attr/font = 0x7f030172
+<<<<<<< HEAD
 com.example.projectapp:id/test_checkbox_android_button_tint = 0x7f0801d9
+=======
+com.example.projectapp:id/test_checkbox_android_button_tint = 0x7f0801d8
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/tabIndicatorColor = 0x7f0302ff
 com.example.projectapp:drawable/abc_ic_voice_search_api_material = 0x7f070028
 com.example.projectapp:color/design_default_color_primary_variant = 0x7f050052
 com.example.projectapp:dimen/abc_control_corner_material = 0x7f060018
+<<<<<<< HEAD
 com.example.projectapp:id/textSpacerNoTitle = 0x7f0801e1
+=======
+com.example.projectapp:id/textSpacerNoTitle = 0x7f0801e0
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/boxCornerRadiusTopStart = 0x7f030066
 com.example.projectapp:attr/flow_horizontalBias = 0x7f030164
 com.example.projectapp:attr/flow_firstVerticalBias = 0x7f030161
@@ -3055,14 +4468,22 @@ com.example.projectapp:string/mtrl_picker_a11y_prev_month = 0x7f0e0051
 com.example.projectapp:attr/boxCornerRadiusBottomStart = 0x7f030064
 com.example.projectapp:style/Base.TextAppearance.AppCompat.Widget.ActionMode.Title = 0x7f0f0035
 com.example.projectapp:attr/searchHintIcon = 0x7f0302b3
+<<<<<<< HEAD
 com.example.projectapp:id/savedRoutesBtn = 0x7f08018c
+=======
+com.example.projectapp:id/savedRoutesBtn = 0x7f08018b
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/mtrl_large_touch_target = 0x7f060133
 com.example.projectapp:color/abc_search_url_text_selected = 0x7f050010
 com.example.projectapp:dimen/mtrl_calendar_header_content_padding = 0x7f0600f1
 com.example.projectapp:attr/endIconContentDescription = 0x7f030136
 com.example.projectapp:attr/materialCalendarFullscreenTheme = 0x7f030234
 com.example.projectapp:attr/actionBarWidgetTheme = 0x7f03000a
+<<<<<<< HEAD
 com.example.projectapp:id/title_template = 0x7f08020c
+=======
+com.example.projectapp:id/title_template = 0x7f08020b
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:color/common_google_signin_btn_text_dark_focused = 0x7f050032
 com.example.projectapp:dimen/mtrl_btn_padding_bottom = 0x7f0600d8
 com.example.projectapp:drawable/abc_list_selector_holo_dark = 0x7f070035
@@ -3086,7 +4507,11 @@ com.example.projectapp:layout/mtrl_calendar_year = 0x7f0b0056
 com.example.projectapp:attr/drawerArrowStyle = 0x7f03012b
 com.example.projectapp:attr/lineSpacing = 0x7f030216
 com.example.projectapp:animator/mtrl_extended_fab_change_size_expand_motion_spec = 0x7f020012
+<<<<<<< HEAD
 com.example.projectapp:id/transitionToEnd = 0x7f080214
+=======
+com.example.projectapp:id/transitionToEnd = 0x7f080213
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/ratingBarStyle = 0x7f0302a2
 com.example.projectapp:string/mtrl_picker_invalid_format = 0x7f0e0059
 com.example.projectapp:color/common_google_signin_btn_text_light_pressed = 0x7f050038
@@ -3112,7 +4537,11 @@ com.example.projectapp:style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inv
 com.example.projectapp:attr/dividerHorizontal = 0x7f03011b
 com.example.projectapp:attr/displayOptions = 0x7f030119
 com.example.projectapp:styleable/ListPopupWindow = 0x7f100044
+<<<<<<< HEAD
 com.example.projectapp:id/transition_transform = 0x7f08021a
+=======
+com.example.projectapp:id/transition_transform = 0x7f080219
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/dialogCornerRadius = 0x7f030116
 com.example.projectapp:style/TextAppearance.AppCompat.Widget.Button = 0x7f0f0156
 com.example.projectapp:anim/design_snackbar_out = 0x7f01001b
@@ -3152,10 +4581,17 @@ com.example.projectapp:string/common_open_on_phone = 0x7f0e0033
 com.example.projectapp:attr/checkedIconSize = 0x7f030090
 com.example.projectapp:dimen/abc_dialog_title_divider_material = 0x7f060026
 com.example.projectapp:dimen/abc_star_medium = 0x7f06003c
+<<<<<<< HEAD
 com.example.projectapp:id/material_value_index = 0x7f08012a
 com.example.projectapp:attr/transitionDisable = 0x7f030366
 com.example.projectapp:styleable/MenuItem = 0x7f100057
 com.example.projectapp:id/month_navigation_bar = 0x7f080130
+=======
+com.example.projectapp:id/material_value_index = 0x7f080129
+com.example.projectapp:attr/transitionDisable = 0x7f030366
+com.example.projectapp:styleable/MenuItem = 0x7f100057
+com.example.projectapp:id/month_navigation_bar = 0x7f08012f
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:id/CT_FiltersTextView = 0x7f080005
 com.example.projectapp:attr/chipStandaloneStyle = 0x7f0300a2
 com.example.projectapp:anim/abc_slide_in_top = 0x7f010007
@@ -3179,7 +4615,11 @@ com.example.projectapp:attr/colorPrimaryVariant = 0x7f0300cf
 com.example.projectapp:style/Base.Widget.AppCompat.PopupWindow = 0x7f0f00c4
 com.example.projectapp:attr/iconSize = 0x7f03019b
 com.example.projectapp:color/switch_thumb_material_dark = 0x7f0500d5
+<<<<<<< HEAD
 com.example.projectapp:id/terrain = 0x7f0801d8
+=======
+com.example.projectapp:id/terrain = 0x7f0801d7
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/tabTextColor = 0x7f030310
 com.example.projectapp:attr/fabAnimationMode = 0x7f030152
 com.example.projectapp:animator/fragment_fade_exit = 0x7f020006
@@ -3203,7 +4643,11 @@ com.example.projectapp:dimen/mtrl_progress_circular_size = 0x7f060144
 com.example.projectapp:dimen/clock_face_margin_start = 0x7f060056
 com.example.projectapp:anim/btn_checkbox_to_checked_icon_null_animation = 0x7f01000e
 com.example.projectapp:attr/fontProviderSystemFontFamily = 0x7f03017a
+<<<<<<< HEAD
 com.example.projectapp:id/btnNext = 0x7f080067
+=======
+com.example.projectapp:id/btnNext = 0x7f080066
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/titleTextStyle = 0x7f030352
 com.example.projectapp:attr/closeIconEndPadding = 0x7f0300b2
 com.example.projectapp:color/material_slider_thumb_color = 0x7f050086
@@ -3214,7 +4658,11 @@ com.example.projectapp:attr/recyclerViewStyle = 0x7f0302a5
 com.example.projectapp:dimen/mtrl_textinput_box_corner_radius_medium = 0x7f060161
 com.example.projectapp:attr/clockHandColor = 0x7f0300ad
 com.example.projectapp:attr/autoSizeMinTextSize = 0x7f030038
+<<<<<<< HEAD
 com.example.projectapp:id/travellingTimeTextView = 0x7f080222
+=======
+com.example.projectapp:id/travellingTimeTextView = 0x7f080221
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/behavior_skipCollapsed = 0x7f030059
 com.example.projectapp:attr/textStartPadding = 0x7f030333
 com.example.projectapp:id/chronometer = 0x7f080079
@@ -3227,18 +4675,31 @@ com.example.projectapp:dimen/mtrl_chip_pressed_translation_z = 0x7f060114
 com.example.projectapp:dimen/mtrl_slider_halo_radius = 0x7f060150
 com.example.projectapp:style/Base.V21.Theme.AppCompat.Light.Dialog = 0x7f0f0083
 com.example.projectapp:attr/drawableSize = 0x7f030126
+<<<<<<< HEAD
 com.example.projectapp:id/material_timepicker_mode_button = 0x7f080127
+=======
+com.example.projectapp:id/material_timepicker_mode_button = 0x7f080126
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.Widget.AppCompat.TextView.SpinnerItem = 0x7f0f00d1
 com.example.projectapp:attr/chipSurfaceColor = 0x7f0300a7
 com.example.projectapp:attr/chipStyle = 0x7f0300a6
 com.example.projectapp:style/Widget.AppCompat.Button.Borderless.Colored = 0x7f0f0211
 com.example.projectapp:style/Widget.MaterialComponents.AppBarLayout.Surface = 0x7f0f0260
+<<<<<<< HEAD
 com.example.projectapp:id/slide = 0x7f0801ae
 com.example.projectapp:id/fill_horizontal = 0x7f0800c7
 com.example.projectapp:attr/fontStyle = 0x7f03017b
 com.example.projectapp:style/Widget.AppCompat.TextView = 0x7f0f0249
 com.example.projectapp:attr/chipSpacingVertical = 0x7f0300a1
 com.example.projectapp:id/test_radiobutton_android_button_tint = 0x7f0801db
+=======
+com.example.projectapp:id/slide = 0x7f0801ad
+com.example.projectapp:id/fill_horizontal = 0x7f0800c6
+com.example.projectapp:attr/fontStyle = 0x7f03017b
+com.example.projectapp:style/Widget.AppCompat.TextView = 0x7f0f0249
+com.example.projectapp:attr/chipSpacingVertical = 0x7f0300a1
+com.example.projectapp:id/test_radiobutton_android_button_tint = 0x7f0801da
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/material_helper_text_default_padding_top = 0x7f0600b3
 com.example.projectapp:styleable/RadialViewGroup = 0x7f100065
 com.example.projectapp:attr/trackColorActive = 0x7f03035f
@@ -3271,7 +4732,11 @@ com.example.projectapp:attr/cardMaxElevation = 0x7f030085
 com.example.projectapp:attr/flow_firstVerticalStyle = 0x7f030162
 com.example.projectapp:id/animateToEnd = 0x7f080053
 com.example.projectapp:attr/cardElevation = 0x7f030083
+<<<<<<< HEAD
 com.example.projectapp:id/progress_circular = 0x7f080172
+=======
+com.example.projectapp:id/progress_circular = 0x7f080171
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/TextAppearance.Widget.AppCompat.ExpandedMenu.Item = 0x7f0f0181
 com.example.projectapp:attr/titleMarginStart = 0x7f03034d
 com.example.projectapp:attr/dayTodayStyle = 0x7f03010f
@@ -3313,7 +4778,11 @@ com.example.projectapp:style/TextAppearance.AppCompat.Widget.PopupMenu.Small = 0
 com.example.projectapp:attr/round = 0x7f0302ac
 com.example.projectapp:dimen/mtrl_bottomappbar_fab_bottom_margin = 0x7f0600c8
 com.example.projectapp:dimen/fastscroll_minimum_range = 0x7f060092
+<<<<<<< HEAD
 com.example.projectapp:id/placeOfDepartureTextView = 0x7f08016d
+=======
+com.example.projectapp:id/placeOfDepartureTextView = 0x7f08016c
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:dimen/abc_dialog_corner_radius_material = 0x7f06001b
 com.example.projectapp:layout/activity_ct_locations_filters = 0x7f0b001e
 com.example.projectapp:attr/fabAlignmentMode = 0x7f030151
@@ -3366,7 +4835,11 @@ com.example.projectapp:attr/fastScrollVerticalTrackDrawable = 0x7f03015c
 com.example.projectapp:drawable/ic_mtrl_chip_checked_circle = 0x7f070081
 com.example.projectapp:attr/checkedTextViewStyle = 0x7f030093
 com.example.projectapp:attr/actionMenuTextColor = 0x7f03000f
+<<<<<<< HEAD
 com.example.projectapp:id/totalPrice = 0x7f080210
+=======
+com.example.projectapp:id/totalPrice = 0x7f08020f
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/customBoolean = 0x7f030103
 com.example.projectapp:attr/actionBarSize = 0x7f030003
 com.example.projectapp:drawable/material_ic_edit_black_24dp = 0x7f070087
@@ -3384,7 +4857,11 @@ com.example.projectapp:styleable/AppCompatTheme = 0x7f100011
 com.example.projectapp:dimen/abc_action_bar_overflow_padding_end_material = 0x7f060007
 com.example.projectapp:attr/contentPaddingLeft = 0x7f0300e7
 com.example.projectapp:attr/layout_goneMarginLeft = 0x7f030209
+<<<<<<< HEAD
 com.example.projectapp:id/mtrl_picker_text_input_range_start = 0x7f08014b
+=======
+com.example.projectapp:id/mtrl_picker_text_input_range_start = 0x7f08014a
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Widget.AppCompat.RatingBar = 0x7f0f023e
 com.example.projectapp:attr/actionModeStyle = 0x7f03001c
 com.example.projectapp:drawable/tooltip_frame_light = 0x7f0700a6
@@ -3399,18 +4876,30 @@ com.example.projectapp:style/ShapeAppearance.MaterialComponents.SmallComponent =
 com.example.projectapp:attr/placeholderTextColor = 0x7f030291
 com.example.projectapp:color/abc_primary_text_material_light = 0x7f05000c
 com.example.projectapp:styleable/ShapeableImageView = 0x7f10006d
+<<<<<<< HEAD
 com.example.projectapp:id/textView9 = 0x7f0801fa
+=======
+com.example.projectapp:id/textView9 = 0x7f0801f9
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:style/Base.ThemeOverlay.MaterialComponents.Light.Dialog.Alert.Framework = 0x7f0f0072
 com.example.projectapp:animator/linear_indeterminate_line2_head_interpolator = 0x7f02000b
 com.example.projectapp:dimen/mtrl_shape_corner_size_large_component = 0x7f06014d
 com.example.projectapp:attr/trackTintMode = 0x7f030365
+<<<<<<< HEAD
 com.example.projectapp:id/showCustom = 0x7f0801a8
+=======
+com.example.projectapp:id/showCustom = 0x7f0801a7
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/motion_triggerOnCollision = 0x7f030264
 com.example.projectapp:attr/actionBarTabStyle = 0x7f030007
 com.example.projectapp:attr/placeholderText = 0x7f03028f
 com.example.projectapp:animator/design_appbar_state_list_animator = 0x7f020000
 com.example.projectapp:attr/elevationOverlayColor = 0x7f030133
+<<<<<<< HEAD
 com.example.projectapp:id/mtrl_card_checked_layer_id = 0x7f080140
+=======
+com.example.projectapp:id/mtrl_card_checked_layer_id = 0x7f08013f
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/path_percent = 0x7f030288
 com.example.projectapp:string/abc_searchview_description_clear = 0x7f0e0013
 com.example.projectapp:attr/arrowShaftLength = 0x7f030034
@@ -3431,10 +4920,17 @@ com.example.projectapp:anim/btn_radio_to_off_mtrl_ring_outer_path_animation = 0x
 com.example.projectapp:attr/layout_constraintRight_toLeftOf = 0x7f0301f5
 com.example.projectapp:style/Base.Widget.MaterialComponents.Chip = 0x7f0f00d7
 com.example.projectapp:attr/actionOverflowButtonStyle = 0x7f03001f
+<<<<<<< HEAD
 com.example.projectapp:id/rectangles = 0x7f080176
 com.example.projectapp:id/RouteDetailsTitle = 0x7f08000c
 com.example.projectapp:attr/windowActionBarOverlay = 0x7f030386
 com.example.projectapp:id/never = 0x7f080150
+=======
+com.example.projectapp:id/rectangles = 0x7f080175
+com.example.projectapp:id/RouteDetailsTitle = 0x7f08000c
+com.example.projectapp:attr/windowActionBarOverlay = 0x7f030386
+com.example.projectapp:id/never = 0x7f08014f
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/cornerSizeTopRight = 0x7f0300f9
 com.example.projectapp:color/dim_foreground_material_dark = 0x7f050062
 com.example.projectapp:attr/imageAspectRatio = 0x7f0301a0
@@ -3454,7 +4950,11 @@ com.example.projectapp:style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle
 com.example.projectapp:attr/customIntegerValue = 0x7f030108
 com.example.projectapp:style/Widget.MaterialComponents.MaterialCalendar.HeaderDivider = 0x7f0f0298
 com.example.projectapp:dimen/material_clock_face_margin_top = 0x7f06009e
+<<<<<<< HEAD
 com.example.projectapp:id/pin = 0x7f08016b
+=======
+com.example.projectapp:id/pin = 0x7f08016a
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/gestureInsetBottomIgnored = 0x7f030181
 com.example.projectapp:animator/linear_indeterminate_line1_tail_interpolator = 0x7f02000a
 com.example.projectapp:animator/fragment_close_exit = 0x7f020004
@@ -3468,6 +4968,11 @@ com.example.projectapp:attr/saturation = 0x7f0302ae
 com.example.projectapp:animator/linear_indeterminate_line2_tail_interpolator = 0x7f02000c
 com.example.projectapp:drawable/material_ic_clear_black_24dp = 0x7f070086
 com.example.projectapp:color/material_on_surface_emphasis_high_type = 0x7f05007e
+<<<<<<< HEAD
 com.example.projectapp:id/material_timepicker_ok_button = 0x7f080128
 com.example.projectapp:id/accessibility_custom_action_26 = 0x7f08002b
+=======
+com.example.projectapp:id/material_timepicker_ok_button = 0x7f080127
+com.example.projectapp:id/accessibility_custom_action_26 = 0x7f08002a
+>>>>>>> b85566e4ce54657df798603cdaf9c99e046a8781
 com.example.projectapp:attr/actionBarTheme = 0x7f030009
