@@ -99,6 +99,16 @@ public class CT_Locations extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_ct_locations_filters);
 
+        ImageButton returnBtn = findViewById(R.id.returnBtn2);
+        returnBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent lastPage = new Intent(getApplicationContext,MainActivity.lastPage);
+                startActivity(lastPage);
+                MainActivity.lastPage = getApplicationContext();
+            }
+        });
+
         AutoCompleteTextView location2_1 = findViewById(R.id.origem);
         AutoCompleteTextView location2_2 = findViewById(R.id.destino);
         // update origin location with the main activity current location
