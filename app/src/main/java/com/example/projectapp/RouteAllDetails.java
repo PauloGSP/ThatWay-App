@@ -47,6 +47,15 @@ public class RouteAllDetails extends AppCompatActivity {
             }
         });
 
+        ImageButton homeBtn = findViewById(R.id.homeBtnShowTransports8);
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent home = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(home);
+            }
+        });
+
 
         Route route = Route.currentRoute;
 

@@ -26,6 +26,15 @@ public class CT_TripInfo extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_ct_trip_info);
 
+        ImageButton homeBtn = findViewById(R.id.homeBtnShowTransports5);
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent home = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(home);
+            }
+        });
+
         ImageButton returnBtn = findViewById(R.id.returnBtn5);
         returnBtn.setOnClickListener(new View.OnClickListener() {
             @Override

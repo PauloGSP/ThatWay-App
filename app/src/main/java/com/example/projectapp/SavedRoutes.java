@@ -2,6 +2,7 @@ package com.example.projectapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -26,6 +27,15 @@ public class SavedRoutes extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_saved_routes);
+
+        ImageButton homeBtn = findViewById(R.id.homeBtnShowTransports7);
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent home = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(home);
+            }
+        });
 
         ImageButton returnBtn = findViewById(R.id.returnBtn7);
         returnBtn.setOnClickListener(new View.OnClickListener() {

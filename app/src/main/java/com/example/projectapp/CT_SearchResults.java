@@ -18,6 +18,7 @@ import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -222,6 +223,23 @@ public class CT_SearchResults extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_ct_search_results);
+
+        ImageButton returnBtn = findViewById(R.id.returnBtn4);
+        returnBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
+        ImageButton homeBtn = findViewById(R.id.homeBtnShowTransports4);
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent home = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(home);
+            }
+        });
 
         choosen_trips = new ArrayList<Trip>();
         maxPages = selected_trips.size() - 1;

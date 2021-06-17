@@ -2,9 +2,12 @@ package com.example.projectapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 
 public class CityPrivateTransports extends AppCompatActivity {
 
@@ -15,5 +18,14 @@ public class CityPrivateTransports extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_city_private_transports);
+
+        ImageButton homeBtn = findViewById(R.id.homeBtnShowTransports6);
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent home = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(home);
+            }
+        });
     }
 }

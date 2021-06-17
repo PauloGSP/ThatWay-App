@@ -72,6 +72,15 @@ public class ShowTransports extends AppCompatActivity {
         String local= MainActivity.currentLocation.toLowerCase();
         LinearLayout layout =(LinearLayout) findViewById(R.id.layout);
 
+        ImageButton homeBtn = findViewById(R.id.homeBtnShowTransports);
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent home = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(home);
+            }
+        });
+
         ImageButton returnBtn = findViewById(R.id.returnBtnShowTransports);
         returnBtn.setOnClickListener(new View.OnClickListener() {
             @Override
