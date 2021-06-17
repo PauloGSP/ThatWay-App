@@ -4,7 +4,7 @@ package com.example.projectapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.webkit.WebView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,15 +20,15 @@ public final class ActivityMapSelectLocation2Binding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button mapDoneBtn;
+  public final WebView WebView;
 
   @NonNull
   public final TextView selectLocationTextView;
 
   private ActivityMapSelectLocation2Binding(@NonNull ConstraintLayout rootView,
-      @NonNull Button mapDoneBtn, @NonNull TextView selectLocationTextView) {
+      @NonNull WebView WebView, @NonNull TextView selectLocationTextView) {
     this.rootView = rootView;
-    this.mapDoneBtn = mapDoneBtn;
+    this.WebView = WebView;
     this.selectLocationTextView = selectLocationTextView;
   }
 
@@ -59,9 +59,9 @@ public final class ActivityMapSelectLocation2Binding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.mapDoneBtn;
-      Button mapDoneBtn = rootView.findViewById(id);
-      if (mapDoneBtn == null) {
+      id = R.id.WebView;
+      WebView WebView = rootView.findViewById(id);
+      if (WebView == null) {
         break missingId;
       }
 
@@ -71,7 +71,7 @@ public final class ActivityMapSelectLocation2Binding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMapSelectLocation2Binding((ConstraintLayout) rootView, mapDoneBtn,
+      return new ActivityMapSelectLocation2Binding((ConstraintLayout) rootView, WebView,
           selectLocationTextView);
     }
     String missingId = rootView.getResources().getResourceName(id);

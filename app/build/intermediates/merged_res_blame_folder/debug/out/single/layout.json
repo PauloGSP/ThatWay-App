@@ -48,6 +48,10 @@
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\details.xml"
     },
     {
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_transport.xml",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\row_transport.xml"
+    },
+    {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_main.xml"
     },

@@ -1773,6 +1773,7 @@ id SYM
 id SavedRoutesTitle
 id TOP_END
 id TOP_START
+id WebView
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -1856,7 +1857,6 @@ id btnArrival
 id btnDeparture
 id btnNext
 id busCheckBox
-id button
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -2029,7 +2029,6 @@ id locationBtnShowTransports
 id locationShowTransports
 id locationShowTransports2
 id locationTextView
-id mapDoneBtn
 id masked
 id material_clock_display
 id material_clock_face
@@ -2291,6 +2290,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id transportBtn
 id transportIcon
 id transportType
 id transportTypeIcon
@@ -2458,6 +2458,7 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout route_row
 layout row_location
+layout row_transport
 layout row_trip
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
@@ -2477,7 +2478,6 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-layout transportbutton
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round

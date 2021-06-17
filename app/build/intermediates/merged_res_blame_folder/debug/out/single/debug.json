@@ -80,6 +80,10 @@
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\row_location.xml"
     },
     {
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_transport.xml.flat",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\row_transport.xml"
+    },
+    {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
@@ -218,9 +222,5 @@
     {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_logo_round.png.flat",
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo_round.png"
-    },
-    {
-        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_transportbutton.xml.flat",
-        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\transportbutton.xml"
     }
 ]

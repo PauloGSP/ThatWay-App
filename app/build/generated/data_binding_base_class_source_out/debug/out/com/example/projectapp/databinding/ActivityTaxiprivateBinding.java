@@ -21,9 +21,6 @@ public final class ActivityTaxiprivateBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView CTLocationFiltersTextView2;
-
-  @NonNull
   public final EditText editTextTextMultiLine4;
 
   @NonNull
@@ -47,14 +44,16 @@ public final class ActivityTaxiprivateBinding implements ViewBinding {
   @NonNull
   public final ImageButton returnBtn6;
 
+  @NonNull
+  public final TextView title;
+
   private ActivityTaxiprivateBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView CTLocationFiltersTextView2, @NonNull EditText editTextTextMultiLine4,
-      @NonNull EditText editTextTextMultiLine5, @NonNull EditText editTextTextMultiLine6,
-      @NonNull EditText editTextTextMultiLine7, @NonNull EditText editTextTextMultiLine8,
-      @NonNull ImageButton homeBtnShowTransports6, @NonNull TextView locationShowTransports2,
-      @NonNull ImageButton returnBtn6) {
+      @NonNull EditText editTextTextMultiLine4, @NonNull EditText editTextTextMultiLine5,
+      @NonNull EditText editTextTextMultiLine6, @NonNull EditText editTextTextMultiLine7,
+      @NonNull EditText editTextTextMultiLine8, @NonNull ImageButton homeBtnShowTransports6,
+      @NonNull TextView locationShowTransports2, @NonNull ImageButton returnBtn6,
+      @NonNull TextView title) {
     this.rootView = rootView;
-    this.CTLocationFiltersTextView2 = CTLocationFiltersTextView2;
     this.editTextTextMultiLine4 = editTextTextMultiLine4;
     this.editTextTextMultiLine5 = editTextTextMultiLine5;
     this.editTextTextMultiLine6 = editTextTextMultiLine6;
@@ -63,6 +62,7 @@ public final class ActivityTaxiprivateBinding implements ViewBinding {
     this.homeBtnShowTransports6 = homeBtnShowTransports6;
     this.locationShowTransports2 = locationShowTransports2;
     this.returnBtn6 = returnBtn6;
+    this.title = title;
   }
 
   @Override
@@ -92,12 +92,6 @@ public final class ActivityTaxiprivateBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.CT_LocationFiltersTextView2;
-      TextView CTLocationFiltersTextView2 = rootView.findViewById(id);
-      if (CTLocationFiltersTextView2 == null) {
-        break missingId;
-      }
-
       id = R.id.editTextTextMultiLine4;
       EditText editTextTextMultiLine4 = rootView.findViewById(id);
       if (editTextTextMultiLine4 == null) {
@@ -146,10 +140,16 @@ public final class ActivityTaxiprivateBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityTaxiprivateBinding((ConstraintLayout) rootView, CTLocationFiltersTextView2,
-          editTextTextMultiLine4, editTextTextMultiLine5, editTextTextMultiLine6,
-          editTextTextMultiLine7, editTextTextMultiLine8, homeBtnShowTransports6,
-          locationShowTransports2, returnBtn6);
+      id = R.id.title;
+      TextView title = rootView.findViewById(id);
+      if (title == null) {
+        break missingId;
+      }
+
+      return new ActivityTaxiprivateBinding((ConstraintLayout) rootView, editTextTextMultiLine4,
+          editTextTextMultiLine5, editTextTextMultiLine6, editTextTextMultiLine7,
+          editTextTextMultiLine8, homeBtnShowTransports6, locationShowTransports2, returnBtn6,
+          title);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
