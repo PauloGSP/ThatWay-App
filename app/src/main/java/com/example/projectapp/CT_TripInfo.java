@@ -3,8 +3,10 @@ package com.example.projectapp;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
@@ -36,6 +38,8 @@ public class CT_TripInfo extends AppCompatActivity {
         TextView placeofarrival = findViewById(R.id.placeofarrival);
 
         Trip trip = CT_SearchResults.currentTrip;
+        MapSelectLocation.trip = trip;
+        MapSelectLocation.isDeparture= false;
 
         transport.setText(trip.getTransport_type());
         origin.setText(trip.getOrigin_address() + " (" + trip.getOrigin() + ")");
@@ -51,8 +55,24 @@ public class CT_TripInfo extends AppCompatActivity {
         //ir para o mapa com as coordenadas
 
         ImageButton depMap = findViewById(R.id.btnDeparture);
-        ImageButton arrMap = findViewById(R.id.btnArrival);
+        depMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MapSelectLocation.isDeparture = true;
+                Intent goMap = new Intent(getApplicationContext(), MapSelectLocation.class);
+                startActivity(goMap);
+            }
+        });
 
+        ImageButton arrMap = findViewById(R.id.btnArrival);
+        arrMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MapSelectLocation.isDeparture = false;
+                Intent goMap = new Intent(getApplicationContext(), MapSelectLocation.class);
+                startActivity(goMap);
+            }
+        });
         //fazer set do icone de transporte
 
 

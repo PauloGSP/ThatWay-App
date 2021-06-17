@@ -25,8 +25,13 @@ import java.util.ArrayList;
 
 public class ShowTransports extends AppCompatActivity {
 
+    public static String typeTransport;
+
     @RequiresApi(api = Build.VERSION_CODES.O)
     protected  void onBtnClick(String type){
+
+        typeTransport = type;
+
         switch (type.toUpperCase()){
             case "BUS":
                 CT_SearchResults.bus = true;
@@ -47,18 +52,10 @@ public class ShowTransports extends AppCompatActivity {
                 CT_SearchResults.metro = true;
                 Intent goToCreateTripMetro = new Intent(getApplicationContext(), CT_Locations.class);
                 startActivity(goToCreateTripMetro); break;
-            case "MOLICEIRO":
-                Intent goToPrivateTransportMoliceiro = new Intent(getApplicationContext(),taxiprivate.class ); //checkar
-                startActivity(goToPrivateTransportMoliceiro); break;
-            case "TAXI":
+            default:
+
                 Intent goToPrivateTransportTaxi = new Intent(getApplicationContext(),taxiprivate.class ); //checkar
                 startActivity(goToPrivateTransportTaxi); break;
-            default:
-                CT_SearchResults.bus = true;
-                CT_SearchResults.train = true;
-                CT_SearchResults.metro = true;
-                Intent goToCreateTrip = new Intent(getApplicationContext(), CT_Locations.class);
-                startActivity(goToCreateTrip); break;
         }
 
     }
@@ -110,6 +107,7 @@ public class ShowTransports extends AppCompatActivity {
         }else{
             System.out.println(MainActivity.cityTransports + " xDD " + local);
             ArrayList<String> localTransport= new ArrayList(MainActivity.cityTransports.get(local));
+
 
             for(int i = 0; i<localTransport.size() ; i++) {
 

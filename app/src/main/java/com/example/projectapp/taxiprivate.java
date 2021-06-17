@@ -19,5 +19,7 @@ public class taxiprivate extends AppCompatActivity{
 
         TextView location = (TextView) findViewById(R.id.locationShowTransports2);
         location.setText(MainActivity.currentLocation);
+
+       // ShowTransports.typeTransport;
     }
 }

@@ -1773,6 +1773,7 @@ id SYM
 id SavedRoutesTitle
 id TOP_END
 id TOP_START
+id WebView
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2029,7 +2030,6 @@ id locationBtnShowTransports
 id locationShowTransports
 id locationShowTransports2
 id locationTextView
-id mapDoneBtn
 id masked
 id material_clock_display
 id material_clock_face

@@ -2,8 +2,10 @@ package com.example.projectapp;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.collection.ArraySet;
 
 import android.content.Intent;
+import android.graphics.YuvImage;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Window;
@@ -26,7 +28,38 @@ public class MainActivity extends AppCompatActivity {
     public static ArrayList<Trip> allTrips;
     public static ArrayList<String> allLocations;
     public static HashMap<String,ArrayList<String>> cityTransports;
+    public static ArrayList<Ptransport> allPrivateTransports;
+
     // fazer load de todas as trips
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public void loadPrivateTransport(){
+        System.out.println("fui chamado");
+        try{
+
+            BufferedReader rd = new BufferedReader(new InputStreamReader(getAssets().open("priv.txt")));
+            String l;
+            System.out.println("ya");
+            while ((l = rd.readLine()) != null) {
+                String[] transportinfo= l.split("/");
+                System.out.println(transportinfo);
+                System.out.println(l);
+                String city=transportinfo[0];
+                String type= transportinfo[1];
+                String name=transportinfo[2];
+                String contact= transportinfo[3];
+                Ptransport ptransport = new Ptransport(city,type,name,contact);
+                allPrivateTransports.add(ptransport);
+                System.out.println(ptransport);
+            }
+
+            System.out.println("!!!!!!!!!!!!!!!added tras!!!!!!!!!!!!!!!!!");
+
+        }
+        catch (IOException e) {
+
+        e.printStackTrace();
+    }
+    }
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void loadAllTrips() {
 
@@ -89,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
     public void loadcityTransports(){
         System.out.println("loadcityTransports");
 
@@ -123,6 +157,25 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
+
+        }
+        for (Ptransport p : allPrivateTransports){
+
+            String city= p.getCity();
+            String type=p.getType();
+            System.out.println(type);
+            if(!cityTransports.containsKey(city.toLowerCase())){
+                cityTransports.put(city.toLowerCase(),new ArrayList<>(Arrays.asList(type)));
+            }else{
+                ArrayList<String> transportes = new ArrayList(cityTransports.get(city.toLowerCase()));
+                if (!transportes.contains(type)) {
+                    transportes.add(type);
+                    System.out.println("dei put");
+                    cityTransports.put(city.toLowerCase(), transportes);
+                }
+
+            }
+
         }
         System.out.println("begin");
         System.out.println(cityTransports);
@@ -142,12 +195,15 @@ public class MainActivity extends AppCompatActivity {
         allTrips = new ArrayList<Trip>();
         allLocations = new ArrayList<String>();
         cityTransports= new HashMap<String, ArrayList<String>>();
+        allPrivateTransports = new ArrayList<Ptransport>();
 
         CT_SearchResults.order = "DEPARTURE";
 
         loadAllTrips();
         loadAllLocations();
+        loadPrivateTransport();
         loadcityTransports();
+
         EditText locationText = findViewById(R.id.locationTextView);
 
         try {
