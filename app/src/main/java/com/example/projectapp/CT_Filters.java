@@ -2,6 +2,8 @@ package com.example.projectapp;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.Activity;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Build;
@@ -17,7 +19,7 @@ import android.widget.Switch;
 import android.widget.TimePicker;
 import java.util.Calendar;
 
-public class CT_Filters extends AppCompatActivity {
+public class CT_Filters extends Activity {
 
     int mHour, mMin;
 
@@ -27,7 +29,6 @@ public class CT_Filters extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
         setContentView(R.layout.activity_ct_filters);
 
         ImageButton returnBtn = findViewById(R.id.returnBtn3);

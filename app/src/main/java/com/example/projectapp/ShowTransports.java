@@ -3,6 +3,7 @@ package com.example.projectapp;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
@@ -24,7 +25,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 
-public class ShowTransports extends AppCompatActivity {
+public class ShowTransports extends Activity {
 
     public static String typeTransport;
 
@@ -65,7 +66,6 @@ public class ShowTransports extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
         setContentView(R.layout.activity_show_transports);
         TextView location = (TextView) findViewById(R.id.locationShowTransports);
         location.setText(MainActivity.currentLocation);

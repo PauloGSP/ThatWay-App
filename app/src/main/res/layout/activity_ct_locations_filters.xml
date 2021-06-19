@@ -12,7 +12,7 @@
         android:layout_width="363dp"
         android:layout_height="70dp"
         android:layout_marginTop="16dp"
-        android:background="#ECECEC"
+        android:background="#3955AC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout_list">
@@ -20,7 +20,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="268dp"
             android:layout_height="70dp"
-            android:background="#D5D5D5"
+            android:background="#697EBD"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -33,6 +33,7 @@
                 android:layout_width="168dp"
                 android:layout_height="55dp"
                 android:textSize="16sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.32"
@@ -47,6 +48,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="To"
+            android:textAllCaps="false"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.046"
@@ -60,7 +63,7 @@
         android:id="@+id/sdwdw"
         android:layout_width="363dp"
         android:layout_height="70dp"
-        android:background="#ECECEC"
+        android:background="#3955AC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +73,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="268dp"
             android:layout_height="70dp"
-            android:background="#D5D5D5"
+            android:background="#697EBD"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -83,6 +86,7 @@
                 android:layout_width="169dp"
                 android:layout_height="55dp"
                 android:textSize="16sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.303"
@@ -97,6 +101,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="From"
+            android:textAllCaps="false"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.048"
@@ -108,25 +114,30 @@
 
     <ImageButton
         android:id="@+id/homeBtnShowTransports2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_width="128px"
+        android:layout_height="128px"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+        app:layout_constraintVertical_bias="0.025"
+        android:background="@drawable/home" />
 
     <ImageButton
         android:id="@+id/returnBtn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="128px"
+        android:layout_height="128px"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_revert" />
+        app:layout_constraintVertical_bias="0.026"
+        android:background="@drawable/left_arrow" />
 
     <TextView
         android:id="@+id/CT_LocationFiltersTextView"
@@ -134,7 +145,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="Create Trip"
+        android:textAllCaps="true"
         android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -143,9 +156,14 @@
         android:id="@+id/filtersBtn1"
         android:layout_width="112dp"
         android:layout_height="41dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#0e1f47"
         android:text="Filter by"
         android:textSize="12sp"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -156,6 +174,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Search Results"
+        android:backgroundTint="#0e1f47"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
@@ -163,30 +186,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.939" />
 
-    <ImageButton
-        android:id="@+id/swapBtn"
-        android:layout_width="58dp"
-        android:layout_height="54dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.143"
-        app:srcCompat="@android:drawable/ic_menu_rotate" />
-
     <Button
         android:id="@+id/addBreakpoint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="add Breakpoint"
+        android:backgroundTint="#0e1f47"
+        android:text="+ add Breakpoint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/feefef"
-        app:layout_constraintVertical_bias="0.101" />
+        app:layout_constraintVertical_bias="0.068" />
 
     <LinearLayout
         android:id="@+id/layout_list"
@@ -198,6 +209,27 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sdwdw"
-        app:layout_constraintVertical_bias="0.004"></LinearLayout>
+        app:layout_constraintVertical_bias="0.004">
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/swapBtn"
+        android:layout_width="128px"
+        android:layout_height="128px"
+        android:background="@drawable/swap"
+        android:orientation="vertical"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

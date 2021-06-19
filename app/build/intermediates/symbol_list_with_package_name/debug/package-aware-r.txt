@@ -1708,6 +1708,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable home
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -1716,6 +1717,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable left_arrow
 drawable logo_background
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
@@ -1749,6 +1751,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable sort
+drawable sort__2_
+drawable swap
 drawable test_custom_background
 drawable thatway
 drawable thatwaylogo

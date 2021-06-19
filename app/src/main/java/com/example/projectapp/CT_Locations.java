@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-public class CT_Locations extends AppCompatActivity {
+public class CT_Locations extends Activity {
 
     private int numOfBreakpoints;
     ArrayList<View> breakpoints;
@@ -96,7 +96,6 @@ public class CT_Locations extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
         setContentView(R.layout.activity_ct_locations_filters);
 
         ImageButton returnBtn = findViewById(R.id.returnBtn2);

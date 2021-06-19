@@ -7,35 +7,6 @@
     android:background="#395087"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/locationTextView"
-        android:layout_width="300sp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Insert location"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.279" />
-
-    <Button
-        android:id="@+id/createTripBtn"
-        android:layout_width="300sp"
-        android:layout_height="100sp"
-        android:text="create trip"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        app:backgroundTint="#C3C3C3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="150dp"
@@ -45,37 +16,81 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.027"
-        app:srcCompat="@drawable/thatwaylogo" />
-
-    <Button
-        android:id="@+id/showTransportsBtn"
-        android:layout_width="300sp"
-        android:layout_height="100sp"
-        android:text="show transports"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        app:backgroundTint="#C3C3C3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/createTripBtn"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintVertical_bias="0.06"
+        android:background="@drawable/thatwaylogo" />
 
     <Button
         android:id="@+id/savedRoutesBtn"
         android:layout_width="300sp"
         android:layout_height="100sp"
         android:text="saved routes"
-        android:textColor="#000000"
+        android:textColor="@color/white"
         android:textStyle="bold"
-        app:backgroundTint="#C3C3C3"
+        android:backgroundTint="#0e1f47"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/showTransportsBtn"
-        app:layout_constraintVertical_bias="0.068" />
+        app:layout_constraintVertical_bias="0.087" />
+
+    <EditText
+        android:id="@+id/locationTextView"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Insert your current location"
+        android:inputType="textPersonName"
+        android:shadowColor="#FFFFFF"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <Button
+        android:id="@+id/createTripBtn"
+        android:layout_width="300sp"
+        android:layout_height="100sp"
+        android:text="create trip"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:backgroundTint="#0e1f47"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <Button
+        android:id="@+id/showTransportsBtn"
+        android:layout_width="300sp"
+        android:layout_height="100sp"
+        android:text="show transports"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="#0e1f47"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTripBtn"
+        app:layout_constraintVertical_bias="0.054" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@ package com.example.projectapp;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
@@ -26,7 +27,7 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 
-public class RouteAllDetails extends AppCompatActivity {
+public class RouteAllDetails extends Activity {
 
     public static final String TAG = "route";
     public static String json;
@@ -36,7 +37,6 @@ public class RouteAllDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
         setContentView(R.layout.activity_route_all_details);
 
         ImageButton returnBtn = findViewById(R.id.returnBtn8);
