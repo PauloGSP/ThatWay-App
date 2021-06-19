@@ -71,7 +71,7 @@ public class TripAdapter extends ArrayAdapter<Trip> {
                 public void onClick(View v) {
                     ultimaHoraTemp = CT_SearchResults.ultimaHoraChegada; //variavel temporária
                     if (CT_SearchResults.currentContainer != null && MainContainer != CT_SearchResults.currentContainer) {
-                        CT_SearchResults.currentContainer.setBackgroundColor(Color.parseColor("#E4E4E4"));
+                        CT_SearchResults.currentContainer.setBackgroundColor(Color.parseColor("#808BC5"));
                         CT_SearchResults.currentContainer = MainContainer;
                         CT_SearchResults.currentTrip = trip;
                         CT_SearchResults.ultimaHoraChegada = trip.getArrival_time();
@@ -80,7 +80,7 @@ public class TripAdapter extends ArrayAdapter<Trip> {
                         CT_SearchResults.ultimaHoraChegada = ultimaHoraTemp;
                         CT_SearchResults.currentContainer = null;
                         CT_SearchResults.currentTrip = null;
-                        MainContainer.setBackgroundColor(Color.parseColor("#E4E4E4"));
+                        MainContainer.setBackgroundColor(Color.parseColor("#808BC5"));
                     } else {
                         ultimaHoraTemp = CT_SearchResults.ultimaHoraChegada;
                         CT_SearchResults.currentContainer = MainContainer;
