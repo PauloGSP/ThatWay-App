@@ -129,7 +129,6 @@
         android:id="@+id/returnBtn2"
         android:layout_width="128px"
         android:layout_height="128px"
-
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -154,8 +153,8 @@
 
     <Button
         android:id="@+id/filtersBtn1"
-        android:layout_width="112dp"
-        android:layout_height="41dp"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
         android:layout_marginTop="52dp"
         android:backgroundTint="#0e1f47"
         android:text="Filter by"

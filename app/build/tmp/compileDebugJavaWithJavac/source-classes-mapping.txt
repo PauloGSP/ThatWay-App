@@ -1,3 +1,13 @@
+com/example/projectapp/Route.java
+ com.example.projectapp.Route
+com/example/projectapp/Ptransport.java
+ com.example.projectapp.Ptransport
+com/example/projectapp/BuildConfig.java
+ com.example.projectapp.BuildConfig
+com/example/projectapp/LastPage.java
+ com.example.projectapp.LastPage
+com/example/projectapp/Trip.java
+ com.example.projectapp.Trip
 com/example/projectapp/CityPrivateTransports.java
  com.example.projectapp.CityPrivateTransports
  com.example.projectapp.CityPrivateTransports$1
@@ -24,8 +34,6 @@ com/example/projectapp/ShowTransports.java
  com.example.projectapp.ShowTransports$2
  com.example.projectapp.ShowTransports$3
  com.example.projectapp.ShowTransports$4
-com/example/projectapp/LastPage.java
- com.example.projectapp.LastPage
 com/example/projectapp/databinding/ActivityRouteAllDetailsBinding.java
  com.example.projectapp.databinding.ActivityRouteAllDetailsBinding
 com/example/projectapp/CT_TripInfo.java
@@ -46,10 +54,6 @@ com/example/projectapp/TripAdapter.java
  com.example.projectapp.TripAdapter
  com.example.projectapp.TripAdapter$1
  com.example.projectapp.TripAdapter$2
-com/example/projectapp/Route.java
- com.example.projectapp.Route
-com/example/projectapp/Ptransport.java
- com.example.projectapp.Ptransport
 com/example/projectapp/MainActivity.java
  com.example.projectapp.MainActivity
 com/example/projectapp/databinding/ActivityCityPrivateTransportsBinding.java
@@ -72,8 +76,6 @@ com/example/projectapp/taxiprivate.java
  com.example.projectapp.taxiprivate$1
 com/example/projectapp/databinding/ActivitySavedRoutesBinding.java
  com.example.projectapp.databinding.ActivitySavedRoutesBinding
-com/example/projectapp/BuildConfig.java
- com.example.projectapp.BuildConfig
 com/example/projectapp/databinding/ActivityCtTripInfoBinding.java
  com.example.projectapp.databinding.ActivityCtTripInfoBinding
 com/example/projectapp/CT_Filters.java
@@ -91,8 +93,6 @@ com/example/projectapp/MapSelectLocation.java
  com.example.projectapp.MapSelectLocation
 com/example/projectapp/databinding/ActivityMapSelectLocation2Binding.java
  com.example.projectapp.databinding.ActivityMapSelectLocation2Binding
-com/example/projectapp/Trip.java
- com.example.projectapp.Trip
 com/example/projectapp/databinding/DetailsBinding.java
  com.example.projectapp.databinding.DetailsBinding
 com/example/projectapp/SavedRoutes.java

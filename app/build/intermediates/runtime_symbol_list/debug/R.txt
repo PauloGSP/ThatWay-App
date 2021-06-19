@@ -1680,6 +1680,7 @@ int drawable btn_radio_off_mtrl 0x7f07005c
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f07005d
 int drawable btn_radio_on_mtrl 0x7f07005e
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f07005f
+int drawable clock30 0x7f0700ae
 int drawable common_full_open_on_phone 0x7f070060
 int drawable common_google_signin_btn_icon_dark 0x7f070061
 int drawable common_google_signin_btn_icon_dark_focused 0x7f070062
@@ -1728,6 +1729,7 @@ int drawable material_ic_keyboard_arrow_previous_black_24dp 0x7f07008c
 int drawable material_ic_keyboard_arrow_right_black_24dp 0x7f07008d
 int drawable material_ic_menu_arrow_down_black_24dp 0x7f07008e
 int drawable material_ic_menu_arrow_up_black_24dp 0x7f07008f
+int drawable money30 0x7f0700af
 int drawable mtrl_dialog_background 0x7f070090
 int drawable mtrl_dropdown_arrow 0x7f070091
 int drawable mtrl_ic_arrow_drop_down 0x7f070092
