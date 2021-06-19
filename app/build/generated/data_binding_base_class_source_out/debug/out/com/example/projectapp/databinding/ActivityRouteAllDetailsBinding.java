@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -38,7 +37,7 @@ public final class ActivityRouteAllDetailsBinding implements ViewBinding {
   public final ImageButton returnBtn8;
 
   @NonNull
-  public final EditText routeName;
+  public final TextView routeName;
 
   @NonNull
   public final TextView textView3;
@@ -55,7 +54,7 @@ public final class ActivityRouteAllDetailsBinding implements ViewBinding {
   private ActivityRouteAllDetailsBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView RouteDetailsTitle, @NonNull Button deleteRouteBtn,
       @NonNull ImageButton homeBtnShowTransports8, @NonNull ListView listviewtrips,
-      @NonNull ImageButton returnBtn8, @NonNull EditText routeName, @NonNull TextView textView3,
+      @NonNull ImageButton returnBtn8, @NonNull TextView routeName, @NonNull TextView textView3,
       @NonNull TextView textView9, @NonNull TextView totalPrice,
       @NonNull TextView totalTravellingTime) {
     this.rootView = rootView;
@@ -129,7 +128,7 @@ public final class ActivityRouteAllDetailsBinding implements ViewBinding {
       }
 
       id = R.id.routeName;
-      EditText routeName = rootView.findViewById(id);
+      TextView routeName = rootView.findViewById(id);
       if (routeName == null) {
         break missingId;
       }

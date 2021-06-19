@@ -11,8 +11,8 @@ import java.util.ArrayList;
 
 public class RouteAdapter extends ArrayAdapter<Route> {
 
-    public RouteAdapter(Context context, ArrayList<Route> trips){
-        super(context, R.layout.route_row, Route.savedRoutes);
+    public RouteAdapter(Context context, ArrayList<Route> routes){
+        super(context, R.layout.route_row, routes);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)

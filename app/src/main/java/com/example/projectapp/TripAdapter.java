@@ -130,6 +130,7 @@ public class TripAdapter extends ArrayAdapter<Trip> {
 
             ArrayList<String> locations = CT_SearchResults.selected_trips;
 
+
             directions.setText(locations.get(position) + "  ➝  " + locations.get(position+1));
             noselectedtrip.setVisibility(View.VISIBLE);
             Image.setVisibility(View.GONE);

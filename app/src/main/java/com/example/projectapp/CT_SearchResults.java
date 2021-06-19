@@ -43,7 +43,7 @@ public class CT_SearchResults extends Activity {
     public static int numberOfChilds;
     public static Trip currentTrip;
     public static ConstraintLayout currentContainer;
-    public static ArrayList<Trip> choosen_trips;
+    public static ArrayList<Trip> choosen_trips = new ArrayList<>();
     public static ArrayList<String> selected_trips;  //guarda todas as trips (origem + breakpoint(s) + destino)
     public static LocalTime horaSaida;
     public static LocalTime horaChegada;
@@ -71,20 +71,16 @@ public class CT_SearchResults extends Activity {
                 public void onClick(DialogInterface dialog, int which) {
                     String name = input.getText().toString();
                     if (!name.trim().equals("")) {
-                        //CRIAR CLASSE ROUTE COM TODAS AS TRIPS E COM O DEVIDO NOME
-                        //VER SE JÁ EXISTEM ROUTES COM ESSE NOME!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                         Route route = new Route(name,choosen_trips);
                         boolean validName = true;
                         for (Route r : Route.savedRoutes) {
-                            if (r.getTitle() == name) validName = false;
+                            if (r.getTitle().trim().toLowerCase().equals(name.trim().toLowerCase())) validName = false;
                         }
                         if (validName) {
-                            System.out.println("=TRIPS=");
-                            for (Trip t : choosen_trips) System.out.println(t);
                             Route.savedRoutes.add(route);
                             Route.currentRoute = route;
                             Toast.makeText(getApplicationContext(),"Route saved", Toast.LENGTH_SHORT).show();
-                            System.out.println(name);
+                            RouteAllDetails.control = true;
 
                             Intent goToRoute = new Intent(getApplicationContext(), RouteAllDetails.class);
                             startActivity(goToRoute);

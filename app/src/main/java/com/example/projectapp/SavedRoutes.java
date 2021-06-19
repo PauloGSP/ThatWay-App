@@ -53,8 +53,9 @@ public class SavedRoutes extends Activity {
         Route.savedRoutes = arrayList;
 
         System.out.println("SAVEDROUTES!!!");
-        for (Route r : arrayList) System.out.println(r.getTitle());
+        for (Route r : arrayList) System.out.println(r);
 
+        RouteAllDetails.control = false;
         RouteAdapter adapter = new RouteAdapter(this, arrayList);
         ListView listView = (ListView) findViewById(R.id.listviewroutes);
         listView.setAdapter(adapter);

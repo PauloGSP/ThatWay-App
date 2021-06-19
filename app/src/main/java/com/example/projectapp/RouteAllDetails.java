@@ -1,34 +1,29 @@
 package com.example.projectapp;
 
 import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 
 public class RouteAllDetails extends Activity {
 
+    public static boolean control;
     public static final String TAG = "route";
     public static String json;
 
@@ -77,46 +72,18 @@ public class RouteAllDetails extends Activity {
         editor.putString(TAG, jsonstr);
         editor.commit();
 
+        if (control) {
+            TripAdapter adapter = new TripAdapter(this, CT_SearchResults.choosen_trips);
+            ListView listView = (ListView) findViewById(R.id.listviewtrips);
+            listView.setAdapter(adapter);
+        } else {
+            TripAdapter adapter = new TripAdapter(this, route.getList_of_trips());
+            ListView listView = (ListView) findViewById(R.id.listviewtrips);
+            listView.setAdapter(adapter);
+        }
 
-        TripAdapter adapter = new TripAdapter(this, CT_SearchResults.choosen_trips);
-        ListView listView = (ListView) findViewById(R.id.listviewtrips);
-        listView.setAdapter(adapter);
-
-        EditText routeName = findViewById(R.id.routeName);
+        TextView routeName = (TextView) findViewById(R.id.routeName);
         routeName.setText(route.getTitle());
-        routeName.addTextChangedListener(new TextWatcher() {
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                String currentTitle = routeName.getText().toString();
-                boolean validName = true;
-                for (Route r : Route.savedRoutes) {
-                    if (r.getTitle() == s.toString()) validName = false;
-                }
-                if (validName) {
-                    if (s.equals("")) {
-                        Toast.makeText(getApplicationContext(),"Please insert a route name", Toast.LENGTH_SHORT).show();
-                        routeName.setText(currentTitle);
-                    } else {
-                        Toast.makeText(getApplicationContext(),"Changed route name successfully", Toast.LENGTH_SHORT).show();
-                        route.setTitle(s.toString());
-                    }
-                } else {
-                    Toast.makeText(getApplicationContext(),"There's already a route with that title", Toast.LENGTH_SHORT).show();
-                    routeName.setText(currentTitle);
-                }
-
-            }
-
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-        });
-
 
         TextView totalTravellingTime = findViewById(R.id.totalTravellingTime);
         totalTravellingTime.setText(route.getTotal_travelling_time() + " minutes");
