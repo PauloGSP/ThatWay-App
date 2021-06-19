@@ -1681,6 +1681,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable bus250
 drawable clock30
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
@@ -1720,6 +1721,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable left_arrow
 drawable logo_background
+drawable map
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1730,6 +1732,7 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable metro250
 drawable money30
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
@@ -1761,6 +1764,7 @@ drawable thatway
 drawable thatwaylogo
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable train250
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1904,7 +1908,6 @@ id custom
 id customPanel
 id cut
 id dark
-id dateOfDepartureTextView
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -1913,7 +1916,6 @@ id default_activity_button
 id deleteBreakpoint
 id deleteRouteBtn
 id deltaRelative
-id depArrTimeTextView
 id depTime
 id departureTime
 id dependency_ordering
@@ -2004,8 +2006,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageButton
-id imageButton2
 id imageView
 id info
 id invisible
@@ -2121,8 +2121,6 @@ id pathRelative
 id peekHeight
 id percent
 id pin
-id placeOfArrivalTextView
-id placeOfDepartureTextView
 id placeofarrival
 id placeofdeparture
 id position
@@ -2253,8 +2251,6 @@ id textView19
 id textView2
 id textView20
 id textView21
-id textView24
-id textView25
 id textView3
 id textView4
 id textView5
@@ -2274,7 +2270,6 @@ id textinput_suffix_text
 id textviewbreakpoint
 id tickerPriceText
 id ticketPrice
-id ticketPriceTextView
 id time
 id title
 id titleDividerNoCustom
@@ -2298,11 +2293,8 @@ id transportBtn
 id transportIcon
 id transportType
 id transportTypeIcon
-id transportTypeImage
 id transportTypeText
-id transportTypeTextView
 id travellingTime
-id travellingTimeTextView
 id triangle
 id trip_container
 id unchecked
@@ -2410,7 +2402,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout details
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

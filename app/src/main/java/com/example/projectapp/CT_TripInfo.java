@@ -90,7 +90,15 @@ public class CT_TripInfo extends Activity {
                 startActivity(goMap);
             }
         });
+
         //fazer set do icone de transporte
+        if (trip.getTransport_type().equals("BUS")) {
+            transportIcon.setImageResource(R.drawable.bus250);
+        } else if (trip.getTransport_type().equals("TRAIN")) {
+            transportIcon.setImageResource(R.drawable.train250);
+        } else if (trip.getTransport_type().equals("METRO")) {
+            transportIcon.setImageResource(R.drawable.metro250);
+        }
 
 
     }

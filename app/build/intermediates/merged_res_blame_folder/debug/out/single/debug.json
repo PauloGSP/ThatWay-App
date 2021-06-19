@@ -8,6 +8,10 @@
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_metro250.png.flat",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\drawable\\metro250.png"
+    },
+    {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_logo_background.png.flat",
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\logo_background.png"
     },
@@ -48,12 +52,12 @@
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_logo_foreground.png.flat",
-        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\mipmap-xxhdpi\\logo_foreground.png"
-    },
-    {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_logo_foreground.png.flat",
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\mipmap-xhdpi\\logo_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_logo_foreground.png.flat",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\mipmap-xxhdpi\\logo_foreground.png"
     },
     {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_logo_background.png.flat",
@@ -66,6 +70,10 @@
     {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_map.png.flat",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\drawable\\map.png"
     },
     {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_clock30.png.flat",
@@ -92,20 +100,16 @@
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\drawable\\left_arrow.png"
     },
     {
-        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_transport.xml.flat",
-        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\row_transport.xml"
-    },
-    {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_swap.png.flat",
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\drawable\\swap.png"
     },
     {
-        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_transport.xml.flat",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\row_transport.xml"
     },
     {
-        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_details.xml.flat",
-        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\details.xml"
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_money30.png.flat",
@@ -114,6 +118,10 @@
     {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bus250.png.flat",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\drawable\\bus250.png"
     },
     {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
@@ -160,6 +168,10 @@
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\mipmap-anydpi-v26\\logo.xml"
     },
     {
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_train250.png.flat",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\drawable\\train250.png"
+    },
+    {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\layout_route_row.xml.flat",
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\route_row.xml"
     },
@@ -200,16 +212,16 @@
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\mipmap-hdpi\\logo_foreground.png"
     },
     {
+        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sort__2_.png.flat",
+        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\drawable\\sort__2_.png"
+    },
+    {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_logo.png.flat",
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\mipmap-hdpi\\logo.png"
     },
     {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_logo.png.flat",
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\mipmap-xhdpi\\logo.png"
-    },
-    {
-        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sort__2_.png.flat",
-        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\drawable\\sort__2_.png"
     },
     {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_logo.png.flat",

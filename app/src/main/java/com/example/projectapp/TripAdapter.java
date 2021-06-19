@@ -1,5 +1,6 @@
 package com.example.projectapp;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -28,6 +29,7 @@ public class TripAdapter extends ArrayAdapter<Trip> {
         this.context = context;
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -115,6 +117,13 @@ public class TripAdapter extends ArrayAdapter<Trip> {
             });
 
             //set da imagem do tipo de transporte
+            if (trip.getTransport_type().equals("BUS")) {
+                Image.setImageResource(R.drawable.bus250);
+            } else if (trip.getTransport_type().equals("TRAIN")) {
+                Image.setImageResource(R.drawable.train250);
+            } else if (trip.getTransport_type().equals("METRO")) {
+                Image.setImageResource(R.drawable.metro250);
+            }
 
         } else {
             //null trip

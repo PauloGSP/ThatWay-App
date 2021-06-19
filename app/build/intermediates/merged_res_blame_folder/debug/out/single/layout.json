@@ -24,10 +24,6 @@
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_route_all_details.xml"
     },
     {
-        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\transportbutton.xml",
-        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\transportbutton.xml"
-    },
-    {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_taxiprivate.xml",
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_taxiprivate.xml"
     },
@@ -44,10 +40,6 @@
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_ct_trip_info.xml"
     },
     {
-        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\details.xml",
-        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\details.xml"
-    },
-    {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_transport.xml",
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\row_transport.xml"
     },
@@ -62,10 +54,6 @@
     {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\route_row.xml",
         "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\route_row.xml"
-    },
-    {
-        "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_help_page.xml",
-        "source": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\src\\main\\res\\layout\\activity_help_page.xml"
     },
     {
         "merged": "C:\\Users\\35192\\AndroidStudioProjects\\IHC_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_saved_routes.xml",
