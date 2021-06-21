@@ -32,7 +32,7 @@ import java.util.HashMap;
 
 public class MainActivity extends Activity {
 
-    public static boolean control = false;
+    public static boolean control;
     public static LastPage lastPage;
     public static String currentLocation;
     public static ArrayList<Trip> allTrips;
@@ -203,7 +203,8 @@ public class MainActivity extends Activity {
         allPrivateTransports = new ArrayList<Ptransport>();
 
         CT_SearchResults.order = "DEPARTURE";
-
+        control = false;
+        Route.savedRoutes = new ArrayList<Route>();
 
         loadAllTrips();
         loadAllLocations();

@@ -61,7 +61,13 @@ public class RouteAllDetails extends Activity {
         ArrayList<Route> arrayList = gson.fromJson(json, type);
         Route.savedRoutes = arrayList;
 
-        if (MainActivity.control) Route.savedRoutes.add(route);
+        if (Route.savedRoutes == null) {
+            Route.savedRoutes = new ArrayList<Route>();
+        }
+
+        if (MainActivity.control) {
+            Route.savedRoutes.add(route);
+        }
 
         //save
         SharedPreferences sharedP = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
