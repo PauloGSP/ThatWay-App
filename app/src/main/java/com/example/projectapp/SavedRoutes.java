@@ -45,18 +45,10 @@ public class SavedRoutes extends Activity {
             }
         });
 
-        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        Gson gson = new Gson();
-        String json = sharedPrefs.getString(RouteAllDetails.TAG, "");
-        Type type = new TypeToken<ArrayList<Route>>() {}.getType();
-        ArrayList<Route> arrayList = gson.fromJson(json, type);
-        Route.savedRoutes = arrayList;
 
-        System.out.println("SAVEDROUTES!!!");
-        for (Route r : arrayList) System.out.println(r);
 
-        RouteAllDetails.control = false;
-        RouteAdapter adapter = new RouteAdapter(this, arrayList);
+        MainActivity.control = false;
+        RouteAdapter adapter = new RouteAdapter(this, Route.savedRoutes);
         ListView listView = (ListView) findViewById(R.id.listviewroutes);
         listView.setAdapter(adapter);
         adapter.notifyDataSetChanged();

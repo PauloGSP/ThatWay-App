@@ -96,7 +96,6 @@ com/example/projectapp/SavedRoutes.java
  com.example.projectapp.SavedRoutes
  com.example.projectapp.SavedRoutes$1
  com.example.projectapp.SavedRoutes$2
- com.example.projectapp.SavedRoutes$3
 com/example/projectapp/databinding/RowTransportBinding.java
  com.example.projectapp.databinding.RowTransportBinding
 com/example/projectapp/databinding/RowLocationBinding.java

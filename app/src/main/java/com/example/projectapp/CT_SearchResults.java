@@ -69,6 +69,7 @@ public class CT_SearchResults extends Activity {
 
         alertDialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) {
+                    MainActivity.control = true;
                     String name = input.getText().toString();
                     if (!name.trim().equals("")) {
                         Route route = new Route(name,choosen_trips);
@@ -77,10 +78,10 @@ public class CT_SearchResults extends Activity {
                             if (r.getTitle().trim().toLowerCase().equals(name.trim().toLowerCase())) validName = false;
                         }
                         if (validName) {
+                            System.out.println(MainActivity.control);
                             Route.savedRoutes.add(route);
                             Route.currentRoute = route;
                             Toast.makeText(getApplicationContext(),"Route saved", Toast.LENGTH_SHORT).show();
-                            RouteAllDetails.control = true;
 
                             Intent goToRoute = new Intent(getApplicationContext(), RouteAllDetails.class);
                             startActivity(goToRoute);

@@ -8,3 +8,7 @@ Porto/TAXI/Tixa Ride/911223344
 Porto/TAXI/Android Studio/968833112
 Aveiro/MOLICEIRO/Moliceiros BoaVida/912121212
 Aveiro/MOLICEIRO/Moliceiros RiaTrip/953123123
+Aveiro/MOLICEIRO/Moliceiros WiWi/911223344
+Aveiro/MOLICEIRO/Moliceiros Ventania/999999999
+Lisboa/TOURBUS/GreatView Tour Bus/283717717
+Lisboa/TOURBUS/Sheeeeesh Bus/283717717

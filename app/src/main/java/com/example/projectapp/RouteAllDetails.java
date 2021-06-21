@@ -23,8 +23,7 @@ import java.util.ArrayList;
 
 public class RouteAllDetails extends Activity {
 
-    public static boolean control;
-    public static final String TAG = "route";
+    public static final String TAG = "all_routes";
     public static String json;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -62,7 +61,7 @@ public class RouteAllDetails extends Activity {
         ArrayList<Route> arrayList = gson.fromJson(json, type);
         Route.savedRoutes = arrayList;
 
-        Route.savedRoutes.add(route);
+        if (MainActivity.control) Route.savedRoutes.add(route);
 
         //save
         SharedPreferences sharedP = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
@@ -70,9 +69,10 @@ public class RouteAllDetails extends Activity {
         Gson gsonn = new Gson();
         String jsonstr = gsonn.toJson(Route.savedRoutes);
         editor.putString(TAG, jsonstr);
-        editor.commit();
+        editor.clear();
+        editor.apply();
 
-        if (control) {
+        if (MainActivity.control) {
             TripAdapter adapter = new TripAdapter(this, CT_SearchResults.choosen_trips);
             ListView listView = (ListView) findViewById(R.id.listviewtrips);
             listView.setAdapter(adapter);

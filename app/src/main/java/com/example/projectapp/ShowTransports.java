@@ -137,7 +137,7 @@ public class ShowTransports extends Activity {
                 btn.setWidth(890);
                 btn.setHeight(260);
                 btn.setY(200+i*80);
-                btn.setBackgroundColor(Color.parseColor("#FF398787"));
+                btn.setBackgroundColor(Color.parseColor("#0e1f47"));
 
                 //Set onClickListener
                 int finalI = i;

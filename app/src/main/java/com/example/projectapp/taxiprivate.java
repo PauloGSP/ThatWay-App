@@ -7,8 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class taxiprivate extends Activity {
 
@@ -23,6 +27,18 @@ public class taxiprivate extends Activity {
         location.setText(MainActivity.currentLocation);
         TextView title =(TextView) findViewById(R.id.title);
         title.setText(ShowTransports.typeTransport);
+
+        ArrayList<String> privados = new ArrayList<>();
+        for (Ptransport p : MainActivity.allPrivateTransports) {
+            boolean valid = true;
+            if (!p.getCity().equals(MainActivity.currentLocation)) valid = false;
+            if (!p.getType().equals(ShowTransports.typeTransport)) valid = false;
+            if (valid) privados.add(p.getName()+"\n"+p.getContact()+"\n");
+        }
+
+        ListView listviewprivate = findViewById(R.id.listviewprivate);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,privados);
+        listviewprivate.setAdapter(arrayAdapter);
 
         ImageButton returnBtn = findViewById(R.id.returnBtn6);
         returnBtn.setOnClickListener(new View.OnClickListener() {

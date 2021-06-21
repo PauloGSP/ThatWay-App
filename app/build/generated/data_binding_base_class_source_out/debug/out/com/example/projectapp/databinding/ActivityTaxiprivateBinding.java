@@ -4,8 +4,8 @@ package com.example.projectapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,22 +21,10 @@ public final class ActivityTaxiprivateBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final EditText editTextTextMultiLine4;
-
-  @NonNull
-  public final EditText editTextTextMultiLine5;
-
-  @NonNull
-  public final EditText editTextTextMultiLine6;
-
-  @NonNull
-  public final EditText editTextTextMultiLine7;
-
-  @NonNull
-  public final EditText editTextTextMultiLine8;
-
-  @NonNull
   public final ImageButton homeBtnShowTransports6;
+
+  @NonNull
+  public final ListView listviewprivate;
 
   @NonNull
   public final TextView locationShowTransports2;
@@ -48,18 +36,12 @@ public final class ActivityTaxiprivateBinding implements ViewBinding {
   public final TextView title;
 
   private ActivityTaxiprivateBinding(@NonNull ConstraintLayout rootView,
-      @NonNull EditText editTextTextMultiLine4, @NonNull EditText editTextTextMultiLine5,
-      @NonNull EditText editTextTextMultiLine6, @NonNull EditText editTextTextMultiLine7,
-      @NonNull EditText editTextTextMultiLine8, @NonNull ImageButton homeBtnShowTransports6,
+      @NonNull ImageButton homeBtnShowTransports6, @NonNull ListView listviewprivate,
       @NonNull TextView locationShowTransports2, @NonNull ImageButton returnBtn6,
       @NonNull TextView title) {
     this.rootView = rootView;
-    this.editTextTextMultiLine4 = editTextTextMultiLine4;
-    this.editTextTextMultiLine5 = editTextTextMultiLine5;
-    this.editTextTextMultiLine6 = editTextTextMultiLine6;
-    this.editTextTextMultiLine7 = editTextTextMultiLine7;
-    this.editTextTextMultiLine8 = editTextTextMultiLine8;
     this.homeBtnShowTransports6 = homeBtnShowTransports6;
+    this.listviewprivate = listviewprivate;
     this.locationShowTransports2 = locationShowTransports2;
     this.returnBtn6 = returnBtn6;
     this.title = title;
@@ -92,39 +74,15 @@ public final class ActivityTaxiprivateBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.editTextTextMultiLine4;
-      EditText editTextTextMultiLine4 = rootView.findViewById(id);
-      if (editTextTextMultiLine4 == null) {
-        break missingId;
-      }
-
-      id = R.id.editTextTextMultiLine5;
-      EditText editTextTextMultiLine5 = rootView.findViewById(id);
-      if (editTextTextMultiLine5 == null) {
-        break missingId;
-      }
-
-      id = R.id.editTextTextMultiLine6;
-      EditText editTextTextMultiLine6 = rootView.findViewById(id);
-      if (editTextTextMultiLine6 == null) {
-        break missingId;
-      }
-
-      id = R.id.editTextTextMultiLine7;
-      EditText editTextTextMultiLine7 = rootView.findViewById(id);
-      if (editTextTextMultiLine7 == null) {
-        break missingId;
-      }
-
-      id = R.id.editTextTextMultiLine8;
-      EditText editTextTextMultiLine8 = rootView.findViewById(id);
-      if (editTextTextMultiLine8 == null) {
-        break missingId;
-      }
-
       id = R.id.homeBtnShowTransports6;
       ImageButton homeBtnShowTransports6 = rootView.findViewById(id);
       if (homeBtnShowTransports6 == null) {
+        break missingId;
+      }
+
+      id = R.id.listviewprivate;
+      ListView listviewprivate = rootView.findViewById(id);
+      if (listviewprivate == null) {
         break missingId;
       }
 
@@ -146,10 +104,8 @@ public final class ActivityTaxiprivateBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityTaxiprivateBinding((ConstraintLayout) rootView, editTextTextMultiLine4,
-          editTextTextMultiLine5, editTextTextMultiLine6, editTextTextMultiLine7,
-          editTextTextMultiLine8, homeBtnShowTransports6, locationShowTransports2, returnBtn6,
-          title);
+      return new ActivityTaxiprivateBinding((ConstraintLayout) rootView, homeBtnShowTransports6,
+          listviewprivate, locationShowTransports2, returnBtn6, title);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

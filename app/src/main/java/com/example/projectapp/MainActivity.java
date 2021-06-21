@@ -5,16 +5,25 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.reflect.Type;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
@@ -23,6 +32,7 @@ import java.util.HashMap;
 
 public class MainActivity extends Activity {
 
+    public static boolean control = false;
     public static LastPage lastPage;
     public static String currentLocation;
     public static ArrayList<Trip> allTrips;
@@ -41,19 +51,13 @@ public class MainActivity extends Activity {
             System.out.println("ya");
             while ((l = rd.readLine()) != null) {
                 String[] transportinfo= l.split("/");
-                System.out.println(transportinfo);
-                System.out.println(l);
                 String city=transportinfo[0];
                 String type= transportinfo[1];
                 String name=transportinfo[2];
                 String contact= transportinfo[3];
                 Ptransport ptransport = new Ptransport(city,type,name,contact);
                 allPrivateTransports.add(ptransport);
-                System.out.println(ptransport);
             }
-
-            System.out.println("!!!!!!!!!!!!!!!added tras!!!!!!!!!!!!!!!!!");
-
         }
         catch (IOException e) {
 
@@ -199,6 +203,7 @@ public class MainActivity extends Activity {
         allPrivateTransports = new ArrayList<Ptransport>();
 
         CT_SearchResults.order = "DEPARTURE";
+
 
         loadAllTrips();
         loadAllLocations();
