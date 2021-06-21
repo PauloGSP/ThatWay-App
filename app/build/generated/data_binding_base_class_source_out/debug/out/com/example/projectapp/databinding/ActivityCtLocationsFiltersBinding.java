@@ -29,10 +29,13 @@ public final class ActivityCtLocationsFiltersBinding implements ViewBinding {
   public final Button addBreakpoint;
 
   @NonNull
-  public final AutoCompleteTextView destino;
+  public final ConstraintLayout container1;
 
   @NonNull
-  public final ConstraintLayout feefef;
+  public final ConstraintLayout container2;
+
+  @NonNull
+  public final AutoCompleteTextView destino;
 
   @NonNull
   public final Button filtersBtn1;
@@ -50,9 +53,6 @@ public final class ActivityCtLocationsFiltersBinding implements ViewBinding {
   public final ImageButton returnBtn2;
 
   @NonNull
-  public final ConstraintLayout sdwdw;
-
-  @NonNull
   public final Button searchResultsBtn;
 
   @NonNull
@@ -66,23 +66,23 @@ public final class ActivityCtLocationsFiltersBinding implements ViewBinding {
 
   private ActivityCtLocationsFiltersBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView CTLocationFiltersTextView, @NonNull Button addBreakpoint,
-      @NonNull AutoCompleteTextView destino, @NonNull ConstraintLayout feefef,
-      @NonNull Button filtersBtn1, @NonNull ImageButton homeBtnShowTransports2,
-      @NonNull LinearLayout layoutList, @NonNull AutoCompleteTextView origem,
-      @NonNull ImageButton returnBtn2, @NonNull ConstraintLayout sdwdw,
+      @NonNull ConstraintLayout container1, @NonNull ConstraintLayout container2,
+      @NonNull AutoCompleteTextView destino, @NonNull Button filtersBtn1,
+      @NonNull ImageButton homeBtnShowTransports2, @NonNull LinearLayout layoutList,
+      @NonNull AutoCompleteTextView origem, @NonNull ImageButton returnBtn2,
       @NonNull Button searchResultsBtn, @NonNull ImageButton swapBtn, @NonNull TextView textView10,
       @NonNull TextView textView11) {
     this.rootView = rootView;
     this.CTLocationFiltersTextView = CTLocationFiltersTextView;
     this.addBreakpoint = addBreakpoint;
+    this.container1 = container1;
+    this.container2 = container2;
     this.destino = destino;
-    this.feefef = feefef;
     this.filtersBtn1 = filtersBtn1;
     this.homeBtnShowTransports2 = homeBtnShowTransports2;
     this.layoutList = layoutList;
     this.origem = origem;
     this.returnBtn2 = returnBtn2;
-    this.sdwdw = sdwdw;
     this.searchResultsBtn = searchResultsBtn;
     this.swapBtn = swapBtn;
     this.textView10 = textView10;
@@ -128,15 +128,21 @@ public final class ActivityCtLocationsFiltersBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.destino;
-      AutoCompleteTextView destino = rootView.findViewById(id);
-      if (destino == null) {
+      id = R.id.container1;
+      ConstraintLayout container1 = rootView.findViewById(id);
+      if (container1 == null) {
         break missingId;
       }
 
-      id = R.id.feefef;
-      ConstraintLayout feefef = rootView.findViewById(id);
-      if (feefef == null) {
+      id = R.id.container2;
+      ConstraintLayout container2 = rootView.findViewById(id);
+      if (container2 == null) {
+        break missingId;
+      }
+
+      id = R.id.destino;
+      AutoCompleteTextView destino = rootView.findViewById(id);
+      if (destino == null) {
         break missingId;
       }
 
@@ -170,12 +176,6 @@ public final class ActivityCtLocationsFiltersBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.sdwdw;
-      ConstraintLayout sdwdw = rootView.findViewById(id);
-      if (sdwdw == null) {
-        break missingId;
-      }
-
       id = R.id.searchResultsBtn;
       Button searchResultsBtn = rootView.findViewById(id);
       if (searchResultsBtn == null) {
@@ -201,8 +201,8 @@ public final class ActivityCtLocationsFiltersBinding implements ViewBinding {
       }
 
       return new ActivityCtLocationsFiltersBinding((ConstraintLayout) rootView,
-          CTLocationFiltersTextView, addBreakpoint, destino, feefef, filtersBtn1,
-          homeBtnShowTransports2, layoutList, origem, returnBtn2, sdwdw, searchResultsBtn, swapBtn,
+          CTLocationFiltersTextView, addBreakpoint, container1, container2, destino, filtersBtn1,
+          homeBtnShowTransports2, layoutList, origem, returnBtn2, searchResultsBtn, swapBtn,
           textView10, textView11);
     }
     String missingId = rootView.getResources().getResourceName(id);

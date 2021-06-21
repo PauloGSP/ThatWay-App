@@ -8,7 +8,7 @@
     tools:context=".CT_Locations">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/feefef"
+        android:id="@+id/container2"
         android:layout_width="363dp"
         android:layout_height="70dp"
         android:layout_marginTop="16dp"
@@ -32,14 +32,14 @@
                 android:id="@+id/destino"
                 android:layout_width="168dp"
                 android:layout_height="55dp"
+                android:completionThreshold="1"
+                android:dropDownHeight="200dp"
                 android:hint="Insert a location"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:completionThreshold="1"
-                android:dropDownHeight="200dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.32"
+                app:layout_constraintHorizontal_bias="0.26"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.533" />
@@ -63,7 +63,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/sdwdw"
+        android:id="@+id/container1"
         android:layout_width="363dp"
         android:layout_height="70dp"
         android:background="#3955AC"
@@ -88,14 +88,14 @@
                 android:id="@+id/origem"
                 android:layout_width="169dp"
                 android:layout_height="55dp"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:hint="Insert a location"
                 android:completionThreshold="1"
                 android:dropDownHeight="200dp"
+                android:hint="Insert a location"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.303"
+                app:layout_constraintHorizontal_bias="0.25"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.533" />
@@ -122,27 +122,27 @@
         android:id="@+id/homeBtnShowTransports2"
         android:layout_width="128px"
         android:layout_height="128px"
+        android:background="@drawable/home"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.946"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
-        android:background="@drawable/home" />
+        app:layout_constraintVertical_bias="0.025" />
 
     <ImageButton
         android:id="@+id/returnBtn2"
         android:layout_width="128px"
         android:layout_height="128px"
+        android:background="@drawable/left_arrow"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.026"
-        android:background="@drawable/left_arrow" />
+        app:layout_constraintVertical_bias="0.026" />
 
     <TextView
         android:id="@+id/CT_LocationFiltersTextView"
@@ -163,10 +163,10 @@
         android:layout_height="50dp"
         android:layout_marginTop="52dp"
         android:backgroundTint="#0e1f47"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
         android:text="Filter by"
         android:textSize="12sp"
-        android:bottomRightRadius="10dp"
-        android:bottomLeftRadius="10dp"
         android:topLeftRadius="10dp"
         android:topRightRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -178,43 +178,41 @@
         android:id="@+id/searchResultsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Search Results"
         android:backgroundTint="#0e1f47"
-        android:bottomRightRadius="10dp"
         android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:text="Search Results"
         android:topLeftRadius="10dp"
         android:topRightRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939" />
+        app:layout_constraintVertical_bias="0.976" />
 
     <Button
         android:id="@+id/addBreakpoint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#0e1f47"
         android:text="+ add Breakpoint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/feefef"
-        app:layout_constraintVertical_bias="0.068" />
+        app:layout_constraintTop_toBottomOf="@+id/container2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:id="@+id/layout_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="0.01dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sdwdw"
-        app:layout_constraintVertical_bias="0.004">
+        app:layout_constraintTop_toBottomOf="@+id/container1"
+        tools:layout_editor_absoluteX="0dp">
 
     </LinearLayout>
 
@@ -223,13 +221,13 @@
         android:layout_width="128px"
         android:layout_height="128px"
         android:background="@drawable/swap"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
         android:orientation="vertical"
         android:scaleType="centerCrop"
-        android:visibility="visible"
-        android:bottomRightRadius="10dp"
-        android:bottomLeftRadius="10dp"
         android:topLeftRadius="10dp"
         android:topRightRadius="10dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.937"

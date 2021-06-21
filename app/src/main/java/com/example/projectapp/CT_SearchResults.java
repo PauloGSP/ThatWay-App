@@ -162,8 +162,10 @@ public class CT_SearchResults extends Activity {
                 //verificar se o tipo de transporte da trip está nos filtros introduzidos pelo utilizador
                 if (!transports.contains(transport)) valid = false;
 
-                if (!origin_locations.contains(origin)) valid = false;
-                if (!destiny_locations.contains(destiny)) valid = false;
+                if (!origin_locations.stream().map(s -> s.toLowerCase()).collect(Collectors.toList())
+                        .contains(origin.toLowerCase())) valid = false;
+                if (!destiny_locations.stream().map(s -> s.toLowerCase()).collect(Collectors.toList())
+                        .contains(destiny.toLowerCase())) valid = false;
 
                 LocalTime depTime = t.getDeparture_time();
                 LocalTime arrTime = t.getArrival_time();
@@ -225,7 +227,8 @@ public class CT_SearchResults extends Activity {
         returnBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onBackPressed();
+                if (currentPage == 1) { onBackPressed(); }
+                else { loadResults(--currentPage); }
             }
         });
 

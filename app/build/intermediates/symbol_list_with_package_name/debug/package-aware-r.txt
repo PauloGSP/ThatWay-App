@@ -1896,6 +1896,8 @@ id confirm_button
 id constraintLayout
 id constraintLayout2
 id container
+id container1
+id container2
 id content
 id contentPanel
 id contiguous
@@ -1954,7 +1956,6 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
-id feefef
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2157,7 +2158,6 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
-id sdwdw
 id searchResultsBtn
 id search_badge
 id search_bar

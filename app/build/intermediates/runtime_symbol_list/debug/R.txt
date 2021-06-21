@@ -1895,6 +1895,8 @@ int id confirm_button 0x7f08007f
 int id constraintLayout 0x7f080080
 int id constraintLayout2 0x7f080081
 int id container 0x7f080082
+int id container1 0x7f080233
+int id container2 0x7f080232
 int id content 0x7f080083
 int id contentPanel 0x7f080084
 int id contiguous 0x7f080085
@@ -1953,7 +1955,6 @@ int id exitUntilCollapsed 0x7f0800c0
 int id expand_activities_button 0x7f0800c1
 int id expanded_menu 0x7f0800c2
 int id fade 0x7f0800c3
-int id feefef 0x7f0800c4
 int id fill 0x7f0800c5
 int id fill_horizontal 0x7f0800c6
 int id fill_vertical 0x7f0800c7
@@ -2156,7 +2157,6 @@ int id scrollIndicatorDown 0x7f08018e
 int id scrollIndicatorUp 0x7f08018f
 int id scrollView 0x7f080190
 int id scrollable 0x7f080191
-int id sdwdw 0x7f080192
 int id searchResultsBtn 0x7f080193
 int id search_badge 0x7f080194
 int id search_bar 0x7f080195

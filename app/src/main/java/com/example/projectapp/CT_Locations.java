@@ -15,10 +15,13 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.Toast;
+
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class CT_Locations extends Activity {
 
@@ -109,11 +112,25 @@ public class CT_Locations extends Activity {
             }
         });
 
+        ImageButton homeBtn = findViewById(R.id.homeBtnShowTransports2);
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent home = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(home);
+            }
+        });
+
+        System.out.println("aqui");
+        for (String location : MainActivity.allLocations) System.out.println(location);
+
         AutoCompleteTextView location2_1 = findViewById(R.id.origem);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,MainActivity.allLocations);
         location2_1.setAdapter(adapter);
+        location2_1.setDropDownAnchor(R.id.container1);
         AutoCompleteTextView location2_2 = findViewById(R.id.destino);
         location2_2.setAdapter(adapter);
+        location2_2.setDropDownAnchor(R.id.container2);
         // update origin location with the main activity current location
         location2_1.setText(MainActivity.currentLocation);
 
@@ -172,13 +189,16 @@ public class CT_Locations extends Activity {
                 locations.add(location2);
 
                 for (String loc : locations) {
-                    if (!MainActivity.allLocations.contains(loc.toLowerCase())) validLocations = false;
+                    if (!MainActivity.allLocations.stream().map(s -> s.toLowerCase()).collect(Collectors.toList()).contains(loc.toLowerCase())) validLocations = false;
                 }
+
+                if (validLocations == false) Toast.makeText(getApplicationContext(),"Invalid locations", Toast.LENGTH_SHORT).show();
+
 
                 Set<String> set = new HashSet<String>(locations);
                 if (set.size() != locations.size()) {
                     noRepeatedLocations = false;
-                    System.out.println("LOCATIONS repetidas");
+                    Toast.makeText(getApplicationContext(),"Repeated locations", Toast.LENGTH_SHORT).show();
                 }
 
                 for (String l : locations)  System.out.println(l);

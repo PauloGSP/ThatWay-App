@@ -17,6 +17,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -31,6 +32,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.stream.Collectors;
 
 public class MainActivity extends Activity {
 
@@ -109,9 +111,8 @@ public class MainActivity extends Activity {
     }
 
     // load de todos os locais de saída/chegada
+    @RequiresApi(api = Build.VERSION_CODES.N)
     public void loadAllLocations() {
-
-        System.out.println("loadAllLocations");
 
         for (Trip t : allTrips) {
             String origin = t.getOrigin();
@@ -120,13 +121,15 @@ public class MainActivity extends Activity {
             String destiny_address = t.getDestiny_address();
             String[] temp = new String[] {origin,destiny,origin_address,destiny_address};
 
-            for (String s : temp) {
-                if (!allLocations.contains(s.toLowerCase())) {
-                    allLocations.add(s.toLowerCase());
-                    System.out.println(s.toLowerCase());
+            for (String str : temp) {
+                if (!allLocations.stream().map(s -> s.toLowerCase()).collect(Collectors.toList()).contains(str.toLowerCase())) {
+                    allLocations.add(str);
                 }
             }
         }
+
+        System.out.println("aqui");
+        for (String location : MainActivity.allLocations) System.out.println(location);
     }
 
     public void loadcityTransports(){
@@ -230,8 +233,12 @@ public class MainActivity extends Activity {
         Button showTransportsBtn = findViewById(R.id.showTransportsBtn);
         showTransportsBtn.setOnClickListener(v -> {
             currentLocation = locationText.getText().toString();
-            Intent goToShowTransports = new Intent(getApplicationContext(), ShowTransports.class);
-            startActivity(goToShowTransports);
+            if (!allLocations.stream().map(s -> s.toLowerCase()).collect(Collectors.toList()).contains(currentLocation.trim().toLowerCase())) {
+                Toast.makeText(getApplicationContext(),"Invalid location", Toast.LENGTH_SHORT).show();
+            } else {
+                Intent goToShowTransports = new Intent(getApplicationContext(), ShowTransports.class);
+                startActivity(goToShowTransports);
+            }
         });
 
         //ir para saved routes
