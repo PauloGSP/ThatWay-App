@@ -98,9 +98,13 @@ public class RouteAllDetails extends Activity {
             @Override
             public void onClick(View v) {
 
-                File sharedPreferenceFile = new File("/data/data/"+ getPackageName()+ "/shared_prefs/");
-                File[] listFiles = sharedPreferenceFile.listFiles();
-                for (File file : listFiles) file.delete();
+                //load
+                SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                Gson gson = new Gson();
+                String json = sharedPrefs.getString(RouteAllDetails.TAG, "");
+                Type type = new TypeToken<ArrayList<Route>>() {}.getType();
+                ArrayList<Route> arrayList = gson.fromJson(json, type);
+                Route.savedRoutes = arrayList;
 
                 Route.savedRoutes.remove(route);
 

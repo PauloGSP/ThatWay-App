@@ -9,6 +9,7 @@ com/example/projectapp/RouteAllDetails.java
  com.example.projectapp.RouteAllDetails$2
  com.example.projectapp.RouteAllDetails$3
  com.example.projectapp.RouteAllDetails$4
+ com.example.projectapp.RouteAllDetails$4$1
 com/example/projectapp/databinding/ActivityShowTransportsBinding.java
  com.example.projectapp.databinding.ActivityShowTransportsBinding
 com/example/projectapp/databinding/ActivityMainBinding.java

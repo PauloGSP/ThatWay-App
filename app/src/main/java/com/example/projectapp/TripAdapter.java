@@ -75,7 +75,7 @@ public class TripAdapter extends ArrayAdapter<Trip> {
                         CT_SearchResults.currentContainer = MainContainer;
                         CT_SearchResults.currentTrip = trip;
                         CT_SearchResults.ultimaHoraChegada = trip.getArrival_time();
-                        MainContainer.setBackgroundColor(Color.parseColor("#ff512e"));
+                        MainContainer.setBackgroundColor(Color.parseColor("#31C7D5"));
                     } else if (MainContainer == CT_SearchResults.currentContainer) {
                         CT_SearchResults.ultimaHoraChegada = ultimaHoraTemp;
                         CT_SearchResults.currentContainer = null;
@@ -86,7 +86,7 @@ public class TripAdapter extends ArrayAdapter<Trip> {
                         CT_SearchResults.currentContainer = MainContainer;
                         CT_SearchResults.currentTrip = trip;
                         CT_SearchResults.ultimaHoraChegada = trip.getArrival_time();
-                        MainContainer.setBackgroundColor(Color.parseColor("#ff512e"));
+                        MainContainer.setBackgroundColor(Color.parseColor("#31C7D5"));
                     }
                 }
             });
