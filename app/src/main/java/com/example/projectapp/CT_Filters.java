@@ -74,7 +74,6 @@ public class CT_Filters extends Activity {
                         }
                         departureTime.setText(time);
                         CT_SearchResults.horaSaida_str = time;
-                        System.out.println(time);
                     }
                 }, mHour, mMin, true);
                 timePickerDialog.show();
@@ -114,7 +113,6 @@ public class CT_Filters extends Activity {
                         } else {
                             time += minute;
                         }
-                        System.out.println(time);
                         arrivalTime.setText(time);
                         CT_SearchResults.horaChegada_str = time;
                     }
@@ -151,9 +149,6 @@ public class CT_Filters extends Activity {
             @Override
             public void onClick(View v) {
 
-                System.out.println(CT_SearchResults.horaSaida_str);
-                System.out.println(CT_SearchResults.horaChegada_str);
-
                 String depTime = CT_SearchResults.horaSaida_str;
                 String arrTime = CT_SearchResults.horaChegada_str;
 
@@ -171,13 +166,6 @@ public class CT_Filters extends Activity {
                     ORDER_BY = "DEPARTURE";
                 }
                 CT_SearchResults.order = ORDER_BY;
-
-                //System.out.println(depDate);
-                System.out.println(depTime);
-                System.out.println(arrTime);
-                for (Boolean b : checked_transports) System.out.println(b);
-                System.out.println(ORDER_BY);
-
 
                 Intent sendFilters = new Intent();
                 sendFilters.putExtra("depTime",depTime);

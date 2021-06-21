@@ -121,9 +121,6 @@ public class CT_Locations extends Activity {
             }
         });
 
-        System.out.println("aqui");
-        for (String location : MainActivity.allLocations) System.out.println(location);
-
         AutoCompleteTextView location2_1 = findViewById(R.id.origem);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,MainActivity.allLocations);
         location2_1.setAdapter(adapter);
@@ -200,8 +197,6 @@ public class CT_Locations extends Activity {
                     noRepeatedLocations = false;
                     Toast.makeText(getApplicationContext(),"Repeated locations", Toast.LENGTH_SHORT).show();
                 }
-
-                for (String l : locations)  System.out.println(l);
 
                 if (validLocations && noRepeatedLocations) {
                     CT_SearchResults.selected_trips = locations;

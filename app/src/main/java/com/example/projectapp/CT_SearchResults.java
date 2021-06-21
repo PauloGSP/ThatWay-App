@@ -78,7 +78,6 @@ public class CT_SearchResults extends Activity {
                             if (r.getTitle().trim().toLowerCase().equals(name.trim().toLowerCase())) validName = false;
                         }
                         if (validName) {
-                            System.out.println(MainActivity.control);
                             Route.savedRoutes.add(route);
                             Route.currentRoute = route;
                             Toast.makeText(getApplicationContext(),"Route saved", Toast.LENGTH_SHORT).show();
@@ -86,7 +85,6 @@ public class CT_SearchResults extends Activity {
                             Intent goToRoute = new Intent(getApplicationContext(), RouteAllDetails.class);
                             startActivity(goToRoute);
                         } else {
-                            System.out.println("repeated route title");
                             Toast.makeText(getApplicationContext(),"There's already a route with that title.", Toast.LENGTH_SHORT).show();
                             openDialog();
                         }
@@ -176,15 +174,12 @@ public class CT_SearchResults extends Activity {
                 if (valid) trips.add(t);
             }
 
-            System.out.println(CT_SearchResults.order);
             if (order.equals("PRICE")) {
-                System.out.println("PRICE");
                 Comparator<Trip> comparatorPrice = Comparator.comparing(Trip::getPrice);
                 comparatorPrice = comparatorPrice.thenComparing(Comparator.comparing(trip -> trip.getDeparture_time()));
                 Stream<Trip> tripStream = trips.stream().sorted(comparatorPrice);
                 trips = getArrayListFromStream(tripStream);
             } else {
-                System.out.println("DEPARTURE");
                 Comparator<Trip> comparatorDeparture = Comparator.comparing(Trip::getDeparture_time);
                 comparatorDeparture = comparatorDeparture.thenComparing(Comparator.comparing(trip -> trip.getPrice()));
                 Stream<Trip> tripStream = trips.stream().sorted(comparatorDeparture);
@@ -268,8 +263,6 @@ public class CT_SearchResults extends Activity {
             }
         });
 
-        System.out.println("SEARCH RESULTS - TRIP INFO");
-        for (String s : selected_trips) System.out.println(s);
 
     }
 }

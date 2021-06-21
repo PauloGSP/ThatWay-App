@@ -17,6 +17,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+
+import java.io.File;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
@@ -95,7 +97,22 @@ public class RouteAllDetails extends Activity {
         deleteRoute.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                File sharedPreferenceFile = new File("/data/data/"+ getPackageName()+ "/shared_prefs/");
+                File[] listFiles = sharedPreferenceFile.listFiles();
+                for (File file : listFiles) file.delete();
+
                 Route.savedRoutes.remove(route);
+
+                //save
+                SharedPreferences sharedP = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                SharedPreferences.Editor editor = sharedP.edit();
+                Gson gsonn = new Gson();
+                String jsonstr = gsonn.toJson(Route.savedRoutes);
+                editor.putString(TAG, jsonstr);
+                editor.clear();
+                editor.apply();
+
                 Toast.makeText(getApplicationContext(),"Route deleted successfully", Toast.LENGTH_SHORT).show();
                 Intent gotosavedroutes = new Intent(getApplicationContext(), SavedRoutes.class);
                 startActivity(gotosavedroutes);

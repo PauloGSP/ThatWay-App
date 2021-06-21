@@ -123,9 +123,7 @@ public class ShowTransports extends Activity {
                 layout.addView(btn);
             }
         }else{
-            System.out.println(MainActivity.cityTransports + " xDD " + local);
             ArrayList<String> localTransport= new ArrayList(MainActivity.cityTransports.get(local));
-
 
             for(int i = 0; i<localTransport.size() ; i++) {
 

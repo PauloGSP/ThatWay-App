@@ -47,12 +47,10 @@ public class MainActivity extends Activity {
     // fazer load de todas as trips
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void loadPrivateTransport(){
-        System.out.println("fui chamado");
         try{
 
             BufferedReader rd = new BufferedReader(new InputStreamReader(getAssets().open("priv.txt")));
             String l;
-            System.out.println("ya");
             while ((l = rd.readLine()) != null) {
                 String[] transportinfo= l.split("/");
                 String city=transportinfo[0];
@@ -98,11 +96,8 @@ public class MainActivity extends Activity {
 
                 allTrips.add(trip);
 
-                System.out.println(trip);
-
             }
 
-            System.out.println("!!!!!!!!!!!!!!!added trips!!!!!!!!!!!!!!!!!");
 
         } catch (IOException e) {
 
@@ -128,22 +123,17 @@ public class MainActivity extends Activity {
             }
         }
 
-        System.out.println("aqui");
-        for (String location : MainActivity.allLocations) System.out.println(location);
     }
 
     public void loadcityTransports(){
-        System.out.println("loadcityTransports");
+
 
         for (Trip t : allTrips) {
             String origin = t.getOrigin();
             String destiny = t.getDestiny();
             String transport = t.getTransport_type();
-            System.out.println("Mano testei"+!cityTransports.containsKey(origin.toLowerCase() ));
             if(!cityTransports.containsKey(origin.toLowerCase())){
                 cityTransports.put(origin.toLowerCase(),new ArrayList<>(Arrays.asList(transport)));
-                System.out.println("Dei put de");
-                System.out.println(origin.toLowerCase() + "   "+ transport);
 
             }else {
                 ArrayList<String> transportes = new ArrayList(cityTransports.get(origin.toLowerCase()));
@@ -172,23 +162,19 @@ public class MainActivity extends Activity {
 
             String city= p.getCity();
             String type=p.getType();
-            System.out.println(type);
             if(!cityTransports.containsKey(city.toLowerCase())){
                 cityTransports.put(city.toLowerCase(),new ArrayList<>(Arrays.asList(type)));
             }else{
                 ArrayList<String> transportes = new ArrayList(cityTransports.get(city.toLowerCase()));
                 if (!transportes.contains(type)) {
                     transportes.add(type);
-                    System.out.println("dei put");
+
                     cityTransports.put(city.toLowerCase(), transportes);
                 }
 
             }
 
         }
-        System.out.println("begin");
-        System.out.println(cityTransports);
-        System.out.println("end");
 
     }
 
