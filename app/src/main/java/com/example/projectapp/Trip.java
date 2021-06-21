@@ -16,6 +16,7 @@ import java.util.Date;
         private long travelling_time;
         private String origin_coords;
         private String destiny_coords;
+        private String trip_time;
 
         //construtor com data única
         public Trip(String origin, String destiny, String origin_address, String destiny_address, LocalTime departure_time, LocalTime arrival_time, String transport_type, Double price,
@@ -31,6 +32,7 @@ import java.util.Date;
             this.origin_coords = origin_coords;
             this.destiny_coords = destiny_coords;
             this.travelling_time = travelling_time;
+            this.trip_time = this.getTripTime();
         }
 
         // GETTERS AND SETTERS
@@ -122,6 +124,10 @@ import java.util.Date;
         //função para retornar string do tipo "14:00 - 14:45"
         public String getTripTime() {
             return this.departure_time.toString() + " - " + this.arrival_time.toString() + " (" + this.getTravelling_time() + " min.)";
+        }
+
+        public String getTrip_time() {
+            return this.trip_time;
         }
 
         // TO STRING

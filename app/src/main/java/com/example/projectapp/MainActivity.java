@@ -13,6 +13,8 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -211,7 +213,9 @@ public class MainActivity extends Activity {
         loadPrivateTransport();
         loadcityTransports();
 
-        EditText locationText = findViewById(R.id.locationTextView);
+        AutoCompleteTextView locationText = findViewById(R.id.locationTextView);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,allLocations);
+        locationText.setAdapter(adapter);
 
         //ir para o create trips
         Button createTripBtn = findViewById(R.id.createTripBtn);

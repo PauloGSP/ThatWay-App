@@ -4,8 +4,8 @@ package com.example.projectapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,7 +27,7 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ImageView imageView;
 
   @NonNull
-  public final EditText locationTextView;
+  public final AutoCompleteTextView locationTextView;
 
   @NonNull
   public final Button savedRoutesBtn;
@@ -36,7 +36,7 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button showTransportsBtn;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button createTripBtn,
-      @NonNull ImageView imageView, @NonNull EditText locationTextView,
+      @NonNull ImageView imageView, @NonNull AutoCompleteTextView locationTextView,
       @NonNull Button savedRoutesBtn, @NonNull Button showTransportsBtn) {
     this.rootView = rootView;
     this.createTripBtn = createTripBtn;
@@ -86,7 +86,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       id = R.id.locationTextView;
-      EditText locationTextView = rootView.findViewById(id);
+      AutoCompleteTextView locationTextView = rootView.findViewById(id);
       if (locationTextView == null) {
         break missingId;
       }

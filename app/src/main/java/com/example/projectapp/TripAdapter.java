@@ -100,7 +100,8 @@ public class TripAdapter extends ArrayAdapter<Trip> {
             //moreinfo.setClickable(true);
 
             //set do tempo e demora
-            scheduleTimeText.setText(trip.getTripTime());
+            scheduleTimeText.setText(trip.getTrip_time());
+            
 
             //set das directions
             String direction = trip.getOrigin_address() + "  ➝  " + trip.getDestiny_address();

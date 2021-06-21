@@ -38,12 +38,14 @@
         app:layout_constraintTop_toBottomOf="@+id/showTransportsBtn"
         app:layout_constraintVertical_bias="0.087" />
 
-    <EditText
+    <AutoCompleteTextView
         android:id="@+id/locationTextView"
         android:layout_width="300sp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Insert your current location"
+        android:completionThreshold="1"
+        android:dropDownHeight="200dp"
         android:inputType="textPersonName"
         android:shadowColor="#FFFFFF"
         android:textColor="@color/white"

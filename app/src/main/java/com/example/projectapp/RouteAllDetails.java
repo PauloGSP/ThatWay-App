@@ -24,7 +24,6 @@ import java.util.ArrayList;
 public class RouteAllDetails extends Activity {
 
     public static final String TAG = "all_routes";
-    public static String json;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,13 +60,8 @@ public class RouteAllDetails extends Activity {
         ArrayList<Route> arrayList = gson.fromJson(json, type);
         Route.savedRoutes = arrayList;
 
-        if (Route.savedRoutes == null) {
-            Route.savedRoutes = new ArrayList<Route>();
-        }
-
-        if (MainActivity.control) {
-            Route.savedRoutes.add(route);
-        }
+        if (Route.savedRoutes == null) Route.savedRoutes = new ArrayList<Route>();
+        if (MainActivity.control) Route.savedRoutes.add(route);
 
         //save
         SharedPreferences sharedP = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
@@ -95,6 +89,7 @@ public class RouteAllDetails extends Activity {
         totalTravellingTime.setText(route.getTotal_travelling_time() + " minutes");
         TextView totalPrice = findViewById(R.id.totalPrice);
         totalPrice.setText(route.getTotal_price().toString() + "€");
+
 
         Button deleteRoute = findViewById(R.id.deleteRouteBtn);
         deleteRoute.setOnClickListener(new View.OnClickListener() {

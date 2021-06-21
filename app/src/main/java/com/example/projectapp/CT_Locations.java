@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -30,6 +31,8 @@ public class CT_Locations extends Activity {
         View locationView = getLayoutInflater().inflate(R.layout.row_location, null, false);
 
         AutoCompleteTextView locationText = (AutoCompleteTextView) locationView.findViewById(R.id.locationAutoComplete);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,MainActivity.allLocations);
+        locationText.setAdapter(adapter);
 
         ImageButton removeButton = (ImageButton) locationView.findViewById(R.id.deleteBreakpoint);
         removeButton.setOnClickListener(new View.OnClickListener() {
@@ -107,7 +110,10 @@ public class CT_Locations extends Activity {
         });
 
         AutoCompleteTextView location2_1 = findViewById(R.id.origem);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,MainActivity.allLocations);
+        location2_1.setAdapter(adapter);
         AutoCompleteTextView location2_2 = findViewById(R.id.destino);
+        location2_2.setAdapter(adapter);
         // update origin location with the main activity current location
         location2_1.setText(MainActivity.currentLocation);
 
